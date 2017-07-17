@@ -13,6 +13,8 @@ public class SkillController : MonoBehaviour {
     private IEnumerator cooldown;
     private CharsFMData Character;
     private float MPDrain;
+    private float holdTimer = 0;
+
     private static SkillController controller;
 
     #region API
@@ -57,6 +59,7 @@ public class SkillController : MonoBehaviour {
         if (Input.GetButtonDown("Fire2")) { //B Button
             SkillBDown();
         }
+        if (holdTimer > 0) holdTimer -= Time.deltaTime;
     }
 
     #endregion
@@ -71,6 +74,9 @@ public class SkillController : MonoBehaviour {
         if (_emc.currentMP <= 0) {
             _emc.currentMP = 0;
             SkillFly(1, false);
+        }
+        if (holdTimer <= 0) {
+            SkillProjectile(1, 2);
         }
     }
     public void SkillXUp() {
@@ -104,15 +110,28 @@ public class SkillController : MonoBehaviour {
     }
     void SkillProjectile(int sn, float lifetime) {
         if ((int)Character.CharSkills[sn].skillType == 3 && _emc.currentMP >= Character.CharSkills[sn].MP_cost) {
-            SM.PlaySound("a_shoot");
-            _emc.currentMP -= Character.CharSkills[sn].MP_cost;
             GameObject spark_cl;
             Vector3 v3 = new Vector3(Pony.transform.position.x + 0.75f, Pony.transform.position.y, Pony.transform.position.z);
+            if (Character.CharSkills[sn].projType == Skill.ProjectileType.Autofire) {
+                SM.PlaySound("a_gun");
+                v3 = new Vector3(Pony.transform.position.x + 0.7f, Pony.transform.position.y - 0.1f, Pony.transform.position.z);
+                holdTimer = Character.CharSkills[sn].duration;
+            } else {
+                SM.PlaySound("a_shoot");
+            }
+            if (fx[sn] != null) {
+                fx[sn].SetActive(true);
+                IEnumerator fxDisable = DisableObject(fx[sn], 0.15f);
+                StartCoroutine(fxDisable);
+            }
+            _emc.currentMP -= Character.CharSkills[sn].MP_cost;
             spark_cl = (GameObject)Instantiate(Character.CharSkills[sn].obj, v3, Character.CharSkills[sn].obj.transform.rotation);
             if (Character.CharSkills[sn].projType == Skill.ProjectileType.Light)
                 spark_cl.GetComponent<Rigidbody>().AddForce(new Vector3(250f, 0f, 0f));
             if (Character.CharSkills[sn].projType == Skill.ProjectileType.Heavy)
                 spark_cl.GetComponent<Rigidbody>().AddForce(new Vector3(400f, 100f, 0f));
+            if (Character.CharSkills[sn].projType == Skill.ProjectileType.Autofire)
+                spark_cl.GetComponent<Rigidbody>().AddForce(new Vector3(100f, 0f, 0f));
             Destroy(spark_cl, lifetime);
         }
     }
@@ -268,6 +287,10 @@ public class SkillController : MonoBehaviour {
         Character.CharSkills[num].IsCooldown = false;
         _uiSkill.ActivateSkill(num);
     }
+    IEnumerator DisableObject(GameObject obj, float delay) {
+        yield return new WaitForSeconds(delay);
+        obj.SetActive(false);
+    }
 
     #endregion
 
@@ -285,6 +308,6 @@ public class SkillController : MonoBehaviour {
             Character.CharSkills[0].ItemMultiplier(it, Character.CharSkills[0].multiplier);
             _emc.ShowPopupInfo(it);
         }
-    }
+    }  
 
 }

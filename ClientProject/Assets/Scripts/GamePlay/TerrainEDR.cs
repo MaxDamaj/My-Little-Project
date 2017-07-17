@@ -51,10 +51,13 @@ public class TerrainEDR : MonoBehaviour {
         EnduranceSection section =  sections.FindLast(x => x.startDistance <= transform.position.x);
 
         //Spawn Terrain
-        int sel = UnityEngine.Random.Range(1, section.terrains.GetLength(0));
-        if (lastTerrain != section.terrains[0]) {
-            sel = 0;
-        }
+        int sel = 0;
+        if (section.terrains.GetLength(0) > 1) {
+            sel = UnityEngine.Random.Range(1, section.terrains.GetLength(0));
+            if (lastTerrain != section.terrains[0]) {
+                sel = 0;
+            }
+        }    
         Destroy(Instantiate(section.terrains[sel], transform.position, section.terrains[sel].transform.rotation), 45);
         lastTerrain = section.terrains[sel];
         //Spawn Bonuses
