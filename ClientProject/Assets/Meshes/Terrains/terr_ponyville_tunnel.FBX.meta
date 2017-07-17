@@ -1,0 +1,188 @@
+fileFormatVersion: 2
+guid: a8da63d3b4acd504b9a49050d15b27fe
+timeCreated: 1499972384
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Box01
+    100002: Box02
+    100004: Box03
+    100006: Box05
+    100008: Box06
+    100010: forBorder02
+    100012: forBorder03
+    100014: forBorder04
+    100016: forBorder05
+    100018: grass
+    100020: grass01
+    100022: highGrass10
+    100024: highGrass11
+    100026: highGrass12
+    100028: highGrass13
+    100030: highGrass14
+    100032: highGrass15
+    100034: highGrass16
+    100036: highGrass17
+    100038: highGrass18
+    100040: highGrass19
+    100042: road
+    100044: road01
+    100046: //RootNode
+    400000: Box01
+    400002: Box02
+    400004: Box03
+    400006: Box05
+    400008: Box06
+    400010: forBorder02
+    400012: forBorder03
+    400014: forBorder04
+    400016: forBorder05
+    400018: grass
+    400020: grass01
+    400022: highGrass10
+    400024: highGrass11
+    400026: highGrass12
+    400028: highGrass13
+    400030: highGrass14
+    400032: highGrass15
+    400034: highGrass16
+    400036: highGrass17
+    400038: highGrass18
+    400040: highGrass19
+    400042: road
+    400044: road01
+    400046: //RootNode
+    2300000: Box01
+    2300002: Box02
+    2300004: Box03
+    2300006: Box05
+    2300008: Box06
+    2300010: forBorder02
+    2300012: forBorder03
+    2300014: forBorder04
+    2300016: forBorder05
+    2300018: grass
+    2300020: grass01
+    2300022: highGrass10
+    2300024: highGrass11
+    2300026: highGrass12
+    2300028: highGrass13
+    2300030: highGrass14
+    2300032: highGrass15
+    2300034: highGrass16
+    2300036: highGrass17
+    2300038: highGrass18
+    2300040: highGrass19
+    2300042: road
+    2300044: road01
+    3300000: Box01
+    3300002: Box02
+    3300004: Box03
+    3300006: Box05
+    3300008: Box06
+    3300010: forBorder02
+    3300012: forBorder03
+    3300014: forBorder04
+    3300016: forBorder05
+    3300018: grass
+    3300020: grass01
+    3300022: highGrass10
+    3300024: highGrass11
+    3300026: highGrass12
+    3300028: highGrass13
+    3300030: highGrass14
+    3300032: highGrass15
+    3300034: highGrass16
+    3300036: highGrass17
+    3300038: highGrass18
+    3300040: highGrass19
+    3300042: road
+    3300044: road01
+    4300000: road
+    4300002: grass
+    4300004: grass01
+    4300006: Box01
+    4300008: highGrass10
+    4300010: highGrass11
+    4300012: highGrass12
+    4300014: highGrass13
+    4300016: highGrass14
+    4300018: highGrass15
+    4300020: highGrass16
+    4300022: highGrass17
+    4300024: forBorder02
+    4300026: forBorder03
+    4300028: forBorder04
+    4300030: forBorder05
+    4300032: highGrass18
+    4300034: highGrass19
+    4300036: road01
+    4300038: Box02
+    4300040: Box03
+    4300042: Box05
+    4300044: Box06
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 3.9375
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

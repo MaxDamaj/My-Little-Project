@@ -1,0 +1,213 @@
+fileFormatVersion: 2
+guid: 43dd54007e7ae334097dff92167a785d
+timeCreated: 1499324280
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Box01
+    100002: forBorder02
+    100004: forBorder03
+    100006: forBorder04
+    100008: forBorder05
+    100010: forBorder06
+    100012: forBorder07
+    100014: forBorder08
+    100016: forBorder09
+    100018: forBorder10
+    100020: forBorder11
+    100022: forBorder12
+    100024: forBorder13
+    100026: grass
+    100028: grass01
+    100030: highGrass14
+    100032: highGrass15
+    100034: highGrass16
+    100036: highGrass17
+    100038: highGrass18
+    100040: highGrass19
+    100042: log01
+    100044: log02
+    100046: road
+    100048: road01
+    100050: //RootNode
+    100052: water
+    100054: waterGrass
+    100056: waterGrass01
+    400000: Box01
+    400002: forBorder02
+    400004: forBorder03
+    400006: forBorder04
+    400008: forBorder05
+    400010: forBorder06
+    400012: forBorder07
+    400014: forBorder08
+    400016: forBorder09
+    400018: forBorder10
+    400020: forBorder11
+    400022: forBorder12
+    400024: forBorder13
+    400026: grass
+    400028: grass01
+    400030: highGrass14
+    400032: highGrass15
+    400034: highGrass16
+    400036: highGrass17
+    400038: highGrass18
+    400040: highGrass19
+    400042: log01
+    400044: log02
+    400046: road
+    400048: road01
+    400050: //RootNode
+    400052: water
+    400054: waterGrass
+    400056: waterGrass01
+    2300000: Box01
+    2300002: forBorder02
+    2300004: forBorder03
+    2300006: forBorder04
+    2300008: forBorder05
+    2300010: forBorder06
+    2300012: forBorder07
+    2300014: forBorder08
+    2300016: forBorder09
+    2300018: forBorder10
+    2300020: forBorder11
+    2300022: forBorder12
+    2300024: forBorder13
+    2300026: grass
+    2300028: grass01
+    2300030: highGrass14
+    2300032: highGrass15
+    2300034: highGrass16
+    2300036: highGrass17
+    2300038: highGrass18
+    2300040: highGrass19
+    2300042: log01
+    2300044: log02
+    2300046: road
+    2300048: road01
+    2300050: water
+    2300052: waterGrass
+    2300054: waterGrass01
+    3300000: Box01
+    3300002: forBorder02
+    3300004: forBorder03
+    3300006: forBorder04
+    3300008: forBorder05
+    3300010: forBorder06
+    3300012: forBorder07
+    3300014: forBorder08
+    3300016: forBorder09
+    3300018: forBorder10
+    3300020: forBorder11
+    3300022: forBorder12
+    3300024: forBorder13
+    3300026: grass
+    3300028: grass01
+    3300030: highGrass14
+    3300032: highGrass15
+    3300034: highGrass16
+    3300036: highGrass17
+    3300038: highGrass18
+    3300040: highGrass19
+    3300042: log01
+    3300044: log02
+    3300046: road
+    3300048: road01
+    3300050: water
+    3300052: waterGrass
+    3300054: waterGrass01
+    4300000: road
+    4300002: grass
+    4300004: grass01
+    4300006: Box01
+    4300008: highGrass14
+    4300010: highGrass15
+    4300012: highGrass16
+    4300014: highGrass17
+    4300016: forBorder02
+    4300018: forBorder03
+    4300020: forBorder04
+    4300022: forBorder05
+    4300024: highGrass18
+    4300026: highGrass19
+    4300028: water
+    4300030: road01
+    4300032: forBorder06
+    4300034: forBorder07
+    4300036: forBorder08
+    4300038: forBorder09
+    4300040: forBorder10
+    4300042: forBorder11
+    4300044: forBorder12
+    4300046: forBorder13
+    4300048: log01
+    4300050: log02
+    4300052: waterGrass
+    4300054: waterGrass01
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 3.9375
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

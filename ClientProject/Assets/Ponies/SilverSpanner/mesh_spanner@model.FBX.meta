@@ -1,0 +1,182 @@
+fileFormatVersion: 2
+guid: ac943e217e1ced546bf64f14936cb6fc
+timeCreated: 1488703443
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: body
+    100002: cutiemark
+    100004: Ear
+    100006: ear
+    100008: eye
+    100010: FL_01
+    100012: FLLeg
+    100014: flLeg
+    100016: FR_01
+    100018: FRLeg
+    100020: frLeg
+    100022: hair01
+    100024: hair02
+    100026: hair_1_1
+    100028: hair_1_2
+    100030: hair_1_3
+    100032: hair_2_1
+    100034: hair_2_2
+    100036: hair_3_1
+    100038: hair_3_2
+    100040: Head
+    100042: head
+    100044: Hip
+    100046: horn
+    100048: //RootNode
+    100050: mouth
+    100052: Neck
+    100054: pony
+    100056: RL_01
+    100058: RL_02
+    100060: RLLeg
+    100062: rlLeg
+    100064: RR_01
+    100066: RR_02
+    100068: RRLeg
+    100070: rrLeg
+    100072: Tail
+    100074: tail
+    100076: Tail_01
+    100078: Tail_02
+    100080: Tail_03
+    400000: body
+    400002: cutiemark
+    400004: Ear
+    400006: ear
+    400008: eye
+    400010: FL_01
+    400012: FLLeg
+    400014: flLeg
+    400016: FR_01
+    400018: FRLeg
+    400020: frLeg
+    400022: hair01
+    400024: hair02
+    400026: hair_1_1
+    400028: hair_1_2
+    400030: hair_1_3
+    400032: hair_2_1
+    400034: hair_2_2
+    400036: hair_3_1
+    400038: hair_3_2
+    400040: Head
+    400042: head
+    400044: Hip
+    400046: horn
+    400048: //RootNode
+    400050: mouth
+    400052: Neck
+    400054: pony
+    400056: RL_01
+    400058: RL_02
+    400060: RLLeg
+    400062: rlLeg
+    400064: RR_01
+    400066: RR_02
+    400068: RRLeg
+    400070: rrLeg
+    400072: Tail
+    400074: tail
+    400076: Tail_01
+    400078: Tail_02
+    400080: Tail_03
+    4300000: body
+    4300002: flLeg
+    4300004: frLeg
+    4300006: ear
+    4300008: head
+    4300010: rlLeg
+    4300012: rrLeg
+    4300014: eye
+    4300016: mouth
+    4300018: cutiemark
+    4300020: tail
+    4300022: hair02
+    4300024: hair01
+    4300026: horn
+    9500000: //RootNode
+    13700000: body
+    13700002: cutiemark
+    13700004: ear
+    13700006: eye
+    13700008: flLeg
+    13700010: frLeg
+    13700012: hair01
+    13700014: hair02
+    13700016: head
+    13700018: horn
+    13700020: mouth
+    13700022: rlLeg
+    13700024: rrLeg
+    13700026: tail
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

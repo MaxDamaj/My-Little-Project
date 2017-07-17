@@ -1,0 +1,158 @@
+fileFormatVersion: 2
+guid: 6ff9dacc674ed1243a06036e587bfbc3
+timeCreated: 1499703175
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Box02
+    100002: Box03
+    100004: Box04
+    100006: Box05
+    100008: Box06
+    100010: Box07
+    100012: highGrass14
+    100014: highGrass15
+    100016: highGrass16
+    100018: highGrass17
+    100020: highGrass18
+    100022: highGrass19
+    100024: log01
+    100026: log02
+    100028: road
+    100030: road02
+    100032: //RootNode
+    100034: water
+    400000: Box02
+    400002: Box03
+    400004: Box04
+    400006: Box05
+    400008: Box06
+    400010: Box07
+    400012: highGrass14
+    400014: highGrass15
+    400016: highGrass16
+    400018: highGrass17
+    400020: highGrass18
+    400022: highGrass19
+    400024: log01
+    400026: log02
+    400028: road
+    400030: road02
+    400032: //RootNode
+    400034: water
+    2300000: Box02
+    2300002: Box03
+    2300004: Box04
+    2300006: Box05
+    2300008: Box06
+    2300010: Box07
+    2300012: highGrass14
+    2300014: highGrass15
+    2300016: highGrass16
+    2300018: highGrass17
+    2300020: highGrass18
+    2300022: highGrass19
+    2300024: log01
+    2300026: log02
+    2300028: road
+    2300030: road02
+    2300032: water
+    3300000: Box02
+    3300002: Box03
+    3300004: Box04
+    3300006: Box05
+    3300008: Box06
+    3300010: Box07
+    3300012: highGrass14
+    3300014: highGrass15
+    3300016: highGrass16
+    3300018: highGrass17
+    3300020: highGrass18
+    3300022: highGrass19
+    3300024: log01
+    3300026: log02
+    3300028: road
+    3300030: road02
+    3300032: water
+    4300000: Box02
+    4300002: Box03
+    4300004: Box04
+    4300006: Box05
+    4300008: road
+    4300010: highGrass14
+    4300012: highGrass15
+    4300014: highGrass16
+    4300016: highGrass17
+    4300018: highGrass18
+    4300020: highGrass19
+    4300022: water
+    4300024: road02
+    4300026: log01
+    4300028: log02
+    4300030: Box06
+    4300032: Box07
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 3.9375
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

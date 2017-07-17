@@ -1,0 +1,293 @@
+fileFormatVersion: 2
+guid: f74ddb74844e55c45852f8c4e770ebf0
+timeCreated: 1488703197
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: body
+    100004: cutiemark
+    100006: Ear
+    100008: ear
+    100010: eye
+    100012: FL_01
+    100014: FLLeg
+    100016: flLeg
+    100018: FR_01
+    100020: FRLeg
+    100022: frLeg
+    100024: hair01
+    100026: hair02
+    100028: hair_1_1
+    100030: hair_1_2
+    100032: hair_1_3
+    100034: hair_2_1
+    100036: hair_2_2
+    100038: hair_3_1
+    100040: hair_3_2
+    100042: Head
+    100044: head
+    100046: Hip
+    100048: horn
+    100050: mouth
+    100052: Neck
+    100054: pony
+    100056: RL_01
+    100058: RL_02
+    100060: RLLeg
+    100062: rlLeg
+    100064: RR_01
+    100066: RR_02
+    100068: RRLeg
+    100070: rrLeg
+    100072: Tail
+    100074: tail
+    100076: Tail_01
+    100078: Tail_02
+    100080: Tail_03
+    400000: //RootNode
+    400002: body
+    400004: cutiemark
+    400006: Ear
+    400008: ear
+    400010: eye
+    400012: FL_01
+    400014: FLLeg
+    400016: flLeg
+    400018: FR_01
+    400020: FRLeg
+    400022: frLeg
+    400024: hair01
+    400026: hair02
+    400028: hair_1_1
+    400030: hair_1_2
+    400032: hair_1_3
+    400034: hair_2_1
+    400036: hair_2_2
+    400038: hair_3_1
+    400040: hair_3_2
+    400042: Head
+    400044: head
+    400046: Hip
+    400048: horn
+    400050: mouth
+    400052: Neck
+    400054: pony
+    400056: RL_01
+    400058: RL_02
+    400060: RLLeg
+    400062: rlLeg
+    400064: RR_01
+    400066: RR_02
+    400068: RRLeg
+    400070: rrLeg
+    400072: Tail
+    400074: tail
+    400076: Tail_01
+    400078: Tail_02
+    400080: Tail_03
+    4300000: body
+    4300002: flLeg
+    4300004: frLeg
+    4300006: ear
+    4300008: head
+    4300010: rlLeg
+    4300012: rrLeg
+    4300014: eye
+    4300016: mouth
+    4300018: cutiemark
+    4300020: tail
+    4300022: hair02
+    4300024: hair01
+    4300026: horn
+    7400000: idle
+    9500000: //RootNode
+    13700000: body
+    13700002: cutiemark
+    13700004: ear
+    13700006: eye
+    13700008: flLeg
+    13700010: frLeg
+    13700012: hair01
+    13700014: hair02
+    13700016: head
+    13700018: horn
+    13700020: mouth
+    13700022: rlLeg
+    13700024: rrLeg
+    13700026: tail
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hip
+        weight: 1
+      - path: Hip/FLLeg
+        weight: 1
+      - path: Hip/FLLeg/FL_01
+        weight: 1
+      - path: Hip/FRLeg
+        weight: 1
+      - path: Hip/FRLeg/FR_01
+        weight: 1
+      - path: Hip/Neck
+        weight: 1
+      - path: Hip/Neck/Head
+        weight: 1
+      - path: Hip/Neck/Head/Ear
+        weight: 1
+      - path: Hip/Neck/Head/hair_1_1
+        weight: 1
+      - path: Hip/Neck/Head/hair_1_1/hair_1_2
+        weight: 1
+      - path: Hip/Neck/Head/hair_1_1/hair_1_2/hair_1_3
+        weight: 1
+      - path: Hip/Neck/Head/hair_2_1
+        weight: 1
+      - path: Hip/Neck/Head/hair_2_1/hair_2_2
+        weight: 1
+      - path: Hip/Neck/Head/hair_3_1
+        weight: 1
+      - path: Hip/Neck/Head/hair_3_1/hair_3_2
+        weight: 1
+      - path: Hip/RLLeg
+        weight: 1
+      - path: Hip/RLLeg/RL_01
+        weight: 1
+      - path: Hip/RLLeg/RL_01/RL_02
+        weight: 1
+      - path: Hip/RRLeg
+        weight: 1
+      - path: Hip/RRLeg/RR_01
+        weight: 1
+      - path: Hip/RRLeg/RR_01/RR_02
+        weight: 1
+      - path: Hip/Tail
+        weight: 1
+      - path: Hip/Tail/Tail_01
+        weight: 1
+      - path: Hip/Tail/Tail_01/Tail_02
+        weight: 1
+      - path: Hip/Tail/Tail_01/Tail_02/Tail_03
+        weight: 1
+      - path: pony
+        weight: 1
+      - path: pony/body
+        weight: 1
+      - path: pony/cutiemark
+        weight: 1
+      - path: pony/ear
+        weight: 1
+      - path: pony/eye
+        weight: 1
+      - path: pony/flLeg
+        weight: 1
+      - path: pony/frLeg
+        weight: 1
+      - path: pony/hair01
+        weight: 1
+      - path: pony/hair02
+        weight: 1
+      - path: pony/head
+        weight: 1
+      - path: pony/horn
+        weight: 1
+      - path: pony/mouth
+        weight: 1
+      - path: pony/rlLeg
+        weight: 1
+      - path: pony/rrLeg
+        weight: 1
+      - path: pony/tail
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 1
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

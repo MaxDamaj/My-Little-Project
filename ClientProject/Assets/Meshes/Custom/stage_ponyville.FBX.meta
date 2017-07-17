@@ -1,0 +1,207 @@
+fileFormatVersion: 2
+guid: 4e8e801c2a6ec3c4880ce1d6534c7925
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: gr01
+    100002: gr02
+    100004: gr03
+    100006: gr04
+    100008: gr05
+    100010: gr06
+    100012: gr07
+    100014: gr08
+    100016: gr09
+    100018: gr10
+    100020: gr11
+    100022: gr12
+    100024: grass
+    100026: grass 1
+    100028: grass 2
+    100030: log
+    100032: log 1
+    100034: log 2
+    100036: log 3
+    100038: //RootNode
+    100040: stone01
+    100042: stone02
+    100044: stump
+    100046: tree01
+    100048: tree02
+    100050: tree03
+    100052: wall
+    100054: wall 1
+    400000: gr01
+    400002: gr02
+    400004: gr03
+    400006: gr04
+    400008: gr05
+    400010: gr06
+    400012: gr07
+    400014: gr08
+    400016: gr09
+    400018: gr10
+    400020: gr11
+    400022: gr12
+    400024: grass
+    400026: grass 1
+    400028: grass 2
+    400030: log
+    400032: log 1
+    400034: log 2
+    400036: log 3
+    400038: //RootNode
+    400040: stone01
+    400042: stone02
+    400044: stump
+    400046: tree01
+    400048: tree02
+    400050: tree03
+    400052: wall
+    400054: wall 1
+    2300000: gr01
+    2300002: gr02
+    2300004: gr03
+    2300006: gr04
+    2300008: gr05
+    2300010: gr06
+    2300012: gr07
+    2300014: gr08
+    2300016: gr09
+    2300018: gr10
+    2300020: gr11
+    2300022: gr12
+    2300024: grass
+    2300026: grass 1
+    2300028: grass 2
+    2300030: log
+    2300032: log 1
+    2300034: log 2
+    2300036: log 3
+    2300038: stone01
+    2300040: stone02
+    2300042: stump
+    2300044: tree01
+    2300046: tree02
+    2300048: tree03
+    2300050: wall
+    2300052: wall 1
+    3300000: gr01
+    3300002: gr02
+    3300004: gr03
+    3300006: gr04
+    3300008: gr05
+    3300010: gr06
+    3300012: gr07
+    3300014: gr08
+    3300016: gr09
+    3300018: gr10
+    3300020: gr11
+    3300022: gr12
+    3300024: grass
+    3300026: grass 1
+    3300028: grass 2
+    3300030: log
+    3300032: log 1
+    3300034: log 2
+    3300036: log 3
+    3300038: stone01
+    3300040: stone02
+    3300042: stump
+    3300044: tree01
+    3300046: tree02
+    3300048: tree03
+    3300050: wall
+    3300052: wall 1
+    4300000: grass
+    4300002: wall
+    4300004: grass
+    4300006: stone01
+    4300008: stone02
+    4300010: log
+    4300012: grass
+    4300014: log
+    4300016: log
+    4300018: wall
+    4300020: log
+    4300022: tree01
+    4300024: tree02
+    4300026: tree03
+    4300028: stump
+    4300030: gr01
+    4300032: gr02
+    4300034: gr03
+    4300036: gr04
+    4300038: gr05
+    4300040: gr06
+    4300042: gr07
+    4300044: gr08
+    4300046: gr09
+    4300048: gr10
+    4300050: gr11
+    4300052: gr12
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.05
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

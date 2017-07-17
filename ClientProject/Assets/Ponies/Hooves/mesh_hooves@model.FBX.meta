@@ -1,0 +1,182 @@
+fileFormatVersion: 2
+guid: d865d9bfe61fca840b818996b5fcc5b2
+timeCreated: 1500205236
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: bag
+    100002: body
+    100004: cutiemark
+    100006: Ear
+    100008: ear
+    100010: eye
+    100012: FL_01
+    100014: FLLeg
+    100016: flLeg
+    100018: FR_01
+    100020: FRLeg
+    100022: frLeg
+    100024: glasses
+    100026: gun
+    100028: hair_1_1
+    100030: hair_1_2
+    100032: Head
+    100034: head
+    100036: Hip
+    100038: mane
+    100040: //RootNode
+    100042: mouth
+    100044: Neck
+    100046: pencil
+    100048: pony
+    100050: RL_01
+    100052: RL_02
+    100054: RLLeg
+    100056: rlLeg
+    100058: RR_01
+    100060: RR_02
+    100062: RRLeg
+    100064: rrLeg
+    100066: shirt
+    100068: Tail
+    100070: tail
+    100072: Tail_01
+    100074: Tail_02
+    400000: bag
+    400002: body
+    400004: cutiemark
+    400006: Ear
+    400008: ear
+    400010: eye
+    400012: FL_01
+    400014: FLLeg
+    400016: flLeg
+    400018: FR_01
+    400020: FRLeg
+    400022: frLeg
+    400024: glasses
+    400026: gun
+    400028: hair_1_1
+    400030: hair_1_2
+    400032: Head
+    400034: head
+    400036: Hip
+    400038: mane
+    400040: //RootNode
+    400042: mouth
+    400044: Neck
+    400046: pencil
+    400048: pony
+    400050: RL_01
+    400052: RL_02
+    400054: RLLeg
+    400056: rlLeg
+    400058: RR_01
+    400060: RR_02
+    400062: RRLeg
+    400064: rrLeg
+    400066: shirt
+    400068: Tail
+    400070: tail
+    400072: Tail_01
+    400074: Tail_02
+    4300000: body
+    4300002: flLeg
+    4300004: frLeg
+    4300006: ear
+    4300008: rlLeg
+    4300010: rrLeg
+    4300012: eye
+    4300014: mouth
+    4300016: cutiemark
+    4300018: head
+    4300020: tail
+    4300022: mane
+    4300024: bag
+    4300026: shirt
+    4300028: gun
+    4300030: glasses
+    4300032: pencil
+    9500000: //RootNode
+    13700000: bag
+    13700002: body
+    13700004: cutiemark
+    13700006: ear
+    13700008: eye
+    13700010: flLeg
+    13700012: frLeg
+    13700014: glasses
+    13700016: gun
+    13700018: head
+    13700020: mane
+    13700022: mouth
+    13700024: pencil
+    13700026: rlLeg
+    13700028: rrLeg
+    13700030: shirt
+    13700032: tail
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.46
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
