@@ -18,6 +18,7 @@ public class UISkills : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, I
     public Text[] CoolTexts;
 
     private bool IsPressed;
+    private string pressedButton;
 
     #region API
 
@@ -27,21 +28,29 @@ public class UISkills : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, I
 
     void FixedUpdate() {
         if (IsPressed) {
-            SkillController.Instance.SkillXHold();
+            switch (pressedButton) {
+                case "X":
+                    SkillController.Instance.SkillXHold();
+                    break;
+            }       
         }
     }
 
+    #endregion
+
+    #region Events
+
     public void OnPointerDown(PointerEventData eventData) {
         if (!IsPressed) {
-            if (eventData.pointerEnter == Frames[0].gameObject) { PonyController.Instance.Jump(); }
-            if (eventData.pointerEnter == Frames[1].gameObject) { SkillController.Instance.SkillXDown(); }
-            if (eventData.pointerEnter == Frames[2].gameObject) { SkillController.Instance.SkillYDown(); }
-            if (eventData.pointerEnter == Frames[3].gameObject) { SkillController.Instance.SkillBDown(); }
+            if (eventData.pointerEnter == Frames[0].gameObject) { PonyController.Instance.Jump(); pressedButton = "A"; }
+            if (eventData.pointerEnter == Frames[1].gameObject) { SkillController.Instance.SkillXDown(); pressedButton = "X"; }
+            if (eventData.pointerEnter == Frames[2].gameObject) { SkillController.Instance.SkillYDown(); pressedButton = "Y"; }
+            if (eventData.pointerEnter == Frames[3].gameObject) { SkillController.Instance.SkillBDown(); pressedButton = "B"; }
         }
         IsPressed = true;
     }
     public void OnPointerExit(PointerEventData eventData) {
-        IsPressed = false;
+        IsPressed = false; pressedButton = "none";
         if (eventData.pointerEnter == Frames[1].gameObject) {
             SkillController.Instance.SkillXUp();
         }

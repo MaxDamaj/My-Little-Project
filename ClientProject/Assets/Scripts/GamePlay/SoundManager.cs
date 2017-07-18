@@ -4,12 +4,28 @@ using System.Collections.Generic;
 
 public class SoundManager : MonoBehaviour {
 
-    [SerializeField]
-    List<AudioSource> sounds = null;
+    private List<AudioSource> sounds = null;
+    private static SoundManager manager;
 
-    // Use this for initialization
+    public static SoundManager Instance {
+        get {
+            if (manager == null) {
+                manager = FindObjectOfType<SoundManager>();
+            }
+            return manager;
+        }
+    }
+
     void Start() {
+        
+    }
 
+
+    public void UpdateSoundList() {
+        sounds = new List<AudioSource>();
+        for (int i = 0; i < transform.childCount; i++) {
+            sounds.Add(transform.GetChild(i).GetComponent<AudioSource>());
+        }
     }
 
     public void PlaySound(string name) {

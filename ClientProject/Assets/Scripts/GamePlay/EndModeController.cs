@@ -42,16 +42,15 @@ public class EndModeController : MonoBehaviour {
     [Header("Events")]
     public UnityAction<int, Skill.Condition> CharacterState;
 
-    private SoundManager SM;
     private CharsFMData _pony;
     private Transform player;
     private float deltaCam; //Main Camera last x position
     //Statement check
     bool IsMPLow, IsHPLow;
 
-    // Use this for initialization
+    #region API
+
     void Start() {
-        SM = FindObjectOfType<SoundManager>();
         Invoke("FindPony", 0.3f);
         _pony = Database.Instance.GetCharFMInfo(Database.Instance.SelectedPony);
         pauseButton.onClick.AddListener(GamePause);
@@ -78,7 +77,7 @@ public class EndModeController : MonoBehaviour {
         SkillIcons[3].sprite = _pony.CharSkills[3].icon;
 
         distance.text = "0";
-        SM.SetMuteState("a_run", true);
+        SoundManager.Instance.SetMuteState("a_run", true);
         popupTimer = -1;
         Time.timeScale = 0;
         timeSpeed = 1;
@@ -89,7 +88,6 @@ public class EndModeController : MonoBehaviour {
         player = PonyController.Instance.transform;
     }
 
-    // Update is called once per frame
     void Update() {
         //Passed Distance
         if (player != null) distance.text = "" + (player.position.x > 0 ? Mathf.RoundToInt(player.position.x * 2) : 0);
@@ -152,6 +150,7 @@ public class EndModeController : MonoBehaviour {
 
     }
 
+    #endregion
 
     public void ShowPopupInfo(string item) {
         popupTimer = 60;
@@ -165,7 +164,7 @@ public class EndModeController : MonoBehaviour {
         pauseButton.gameObject.SetActive(false);
         InfoScreen.SetActive(true);
         InfoText.text = "You are out of stamina!";
-        SM.SetMuteState("a_run", true);
+        SoundManager.Instance.SetMuteState("a_run", true);
         Time.timeScale = 0f;
     }
     void ShowKOWindow() {
@@ -173,7 +172,7 @@ public class EndModeController : MonoBehaviour {
         pauseButton.gameObject.SetActive(false);
         InfoScreen.SetActive(true);
         InfoText.text = "You are Knocked Out!";
-        SM.SetMuteState("a_run", true);
+        SoundManager.Instance.SetMuteState("a_run", true);
         Time.timeScale = 0f;
     }
     public void ShowPassWindow() {
@@ -182,7 +181,7 @@ public class EndModeController : MonoBehaviour {
         InfoScreen.SetActive(true);
         InfoText.text = "Challenge Complete!";
         retireText.text = "Ok";
-        SM.SetMuteState("a_run", true);
+        SoundManager.Instance.SetMuteState("a_run", true);
         Time.timeScale = 0f;
     }
 

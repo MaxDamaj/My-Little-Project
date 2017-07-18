@@ -19,7 +19,6 @@ public struct EnduranceSection {
 public class TerrainEDR : MonoBehaviour {
 
     public List<EnduranceSection> sections;
-
     public Light sunlight;
     public Skybox sky_camera;
 
@@ -27,12 +26,21 @@ public class TerrainEDR : MonoBehaviour {
     private int eoh_counter;
     private GameObject lastTerrain = null;
 
-    // Use this for initialization
+    #region API
+
     void Start() {
         Invoke("FindPony", 0.4f);
         eoh_counter = 3;
 
     }
+
+    void FindPony() {
+        pony = PonyController.Instance.GetComponent<Collider>();
+    }
+
+    #endregion
+
+    #region Events
 
     void OnTriggerEnter(Collider coll) {
         if (coll == pony) {
@@ -40,9 +48,7 @@ public class TerrainEDR : MonoBehaviour {
         }
     }
 
-    void FindPony() {
-        pony = PonyController.Instance.GetComponent<Collider>();
-    }
+    #endregion
 
     void SpawnNewSection() {
         //Move Trigger

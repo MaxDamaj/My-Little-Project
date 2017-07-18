@@ -8,7 +8,6 @@ public class SkillController : MonoBehaviour {
 
     private GameObject Pony;
     private EndModeController _emc;
-    private SoundManager SM;
     private UISkills _uiSkill;
     private IEnumerator cooldown;
     private CharsFMData Character;
@@ -32,7 +31,6 @@ public class SkillController : MonoBehaviour {
         Character = Database.Instance.GetCharFMInfo(Database.Instance.SelectedPony);
         Pony = PonyController.Instance.gameObject;
         _emc = FindObjectOfType<EndModeController>();
-        SM = FindObjectOfType<SoundManager>();
         _uiSkill = FindObjectOfType<UISkills>();
         //Set all skilt to execute state
         for (int i = 0; i < Character.CharSkills.GetLength(0); i++) {
@@ -96,7 +94,7 @@ public class SkillController : MonoBehaviour {
 
     void SkillDash(int sn) {
         if ((int)Character.CharSkills[sn].skillType == 1 && _emc.currentMP >= Character.CharSkills[sn].MP_cost) {
-            SM.PlaySound("a_dash");
+            SoundManager.Instance.PlaySound("a_dash");
             _emc.currentMP -= Character.CharSkills[sn].MP_cost;
             _emc.SPDmlp = _emc.SPDmlp * Character.CharSkills[sn].SPDmlp;
             _emc.DMGmlp = _emc.DMGmlp * Character.CharSkills[sn].DMGmlp;
@@ -113,11 +111,11 @@ public class SkillController : MonoBehaviour {
             GameObject spark_cl;
             Vector3 v3 = new Vector3(Pony.transform.position.x + 0.75f, Pony.transform.position.y, Pony.transform.position.z);
             if (Character.CharSkills[sn].projType == Skill.ProjectileType.Autofire) {
-                SM.PlaySound("a_gun");
+                SoundManager.Instance.PlaySound("a_gun");
                 v3 = new Vector3(Pony.transform.position.x + 0.7f, Pony.transform.position.y - 0.1f, Pony.transform.position.z);
                 holdTimer = Character.CharSkills[sn].duration;
             } else {
-                SM.PlaySound("a_shoot");
+                SoundManager.Instance.PlaySound("a_shoot");
             }
             if (fx[sn] != null) {
                 fx[sn].SetActive(true);
@@ -188,7 +186,7 @@ public class SkillController : MonoBehaviour {
                 _emc.DMGmlp = _emc.DMGmlp * Character.CharSkills[sn].DMGmlp;
                 Pony.GetComponentInChildren<Animator>().SetBool("fly", true);
                 Pony.GetComponent<Rigidbody>().velocity = Vector3.zero;
-                SM.SetMuteState("a_wings", false);
+                SoundManager.Instance.SetMuteState("a_wings", false);
             }
             if (!active && Pony.GetComponentInChildren<Animator>().GetBool("fly")) {
                 Pony.GetComponent<Rigidbody>().useGravity = true;
@@ -197,7 +195,7 @@ public class SkillController : MonoBehaviour {
                 MPDrain = 0;
                 _emc.SPDmlp = _emc.SPDmlp / Character.CharSkills[sn].SPDmlp;
                 _emc.DMGmlp = _emc.DMGmlp / Character.CharSkills[sn].DMGmlp;
-                SM.SetMuteState("a_wings", true);
+                SoundManager.Instance.SetMuteState("a_wings", true);
             }
         }
     }
@@ -208,7 +206,7 @@ public class SkillController : MonoBehaviour {
             _emc.timeSpeed = Character.CharSkills[sn].multiplier;
             Time.timeScale = Character.CharSkills[sn].multiplier;
             if (fx[sn] != null) fx[sn].SetActive(true);
-            SM.PlaySound("a_slowdown");
+            SoundManager.Instance.PlaySound("a_slowdown");
             IEnumerator endSlowMotion = SlowMotion(Character.CharSkills[sn].duration, Character.CharSkills[sn].cooldown, sn);
             StartCoroutine(endSlowMotion);
             cooldown = _uiSkill.StartCooldown(sn, (int)Character.CharSkills[sn].cooldown);

@@ -18,6 +18,8 @@ public class ItemsController : MonoBehaviour {
 
     private EndModeController _emc;
 
+    #region API
+
     void Start() {
         DontDestroyOnLoad(gameObject);
         itemWindow.anchoredPosition = new Vector2(0, 200);
@@ -27,30 +29,28 @@ public class ItemsController : MonoBehaviour {
         //Keys Pressed
         if (itemWindow.anchoredPosition.y == 0) {
             if (_emc == null) _emc = FindObjectOfType<EndModeController>();
-            //Left item (1)
+            /*//Left item (1)
             if (Input.GetAxis("D-Pad X") == -1) {
-                if (belt[0].childCount > 0) {
-                    UseItem(belt[0].GetComponentInChildren<CraftComponent>().title, 0);
-                    uifx[0].ShowUIFX(3);
-                }
+                ActivateItem(1);
             }
             //Center item (2)
             if (Input.GetAxis("D-Pad Y") == -1) {
-                if (belt[1].childCount > 0) {
-                    UseItem(belt[1].GetComponentInChildren<CraftComponent>().title, 1);
-                    uifx[1].ShowUIFX(3);
-                }
+                ActivateItem(2);
             }
             //Right item (3)
             if (Input.GetAxis("D-Pad X") == 1) {
-                if (belt[2].childCount > 0) {
-                    UseItem(belt[2].GetComponentInChildren<CraftComponent>().title, 2);
-                    uifx[2].ShowUIFX(3);
-                }
-            }
+                ActivateItem(3);
+            }*/
         }
-        //Debug Info
-        //infoText.text = "D-Pad X = " + Input.GetAxis("D-Pad X") + "  D-Pad Y = " + Input.GetAxis("D-Pad Y");
+    }
+
+    #endregion
+
+    public void ActivateItem(int slot) {
+        if (belt[slot-1].childCount > 0) {
+            UseItem(belt[slot-1].GetComponentInChildren<CraftComponent>().title, slot);
+            uifx[slot-1].ShowUIFX(3);
+        }
     }
 
     void UseItem(string itemName, int beltID) {

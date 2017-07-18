@@ -4,7 +4,6 @@ using System.Collections.Generic;
 
 public class PonyController : MonoBehaviour {
 
-    private SoundManager SM;
     private EndModeController _emc;
     private CameraPonyFollow _cpf;
 
@@ -31,7 +30,6 @@ public class PonyController : MonoBehaviour {
     }
 
     void Start() {
-        SM = FindObjectOfType<SoundManager>();
         _cpf = FindObjectOfType<CameraPonyFollow>();
         _emc = FindObjectOfType<EndModeController>();
         _rigidbody = GetComponent<Rigidbody>();
@@ -62,7 +60,7 @@ public class PonyController : MonoBehaviour {
             jump_recover = 20;
             anim.SetBool("ground", false);
             _rigidbody.AddForce(new Vector3(0f, 220f, 0f));
-            SM.SetMuteState("a_run", true);
+            SoundManager.Instance.SetMuteState("a_run", true);
         }
     }
     public void SetShift(float value) {
@@ -85,37 +83,37 @@ public class PonyController : MonoBehaviour {
         //Check target tag
         switch (coll.gameObject.tag) {
             case "Bit":
-                SM.PlaySound("a_coins");
+                SoundManager.Instance.PlaySound("a_coins");
                 _emc.ShowPopupInfo("Bits");
                 Database.Instance.IncreaseItemQuantity("Bits", 1);
                 break;
             case "EoH_Laughter":
-                SM.PlaySound("a_beeps");
+                SoundManager.Instance.PlaySound("a_beeps");
                 _emc.ShowPopupInfo("Laughter");
                 Database.Instance.IncreaseItemQuantity("Laughter", 1);
                 break;
             case "EoH_Generosity":
-                SM.PlaySound("a_beeps");
+                SoundManager.Instance.PlaySound("a_beeps");
                 _emc.ShowPopupInfo("Generosity");
                 Database.Instance.IncreaseItemQuantity("Generosity", 1);
                 break;
             case "EoH_Honesty":
-                SM.PlaySound("a_beeps");
+                SoundManager.Instance.PlaySound("a_beeps");
                 _emc.ShowPopupInfo("Honesty");
                 Database.Instance.IncreaseItemQuantity("Honesty", 1);
                 break;
             case "EoH_Kindness":
-                SM.PlaySound("a_beeps");
+                SoundManager.Instance.PlaySound("a_beeps");
                 _emc.ShowPopupInfo("Kindness");
                 Database.Instance.IncreaseItemQuantity("Kindness", 1);
                 break;
             case "EoH_Loyalty":
-                SM.PlaySound("a_beeps");
+                SoundManager.Instance.PlaySound("a_beeps");
                 _emc.ShowPopupInfo("Loyalty");
                 Database.Instance.IncreaseItemQuantity("Loyalty", 1);
                 break;
             case "EoH_Magic":
-                SM.PlaySound("a_beeps");
+                SoundManager.Instance.PlaySound("a_beeps");
                 _emc.ShowPopupInfo("Magic");
                 Database.Instance.IncreaseItemQuantity("Magic", 1);
                 break;
@@ -126,8 +124,8 @@ public class PonyController : MonoBehaviour {
         switch (coll.gameObject.tag) {
             case "Ground":
                 anim.SetBool("ground", true);
-                SM.SetMuteState("a_run", false);
-                SM.PlaySound("a_landing");
+                SoundManager.Instance.SetMuteState("a_run", false);
+                SoundManager.Instance.PlaySound("a_landing");
                 break;
             case "Hay":
                 CalculateObstacle(coll.gameObject.transform, 0.3f, 1f, 0.05f);
@@ -147,7 +145,7 @@ public class PonyController : MonoBehaviour {
     void CalculateObstacle(Transform obstacle, float shift, float damage, float camShaking) {
         Database.Instance.obstTotal++;
         if (obstacle.position.x - transform.position.x > shift) {
-            SM.PlaySound("a_thump"); _emc.currentHP -= damage * _emc.DMGmlp;
+            SoundManager.Instance.PlaySound("a_thump"); _emc.currentHP -= damage * _emc.DMGmlp;
             _cpf.shake_intensity = camShaking * _emc.DMGmlp;
             Database.Instance.obstWithDamage++;
         } else {
