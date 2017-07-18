@@ -303,8 +303,11 @@ public class SkillController : MonoBehaviour {
             //pick random element from array
             string it = Character.CharSkills[0].items[Mathf.RoundToInt(Random.Range(0.0f, Character.CharSkills[0].items.GetLength(0) - 1.0f))];
             //increase element quantity and show popup
-            Character.CharSkills[0].ItemMultiplier(it, Character.CharSkills[0].multiplier);
-            _emc.ShowPopupInfo(it);
+            float rnd = Random.Range(0.0f, 1.0f);
+            if (rnd < Character.CharSkills[0].chance) {
+                Character.CharSkills[0].ItemMultiplier(it, Character.CharSkills[0].multiplier);
+                _emc.ShowPopupInfo(it);
+            }
         }
     }  
 

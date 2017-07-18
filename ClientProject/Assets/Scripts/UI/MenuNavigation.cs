@@ -10,8 +10,6 @@ public class MenuNavigation : MonoBehaviour {
     public FallBackPanel panel;
     public Text ScenePonyName;
 
-    private GameObject _previewPony;
-
     void Start() {
         //First Panel Active
         backButton.onClick.AddListener(GetBack);
@@ -25,15 +23,6 @@ public class MenuNavigation : MonoBehaviour {
                                                    //Spawn Selected Pony first time
         CharsFMData pony = Database.Instance.GetCharFMInfo(Database.Instance.SelectedPony);
         RefreshPreviewMesh(pony);
-    }
-
-
-    void FixedUpdate() {
-        //Find Preview pony if it cannot find in method
-        if (_previewPony == null) {
-            _previewPony = GameObject.FindGameObjectWithTag("Player");
-        }
-
     }
 
     void GetBack() {
@@ -66,6 +55,7 @@ public class MenuNavigation : MonoBehaviour {
     }
 
     public void RefreshPreviewMesh(CharsFMData _pony) {
+        GameObject _previewPony = GameObject.FindGameObjectWithTag("Player");
         if (_previewPony != null) { Destroy(_previewPony); }
         Instantiate(_pony.PreviewPrefab, _pony.PreviewPrefab.transform.position, _pony.PreviewPrefab.transform.rotation);
         ScenePonyName.text = _pony.CharName;

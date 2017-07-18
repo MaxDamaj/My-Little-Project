@@ -18,6 +18,7 @@ public class EndModeController : MonoBehaviour {
     public Text distance;
     public GameObject InfoScreen;
     public Text InfoText;
+    public GameObject SkillsPanel;
     public Image[] SkillIcons;
     public Text stamina;
     public Text charName;
@@ -162,24 +163,21 @@ public class EndModeController : MonoBehaviour {
     void ShowSTMOutWindow() {
         retireButton.gameObject.SetActive(true);
         pauseButton.gameObject.SetActive(false);
-        InfoScreen.SetActive(true);
-        InfoText.text = "You are out of stamina!";
+        SetInfoScreenState("You are out of stamina!", false);
         SoundManager.Instance.SetMuteState("a_run", true);
         Time.timeScale = 0f;
     }
     void ShowKOWindow() {
         retireButton.gameObject.SetActive(true);
         pauseButton.gameObject.SetActive(false);
-        InfoScreen.SetActive(true);
-        InfoText.text = "You are Knocked Out!";
+        SetInfoScreenState("You are Knocked Out!", false);
         SoundManager.Instance.SetMuteState("a_run", true);
         Time.timeScale = 0f;
     }
     public void ShowPassWindow() {
         retireButton.gameObject.SetActive(true);
         pauseButton.gameObject.SetActive(false);
-        InfoScreen.SetActive(true);
-        InfoText.text = "Challenge Complete!";
+        SetInfoScreenState("Challenge Complete!", false);
         retireText.text = "Ok";
         SoundManager.Instance.SetMuteState("a_run", true);
         Time.timeScale = 0f;
@@ -191,11 +189,12 @@ public class EndModeController : MonoBehaviour {
             pauseText.text = "Pause";
             retireButton.gameObject.SetActive(false);
             InfoScreen.SetActive(false);
+            SoundManager.Instance.SetMuteState("a_run", false);
             Time.timeScale = timeSpeed;
         } else {
             pauseText.text = "Resume";
             retireButton.gameObject.SetActive(true);
-            InfoScreen.SetActive(true);
+            SetInfoScreenState("", true);
             Time.timeScale = 0f;
         }
     }
@@ -208,11 +207,18 @@ public class EndModeController : MonoBehaviour {
                 Database.Instance.distChall += player.position.x > 0 ? Mathf.RoundToInt(player.position.x * 2) : 0;
             } else {
                 Database.Instance.distEnd += player.position.x > 0 ? Mathf.RoundToInt(player.position.x * 2) : 0;
-				if (player.position.x * 2 > Database.Instance.distEndEasy) {
-					Database.Instance.distEndEasy = Mathf.RoundToInt(player.position.x * 2);
-				}
+                if (player.position.x * 2 > Database.Instance.distEndEasy) {
+                    Database.Instance.distEndEasy = Mathf.RoundToInt(player.position.x * 2);
+                }
             }
         }
         UnityEngine.SceneManagement.SceneManager.LoadScene("menu");
+    }
+
+    void SetInfoScreenState(string text, bool skills) {
+        InfoScreen.SetActive(true);
+        SkillsPanel.SetActive(skills);
+        InfoText.gameObject.SetActive(!skills);
+        if (text != "") { InfoText.text = text; }
     }
 }
