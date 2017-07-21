@@ -93,13 +93,9 @@ public class EndModeController : MonoBehaviour {
         //Passed Distance
         if (player != null) distance.text = "" + (player.position.x > 0 ? Mathf.RoundToInt(player.position.x * 2) : 0);
         //Retire
-        if (Input.GetButtonDown("Back") && Time.timeScale == 0) {
-            GameRetire();
-        }
+        if (Input.GetButtonDown("Back") && Time.timeScale == 0) { GameRetire(); }
         //Pause switch
-        if (Input.GetButtonDown("Start") && pauseButton.gameObject.activeSelf) {
-            GamePause();
-        }
+        if (Input.GetButtonDown("Start") && pauseButton.gameObject.activeSelf) { GamePause(); }
         //Statements checking
         if (currentHP < _pony.HP / 2 && !IsHPLow) {
             CharacterState(0, Skill.Condition.HPLow);

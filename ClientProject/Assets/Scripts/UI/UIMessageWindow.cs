@@ -26,11 +26,25 @@ public class UIMessageWindow : MonoBehaviour {
     private int ID;
     private Action action;
 
-    // Use this for initialization
+    private static UIMessageWindow component;
+
+    #region API
+
+    public static UIMessageWindow Instance {
+        get {
+            if (component == null) {
+                component = FindObjectOfType<UIMessageWindow>();
+            }
+            return component;
+        }
+    }
+
     void Start() {
         ButtonYes.onClick.AddListener(Confirm);
         ButtonNo.onClick.AddListener(Decline);
     }
+
+    #endregion
 
     public void ShowMessage(string text, int id, Action mAction) {
         ID = id;

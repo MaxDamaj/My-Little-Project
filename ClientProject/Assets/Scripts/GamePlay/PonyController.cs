@@ -55,19 +55,8 @@ public class PonyController : MonoBehaviour {
 
     #endregion
 
-    public void Jump() {
-        if (anim.GetBool("ground")) {
-            jump_recover = 20;
-            anim.SetBool("ground", false);
-            _rigidbody.AddForce(new Vector3(0f, 220f, 0f));
-            SoundManager.Instance.SetMuteState("a_run", true);
-        }
-    }
-    public void SetShift(float value) {
-        s_shift = value;
-    }
+    #region Colliders
 
-    //----Colliders-Work----------------------------------------
     void OnCollisionStay(Collision coll) {
         //Walls Collider fix
         if (coll.gameObject.tag == "FarWall" && m_shift > 0f) m_shift = 0;
@@ -152,4 +141,19 @@ public class PonyController : MonoBehaviour {
             Database.Instance.obstNonDamage++;
         }
     }
+
+    #endregion
+
+    public void Jump() {
+        if (anim.GetBool("ground")) {
+            jump_recover = 20;
+            anim.SetBool("ground", false);
+            _rigidbody.AddForce(new Vector3(0f, 220f, 0f));
+            SoundManager.Instance.SetMuteState("a_run", true);
+        }
+    }
+    public void SetShift(float value) {
+        s_shift = value;
+    }
+
 }

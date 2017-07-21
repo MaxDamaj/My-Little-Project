@@ -43,9 +43,7 @@ public class TerrainEDR : MonoBehaviour {
     #region Events
 
     void OnTriggerEnter(Collider coll) {
-        if (coll == pony) {
-            SpawnNewSection();
-        }
+        if (coll == pony) { SpawnNewSection(); }
     }
 
     #endregion

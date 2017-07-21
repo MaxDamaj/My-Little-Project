@@ -148,7 +148,8 @@ public class Database : MonoBehaviour {
         }
     }
 
-    //Materials
+    #region Materials
+
     public void IncreaseItemQuantity(string itemName, float quantity) {
         for (int i = 0; i < _storageItems.Count; i++) {
             if (_storageItems[i].ItemName == itemName) {
@@ -184,6 +185,9 @@ public class Database : MonoBehaviour {
         }
         return _storageItems[0].ItemIcon;
     }
+    public Sprite GetItemIcon(int index) {
+        return _storageItems[index].ItemIcon;
+    }
     public string GetItemTitle(int index) {
         return _storageItems[index].ItemName;
     }
@@ -194,7 +198,10 @@ public class Database : MonoBehaviour {
         return false;
     }
 
-    //Usable Items
+    #endregion
+
+    #region Recipes
+
     public UsableItem GetUsableItem(string name) {
         return _usableItems.Find(x => x.ItemName == name);
     }
@@ -223,35 +230,11 @@ public class Database : MonoBehaviour {
         return -1;
     }
 
-    //Stamina
-    public void IncreaseCurrSTM(int id, float value) {
-        _freeModeChars[id].STMCurrent += value;
-        if (_freeModeChars[id].STMCurrent > _freeModeChars[id].STMMax) { _freeModeChars[id].STMCurrent = _freeModeChars[id].STMMax; }
-        if (onRefresh != null) { onRefresh(); }
-    }
-    public void SetCurrSTM(int id, float value) {
-        _freeModeChars[id].STMCurrent = value;
-        if (onRefresh != null) { onRefresh(); }
-    }
-    public float GetCurrSTM(int id) {
-        return _freeModeChars[id].STMCurrent;
-    }
-    public float GetMaxSTM(int id) {
-        return _freeModeChars[id].STMMax;
-    }
+    #endregion  
 
-    //Lists Lenght
-    public int ArrayItemsGetLenght() {
-        return _storageItems.Count;
-    }
-    public int ArrayCharFMGetLenght() {
-        return _freeModeChars.Count;
-    }
-    public int ArrayUsableItemsGetLenght() {
-        return _usableItems.Count;
-    }
+    #region Characters
 
-    //Free Mode Characters
+    //Get states
     public CharsFMData GetCharFMInfo(int id) {
         return _freeModeChars[id];
     }
@@ -274,7 +257,7 @@ public class Database : MonoBehaviour {
         }
         return count;
     }
-
+    //Set states
     public void SetCharFM_HP(int id, float HP) {
         _freeModeChars[id].HP = HP;
         if (onRefresh != null) { onRefresh(); }
@@ -291,7 +274,35 @@ public class Database : MonoBehaviour {
         _freeModeChars[id].Rank = rank;
         if (onRefresh != null) { onRefresh(); }
     }
+    //Stamina
+    public void IncreaseCurrSTM(int id, float value) {
+        _freeModeChars[id].STMCurrent += value;
+        if (_freeModeChars[id].STMCurrent > _freeModeChars[id].STMMax) { _freeModeChars[id].STMCurrent = _freeModeChars[id].STMMax; }
+        if (onRefresh != null) { onRefresh(); }
+    }
+    public void SetCurrSTM(int id, float value) {
+        _freeModeChars[id].STMCurrent = value;
+        if (onRefresh != null) { onRefresh(); }
+    }
+    public float GetCurrSTM(int id) {
+        return _freeModeChars[id].STMCurrent;
+    }
+    public float GetMaxSTM(int id) {
+        return _freeModeChars[id].STMMax;
+    }
 
+    #endregion
+
+    //Lists Lenght
+    public int ArrayItemsGetLenght() {
+        return _storageItems.Count;
+    }
+    public int ArrayCharFMGetLenght() {
+        return _freeModeChars.Count;
+    }
+    public int ArrayUsableItemsGetLenght() {
+        return _usableItems.Count;
+    }
 
 #if UNITY_EDITOR
     [CustomPropertyDrawer(typeof(StorageData))]

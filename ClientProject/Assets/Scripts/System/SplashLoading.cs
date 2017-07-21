@@ -12,7 +12,6 @@ public class SplashLoading : MonoBehaviour {
     [SerializeField]
     Button confirmButton = null;
 
-    // Use this for initialization
     void Start() {
         confirmButton.onClick.AddListener(BeginGame);
 		if (FindObjectOfType<Database>() != null) {

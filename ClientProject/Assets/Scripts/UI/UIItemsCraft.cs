@@ -5,6 +5,9 @@ using System.Collections.Generic;
 
 public class UIItemsCraft : MonoBehaviour {
 
+    [SerializeField]
+    private UICraftTable craftTable;
+
     public Button meltButton;
     public Button upgradeButton;
     public List<Transform> furnace;
@@ -14,12 +17,15 @@ public class UIItemsCraft : MonoBehaviour {
     public Transform[] belt;
     public Text warningText;
     public UIStatUpgrade upgradeStat;
+    public Button recipeButton;
+    public Image[] recipeItemSamples;
 
     private ItemsController IC;
-    private static UIItemsCraft _uiItemCraft;
     private bool IsEnoughItem = false;
+    private static UIItemsCraft _uiItemCraft;   
 
-    //Instance
+    #region API
+
     public static UIItemsCraft Instance {
         get {
             if (_uiItemCraft == null) {
@@ -50,8 +56,45 @@ public class UIItemsCraft : MonoBehaviour {
         meltButton.onClick.AddListener(Melting);
         upgradeButton.onClick.AddListener(Upgrade);
         warningText.gameObject.SetActive(false);
+        recipeButton.onClick.AddListener(delegate { craftTable.gameObject.SetActive(true); });
         Database.onRefresh += RefreshUI;
     }
+
+    void OnDestroy() {
+        Database.onRefresh -= RefreshUI;
+        if (IC == null) return;
+        //Move all items in itemController
+        IC.itemWindow.anchoredPosition = new Vector2(0, 0);
+        if (inventory.childCount > 0) {
+            int count = inventory.childCount;
+            for (int i = 0; i < count; i++) {
+                string item = inventory.GetChild(i).GetComponent<CraftComponent>().title;
+                GameObject tmp = Instantiate(Database.Instance.GetUsableItem(item).prefab);
+                tmp.transform.SetParent(IC.inventory);
+                tmp.transform.localScale = Vector3.one;
+            }
+        }
+        for (int i = 0; i < belt.GetLength(0); i++) {
+            if (belt[i].childCount > 0) {
+                string item = belt[i].GetChild(0).GetComponent<CraftComponent>().title;
+                GameObject tmp = Instantiate(Database.Instance.GetUsableItem(item).prefab);
+                tmp.transform.SetParent(IC.belt[i]);
+                tmp.transform.localScale = Vector3.one;
+            }
+        }
+        for (int i = 0; i < furnace.Count; i++) {
+            if (furnace[i].childCount > 0) {
+                if (furnace[i].GetChild(0).GetComponent<CraftComponent>().IsItem) {
+                    string item = furnace[i].GetChild(0).GetComponent<CraftComponent>().title;
+                    GameObject tmp = Instantiate(Database.Instance.GetUsableItem(item).prefab);
+                    tmp.transform.SetParent(IC.furnace[i]);
+                    tmp.transform.localScale = Vector3.one;
+                }
+            }
+        }
+    }
+
+    #endregion
 
     public void RefreshUI() {
         //Set active furnace slots
@@ -190,37 +233,25 @@ public class UIItemsCraft : MonoBehaviour {
         return true;
     }
 
-    void OnDestroy() {
-        Database.onRefresh -= RefreshUI;
-        if (IC == null) return;
-        //Move all items in itemController
-        IC.itemWindow.anchoredPosition = new Vector2(0, 0);
-        if (inventory.childCount > 0) {
-            int count = inventory.childCount;
-            for (int i = 0; i < count; i++) {
-                string item = inventory.GetChild(i).GetComponent<CraftComponent>().title;
-                GameObject tmp = Instantiate(Database.Instance.GetUsableItem(item).prefab);
-                tmp.transform.SetParent(IC.inventory);
-                tmp.transform.localScale = Vector3.one;
-            }
+    public void SetRecipeItemsSalples(string[] materials, float[] values, string result) {
+        if (materials.GetLength(0) > 4) return;
+        if (values.GetLength(0) > 4) return;
+        //Set components
+        foreach(var item in recipeItemSamples) {
+            item.gameObject.SetActive(false);
         }
-        for (int i = 0; i < belt.GetLength(0); i++) {
-            if (belt[i].childCount > 0) {
-                string item = belt[i].GetChild(0).GetComponent<CraftComponent>().title;
-                GameObject tmp = Instantiate(Database.Instance.GetUsableItem(item).prefab);
-                tmp.transform.SetParent(IC.belt[i]);
-                tmp.transform.localScale = Vector3.one;
-            }
+        for (int i=0; i< materials.GetLength(0); i++) {
+            recipeItemSamples[i].gameObject.SetActive(true);
+            recipeItemSamples[i].sprite = Database.Instance.GetItemIcon(materials[i]);
         }
-        for (int i = 0; i < furnace.Count; i++) {
-            if (furnace[i].childCount > 0) {
-                if (furnace[i].GetChild(0).GetComponent<CraftComponent>().IsItem) {
-                    string item = furnace[i].GetChild(0).GetComponent<CraftComponent>().title;
-                    GameObject tmp = Instantiate(Database.Instance.GetUsableItem(item).prefab);
-                    tmp.transform.SetParent(IC.furnace[i]);
-                    tmp.transform.localScale = Vector3.one;
-                }
-            }
+        //Set result
+        recipeItemSamples[4].gameObject.SetActive(true);
+        recipeItemSamples[4].sprite = Database.Instance.GetItemIcon(result);
+    }
+
+    public void ClearRecipeSamples() {
+        foreach (var item in recipeItemSamples) {
+            item.gameObject.SetActive(false);
         }
     }
 

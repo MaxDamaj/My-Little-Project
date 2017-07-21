@@ -1,26 +1,35 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
 
 public class MenuNavigation : MonoBehaviour {
 
     public Button backButton;
-    public Animator[] UIRightPanels;
-    public Animator[] UILeftPanels;
-    public FallBackPanel panel;
+    public RectTransform panelsContainer;
+    public List<UIWindow> UIRightPanels;
+    public List<UIWindow> UILeftPanels;
     public Text ScenePonyName;
+    [HideInInspector]
+    public FallBackPanel panel; 
 
     void Start() {
+        //Find all panels
+        List<UIWindow> panels = new List<UIWindow>();
+        panels.AddRange(panelsContainer.GetComponentsInChildren<UIWindow>(true));
+        UIRightPanels.AddRange(panels.FindAll(x => x.panelType == PanelType.RightPanel));
+        UILeftPanels.AddRange(panels.FindAll(x => x.panelType == PanelType.LeftPanel));
+
         //First Panel Active
         backButton.onClick.AddListener(GetBack);
-        for (int i = 0; i < UIRightPanels.GetLength(0); i++) {
+        for (int i = 0; i < UIRightPanels.Count; i++) {
             UIRightPanels[i].gameObject.SetActive(true);
         }
-        for (int i = 0; i < UILeftPanels.GetLength(0); i++) {
+        for (int i = 0; i < UILeftPanels.Count; i++) {
             UILeftPanels[i].gameObject.SetActive(true);
         }
-        UIRightPanels[0].SetBool("trigger", true); //FreeMode panel
-                                                   //Spawn Selected Pony first time
+        UIRightPanels.Find(x => x.fallback == FallBackPanel.FreeMode).anim.SetBool("trigger", true); //FreeMode panel
+        //Spawn Selected Pony first time
         CharsFMData pony = Database.Instance.GetCharFMInfo(Database.Instance.SelectedPony);
         RefreshPreviewMesh(pony);
     }
@@ -31,26 +40,26 @@ public class MenuNavigation : MonoBehaviour {
         HideLeftPanels();
         //Return to main Screen
         if (panel == FallBackPanel.FreeMode) {
-            UIRightPanels[0].SetBool("trigger", true);
+            UIRightPanels.Find(x => x.fallback == FallBackPanel.FreeMode).anim.SetBool("trigger", true);
             backButton.gameObject.SetActive(false);
             return;
         }
         //Return to MLC Screen
         if (panel == FallBackPanel.MLC) {
-            UIRightPanels[2].SetBool("trigger", true); //MLC window
+            UIRightPanels.Find(x => x.fallback == FallBackPanel.MLC).anim.SetBool("trigger", true); //MLC window
             panel = FallBackPanel.FreeMode;
             return;
         }
     }
 
     public void HideRightPanels() {
-        for (int i = 0; i < UIRightPanels.GetLength(0); i++) {
-            UIRightPanels[i].SetBool("trigger", false);
+        for (int i = 0; i < UIRightPanels.Count; i++) {
+            UIRightPanels[i].anim.SetBool("trigger", false);
         }
     }
     public void HideLeftPanels() {
-        for (int i = 0; i < UILeftPanels.GetLength(0); i++) {
-            UILeftPanels[i].SetBool("trigger", false);
+        for (int i = 0; i < UILeftPanels.Count; i++) {
+            UILeftPanels[i].anim.SetBool("trigger", false);
         }
     }
 
