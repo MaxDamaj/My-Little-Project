@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e8f4c431080821d4594bd078fb753d1f
-timeCreated: 1500225884
+timeCreated: 1500643373
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -76,7 +76,7 @@ TextureImporter:
     21300138: icon_LED
     21300140: icon_integrateunit
     21300142: icon_processorunit
-    21300144: atlas_icons_72
+    21300144: icon_reedswitch
     21300146: atlas_icons_73
     21300148: atlas_icons_74
     21300150: atlas_icons_75
@@ -931,7 +931,7 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - serializedVersion: 2
-      name: atlas_icons_72
+      name: icon_reedswitch
       rect:
         serializedVersion: 2
         x: 1024
