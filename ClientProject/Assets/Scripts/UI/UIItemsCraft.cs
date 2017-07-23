@@ -6,7 +6,7 @@ using System.Collections.Generic;
 public class UIItemsCraft : MonoBehaviour {
 
     [SerializeField]
-    private UICraftTable craftTable;
+    private UICraftTable craftTable = null;
 
     public Button meltButton;
     public Button upgradeButton;
@@ -22,7 +22,7 @@ public class UIItemsCraft : MonoBehaviour {
 
     private ItemsController IC;
     private bool IsEnoughItem = false;
-    private static UIItemsCraft _uiItemCraft;   
+    private static UIItemsCraft _uiItemCraft;
 
     #region API
 
@@ -101,11 +101,7 @@ public class UIItemsCraft : MonoBehaviour {
         for (int i = 0; i < furnace.Count; i++) {
             furnace[i].parent.gameObject.SetActive(Database.Instance.furnaceSlots > i);
         }
-        SetFurnaceUpgradeStats();
-
-        for (int i = 0; i < itemsCount.GetLength(0); i++) {
-            itemsCount[i].text = "";
-        }
+        SetFurnaceUpgradeStats();      
         HideWarningText();
 
         List<CraftComponent> item = new List<CraftComponent>();
@@ -113,11 +109,18 @@ public class UIItemsCraft : MonoBehaviour {
             if (res.GetComponentInChildren<CraftComponent>() != null)
                 item.Add(res.GetComponentInChildren<CraftComponent>());
         }
-        if (item.Count < 2) return;
+        if (recipeItemSamples[0].gameObject.activeSelf) return;
+        recipeItemSamples[4].gameObject.SetActive(false);
+        for (int i = 0; i < itemsCount.GetLength(0); i++) {
+            itemsCount[i].text = "";
+        }
+
+        if (item.Count < 2) return;     
 
         UsableItem result = null;
         if (item.Count == 2) { result = Database.Instance.GetUsableItem(item[0].title, item[1].title); }
         if (item.Count == 3) { result = Database.Instance.GetUsableItem(item[0].title, item[1].title, item[2].title); }
+        if (item.Count == 4) { result = Database.Instance.GetUsableItem(item[0].title, item[1].title, item[2].title, item[3].title); }
         if (result == null) return;
         //------
         foreach (var res in item) {
@@ -127,6 +130,11 @@ public class UIItemsCraft : MonoBehaviour {
             } else {
                 res.transform.parent.parent.GetComponentInChildren<Text>().color = Database.COLOR_GREEN;
             }
+        }
+        itemsCount[4].text = "" + result.exitQuantity;
+        recipeItemSamples[4].gameObject.SetActive(true);
+        if (Database.Instance.GetItemExist(result.ItemName)) {
+            recipeItemSamples[4].sprite = Database.Instance.GetItemIcon(result.ItemName);
         }
         ShowNotification("You can create " + result.ItemName, Database.COLOR_YELLOW, 0);
     }
@@ -146,6 +154,7 @@ public class UIItemsCraft : MonoBehaviour {
         UsableItem result = null;
         if (item.Count == 2) { result = Database.Instance.GetUsableItem(item[0].title, item[1].title); }
         if (item.Count == 3) { result = Database.Instance.GetUsableItem(item[0].title, item[1].title, item[2].title); }
+        if (item.Count == 4) { result = Database.Instance.GetUsableItem(item[0].title, item[1].title, item[2].title, item[3].title); }
 
         if (result == null) {
             ShowNotification("There are no recipe with current components!", Database.COLOR_RED);
@@ -187,6 +196,10 @@ public class UIItemsCraft : MonoBehaviour {
     void Upgrade() {
         if (IsEnoughItem) {
             Database.Instance.furnaceSlots++;
+            craftTable.SetRecipes();
+            var upgrade = DBCharUpgrade.Instance.FurnaceUpgrade[Database.Instance.furnaceSlots];
+            Database.Instance.IncreaseItemQuantity(upgrade.res1, -upgrade.quan1);
+            Database.Instance.IncreaseItemQuantity(upgrade.res2, -upgrade.quan2);
             RefreshUI();
         } else {
             ShowNotification("You don't have enough materials!", Database.COLOR_RED);
@@ -210,7 +223,7 @@ public class UIItemsCraft : MonoBehaviour {
                 upgradeStat.itemText[1].gameObject.SetActive(false);
                 upgradeButton.interactable = false;
                 break;
-        }    
+        }
     }
 
     void ShowNotification(string message, Color textColor, float hideDelay = 3.0f) {
@@ -221,6 +234,7 @@ public class UIItemsCraft : MonoBehaviour {
             Invoke("HideWarningText", hideDelay);
         }
     }
+
     void HideWarningText() {
         warningText.gameObject.SetActive(false);
     }
@@ -233,20 +247,26 @@ public class UIItemsCraft : MonoBehaviour {
         return true;
     }
 
-    public void SetRecipeItemsSalples(string[] materials, float[] values, string result) {
+    public void SetRecipeItemsSalples(string[] materials, float[] values, string result, float exitCount) {
         if (materials.GetLength(0) > 4) return;
         if (values.GetLength(0) > 4) return;
+        for (int i = 0; i < itemsCount.GetLength(0); i++) {
+            itemsCount[i].text = "";
+        }
         //Set components
-        foreach(var item in recipeItemSamples) {
+        foreach (var item in recipeItemSamples) {
             item.gameObject.SetActive(false);
         }
-        for (int i=0; i< materials.GetLength(0); i++) {
+        for (int i = 0; i < materials.GetLength(0); i++) {
             recipeItemSamples[i].gameObject.SetActive(true);
             recipeItemSamples[i].sprite = Database.Instance.GetItemIcon(materials[i]);
+            itemsCount[i].text = "" + values[i];
+            itemsCount[i].color = Color.white;
         }
         //Set result
         recipeItemSamples[4].gameObject.SetActive(true);
         recipeItemSamples[4].sprite = Database.Instance.GetItemIcon(result);
+        itemsCount[4].text = "" + exitCount;
     }
 
     public void ClearRecipeSamples() {

@@ -27,7 +27,7 @@ public class AchievementsController : MonoBehaviour {
 				tmp.name = achievement.reward;
 				//Show message
 				Database.Instance.takenAchievements[i] = 1;
-				mWindow.ShowMessage("You are gain achievement -"+achievement.title+"-", 0, UIMessageWindow.Action.nothing, true, false);
+				mWindow.ShowMessage("You are gain achievement -"+achievement.title+"-", 0, UIAction.nothing, true, false);
 			}
 		}
 	}

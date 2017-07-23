@@ -209,15 +209,42 @@ public class Database : MonoBehaviour {
         return _usableItems[id];
     }
     public UsableItem GetUsableItem(string material1, string material2) {
+        List<string> materials = new List<string>();
+        materials.Add(material1);
+        materials.Add(material2);
+
         var items = _usableItems.FindAll(x => x.costItems.Count == 2);
         items = items.FindAll(x => (x.costItems.Find(y => y == material1) != null && x.costItems.Find(z => z == material2) != null));
-        if (material1 == material2) { return null; }
+        if (materials.FindAll(w => w == material1).Count > 1) { return null; }
+        if (materials.FindAll(w => w == material2).Count > 1) { return null; }
         return items.Count > 0 ? items[0] : null;
     }
     public UsableItem GetUsableItem(string material1, string material2, string material3) {
+        List<string> materials = new List<string>();
+        materials.Add(material1);
+        materials.Add(material2);
+        materials.Add(material3);
+
         var items = _usableItems.FindAll(x => x.costItems.Count == 3);
         items = items.FindAll(x => (x.costItems.Find(a => a == material1) != null && x.costItems.Find(b => b == material2) != null && x.costItems.Find(c => c == material3) != null));
-        if (material1 == material2 || material1 == material3 || material2 == material3) { return null; }
+        if (materials.FindAll(w => w == material1).Count > 1) { return null; }
+        if (materials.FindAll(w => w == material2).Count > 1) { return null; }
+        if (materials.FindAll(w => w == material3).Count > 1) { return null; }
+        return items.Count > 0 ? items[0] : null;
+    }
+    public UsableItem GetUsableItem(string material1, string material2, string material3, string material4) {
+        List<string> materials = new List<string>();
+        materials.Add(material1);
+        materials.Add(material2);
+        materials.Add(material3);
+        materials.Add(material4);
+
+        var items = _usableItems.FindAll(x => x.costItems.Count == 4);
+        items = items.FindAll(x => (x.costItems.Find(a => a == material1) != null && x.costItems.Find(b => b == material2) != null && x.costItems.Find(c => c == material3) != null && x.costItems.Find(d => d == material4) != null));
+        if (materials.FindAll(w => w == material1).Count > 1) { return null; }
+        if (materials.FindAll(w => w == material2).Count > 1) { return null; }
+        if (materials.FindAll(w => w == material3).Count > 1) { return null; }
+        if (materials.FindAll(w => w == material4).Count > 1) { return null; }
         return items.Count > 0 ? items[0] : null;
     }
 

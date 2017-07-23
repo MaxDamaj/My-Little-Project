@@ -76,7 +76,7 @@ public class UICardGame : MonoBehaviour {
 
 	void StartChallenge() {
 		if (playerDeck.childCount < 10) {
-			mWindow.ShowMessage("You need " + 10 + " cards in your deck to begin challenge", 0, UIMessageWindow.Action.nothing, true, false);
+			mWindow.ShowMessage("You need " + 10 + " cards in your deck to begin challenge", 0, UIAction.nothing, true, false);
 		} else {
 			ItemsController IC = GameObject.Find("UI_Items").GetComponent<ItemsController>();
 			var challenge = DBC.GetChallenge(GlobalData.Instance.nowChallenge);

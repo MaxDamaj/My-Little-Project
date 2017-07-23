@@ -19,11 +19,10 @@ public class UICodexController : MonoBehaviour {
 	private UICodexList[] codexLists;
 
     void Start() {
-        ItemsController IC = GameObject.Find("UI_Items").GetComponent<ItemsController>();
         buttonBack.onClick.AddListener(delegate {
             UnityEngine.SceneManagement.SceneManager.LoadScene("menu");
         });
-        IC.itemWindow.anchoredPosition = new Vector2(0, 200);
+        ItemsController.Instance.HideItemWindow();
         helpTip.SetActive(false);
         HideAllFields();
         //Show in first time

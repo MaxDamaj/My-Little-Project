@@ -1,0 +1,327 @@
+fileFormatVersion: 2
+guid: 0119fd48de02b8a4daef3a105487ce70
+timeCreated: 1500831575
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: body
+    100004: collar
+    100006: cutiemark
+    100008: Ear
+    100010: ear
+    100012: eye
+    100014: FL_01
+    100016: FLLeg
+    100018: flLeg
+    100020: FR_01
+    100022: FRLeg
+    100024: frLeg
+    100026: Hair1
+    100028: Hair1_01
+    100030: Hair2
+    100032: Hair2_01
+    100034: Hair3
+    100036: Hair3_01
+    100038: Hair4
+    100040: Hair4_01
+    100042: Hair5
+    100044: Hair5_01
+    100046: Hair5_02
+    100048: Head
+    100050: head
+    100052: Hip
+    100054: mane01
+    100056: mane02
+    100058: mane03
+    100060: mane04
+    100062: mane05
+    100064: mouth
+    100066: Neck
+    100068: pony
+    100070: RL_01
+    100072: RL_02
+    100074: RLLeg
+    100076: rlLeg
+    100078: RR_01
+    100080: RR_02
+    100082: RRLeg
+    100084: rrLeg
+    100086: Tail
+    100088: tail
+    100090: Tail_01
+    100092: Tail_02
+    100094: Tail_03
+    400000: //RootNode
+    400002: body
+    400004: collar
+    400006: cutiemark
+    400008: Ear
+    400010: ear
+    400012: eye
+    400014: FL_01
+    400016: FLLeg
+    400018: flLeg
+    400020: FR_01
+    400022: FRLeg
+    400024: frLeg
+    400026: Hair1
+    400028: Hair1_01
+    400030: Hair2
+    400032: Hair2_01
+    400034: Hair3
+    400036: Hair3_01
+    400038: Hair4
+    400040: Hair4_01
+    400042: Hair5
+    400044: Hair5_01
+    400046: Hair5_02
+    400048: Head
+    400050: head
+    400052: Hip
+    400054: mane01
+    400056: mane02
+    400058: mane03
+    400060: mane04
+    400062: mane05
+    400064: mouth
+    400066: Neck
+    400068: pony
+    400070: RL_01
+    400072: RL_02
+    400074: RLLeg
+    400076: rlLeg
+    400078: RR_01
+    400080: RR_02
+    400082: RRLeg
+    400084: rrLeg
+    400086: Tail
+    400088: tail
+    400090: Tail_01
+    400092: Tail_02
+    400094: Tail_03
+    4300000: body
+    4300002: flLeg
+    4300004: frLeg
+    4300006: ear
+    4300008: head
+    4300010: rlLeg
+    4300012: rrLeg
+    4300014: eye
+    4300016: mouth
+    4300018: cutiemark
+    4300020: tail
+    4300022: collar
+    4300024: mane03
+    4300026: mane05
+    4300028: mane01
+    4300030: mane04
+    4300032: mane02
+    7400000: jump
+    9500000: //RootNode
+    13700000: body
+    13700002: collar
+    13700004: cutiemark
+    13700006: ear
+    13700008: eye
+    13700010: flLeg
+    13700012: frLeg
+    13700014: head
+    13700016: mane01
+    13700018: mane02
+    13700020: mane03
+    13700022: mane04
+    13700024: mane05
+    13700026: mouth
+    13700028: rlLeg
+    13700030: rrLeg
+    13700032: tail
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: jump
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hip
+        weight: 1
+      - path: Hip/FLLeg
+        weight: 1
+      - path: Hip/FLLeg/FL_01
+        weight: 1
+      - path: Hip/FRLeg
+        weight: 1
+      - path: Hip/FRLeg/FR_01
+        weight: 1
+      - path: Hip/Neck
+        weight: 1
+      - path: Hip/Neck/Head
+        weight: 1
+      - path: Hip/Neck/Head/Ear
+        weight: 1
+      - path: Hip/Neck/Head/Hair1
+        weight: 1
+      - path: Hip/Neck/Head/Hair1/Hair1_01
+        weight: 1
+      - path: Hip/Neck/Head/Hair2
+        weight: 1
+      - path: Hip/Neck/Head/Hair2/Hair2_01
+        weight: 1
+      - path: Hip/Neck/Head/Hair3
+        weight: 1
+      - path: Hip/Neck/Head/Hair3/Hair3_01
+        weight: 1
+      - path: Hip/Neck/Head/Hair4
+        weight: 1
+      - path: Hip/Neck/Head/Hair4/Hair4_01
+        weight: 1
+      - path: Hip/Neck/Head/Hair5
+        weight: 1
+      - path: Hip/Neck/Head/Hair5/Hair5_01
+        weight: 1
+      - path: Hip/Neck/Head/Hair5/Hair5_01/Hair5_02
+        weight: 1
+      - path: Hip/RLLeg
+        weight: 1
+      - path: Hip/RLLeg/RL_01
+        weight: 1
+      - path: Hip/RLLeg/RL_01/RL_02
+        weight: 1
+      - path: Hip/RRLeg
+        weight: 1
+      - path: Hip/RRLeg/RR_01
+        weight: 1
+      - path: Hip/RRLeg/RR_01/RR_02
+        weight: 1
+      - path: Hip/Tail
+        weight: 1
+      - path: Hip/Tail/Tail_01
+        weight: 1
+      - path: Hip/Tail/Tail_01/Tail_02
+        weight: 1
+      - path: Hip/Tail/Tail_01/Tail_02/Tail_03
+        weight: 1
+      - path: pony
+        weight: 1
+      - path: pony/body
+        weight: 1
+      - path: pony/collar
+        weight: 1
+      - path: pony/cutiemark
+        weight: 1
+      - path: pony/ear
+        weight: 1
+      - path: pony/eye
+        weight: 1
+      - path: pony/flLeg
+        weight: 1
+      - path: pony/frLeg
+        weight: 1
+      - path: pony/head
+        weight: 1
+      - path: pony/mane01
+        weight: 1
+      - path: pony/mane02
+        weight: 1
+      - path: pony/mane03
+        weight: 1
+      - path: pony/mane04
+        weight: 1
+      - path: pony/mane05
+        weight: 1
+      - path: pony/mouth
+        weight: 1
+      - path: pony/rlLeg
+        weight: 1
+      - path: pony/rrLeg
+        weight: 1
+      - path: pony/tail
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

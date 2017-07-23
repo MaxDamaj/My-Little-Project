@@ -52,9 +52,8 @@ public class SceneManager : MonoBehaviour
 	private bool endlessOption = false;
 
 	void Start() {
-		ItemsController IC = GameObject.Find("UI_Items").GetComponent<ItemsController>();
 		//Get variables
-		if (IC != null) {
+		if (ItemsController.Instance != null) {
 			CardChallenge challenge = DBC.GetCardChallenge(GlobalData.Instance.nowChallenge);
 			player1.pImage.sprite = Database.Instance.GetCharCardIcon(Database.Instance.SelectedPony);
 			enemy2.pImage.sprite = Database.Instance.GetCharCardIcon(Database.Instance.SelectedPony);
@@ -71,12 +70,12 @@ public class SceneManager : MonoBehaviour
 			player2.PlayerLUV = challenge.enemyLUV;
 			enemy1.LUV = challenge.enemyLUV;
 			//Fill Desk
-			CardsReshuffle(IC.playerDeck, player1.pDeck);
-			CardsReshuffle(IC.enemyDeck, player2.pDeck);
+			CardsReshuffle(ItemsController.Instance.playerDeck, player1.pDeck);
+			CardsReshuffle(ItemsController.Instance.enemyDeck, player2.pDeck);
 			//--------
 			tradeRowStyle = challenge.tradeRowType;
 			endlessOption = challenge.endlessOption;
-			IC.itemWindow.anchoredPosition = new Vector2(0, 200);
+            ItemsController.Instance.HideItemWindow();
 		}
 		nowPlayer = player1;
 		nowEnemy = enemy1;

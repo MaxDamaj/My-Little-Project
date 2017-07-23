@@ -69,7 +69,7 @@ public class CharFMInfoFull : MonoBehaviour {
             Character.HP += 0.5f;
             Database.Instance.SetCharFM_HP(Database.Instance.SelectedPony, Character.HP);
         } else {
-            mWindow.ShowMessage("You don't have enough resources", 0, UIMessageWindow.Action.nothing, true, false);
+            mWindow.ShowMessage("You don't have enough resources", 0, UIAction.nothing, true, false);
         }
     }
 
@@ -95,7 +95,7 @@ public class CharFMInfoFull : MonoBehaviour {
             Character.MP += 0.5f;
             Database.Instance.SetCharFM_MP(Database.Instance.SelectedPony, Character.MP);
         } else {
-            mWindow.ShowMessage("You don't have enough resources", 0, UIMessageWindow.Action.nothing, true, false);
+            mWindow.ShowMessage("You don't have enough resources", 0, UIAction.nothing, true, false);
         }
     }
 

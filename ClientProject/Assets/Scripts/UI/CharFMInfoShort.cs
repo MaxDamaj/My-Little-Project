@@ -60,9 +60,9 @@ public class CharFMInfoShort : MonoBehaviour {
 
     void ShowBuyWindow() {
 		if (PriceCheck()) {
-			mWindow.ShowMessage("Are you really want to this pony join to your team?", CharNum, UIMessageWindow.Action.buying);
+			mWindow.ShowMessage("Are you really want to this pony join to your team?", CharNum, UIAction.buying);
 		} else {
-			mWindow.ShowMessage("You don't have enough materials", 0, UIMessageWindow.Action.nothing, true, false);
+			mWindow.ShowMessage("You don't have enough materials", 0, UIAction.nothing, true, false);
 		}
     }
 

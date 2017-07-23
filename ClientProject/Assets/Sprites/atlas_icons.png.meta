@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e8f4c431080821d4594bd078fb753d1f
-timeCreated: 1500643373
+timeCreated: 1500835877
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -77,7 +77,7 @@ TextureImporter:
     21300140: icon_integrateunit
     21300142: icon_processorunit
     21300144: icon_reedswitch
-    21300146: atlas_icons_73
+    21300146: icon_coolant
     21300148: atlas_icons_74
     21300150: atlas_icons_75
     21300152: atlas_icons_76
@@ -87,7 +87,7 @@ TextureImporter:
     21300160: atlas_icons_80
     21300162: atlas_icons_81
     21300164: atlas_icons_82
-    21300166: atlas_icons_83
+    21300166: icon_staticcell
     21300168: atlas_icons_84
     21300170: atlas_icons_85
     21300172: atlas_icons_86
@@ -271,6 +271,7 @@ TextureImporter:
     21300528: skill_dash
     21300530: skill_slowmotion
     21300532: skill_STM
+    21300534: icon_iridium
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -943,7 +944,7 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - serializedVersion: 2
-      name: atlas_icons_73
+      name: icon_coolant
       rect:
         serializedVersion: 2
         x: 1152
@@ -991,7 +992,7 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - serializedVersion: 2
-      name: atlas_icons_83
+      name: icon_staticcell
       rect:
         serializedVersion: 2
         x: 384
@@ -1512,6 +1513,18 @@ TextureImporter:
         serializedVersion: 2
         x: 1920
         y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: icon_iridium
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1920
         width: 128
         height: 128
       alignment: 0

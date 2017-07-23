@@ -5,7 +5,8 @@ using System.Collections;
 public enum FallBackPanel { 
     None = 0,
     FreeMode = 1,
-    MLC = 2
+    MLC = 2,
+    PlayMode = 3
 };
 public enum PanelType {
     Undefined = 0,

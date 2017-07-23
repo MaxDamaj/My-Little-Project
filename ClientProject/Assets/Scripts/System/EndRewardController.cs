@@ -55,7 +55,7 @@ public class EndRewardController : MonoBehaviour {
 						Database.Instance.IncreaseItemQuantity(DBEndRewards.Instance.EasyRewards[index].rewardItems[i], DBEndRewards.Instance.EasyRewards[index].rewardPrices[i]);
 
 					}
-					mWindow.ShowMessage("You gain new reward for Endurance Mode!", 0, UIMessageWindow.Action.nothing, true, false);
+					mWindow.ShowMessage("You gain new reward for Endurance Mode!", 0, UIAction.nothing, true, false);
 					Database.Instance.endRewardsEasy[index] = 1;
 				}
 			}

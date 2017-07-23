@@ -7,11 +7,26 @@ public class MenuNavigation : MonoBehaviour {
 
     public Button backButton;
     public RectTransform panelsContainer;
-    public List<UIWindow> UIRightPanels;
-    public List<UIWindow> UILeftPanels;
     public Text ScenePonyName;
+    public bool IsSimulation;
     [HideInInspector]
-    public FallBackPanel panel; 
+    public FallBackPanel panel;
+
+    private List<UIWindow> UIRightPanels = new List<UIWindow>();
+    private List<UIWindow> UILeftPanels = new List<UIWindow>();
+
+    private static MenuNavigation navi;
+
+    #region API
+
+    public static MenuNavigation Instance {
+        get {
+            if (navi == null) {
+                navi = FindObjectOfType<MenuNavigation>();
+            }
+            return navi;
+        }
+    }
 
     void Start() {
         //Find all panels
@@ -30,9 +45,16 @@ public class MenuNavigation : MonoBehaviour {
         }
         UIRightPanels.Find(x => x.fallback == FallBackPanel.FreeMode).anim.SetBool("trigger", true); //FreeMode panel
         //Spawn Selected Pony first time
-        CharsFMData pony = Database.Instance.GetCharFMInfo(Database.Instance.SelectedPony);
-        RefreshPreviewMesh(pony);
+        if (!IsSimulation) {
+            CharsFMData pony = Database.Instance.GetCharFMInfo(Database.Instance.SelectedPony);
+            RefreshPreviewMesh(pony);
+        } else {
+            ItemsController.Instance.HideItemWindow();
+        }
+        
     }
+
+    #endregion
 
     void GetBack() {
         //Hide all panels
@@ -46,7 +68,13 @@ public class MenuNavigation : MonoBehaviour {
         }
         //Return to MLC Screen
         if (panel == FallBackPanel.MLC) {
-            UIRightPanels.Find(x => x.fallback == FallBackPanel.MLC).anim.SetBool("trigger", true); //MLC window
+            UIRightPanels.Find(x => x.fallback == FallBackPanel.MLC).anim.SetBool("trigger", true);
+            panel = FallBackPanel.FreeMode;
+            return;
+        }
+        //Return to PlayMode Screen
+        if (panel == FallBackPanel.PlayMode) {
+            UIRightPanels.Find(x => x.fallback == FallBackPanel.PlayMode).anim.SetBool("trigger", true);
             panel = FallBackPanel.FreeMode;
             return;
         }

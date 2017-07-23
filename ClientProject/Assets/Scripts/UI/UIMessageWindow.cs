@@ -3,16 +3,21 @@ using System.Collections;
 using UnityEngine.UI;
 using System;
 
-public class UIMessageWindow : MonoBehaviour {
+public enum UIAction {
+    nothing = 0,
+    buying = 1,
+    clear = 2,
+    exit = 3,
+    startChallenge = 4,
+    restart = 5,
+    returnToEquestria = 6,
+    startEndurance = 7,
+    hideLeftPanels = 8,
+    loadCodex = 9,
+    runSimulation = 10
+};
 
-    public enum Action {
-        nothing = 0,
-        buying = 1,
-        clear = 2,
-        exit = 3,
-        startChallenge = 4,
-		restart = 5
-    };
+public class UIMessageWindow : MonoBehaviour {  
 
     [SerializeField]
     DatabaseManager DBM = null;
@@ -24,7 +29,7 @@ public class UIMessageWindow : MonoBehaviour {
     public Text questionText;
 
     private int ID;
-    private Action action;
+    private UIAction action;
 
     private static UIMessageWindow component;
 
@@ -46,7 +51,7 @@ public class UIMessageWindow : MonoBehaviour {
 
     #endregion
 
-    public void ShowMessage(string text, int id, Action mAction) {
+    public void ShowMessage(string text, int id, UIAction mAction) {
         ID = id;
         action = mAction;
         ButtonYes.gameObject.SetActive(true);
@@ -54,7 +59,7 @@ public class UIMessageWindow : MonoBehaviour {
         questionText.text = text;
         gameObject.SetActive(true);
     }
-    public void ShowMessage(string text, int id, Action mAction, bool bYes, bool bNo) {
+    public void ShowMessage(string text, int id, UIAction mAction, bool bYes, bool bNo) {
         ID = id;
         action = mAction;
         ButtonYes.gameObject.SetActive(bYes);
@@ -63,35 +68,37 @@ public class UIMessageWindow : MonoBehaviour {
         gameObject.SetActive(true);
     }
 
-    private void Confirm() {      
-		switch (action) {
-		//Buy pony
-		case Action.buying: 
-			Database.Instance.SetCharFMRank(ID, 0);
-			CharsFMData pony = Database.Instance.GetCharFMInfo(ID);
-			for (int i = 0; i < pony.costPrises.GetLength(0); i++) {
-				Database.Instance.IncreaseItemQuantity(pony.costItems[i], 0 - pony.costPrises[i]);
-			}
-			break;
-		//Clear State
-		case Action.clear:
-			DBM.ClearState();
-			UnityEngine.SceneManagement.SceneManager.LoadScene("splashScreen");
-			break;
-		//Exit
-		case Action.exit:
-			Application.Quit();
-			break;
-		//Start Challenge
-		case Action.startChallenge:
-			var challenge = DBC.GetChallenge(ID);
-			foreach (var item in challenge.startFee) {
-				Database.Instance.IncreaseItemQuantity(item.ItemName, -item.ItemQuantity);
-			}
-			GlobalData.Instance.nowChallenge = ID;
-			UnityEngine.SceneManagement.SceneManager.LoadScene("road_challenge");
-			break;
-		}
+    private void Confirm() {
+        switch (action) {
+            case UIAction.buying:
+                Database.Instance.SetCharFMRank(ID, 0);
+                CharsFMData pony = Database.Instance.GetCharFMInfo(ID);
+                for (int i = 0; i < pony.costPrises.GetLength(0); i++) {
+                    Database.Instance.IncreaseItemQuantity(pony.costItems[i], 0 - pony.costPrises[i]);
+                }
+                break;
+            case UIAction.clear:
+                DBM.ClearState();
+                UnityEngine.SceneManagement.SceneManager.LoadScene("splashScreen");
+                break;
+            case UIAction.exit:
+                Application.Quit();
+                break;
+            case UIAction.startChallenge:
+                var challenge = DBC.GetChallenge(ID);
+                foreach (var item in challenge.startFee) {
+                    Database.Instance.IncreaseItemQuantity(item.ItemName, -item.ItemQuantity);
+                }
+                GlobalData.Instance.nowChallenge = ID;
+                UnityEngine.SceneManagement.SceneManager.LoadScene("road_challenge");
+                break;
+            case UIAction.returnToEquestria:
+                UnityEngine.SceneManagement.SceneManager.LoadScene("menu");
+                break;
+            case UIAction.runSimulation:
+                UnityEngine.SceneManagement.SceneManager.LoadScene("simulation");
+                break;
+        }
         gameObject.SetActive(false);
     }
 

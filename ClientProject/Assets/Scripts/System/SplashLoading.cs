@@ -9,8 +9,11 @@ public class SplashLoading : MonoBehaviour {
     [SerializeField]
     SoundManager SM = null;
 
-    [SerializeField]
-    Button confirmButton = null;
+    public Button confirmButton;
+    public Slider loadingProgress;
+    public RectTransform loadingWindow;
+
+    private AsyncOperation loadingScene;
 
     void Start() {
         confirmButton.onClick.AddListener(BeginGame);
@@ -33,7 +36,17 @@ public class SplashLoading : MonoBehaviour {
 
 
     void BeginGame() {
-		UnityEngine.SceneManagement.SceneManager.LoadScene("menu");
+		loadingScene = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync("menu");
+        loadingWindow.gameObject.SetActive(true);
+        IEnumerator loading = ProgressWatching(loadingScene);
+        StartCoroutine(loading);
+    }
+
+    IEnumerator ProgressWatching(AsyncOperation load) {
+        while (true) {
+            yield return new WaitForSeconds(0.1f);
+            loadingProgress.value = load.progress;
+        }
     }
 
 }

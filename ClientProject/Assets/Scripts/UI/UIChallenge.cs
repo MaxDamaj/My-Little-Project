@@ -140,20 +140,20 @@ public class UIChallenge : MonoBehaviour {
         //Resources Check
         foreach (var item in challenge.startFee) {
             if (Database.Instance.GetItemQuantity(item.ItemName) < item.ItemQuantity) {
-                mWindow.ShowMessage("You don't have enough items to start this challenge!", 0, UIMessageWindow.Action.nothing, true, false);
+                mWindow.ShowMessage("You don't have enough items to start this challenge!", 0, UIAction.nothing, true, false);
                 return;
             }
         }
         //Pony type check
         if (challenge.charRestr != PonyType.Unaligned) {
             if (challenge.charRestr != Database.Instance.GetCharType(Database.Instance.SelectedPony)) {
-                mWindow.ShowMessage("You need a " + challenge.charRestr.ToString() + " to begin this challenge!", 0, UIMessageWindow.Action.nothing, true, false);
+                mWindow.ShowMessage("You need a " + challenge.charRestr.ToString() + " to begin this challenge!", 0, UIAction.nothing, true, false);
                 return;
             }
         }
         //If enough resources show message
 		if (challenge.challengeType != ChallType.CardGame) {
-			mWindow.ShowMessage("Are you really want to begin challenge " + challenge.title + "?", ChallID, UIMessageWindow.Action.startChallenge);
+			mWindow.ShowMessage("Are you really want to begin challenge " + challenge.title + "?", ChallID, UIAction.startChallenge);
 		} else {
 			GlobalData.Instance.nowChallenge = ChallID;
 			cgWindow.gameObject.SetActive(true);

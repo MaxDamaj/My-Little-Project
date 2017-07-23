@@ -18,11 +18,22 @@ public class ItemsController : MonoBehaviour {
 
     private EndModeController _emc;
 
+    private static ItemsController controller;
+
     #region API
+
+    public static ItemsController Instance {
+        get {
+            if (controller == null) {
+                controller = FindObjectOfType<ItemsController>();
+            }
+            return controller;
+        }
+    }
 
     void Start() {
         DontDestroyOnLoad(gameObject);
-        itemWindow.anchoredPosition = new Vector2(0, 200);
+        HideItemWindow();
     }
 
     void Update() {
@@ -51,6 +62,13 @@ public class ItemsController : MonoBehaviour {
             UseItem(belt[slot-1].GetComponentInChildren<CraftComponent>().title, slot);
             uifx[slot-1].ShowUIFX(3);
         }
+    }
+
+    public void HideItemWindow() {
+        itemWindow.anchoredPosition = new Vector2(0, 200);
+    }
+    public void ShowItemWindow() {
+        itemWindow.anchoredPosition = new Vector2(0, 0);
     }
 
     void UseItem(string itemName, int beltID) {

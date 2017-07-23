@@ -41,7 +41,7 @@ public class MLADraggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
     }
 
     public void OnPointerDown(PointerEventData eventData) {
-        if (eventData.button == PointerEventData.InputButton.Right) {
+        if (eventData.button == PointerEventData.InputButton.Left) {
             if (beginDeck == null) return;
             if (!GetComponent<CraftComponent>().IsItem && beginDeck.targetDeck == MLADecks.Furnace) {
                 transform.SetParent(Table);
