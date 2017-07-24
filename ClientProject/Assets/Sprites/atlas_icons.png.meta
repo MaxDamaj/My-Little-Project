@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e8f4c431080821d4594bd078fb753d1f
-timeCreated: 1500835877
+timeCreated: 1500886153
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -84,9 +84,9 @@ TextureImporter:
     21300154: atlas_icons_77
     21300156: atlas_icons_78
     21300158: atlas_icons_79
-    21300160: atlas_icons_80
-    21300162: atlas_icons_81
-    21300164: atlas_icons_82
+    21300160: icon_discircuit
+    21300162: icon_ctrlcircuit
+    21300164: icon_rectcircuit
     21300166: icon_staticcell
     21300168: atlas_icons_84
     21300170: atlas_icons_85
@@ -956,7 +956,7 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - serializedVersion: 2
-      name: atlas_icons_80
+      name: icon_discircuit
       rect:
         serializedVersion: 2
         x: 0
@@ -968,7 +968,7 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - serializedVersion: 2
-      name: atlas_icons_81
+      name: icon_ctrlcircuit
       rect:
         serializedVersion: 2
         x: 128
@@ -980,7 +980,7 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - serializedVersion: 2
-      name: atlas_icons_82
+      name: icon_rectcircuit
       rect:
         serializedVersion: 2
         x: 256
