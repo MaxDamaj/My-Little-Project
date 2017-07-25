@@ -1,4 +1,8 @@
-﻿Shader "Custom/MatCap Hologram" {
+﻿// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+// Upgrade NOTE: replaced '_World2Object' with 'unity_WorldToObject'
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+Shader "Custom/MatCap Hologram" {
 	Properties{
 		_Color("Color", Color) = (0.5,0.5,0.5,1)
 		_MainTex("Base (RGB) Trans (A)", 2D) = "white" {}
@@ -59,16 +63,16 @@
 			v2f vert(appdata_t v)
 			{
 				v2f o;
-				o.vertex = mul(UNITY_MATRIX_MVP, v.vertex);
+				o.vertex = UnityObjectToClipPos(v.vertex);
 				o.texcoord = TRANSFORM_TEX(v.texcoord, _MainTex);
 				o.texcoord2 = TRANSFORM_TEX(v.texcoord2, _MainTex2);
 				o.color = v.color;
 
-				float3 worldNorm = normalize(_World2Object[0].xyz * v.normal.x + _World2Object[1].xyz * v.normal.y + _World2Object[2].xyz * v.normal.z);
+				float3 worldNorm = normalize(unity_WorldToObject[0].xyz * v.normal.x + unity_WorldToObject[1].xyz * v.normal.y + unity_WorldToObject[2].xyz * v.normal.z);
 				worldNorm = mul((float3x3)UNITY_MATRIX_V, worldNorm);
 				o.texcoord2 = worldNorm.xy * 0.5 + 0.5;
 
-				o.texcoord3 = mul(_Object2World, v.vertex).xy;
+				o.texcoord3 = mul(unity_ObjectToWorld, v.vertex).xy;
 				return o;
 			}
 

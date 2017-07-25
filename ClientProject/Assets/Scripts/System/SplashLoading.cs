@@ -8,6 +8,8 @@ public class SplashLoading : MonoBehaviour {
     Database DBd = null;
     [SerializeField]
     SoundManager SM = null;
+    [SerializeField]
+    DBSimulation DBS = null;
 
     public Button confirmButton;
     public Slider loadingProgress;
@@ -23,13 +25,19 @@ public class SplashLoading : MonoBehaviour {
         if (FindObjectOfType<SoundManager>() != null) {
             Destroy(SoundManager.Instance.gameObject);
         }
+        if (FindObjectOfType<DBSimulation>() != null) {
+            Destroy(DBSimulation.Instance.gameObject);
+        }
 
-		GameObject tmp = Instantiate(DBd.gameObject);
+        GameObject tmp = Instantiate(DBd.gameObject);
 		tmp.name = "GameDatabase";
         DontDestroyOnLoad(tmp);
         tmp = Instantiate(SM.gameObject);
         tmp.name = "SoundManager"; 
 		DontDestroyOnLoad(tmp);
+        tmp = Instantiate(DBS.gameObject);
+        tmp.name = "Database_Simulation";
+        DontDestroyOnLoad(tmp);
 
         SoundManager.Instance.UpdateSoundList();
     }

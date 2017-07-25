@@ -44,6 +44,12 @@ public class Skill : MonoBehaviour {
         Autofire = 3    //No gravity, shoot while key pressed
     };
 
+    public enum FXTarget {
+        None = 0,       //FX not spawned
+        Body = 1,       //FX attached to chacter root
+        Point = 2       //FX attached to object "fx_point"
+    };
+
     public bool IsCooldown = false;
     //-------------------------
     public string title;            //Skill title
@@ -66,6 +72,8 @@ public class Skill : MonoBehaviour {
     public string item;             //item/obstacle what skill are affected
     public string[] items;          //items array what skill are affected
     public GameObject obj;          //skill attached object
+    public string fx;               //skill spawned fx by pool manager
+    public FXTarget fxTarget;       //FX spawn position
 
     public void ItemMultiplier(string i, float q) {
         if (Random.Range(0.0f, 1.0f) <= chance) {

@@ -6,9 +6,13 @@ public class UISimRoadInfo : MonoBehaviour {
 
     [Header("UI")]
     public Text bonusesText;
+    public Button beginButton;
 
     void Start() {
         Refresh();
+        beginButton.onClick.AddListener(delegate {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("road_simulation");
+        });
     }
 
     void Refresh() {
