@@ -9,7 +9,15 @@ public class GlobalData : ScriptableObject {
     [Header("Non saved params")]
     public int nowChallenge;
     public int itemsInventoryCount;
-    public int itemstBeltCount;
+    public int itemsBeltCount;
+
+    [Header("Ingame params")]
+    public float SPDmlp;        //Speed multiplier. Used in PonyController
+    public float DMGmlp;        //Damage multiplier. Used in PonyController
+    public float timeSpeed;     //Current time length. Used in slowing motions skills
+    public float currentHP;
+    public float currentMP;
+    public float currentMP_rec; //MP recovery value
 
     private static GlobalData globalData;
 

@@ -75,10 +75,10 @@ public class ItemsController : MonoBehaviour {
         if (_emc == null) return;
         switch (itemName) {
             case "Health Potion":
-                _emc.currentHP += 10;
+                GlobalData.Instance.currentHP += 10;
                 break;
             case "Large Health Potion":
-                _emc.currentHP += 25;
+                GlobalData.Instance.currentHP += 25;
                 break;
             case "Stamina Potion":
                 Database.Instance.IncreaseCurrSTM(Database.Instance.SelectedPony, 1000);
@@ -87,10 +87,10 @@ public class ItemsController : MonoBehaviour {
                 Database.Instance.IncreaseCurrSTM(Database.Instance.SelectedPony, 2500);
                 break;
             case "Mana Potion":
-                _emc.currentMP += 10;
+                GlobalData.Instance.currentMP += 10;
                 break;
             case "Large Mana Potion":
-                _emc.currentMP += 25;
+                GlobalData.Instance.currentMP += 25;
                 break;
         }
         Destroy(belt[beltID].GetChild(0).gameObject);

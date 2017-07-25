@@ -68,9 +68,9 @@ public class SkillController : MonoBehaviour {
         SkillFly(1, true);
     }
     public void SkillXHold() {
-        _emc.currentMP -= MPDrain;
-        if (_emc.currentMP <= 0) {
-            _emc.currentMP = 0;
+        GlobalData.Instance.currentMP -= MPDrain;
+        if (GlobalData.Instance.currentMP <= 0) {
+            GlobalData.Instance.currentMP = 0;
             SkillFly(1, false);
         }
         if (holdTimer <= 0) {
@@ -93,11 +93,11 @@ public class SkillController : MonoBehaviour {
     #region Skills
 
     void SkillDash(int sn) {
-        if ((int)Character.CharSkills[sn].skillType == 1 && _emc.currentMP >= Character.CharSkills[sn].MP_cost) {
+        if ((int)Character.CharSkills[sn].skillType == 1 && GlobalData.Instance.currentMP >= Character.CharSkills[sn].MP_cost) {
             SoundManager.Instance.PlaySound("a_dash");
-            _emc.currentMP -= Character.CharSkills[sn].MP_cost;
-            _emc.SPDmlp = _emc.SPDmlp * Character.CharSkills[sn].SPDmlp;
-            _emc.DMGmlp = _emc.DMGmlp * Character.CharSkills[sn].DMGmlp;
+            GlobalData.Instance.currentMP -= Character.CharSkills[sn].MP_cost;
+            GlobalData.Instance.SPDmlp = GlobalData.Instance.SPDmlp * Character.CharSkills[sn].SPDmlp;
+            GlobalData.Instance.DMGmlp = GlobalData.Instance.DMGmlp * Character.CharSkills[sn].DMGmlp;
             _uiSkill.DeactivateSkill(sn);
             if (fx[sn] != null) fx[sn].SetActive(true);
             IEnumerator endDash = Dash(Character.CharSkills[sn].duration, sn);
@@ -107,7 +107,7 @@ public class SkillController : MonoBehaviour {
         }
     }
     void SkillProjectile(int sn, float lifetime) {
-        if ((int)Character.CharSkills[sn].skillType == 3 && _emc.currentMP >= Character.CharSkills[sn].MP_cost) {
+        if ((int)Character.CharSkills[sn].skillType == 3 && GlobalData.Instance.currentMP >= Character.CharSkills[sn].MP_cost) {
             GameObject spark_cl;
             Vector3 v3 = new Vector3(Pony.transform.position.x + 0.75f, Pony.transform.position.y, Pony.transform.position.z);
             if (Character.CharSkills[sn].projType == Skill.ProjectileType.Autofire) {
@@ -122,7 +122,7 @@ public class SkillController : MonoBehaviour {
                 IEnumerator fxDisable = DisableObject(fx[sn], 0.15f);
                 StartCoroutine(fxDisable);
             }
-            _emc.currentMP -= Character.CharSkills[sn].MP_cost;
+            GlobalData.Instance.currentMP -= Character.CharSkills[sn].MP_cost;
             spark_cl = (GameObject)Instantiate(Character.CharSkills[sn].obj, v3, Character.CharSkills[sn].obj.transform.rotation);
             if (Character.CharSkills[sn].projType == Skill.ProjectileType.Light)
                 spark_cl.GetComponent<Rigidbody>().AddForce(new Vector3(250f, 0f, 0f));
@@ -134,13 +134,13 @@ public class SkillController : MonoBehaviour {
         }
     }
     void SkillStatChange(int sn) {
-        if ((int)Character.CharSkills[sn].skillType == 4 && _emc.currentMP >= Character.CharSkills[sn].MP_cost) {
-            _emc.currentMP -= Character.CharSkills[sn].MP_cost;
-            if (Character.CharSkills[sn].statType == Skill.StatType.Health) { _emc.currentHP += Character.CharSkills[sn].multiplier; }
-            if (Character.CharSkills[sn].statType == Skill.StatType.Mana) { _emc.currentMP = Character.MP * Character.CharSkills[sn].multiplier; }
+        if ((int)Character.CharSkills[sn].skillType == 4 && GlobalData.Instance.currentMP >= Character.CharSkills[sn].MP_cost) {
+            GlobalData.Instance.currentMP -= Character.CharSkills[sn].MP_cost;
+            if (Character.CharSkills[sn].statType == Skill.StatType.Health) { GlobalData.Instance.currentHP += Character.CharSkills[sn].multiplier; }
+            if (Character.CharSkills[sn].statType == Skill.StatType.Mana) { GlobalData.Instance.currentMP = Character.MP * Character.CharSkills[sn].multiplier; }
             if (Character.CharSkills[sn].statType == Skill.StatType.Stamina) { Database.Instance.IncreaseCurrSTM(Database.Instance.SelectedPony, Character.CharSkills[sn].multiplier); }
-            if ((int)Character.CharSkills[sn].statType == 3) { _emc.SPDmlp *= Character.CharSkills[sn].multiplier; }
-            if ((int)Character.CharSkills[sn].statType == 4) { _emc.DMGmlp *= Character.CharSkills[sn].multiplier; }
+            if ((int)Character.CharSkills[sn].statType == 3) { GlobalData.Instance.SPDmlp *= Character.CharSkills[sn].multiplier; }
+            if ((int)Character.CharSkills[sn].statType == 4) { GlobalData.Instance.DMGmlp *= Character.CharSkills[sn].multiplier; }
             if ((int)Character.CharSkills[sn].statType > 2) {
                 _uiSkill.DeactivateSkill(sn);
                 if (fx[sn] != null) fx[sn].SetActive(true);
@@ -154,7 +154,7 @@ public class SkillController : MonoBehaviour {
     void SkillRestoreStat(int sn) {
         if ((int)Character.CharSkills[sn].skillType == 5 && !Character.CharSkills[sn].IsCooldown) {
             Character.CharSkills[sn].IsCooldown = true;
-            if (Character.CharSkills[sn].statType == Skill.StatType.Mana) { _emc.currentMP_rec *= Character.CharSkills[sn].multiplier; }
+            if (Character.CharSkills[sn].statType == Skill.StatType.Mana) { GlobalData.Instance.currentMP_rec *= Character.CharSkills[sn].multiplier; }
             _uiSkill.DeactivateSkill(sn);
             if (fx[sn] != null) fx[sn].SetActive(true);
             IEnumerator endStatRestore = StatRestore(Character.CharSkills[sn].duration, Character.CharSkills[sn].cooldown, sn, (int)Character.CharSkills[sn].statType);
@@ -169,7 +169,7 @@ public class SkillController : MonoBehaviour {
             _uiSkill.DeactivateSkill(sn);
             string it = Character.CharSkills[sn].items[Mathf.RoundToInt(Random.Range(0.0f, Character.CharSkills[sn].items.GetLength(0) - 1.0f))];
             Character.CharSkills[sn].ItemMultiplier(it, Character.CharSkills[sn].multiplier);
-            _emc.ShowPopupInfo(it);
+            PickupPopup.Instance.ShowPopupInfo(it);
             IEnumerator endItemsGiving = ItemsGiving(Character.CharSkills[sn].cooldown, sn);
             StartCoroutine(endItemsGiving);
             cooldown = _uiSkill.StartCooldown(sn, (int)Character.CharSkills[sn].cooldown);
@@ -178,12 +178,12 @@ public class SkillController : MonoBehaviour {
     }
     void SkillFly(int sn, bool active) {
         if (Character.CharSkills[sn].skillType == Skill.SkillType.Fly) {
-            if (active && _emc.currentMP >= Character.CharSkills[sn].MP_cost * 5) {
+            if (active && GlobalData.Instance.currentMP >= Character.CharSkills[sn].MP_cost * 5) {
                 Pony.GetComponent<Rigidbody>().useGravity = false;
                 _uiSkill.DeactivateSkill(0); //Deactivate Jump
                 MPDrain = Character.CharSkills[sn].MP_cost;
-                _emc.SPDmlp = _emc.SPDmlp * Character.CharSkills[sn].SPDmlp;
-                _emc.DMGmlp = _emc.DMGmlp * Character.CharSkills[sn].DMGmlp;
+                GlobalData.Instance.SPDmlp = GlobalData.Instance.SPDmlp * Character.CharSkills[sn].SPDmlp;
+                GlobalData.Instance.DMGmlp = GlobalData.Instance.DMGmlp * Character.CharSkills[sn].DMGmlp;
                 Pony.GetComponentInChildren<Animator>().SetBool("fly", true);
                 Pony.GetComponent<Rigidbody>().velocity = Vector3.zero;
                 SoundManager.Instance.SetMuteState("a_wings", false);
@@ -193,8 +193,8 @@ public class SkillController : MonoBehaviour {
                 Pony.GetComponentInChildren<Animator>().SetBool("fly", false);
                 _uiSkill.ActivateSkill(0);
                 MPDrain = 0;
-                _emc.SPDmlp = _emc.SPDmlp / Character.CharSkills[sn].SPDmlp;
-                _emc.DMGmlp = _emc.DMGmlp / Character.CharSkills[sn].DMGmlp;
+                GlobalData.Instance.SPDmlp = GlobalData.Instance.SPDmlp / Character.CharSkills[sn].SPDmlp;
+                GlobalData.Instance.DMGmlp = GlobalData.Instance.DMGmlp / Character.CharSkills[sn].DMGmlp;
                 SoundManager.Instance.SetMuteState("a_wings", true);
             }
         }
@@ -203,7 +203,7 @@ public class SkillController : MonoBehaviour {
         if (Character.CharSkills[sn].skillType == Skill.SkillType.SlowMotion && !Character.CharSkills[sn].IsCooldown) {
             Character.CharSkills[sn].IsCooldown = true;
             _uiSkill.DeactivateSkill(sn);
-            _emc.timeSpeed = Character.CharSkills[sn].multiplier;
+            GlobalData.Instance.timeSpeed = Character.CharSkills[sn].multiplier;
             Time.timeScale = Character.CharSkills[sn].multiplier;
             if (fx[sn] != null) fx[sn].SetActive(true);
             SoundManager.Instance.PlaySound("a_slowdown");
@@ -218,27 +218,27 @@ public class SkillController : MonoBehaviour {
             //For HPLow skills
             if (Character.CharSkills[sn].condition == Skill.Condition.HPLow) {
                 if (cond == Skill.Condition.HPLow) {
-                    if (Character.CharSkills[sn].statType == Skill.StatType.Mana) _emc.currentMP_rec *= Character.CharSkills[sn].multiplier;
-                    if (Character.CharSkills[sn].statType == Skill.StatType.Speed) _emc.SPDmlp *= Character.CharSkills[sn].multiplier;
-                    if (Character.CharSkills[sn].statType == Skill.StatType.Damage) _emc.DMGmlp *= Character.CharSkills[sn].multiplier;
+                    if (Character.CharSkills[sn].statType == Skill.StatType.Mana) GlobalData.Instance.currentMP_rec *= Character.CharSkills[sn].multiplier;
+                    if (Character.CharSkills[sn].statType == Skill.StatType.Speed) GlobalData.Instance.SPDmlp *= Character.CharSkills[sn].multiplier;
+                    if (Character.CharSkills[sn].statType == Skill.StatType.Damage) GlobalData.Instance.DMGmlp *= Character.CharSkills[sn].multiplier;
                 }
                 if (cond == Skill.Condition.HPHigh) {
-                    if (Character.CharSkills[sn].statType == Skill.StatType.Mana) _emc.currentMP_rec /= Character.CharSkills[sn].multiplier;
-                    if (Character.CharSkills[sn].statType == Skill.StatType.Speed) _emc.SPDmlp /= Character.CharSkills[sn].multiplier;
-                    if (Character.CharSkills[sn].statType == Skill.StatType.Damage) _emc.DMGmlp /= Character.CharSkills[sn].multiplier;
+                    if (Character.CharSkills[sn].statType == Skill.StatType.Mana) GlobalData.Instance.currentMP_rec /= Character.CharSkills[sn].multiplier;
+                    if (Character.CharSkills[sn].statType == Skill.StatType.Speed) GlobalData.Instance.SPDmlp /= Character.CharSkills[sn].multiplier;
+                    if (Character.CharSkills[sn].statType == Skill.StatType.Damage) GlobalData.Instance.DMGmlp /= Character.CharSkills[sn].multiplier;
                 }
             }
             //For MPLow skills
             if (Character.CharSkills[sn].condition == Skill.Condition.MPLow) {
                 if (cond == Skill.Condition.MPLow) {
-                    if (Character.CharSkills[sn].statType == Skill.StatType.Mana) _emc.currentMP_rec *= Character.CharSkills[sn].multiplier;
-                    if (Character.CharSkills[sn].statType == Skill.StatType.Speed) _emc.SPDmlp *= Character.CharSkills[sn].multiplier;
-                    if (Character.CharSkills[sn].statType == Skill.StatType.Damage) _emc.DMGmlp *= Character.CharSkills[sn].multiplier;
+                    if (Character.CharSkills[sn].statType == Skill.StatType.Mana) GlobalData.Instance.currentMP_rec *= Character.CharSkills[sn].multiplier;
+                    if (Character.CharSkills[sn].statType == Skill.StatType.Speed) GlobalData.Instance.SPDmlp *= Character.CharSkills[sn].multiplier;
+                    if (Character.CharSkills[sn].statType == Skill.StatType.Damage) GlobalData.Instance.DMGmlp *= Character.CharSkills[sn].multiplier;
                 }
                 if (cond == Skill.Condition.MPHigh) {
-                    if (Character.CharSkills[sn].statType == Skill.StatType.Mana) _emc.currentMP_rec /= Character.CharSkills[sn].multiplier;
-                    if (Character.CharSkills[sn].statType == Skill.StatType.Speed) _emc.SPDmlp /= Character.CharSkills[sn].multiplier;
-                    if (Character.CharSkills[sn].statType == Skill.StatType.Damage) _emc.DMGmlp /= Character.CharSkills[sn].multiplier;
+                    if (Character.CharSkills[sn].statType == Skill.StatType.Mana) GlobalData.Instance.currentMP_rec /= Character.CharSkills[sn].multiplier;
+                    if (Character.CharSkills[sn].statType == Skill.StatType.Speed) GlobalData.Instance.SPDmlp /= Character.CharSkills[sn].multiplier;
+                    if (Character.CharSkills[sn].statType == Skill.StatType.Damage) GlobalData.Instance.DMGmlp /= Character.CharSkills[sn].multiplier;
                 }
             }
         }
@@ -251,21 +251,21 @@ public class SkillController : MonoBehaviour {
     //IENumerators
     IEnumerator Dash(float duration, int num) {
         yield return new WaitForSeconds(duration);
-        _emc.SPDmlp = _emc.SPDmlp / Character.CharSkills[num].SPDmlp;
-        _emc.DMGmlp = _emc.DMGmlp / Character.CharSkills[num].DMGmlp;
+        GlobalData.Instance.SPDmlp = GlobalData.Instance.SPDmlp / Character.CharSkills[num].SPDmlp;
+        GlobalData.Instance.DMGmlp = GlobalData.Instance.DMGmlp / Character.CharSkills[num].DMGmlp;
         if (fx[num] != null) fx[num].SetActive(false);
         _uiSkill.ActivateSkill(num);
     }
     IEnumerator StatChange(float duration, int num, int param) {
         yield return new WaitForSeconds(duration);
-        if (param == 3) { _emc.SPDmlp = _emc.SPDmlp / Character.CharSkills[num].multiplier; }
-        if (param == 4) { _emc.DMGmlp = _emc.DMGmlp / Character.CharSkills[num].multiplier; }
+        if (param == 3) { GlobalData.Instance.SPDmlp = GlobalData.Instance.SPDmlp / Character.CharSkills[num].multiplier; }
+        if (param == 4) { GlobalData.Instance.DMGmlp = GlobalData.Instance.DMGmlp / Character.CharSkills[num].multiplier; }
         if (fx[num] != null) fx[num].SetActive(false);
         _uiSkill.ActivateSkill(num);
     }
     IEnumerator StatRestore(float duration, float cooldown, int num, int param) {
         yield return new WaitForSeconds(duration);
-        if (param == 1) { _emc.currentMP_rec /= Character.CharSkills[num].multiplier; }
+        if (param == 1) { GlobalData.Instance.currentMP_rec /= Character.CharSkills[num].multiplier; }
         if (fx[num] != null) fx[num].SetActive(false);
         yield return new WaitForSeconds(cooldown - duration);
         Character.CharSkills[num].IsCooldown = false;
@@ -279,7 +279,7 @@ public class SkillController : MonoBehaviour {
     IEnumerator SlowMotion(float duration, float cooldown, int num) {
         yield return new WaitForSeconds(duration);
         if (fx[num] != null) fx[num].SetActive(false);
-        _emc.timeSpeed = 1;
+        GlobalData.Instance.timeSpeed = 1;
         Time.timeScale = 1;
         yield return new WaitForSeconds(cooldown - duration);
         Character.CharSkills[num].IsCooldown = false;
@@ -306,7 +306,7 @@ public class SkillController : MonoBehaviour {
             float rnd = Random.Range(0.0f, 1.0f);
             if (rnd < Character.CharSkills[0].chance) {
                 Character.CharSkills[0].ItemMultiplier(it, Character.CharSkills[0].multiplier);
-                _emc.ShowPopupInfo(it);
+                PickupPopup.Instance.ShowPopupInfo(it);
             }
         }
     }  

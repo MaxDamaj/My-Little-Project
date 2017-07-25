@@ -6,6 +6,7 @@ public class PonyCollide : MonoBehaviour {
     void OnCollisionEnter(Collision coll) {
         if (coll.gameObject.tag == "Player") {
             switch (gameObject.tag) {
+                //Obstacles
                 case "Hay":
                 case "WoodCrate":
                 case "Rail":
@@ -14,7 +15,7 @@ public class PonyCollide : MonoBehaviour {
                     Destroy(GetComponent<Collider>());
                     Destroy(gameObject, 1f);
                     break;
-
+                //Pickups
                 case "Bit":
                     GetComponent<Rigidbody>().AddForce(new Vector3(0f, 120f, 0f));
                     Destroy(GetComponent<Collider>());

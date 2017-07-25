@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e8f4c431080821d4594bd078fb753d1f
-timeCreated: 1500886153
+timeCreated: 1500992411
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -272,6 +272,8 @@ TextureImporter:
     21300530: skill_slowmotion
     21300532: skill_STM
     21300534: icon_iridium
+    21300536: icon_pixel
+    21300538: icon_flow
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -1524,6 +1526,30 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1152
+        y: 1920
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: icon_pixel
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1920
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: icon_flow
+      rect:
+        serializedVersion: 2
+        x: 1408
         y: 1920
         width: 128
         height: 128

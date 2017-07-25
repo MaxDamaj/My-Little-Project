@@ -1,13 +1,11 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
-using System;
 using System.Collections;
-using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine.Events;
 
-public class EndModeController : MonoBehaviour {
+public class SimModeController : MonoBehaviour {
 
-    //UI
+    [Header("UI")]
     public Image ponyIcon;
     public Image ponyHP;
     public Image ponyMP;
@@ -20,14 +18,13 @@ public class EndModeController : MonoBehaviour {
     public Text InfoText;
     public GameObject SkillsPanel;
     public Image[] SkillIcons;
-    public Text stamina;
     public Text charName;
-    //SplashSideImage
+    [Header("Common")]
     public Image splashGrad;
     public Animator splashText;
-
     public Transform mainCamera;
     public Animator[] flashingUI;
+    public TerrainEDR terrainSpawner;
 
     [Header("Events")]
     public UnityAction<int, Skill.Condition> CharacterState;
@@ -42,7 +39,7 @@ public class EndModeController : MonoBehaviour {
 
     void Start() {
         Invoke("FindPony", 0.3f);
-        _pony = Database.Instance.GetCharFMInfo(Database.Instance.SelectedPony);
+        _pony = DBSimulation.Instance.simCharacter;
         pauseButton.onClick.AddListener(GamePause);
         retireButton.onClick.AddListener(GameRetire);
         ponyIcon.sprite = _pony.CharIcon;
@@ -53,13 +50,10 @@ public class EndModeController : MonoBehaviour {
         GlobalData.Instance.currentHP = _pony.HP;
         GlobalData.Instance.currentMP = 0;
         GlobalData.Instance.currentMP_rec = _pony.MPRecovery;
-        //Set STM value
-        stamina.text = "" + Mathf.RoundToInt(Database.Instance.GetCurrSTM(Database.Instance.SelectedPony));
         deltaCam = mainCamera.position.x;
         //Set pony name
         charName.text = _pony.CharName;
         charName.color = _pony.CharColor;
-        stamina.color = _pony.CharColor;
 
         //Set Skill icons
         SkillIcons[1].sprite = _pony.CharSkills[1].icon;
@@ -105,9 +99,6 @@ public class EndModeController : MonoBehaviour {
     }
 
     void FixedUpdate() {
-        //Recalculate STM Value
-        Database.Instance.IncreaseCurrSTM(Database.Instance.SelectedPony, 0 - (mainCamera.position.x - deltaCam) * 2);
-        stamina.text = "" + Mathf.RoundToInt(Database.Instance.GetCurrSTM(Database.Instance.SelectedPony));
         //Refresh animators values
         flashingUI[0].SetFloat("value", ponyHP.fillAmount);
         flashingUI[1].SetFloat("value", ponyHP.fillAmount);
@@ -129,7 +120,6 @@ public class EndModeController : MonoBehaviour {
         deltaCam = mainCamera.position.x;
         //KO screen draw
         if (GlobalData.Instance.currentHP <= 0) { ShowKOWindow(); }
-        if (Database.Instance.GetCurrSTM(Database.Instance.SelectedPony) <= 0) { ShowSTMOutWindow(); }
 
     }
 
@@ -187,7 +177,7 @@ public class EndModeController : MonoBehaviour {
                 }
             }
         }
-        UnityEngine.SceneManagement.SceneManager.LoadScene("menu");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("simulation");
     }
 
     void SetInfoScreenState(string text, bool skills) {

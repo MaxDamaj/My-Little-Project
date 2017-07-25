@@ -4,7 +4,6 @@ using System.Collections.Generic;
 
 public class PonyController : MonoBehaviour {
 
-    private EndModeController _emc;
     private CameraPonyFollow _cpf;
 
     private CharsFMData _pony;
@@ -31,7 +30,6 @@ public class PonyController : MonoBehaviour {
 
     void Start() {
         _cpf = FindObjectOfType<CameraPonyFollow>();
-        _emc = FindObjectOfType<EndModeController>();
         _rigidbody = GetComponent<Rigidbody>();
         _pony = Database.Instance.GetCharFMInfo(Database.Instance.SelectedPony);
         anim = GetComponentInChildren<Animator>();
@@ -41,11 +39,11 @@ public class PonyController : MonoBehaviour {
     void FixedUpdate() {
         if (jump_recover > 0) { jump_recover--; }
         //Movement
-        _rigidbody.velocity = new Vector3((_pony.SPD * _emc.SPDmlp) / 10, _rigidbody.velocity.y, m_shift - 0.015f);
+        _rigidbody.velocity = new Vector3((_pony.SPD * GlobalData.Instance.SPDmlp) / 10, _rigidbody.velocity.y, m_shift - 0.015f);
         if (s_shift == 0) {
-            m_shift = Input.GetAxis("Vertical") * (_pony.SPD * _emc.SPDmlp) / 10 / 2;
+            m_shift = Input.GetAxis("Vertical") * (_pony.SPD * GlobalData.Instance.SPDmlp) / 10 / 2;
         } else {
-            m_shift = s_shift * (_pony.SPD * _emc.SPDmlp) / 10 / 2;
+            m_shift = s_shift * (_pony.SPD * GlobalData.Instance.SPDmlp) / 10 / 2;
         }
         //Jumping
         if (Input.GetAxis("Jump") > 0.01f && jump_recover <= 0) {
@@ -62,51 +60,13 @@ public class PonyController : MonoBehaviour {
         if (coll.gameObject.tag == "FarWall" && m_shift > 0f) m_shift = 0;
         if (coll.gameObject.tag == "NearWall" && m_shift < 0f) m_shift = 0;
         //Fall down
-        if (coll.gameObject.tag == "Bottom") _emc.currentHP = 0;
+        if (coll.gameObject.tag == "Bottom") GlobalData.Instance.currentHP = 0;
     }
 
     //Bonuses picking up
     void OnTriggerEnter(Collider coll) {
         //Run pickup event
         if (coll.gameObject.name != "trigger") onPlayerPickup(gameObject.tag, coll.gameObject);
-        //Check target tag
-        switch (coll.gameObject.tag) {
-            case "Bit":
-                SoundManager.Instance.PlaySound("a_coins");
-                _emc.ShowPopupInfo("Bits");
-                Database.Instance.IncreaseItemQuantity("Bits", 1);
-                break;
-            case "EoH_Laughter":
-                SoundManager.Instance.PlaySound("a_beeps");
-                _emc.ShowPopupInfo("Laughter");
-                Database.Instance.IncreaseItemQuantity("Laughter", 1);
-                break;
-            case "EoH_Generosity":
-                SoundManager.Instance.PlaySound("a_beeps");
-                _emc.ShowPopupInfo("Generosity");
-                Database.Instance.IncreaseItemQuantity("Generosity", 1);
-                break;
-            case "EoH_Honesty":
-                SoundManager.Instance.PlaySound("a_beeps");
-                _emc.ShowPopupInfo("Honesty");
-                Database.Instance.IncreaseItemQuantity("Honesty", 1);
-                break;
-            case "EoH_Kindness":
-                SoundManager.Instance.PlaySound("a_beeps");
-                _emc.ShowPopupInfo("Kindness");
-                Database.Instance.IncreaseItemQuantity("Kindness", 1);
-                break;
-            case "EoH_Loyalty":
-                SoundManager.Instance.PlaySound("a_beeps");
-                _emc.ShowPopupInfo("Loyalty");
-                Database.Instance.IncreaseItemQuantity("Loyalty", 1);
-                break;
-            case "EoH_Magic":
-                SoundManager.Instance.PlaySound("a_beeps");
-                _emc.ShowPopupInfo("Magic");
-                Database.Instance.IncreaseItemQuantity("Magic", 1);
-                break;
-        }
     }
 
     void OnCollisionEnter(Collision coll) {
@@ -134,8 +94,8 @@ public class PonyController : MonoBehaviour {
     void CalculateObstacle(Transform obstacle, float shift, float damage, float camShaking) {
         Database.Instance.obstTotal++;
         if (obstacle.position.x - transform.position.x > shift) {
-            SoundManager.Instance.PlaySound("a_thump"); _emc.currentHP -= damage * _emc.DMGmlp;
-            _cpf.shake_intensity = camShaking * _emc.DMGmlp;
+            SoundManager.Instance.PlaySound("a_thump"); GlobalData.Instance.currentHP -= damage * GlobalData.Instance.DMGmlp;
+            _cpf.shake_intensity = camShaking * GlobalData.Instance.DMGmlp;
             Database.Instance.obstWithDamage++;
         } else {
             Database.Instance.obstNonDamage++;

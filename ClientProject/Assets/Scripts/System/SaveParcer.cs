@@ -6,16 +6,16 @@ using System.Collections.Generic;
 public class SaveParcer : MonoBehaviour {
 
     private const string FILE_NAME = "gameSave.sav";
-	private List<string> saveFile;
+    private List<string> saveFile;
 
     public void SaveToFile() {
         string[] saveFiles;
-		if (Directory.Exists(Application.persistentDataPath + "/Saves")) {
-			saveFiles = Directory.GetFiles(Application.persistentDataPath + "/Saves");
-		} else {
-			Directory.CreateDirectory(Application.persistentDataPath + "/Saves");
-			saveFiles = Directory.GetFiles(Application.persistentDataPath + "/Saves");
-		}
+        if (Directory.Exists(Application.persistentDataPath + "/Saves")) {
+            saveFiles = Directory.GetFiles(Application.persistentDataPath + "/Saves");
+        } else {
+            Directory.CreateDirectory(Application.persistentDataPath + "/Saves");
+            saveFiles = Directory.GetFiles(Application.persistentDataPath + "/Saves");
+        }
         if (saveFiles.GetLength(0) == 0) {
             File.Create(Application.persistentDataPath + "/Saves/" + FILE_NAME).Close();
         }
@@ -45,7 +45,7 @@ public class SaveParcer : MonoBehaviour {
         saveFile.Add("obstaclesTotal:" + Database.Instance.obstTotal);
         saveFile.Add("obstaclesWithDamage:" + Database.Instance.obstWithDamage);
         saveFile.Add("obstaclesNonDamage:" + Database.Instance.obstNonDamage);
-		saveFile.Add("enduranceDistanceEasy:" + Database.Instance.distEndEasy);
+        saveFile.Add("enduranceDistanceEasy:" + Database.Instance.distEndEasy);
         saveFile.Add("");
 
         saveFile.Add("--Materials--");
@@ -66,12 +66,12 @@ public class SaveParcer : MonoBehaviour {
         saveFile.Add("--Achievements--");
         saveFile.Add(SaveMultiline(Database.Instance.takenAchievements, "takenAchievements"));
         saveFile.Add("");
-		saveFile.Add("--Codex--");
-		saveFile.Add(SaveMultiline(Database.Instance.readenCodex, "readenCodex"));
-		saveFile.Add("");
-		saveFile.Add("--Endurance Rewards--");
-		saveFile.Add(SaveMultiline(Database.Instance.endRewardsEasy, "enduranceRewardsEasy"));
-		saveFile.Add("");
+        saveFile.Add("--Codex--");
+        saveFile.Add(SaveMultiline(Database.Instance.readenCodex, "readenCodex"));
+        saveFile.Add("");
+        saveFile.Add("--Endurance Rewards--");
+        saveFile.Add(SaveMultiline(Database.Instance.endRewardsEasy, "enduranceRewardsEasy"));
+        saveFile.Add("");
 
         saveFile.Add("--Deckbuilding--");
         saveFile.Add(SaveMultiline(Database.Instance.playerDeck, "cardsInDeck"));
@@ -79,7 +79,7 @@ public class SaveParcer : MonoBehaviour {
         saveFile.Add("");
 
         saveFile.Add("--Characters--");
-        for (int i=0; i< Database.Instance.ArrayCharFMGetLenght(); i++) {
+        for (int i = 0; i < Database.Instance.ArrayCharFMGetLenght(); i++) {
             saveFile.Add(GetCharStats(i));
         }
         saveFile.Add("");
@@ -116,7 +116,7 @@ public class SaveParcer : MonoBehaviour {
         Database.Instance.obstTotal = LoadLineInt(saveFile, "obstaclesTotal", Database.Instance.obstTotal);
         Database.Instance.obstWithDamage = LoadLineInt(saveFile, "obstaclesWithDamage", Database.Instance.obstWithDamage);
         Database.Instance.obstNonDamage = LoadLineInt(saveFile, "obstaclesNonDamage", Database.Instance.obstNonDamage);
-		Database.Instance.distEndEasy = LoadLineInt(saveFile, "enduranceDistanceEasy", Database.Instance.distEndEasy);
+        Database.Instance.distEndEasy = LoadLineInt(saveFile, "enduranceDistanceEasy", Database.Instance.distEndEasy);
 
         //Materials
         for (int i = 0; i < Database.Instance.ArrayItemsGetLenght(); i++) {
@@ -132,15 +132,15 @@ public class SaveParcer : MonoBehaviour {
         Database.Instance.passedChallenges = LoadMultilineInt(saveFile, "passedChallenges", Database.Instance.passedChallenges);
         //Achievements
         Database.Instance.takenAchievements = LoadMultilineInt(saveFile, "takenAchievements", Database.Instance.takenAchievements);
-		//Codex
-		Database.Instance.readenCodex = LoadMultilineInt(saveFile, "readenCodex", Database.Instance.readenCodex);
-		//Endurance Rewards
-		Database.Instance.endRewardsEasy = LoadMultilineInt(saveFile, "enduranceRewardsEasy", Database.Instance.endRewardsEasy);
+        //Codex
+        Database.Instance.readenCodex = LoadMultilineInt(saveFile, "readenCodex", Database.Instance.readenCodex);
+        //Endurance Rewards
+        Database.Instance.endRewardsEasy = LoadMultilineInt(saveFile, "enduranceRewardsEasy", Database.Instance.endRewardsEasy);
 
         //Deckbuilding
         Database.Instance.playerDeck = LoadMultiline(saveFile, "cardsInDeck", Database.Instance.playerDeck);
         Database.Instance.playerStack = LoadMultiline(saveFile, "cardsInStack", Database.Instance.playerStack);
-        
+
         //----
         Debug.Log("Game progress loaded from " + FILE_NAME + " file");
     }
@@ -204,11 +204,11 @@ public class SaveParcer : MonoBehaviour {
             foreach (string item in list) {
                 value.Add(int.Parse(item));
             }
-			if (defaultValue.GetLength(0) > value.Count) {
-				for (int i = value.Count; i < defaultValue.GetLength(0); i++) {
-					value.Add(0);
-				}
-			}
+            if (defaultValue.GetLength(0) > value.Count) {
+                for (int i = value.Count; i < defaultValue.GetLength(0); i++) {
+                    value.Add(0);
+                }
+            }
             return value.ToArray();
         }
         return defaultValue;
@@ -217,22 +217,22 @@ public class SaveParcer : MonoBehaviour {
     string GetCharStats(int index) {
         CharsFMData character = Database.Instance.GetCharFMInfo(index);
         string line = character.CharName;
-		line += ":" + character.HP + "," + character.MP + "," + character.Rank + "," + character.STMCurrent + "," + character.Rank;
+        line += ":" + character.HP + "," + character.MP + "," + character.Rank + "," + character.STMCurrent + "," + character.Rank;
         return line;
     }
-	public void LoadCharData() {
-		for (int i = 0; i < Database.Instance.ArrayCharFMGetLenght(); i++) {
-			List<string> line = LoadMultiline(saveFile, Database.Instance.GetCharFMInfo(i).CharName, null);
-			if (line != null) {
-				Database.Instance.SetCharFM_HP(i, float.Parse(line[0]));
-				Database.Instance.SetCharFM_MP(i, float.Parse(line[1]));
-				Database.Instance.SetCharFMRank(i, int.Parse(line[2]));
-				Database.Instance.SetCurrSTM(i, float.Parse(line[3]));
-				Database.Instance.SetCharFMRank(i, int.Parse(line[4]));
-				//Correcting on-time stamina
-				Database.Instance.IncreaseCurrSTM(i, Database.Instance.timeSpan);
-			}
-		}
+    public void LoadCharData() {
+        for (int i = 0; i < Database.Instance.ArrayCharFMGetLenght(); i++) {
+            List<string> line = LoadMultiline(saveFile, Database.Instance.GetCharFMInfo(i).CharName, null);
+            if (line != null) {
+                Database.Instance.SetCharFM_HP(i, float.Parse(line[0]));
+                Database.Instance.SetCharFM_MP(i, float.Parse(line[1]));
+                Database.Instance.SetCharFMRank(i, int.Parse(line[2]));
+                Database.Instance.SetCurrSTM(i, float.Parse(line[3]));
+                Database.Instance.SetCharFMRank(i, int.Parse(line[4]));
+                //Correcting on-time stamina
+                Database.Instance.IncreaseCurrSTM(i, Database.Instance.timeSpan);
+            }
+        }
 
-	}
+    }
 }

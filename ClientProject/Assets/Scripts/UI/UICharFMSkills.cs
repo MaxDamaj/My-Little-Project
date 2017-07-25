@@ -9,12 +9,10 @@ public class UICharFMSkills : MonoBehaviour {
 
     private CharsFMData Character;
 
-    // Use this for initialization
     void Start () {
         RefreshUI();
     }
 
-    // Update is called once per frame
     public void RefreshUI() {
         Character = Database.Instance.GetCharFMInfo(Database.Instance.SelectedPony);
         for (int i=0; i<SkillTitle.GetLength(0); i++) {
