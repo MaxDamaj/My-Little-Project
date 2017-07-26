@@ -3,11 +3,13 @@ using System.Collections;
 
 public class SkillController : MonoBehaviour {
 
+    public bool IsSimulation = false;
     [SerializeField]
     GameObject[] fx = null;
 
     private GameObject Pony;
     private EndModeController _emc;
+    private SimModeController _smc;
     private UISkills _uiSkill;
     private IEnumerator cooldown;
     private CharsFMData Character;
@@ -28,16 +30,22 @@ public class SkillController : MonoBehaviour {
     }
 
     void Start() {
-        Character = Database.Instance.GetCharFMInfo(Database.Instance.SelectedPony);
+        if (!IsSimulation) {
+            Character = Database.Instance.GetCharFMInfo(Database.Instance.SelectedPony);
+        } else {
+            Character = DBSimulation.Instance.simCharacter;
+        }
         Pony = PonyController.Instance.gameObject;
         _emc = FindObjectOfType<EndModeController>();
+        _smc = FindObjectOfType<SimModeController>();
         _uiSkill = FindObjectOfType<UISkills>();
         //Set all skilt to execute state
         for (int i = 0; i < Character.CharSkills.GetLength(0); i++) {
             Character.CharSkills[i].IsCooldown = false;
             _uiSkill.ActivateSkill(i);
         }
-        _emc.CharacterState = SkillConditionStats;
+        if (_emc != null) { _emc.CharacterState = SkillConditionStats; }
+        if (_smc != null) { _smc.CharacterState = SkillConditionStats; }
         MPDrain = 0;
     }
 

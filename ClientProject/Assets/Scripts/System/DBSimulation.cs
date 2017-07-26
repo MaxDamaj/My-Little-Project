@@ -10,7 +10,8 @@ public class DBSimulation : MonoBehaviour {
     public CharsFMData simCharacter;
     public int sectionBonusLow = 0;
     public int sectionBonusHigh = 5;
-    public List<GameObject> simBonuses;
+
+    public EnduranceSection section;
 
     [Header("Card Game")]
     public List<string> playerDeck;

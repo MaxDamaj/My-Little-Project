@@ -26,7 +26,7 @@ public class UISimRoadInfo : MonoBehaviour {
         Refresh();
     }
     public void IncreaseDiffHigh(int value) {
-        if (DBSimulation.Instance.sectionBonusHigh + value > DBSimulation.Instance.sectionBonusLow && DBSimulation.Instance.sectionBonusHigh + value < 20) {
+        if (DBSimulation.Instance.sectionBonusHigh + value > DBSimulation.Instance.sectionBonusLow && DBSimulation.Instance.sectionBonusHigh + value < DBSimulation.Instance.section.obstacles.Count) {
             DBSimulation.Instance.sectionBonusHigh += value;
         }
         Refresh();

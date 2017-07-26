@@ -84,6 +84,13 @@ public class SaveParcer : MonoBehaviour {
         }
         saveFile.Add("");
 
+        saveFile.Add("--Simulation--");
+        saveFile.Add("obstaclesLow:" + DBSimulation.Instance.sectionBonusLow);
+        saveFile.Add("obstaclesHigh:" + DBSimulation.Instance.sectionBonusHigh);
+        saveFile.Add("TestSubjectHP:" + DBSimulation.Instance.simCharacter.HP);
+        saveFile.Add("TestSubjectMP:" + DBSimulation.Instance.simCharacter.MP);
+        saveFile.Add("TestSubjectSPD:" + DBSimulation.Instance.simCharacter.SPD);
+        saveFile.Add("");
 
         //Write save info into file
         File.WriteAllLines(Application.persistentDataPath + "/Saves/" + FILE_NAME, saveFile.ToArray());
@@ -140,6 +147,13 @@ public class SaveParcer : MonoBehaviour {
         //Deckbuilding
         Database.Instance.playerDeck = LoadMultiline(saveFile, "cardsInDeck", Database.Instance.playerDeck);
         Database.Instance.playerStack = LoadMultiline(saveFile, "cardsInStack", Database.Instance.playerStack);
+
+        //Simulation
+        DBSimulation.Instance.sectionBonusLow = LoadLineInt(saveFile, "obstaclesLow", DBSimulation.Instance.sectionBonusLow);
+        DBSimulation.Instance.sectionBonusHigh = LoadLineInt(saveFile, "obstaclesHigh", DBSimulation.Instance.sectionBonusHigh);
+        DBSimulation.Instance.simCharacter.HP = LoadLineFloat(saveFile, "TestSubjectHP", DBSimulation.Instance.simCharacter.HP);
+        DBSimulation.Instance.simCharacter.MP = LoadLineFloat(saveFile, "TestSubjectMP", DBSimulation.Instance.simCharacter.MP);
+        DBSimulation.Instance.simCharacter.SPD = LoadLineFloat(saveFile, "TestSubjectSPD", DBSimulation.Instance.simCharacter.SPD);
 
         //----
         Debug.Log("Game progress loaded from " + FILE_NAME + " file");
