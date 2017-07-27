@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e8f4c431080821d4594bd078fb753d1f
-timeCreated: 1500992411
+timeCreated: 1501154202
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -88,10 +88,10 @@ TextureImporter:
     21300162: icon_ctrlcircuit
     21300164: icon_rectcircuit
     21300166: icon_staticcell
-    21300168: atlas_icons_84
-    21300170: atlas_icons_85
-    21300172: atlas_icons_86
-    21300174: atlas_icons_87
+    21300168: icon_baselogiccircuit
+    21300170: icon_advancedmachineblock
+    21300172: icon_hitechboard
+    21300174: icon_opticalcable
     21300176: atlas_icons_88
     21300178: atlas_icons_89
     21300180: atlas_icons_90
@@ -274,12 +274,12 @@ TextureImporter:
     21300534: icon_iridium
     21300536: icon_pixel
     21300538: icon_flow
-  serializedVersion: 2
+  serializedVersion: 4
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
     mipMapFadeDistanceStart: 1
@@ -291,10 +291,8 @@ TextureImporter:
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 7
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 2048
@@ -305,9 +303,7 @@ TextureImporter:
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
@@ -315,9 +311,23 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -333,6 +343,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_laughter
       rect:
@@ -345,6 +356,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_generosity
       rect:
@@ -357,6 +369,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_honesty
       rect:
@@ -369,6 +382,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_kindness
       rect:
@@ -381,6 +395,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_loyalty
       rect:
@@ -393,6 +408,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_magic
       rect:
@@ -405,6 +421,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_distance
       rect:
@@ -417,6 +434,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_celestia
       rect:
@@ -429,6 +447,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_iron
       rect:
@@ -441,6 +460,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_copper
       rect:
@@ -453,6 +473,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_tin
       rect:
@@ -465,6 +486,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_zink
       rect:
@@ -477,6 +499,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_nickel
       rect:
@@ -489,6 +512,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_titanium
       rect:
@@ -501,6 +525,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_tungsten
       rect:
@@ -513,6 +538,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_steel
       rect:
@@ -525,6 +551,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_bronze
       rect:
@@ -537,6 +564,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_brass
       rect:
@@ -549,6 +577,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_invar
       rect:
@@ -561,6 +590,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_electrum
       rect:
@@ -573,6 +603,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_nitinol
       rect:
@@ -585,6 +616,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_carbide
       rect:
@@ -597,6 +629,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_silicon
       rect:
@@ -609,6 +642,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_carbon
       rect:
@@ -621,6 +655,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_rubber
       rect:
@@ -633,6 +668,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_ceramics
       rect:
@@ -645,6 +681,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_paper
       rect:
@@ -657,6 +694,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_plastic
       rect:
@@ -669,6 +707,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_silver
       rect:
@@ -681,6 +720,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_gold
       rect:
@@ -693,6 +733,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_platinum
       rect:
@@ -705,6 +746,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_mercury
       rect:
@@ -717,6 +759,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_wire
       rect:
@@ -729,6 +772,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_screw
       rect:
@@ -741,6 +785,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_curcuitboard
       rect:
@@ -753,6 +798,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_machineblock
       rect:
@@ -765,6 +811,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_semiconductor
       rect:
@@ -777,6 +824,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_connector
       rect:
@@ -789,6 +837,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_hitechconnector
       rect:
@@ -801,6 +850,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_opticalwire
       rect:
@@ -813,6 +863,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_nanowire
       rect:
@@ -825,6 +876,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_aiboard
       rect:
@@ -837,6 +889,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_resistance
       rect:
@@ -849,6 +902,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_capacitor
       rect:
@@ -861,6 +915,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_inductor
       rect:
@@ -873,6 +928,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_diode
       rect:
@@ -885,6 +941,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_transistor
       rect:
@@ -897,6 +954,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_LED
       rect:
@@ -909,6 +967,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_integrateunit
       rect:
@@ -921,6 +980,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_processorunit
       rect:
@@ -933,6 +993,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_reedswitch
       rect:
@@ -945,6 +1006,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_coolant
       rect:
@@ -957,6 +1019,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_discircuit
       rect:
@@ -969,6 +1032,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_ctrlcircuit
       rect:
@@ -981,6 +1045,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_rectcircuit
       rect:
@@ -993,6 +1058,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_staticcell
       rect:
@@ -1005,8 +1071,9 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
-      name: atlas_icons_84
+      name: icon_baselogiccircuit
       rect:
         serializedVersion: 2
         x: 512
@@ -1017,8 +1084,9 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
-      name: atlas_icons_85
+      name: icon_advancedmachineblock
       rect:
         serializedVersion: 2
         x: 640
@@ -1029,8 +1097,9 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
-      name: atlas_icons_86
+      name: icon_hitechboard
       rect:
         serializedVersion: 2
         x: 768
@@ -1041,8 +1110,9 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
-      name: atlas_icons_87
+      name: icon_opticalcable
       rect:
         serializedVersion: 2
         x: 896
@@ -1053,6 +1123,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: atlas_icons_88
       rect:
@@ -1065,6 +1136,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: atlas_icons_89
       rect:
@@ -1077,6 +1149,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: atlas_icons_96
       rect:
@@ -1089,6 +1162,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: atlas_icons_97
       rect:
@@ -1101,6 +1175,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: atlas_icons_98
       rect:
@@ -1113,6 +1188,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: atlas_icons_99
       rect:
@@ -1125,6 +1201,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: atlas_icons_100
       rect:
@@ -1137,186 +1214,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - serializedVersion: 2
-      name: atlas_icons_101
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 1152
-        width: 128
-        height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: atlas_icons_102
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 1152
-        width: 128
-        height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: atlas_icons_103
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 1152
-        width: 128
-        height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: atlas_icons_104
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 1152
-        width: 128
-        height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: atlas_icons_105
-      rect:
-        serializedVersion: 2
-        x: 1152
-        y: 1152
-        width: 128
-        height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: atlas_icons_112
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1024
-        width: 128
-        height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: atlas_icons_113
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 1024
-        width: 128
-        height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: atlas_icons_114
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 1024
-        width: 128
-        height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: atlas_icons_115
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 1024
-        width: 128
-        height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: atlas_icons_116
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 1024
-        width: 128
-        height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: atlas_icons_117
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 1024
-        width: 128
-        height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: atlas_icons_118
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 1024
-        width: 128
-        height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: atlas_icons_119
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 1024
-        width: 128
-        height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: atlas_icons_120
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 1024
-        width: 128
-        height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: atlas_icons_121
-      rect:
-        serializedVersion: 2
-        x: 1152
-        y: 1024
-        width: 128
-        height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: item_HPbottle1
       rect:
@@ -1329,6 +1227,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: item_HPbottle2
       rect:
@@ -1341,6 +1240,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: item_MPbottle1
       rect:
@@ -1353,6 +1253,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: item_MPbottle2
       rect:
@@ -1365,6 +1266,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: item_STMbottle1
       rect:
@@ -1377,6 +1279,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: item_STMbottle2
       rect:
@@ -1389,6 +1292,7 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: skill_jump
       rect:
@@ -1401,6 +1305,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: skill_eohL
       rect:
@@ -1413,6 +1318,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: skill_eohM
       rect:
@@ -1425,6 +1331,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: skill_protect
       rect:
@@ -1437,6 +1344,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: skill_MP
       rect:
@@ -1449,6 +1357,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: skill_material
       rect:
@@ -1461,6 +1370,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: skill_shoot
       rect:
@@ -1473,6 +1383,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: skill_fly
       rect:
@@ -1485,6 +1396,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: skill_dash
       rect:
@@ -1497,6 +1409,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: skill_slowmotion
       rect:
@@ -1509,6 +1422,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: skill_STM
       rect:
@@ -1521,6 +1435,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_iridium
       rect:
@@ -1533,6 +1448,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_pixel
       rect:
@@ -1545,6 +1461,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: icon_flow
       rect:
@@ -1557,6 +1474,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     outline: []
   spritePackingTag: 
   userData: 

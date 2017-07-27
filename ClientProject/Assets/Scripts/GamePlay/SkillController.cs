@@ -101,7 +101,8 @@ public class SkillController : MonoBehaviour {
     #region Skills
 
     void SkillDash(int sn) {
-        if ((int)Character.CharSkills[sn].skillType == 1 && GlobalData.Instance.currentMP >= Character.CharSkills[sn].MP_cost) {
+        if ((int)Character.CharSkills[sn].skillType == 1 && GlobalData.Instance.currentMP >= Character.CharSkills[sn].MP_cost && !Character.CharSkills[sn].IsCooldown) {
+            Character.CharSkills[sn].IsCooldown = true;
             SoundManager.Instance.PlaySound("a_dash");
             GlobalData.Instance.currentMP -= Character.CharSkills[sn].MP_cost;
             GlobalData.Instance.SPDmlp = GlobalData.Instance.SPDmlp * Character.CharSkills[sn].SPDmlp;
@@ -262,6 +263,7 @@ public class SkillController : MonoBehaviour {
         GlobalData.Instance.SPDmlp = GlobalData.Instance.SPDmlp / Character.CharSkills[num].SPDmlp;
         GlobalData.Instance.DMGmlp = GlobalData.Instance.DMGmlp / Character.CharSkills[num].DMGmlp;
         if (fx[num] != null) fx[num].SetActive(false);
+        Character.CharSkills[num].IsCooldown = false;
         _uiSkill.ActivateSkill(num);
     }
     IEnumerator StatChange(float duration, int num, int param) {

@@ -12,20 +12,22 @@ public class UICodexList : MonoBehaviour {
     public CodexList codexList;
     public CodexActionType action;
     public UICodexList nextCodexList;
-	public Image unreadIcon;
-	public int codexID;
+    public Image unreadIcon;
+    public int codexID;
 
     void Start() {
         gameObject.GetComponent<Button>().onClick.AddListener(ShowList);
-		if (unreadIcon != null) {
-			unreadIcon.gameObject.SetActive(Database.Instance.readenCodex[codexID] < 1);
-		}
+        if (unreadIcon != null) {
+            unreadIcon.gameObject.SetActive(Database.Instance.readenCodex[codexID] < 1);
+        }
     }
 
     public void ShowList() {
-		UICodexController.Instance.HideAllFields();
-		unreadIcon.gameObject.SetActive(false);
-		writer.ShowText(codexList, action, nextCodexList, codexID);
+        UICodexController.Instance.HideAllFields();
+        if (unreadIcon != null) {
+            unreadIcon.gameObject.SetActive(false);
+        }
+        writer.ShowText(codexList, action, nextCodexList, codexID);
     }
 
 }

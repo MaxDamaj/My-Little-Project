@@ -167,17 +167,6 @@ public class SimModeController : MonoBehaviour {
 
     void GameRetire() {
         Time.timeScale = 1;
-        if (player != null) {
-            Database.Instance.distTotal += player.position.x > 0 ? Mathf.RoundToInt(player.position.x * 2) : 0;
-            if (FindObjectOfType<ChallModeController>() != null) {
-                Database.Instance.distChall += player.position.x > 0 ? Mathf.RoundToInt(player.position.x * 2) : 0;
-            } else {
-                Database.Instance.distEnd += player.position.x > 0 ? Mathf.RoundToInt(player.position.x * 2) : 0;
-                if (player.position.x * 2 > Database.Instance.distEndEasy) {
-                    Database.Instance.distEndEasy = Mathf.RoundToInt(player.position.x * 2);
-                }
-            }
-        }
         UnityEngine.SceneManagement.SceneManager.LoadScene("simulation");
     }
 
