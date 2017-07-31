@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e8f4c431080821d4594bd078fb753d1f
-timeCreated: 1501154202
+timeCreated: 1501490188
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -92,8 +92,8 @@ TextureImporter:
     21300170: icon_advancedmachineblock
     21300172: icon_hitechboard
     21300174: icon_opticalcable
-    21300176: atlas_icons_88
-    21300178: atlas_icons_89
+    21300176: icon_nanocable
+    21300178: icon_aicalculation
     21300180: atlas_icons_90
     21300182: atlas_icons_91
     21300184: atlas_icons_92
@@ -1125,7 +1125,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: atlas_icons_88
+      name: icon_nanocable
       rect:
         serializedVersion: 2
         x: 1024
@@ -1138,7 +1138,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: atlas_icons_89
+      name: icon_aicalculation
       rect:
         serializedVersion: 2
         x: 1152
