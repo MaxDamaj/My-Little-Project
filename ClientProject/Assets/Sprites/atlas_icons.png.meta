@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e8f4c431080821d4594bd078fb753d1f
-timeCreated: 1501490188
+timeCreated: 1501663191
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -100,10 +100,10 @@ TextureImporter:
     21300186: atlas_icons_93
     21300188: atlas_icons_94
     21300190: atlas_icons_95
-    21300192: atlas_icons_96
-    21300194: atlas_icons_97
-    21300196: atlas_icons_98
-    21300198: atlas_icons_99
+    21300192: icon_advlogiccircuit
+    21300194: icon_hitechlogiccircuit
+    21300196: icon_hitechmachineblock
+    21300198: icon_ailogiccircuit
     21300200: atlas_icons_100
     21300202: atlas_icons_101
     21300204: atlas_icons_102
@@ -1151,7 +1151,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: atlas_icons_96
+      name: icon_advlogiccircuit
       rect:
         serializedVersion: 2
         x: 0
@@ -1164,7 +1164,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: atlas_icons_97
+      name: icon_hitechlogiccircuit
       rect:
         serializedVersion: 2
         x: 128
@@ -1177,7 +1177,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: atlas_icons_98
+      name: icon_hitechmachineblock
       rect:
         serializedVersion: 2
         x: 256
@@ -1190,7 +1190,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: atlas_icons_99
+      name: icon_ailogiccircuit
       rect:
         serializedVersion: 2
         x: 384

@@ -94,11 +94,12 @@ public class PonyController : MonoBehaviour {
     void CalculateObstacle(Transform obstacle, float shift, float damage, float camShaking) {
         Database.Instance.obstTotal++;
         if (obstacle.position.x - transform.position.x > shift) {
-            SoundManager.Instance.PlaySound("a_thump"); GlobalData.Instance.currentHP -= damage * GlobalData.Instance.DMGmlp;
+            //SoundManager.Instance.PlaySound("a_thump");
+            GlobalData.Instance.currentHP -= damage * GlobalData.Instance.DMGmlp;
             _cpf.shake_intensity = camShaking * GlobalData.Instance.DMGmlp;
-            Database.Instance.obstWithDamage++;
+            if (!SkillController.Instance.IsSimulation) Database.Instance.obstWithDamage++;
         } else {
-            Database.Instance.obstNonDamage++;
+            if (!SkillController.Instance.IsSimulation) Database.Instance.obstNonDamage++;
         }
     }
 
