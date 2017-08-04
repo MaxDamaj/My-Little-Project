@@ -12,7 +12,7 @@ public class UIStatUpgrade : MonoBehaviour {
     }
 
     public bool UpgradeCost(string i1, string i2, string i3, float quan1, float quan2, float quan3) {
-		bool IsEnoughItems = true;
+        bool IsEnoughItems = true;
         //Show Upgrade Cost on screen
         itemIcon[0].sprite = Database.Instance.GetItemIcon(i1); itemIcon[1].sprite = Database.Instance.GetItemIcon(i2); itemIcon[2].sprite = Database.Instance.GetItemIcon(i3);
         itemText[0].text = "" + quan1; itemText[1].text = "" + quan2; itemText[2].text = "" + quan3;

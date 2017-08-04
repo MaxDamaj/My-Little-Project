@@ -18,12 +18,13 @@ public class CharFMInfoFull : MonoBehaviour {
     public Text[] upgText;
 
     private CharsFMData Character;
-    private bool IsEnoughItems;
+    private bool IsEnoughToHP, IsEnoughToMP;
     private string i1, i2, i3;
-    private float quan1, quan2, quan3;
+    private int quan1, quan2, quan3;
 
     void Start() {
-        IsEnoughItems = false;
+        IsEnoughToHP = false;
+        IsEnoughToMP = false;
         upgButton[0].onClick.AddListener(UpgradeHealth);
         upgButton[1].onClick.AddListener(UpgradeMana);
         Database.onRefresh += RefreshUI;
@@ -49,23 +50,23 @@ public class CharFMInfoFull : MonoBehaviour {
 
     //-----------Health-Upgrade----------------
     void UpgradeHealthCost() {
-		var line = DBCharUpgrade.Instance.GetStatLine(Skill.StatType.Health, Character.HP);
+        var line = DBCharUpgrade.Instance.GetStatLine(Skill.StatType.Health, Character.HP);
         //Set Upgrade Cost
-		i1 = line.res1;
-		i2 = line.res2;
-		i3 = line.res3;
-		quan1 = line.quan1 + (line.quan1) * 0.2f * (Character.HP - line.toValue + 5);
-		quan2 = line.quan2 + (line.quan2) * 0.2f * (Character.HP - line.toValue + 5);
-		quan3 = line.quan3 + (line.quan3) * 0.2f * (Character.HP - line.toValue + 5);
+        i1 = line.res1;
+        i2 = line.res2;
+        i3 = line.res3;
+        quan1 = Mathf.FloorToInt(line.quan1 + (line.quan1) * 0.1f * (Character.HP - line.toValue + 5));
+        quan2 = Mathf.FloorToInt(line.quan2 + (line.quan2) * 0.1f * (Character.HP - line.toValue + 5));
+        quan3 = Mathf.FloorToInt(line.quan3 + (line.quan3) * 0.1f * (Character.HP - line.toValue + 5));
         //Set items values
-        IsEnoughItems = UIStat[0].UpgradeCost(i1, i2, i3, quan1, quan2, quan3);
+        IsEnoughToHP = UIStat[0].UpgradeCost(i1, i2, i3, quan1, quan2, quan3);
     }
     void UpgradeHealth() {
-		var line = DBCharUpgrade.Instance.GetStatLine(Skill.StatType.Health, Character.HP);
-        if (IsEnoughItems) {
-			Database.Instance.IncreaseItemQuantity(line.res1, 0 - (line.quan1 + (line.quan1) * 0.2f * (Character.HP - line.toValue + 5)));
-			Database.Instance.IncreaseItemQuantity(line.res2, 0 - (line.quan2 + (line.quan2) * 0.2f * (Character.HP - line.toValue + 5)));
-			Database.Instance.IncreaseItemQuantity(line.res3, 0 - (line.quan3 + (line.quan3) * 0.2f * (Character.HP - line.toValue + 5)));
+        var line = DBCharUpgrade.Instance.GetStatLine(Skill.StatType.Health, Character.HP);
+        if (IsEnoughToHP) {
+            Database.Instance.IncreaseItemQuantity(line.res1, 0 - (line.quan1 + (line.quan1) * 0.1f * (Character.HP - line.toValue + 5)));
+            Database.Instance.IncreaseItemQuantity(line.res2, 0 - (line.quan2 + (line.quan2) * 0.1f * (Character.HP - line.toValue + 5)));
+            Database.Instance.IncreaseItemQuantity(line.res3, 0 - (line.quan3 + (line.quan3) * 0.1f * (Character.HP - line.toValue + 5)));
             Character.HP += 0.5f;
             Database.Instance.SetCharFM_HP(Database.Instance.SelectedPony, Character.HP);
         } else {
@@ -74,24 +75,24 @@ public class CharFMInfoFull : MonoBehaviour {
     }
 
     //-----------Mana-Upgrade----------------
-	void UpgradeManaCost() {
-		var line = DBCharUpgrade.Instance.GetStatLine(Skill.StatType.Mana, Character.MP);
-		//Set Upgrade Cost
-		i1 = line.res1;
-		i2 = line.res2;
-		i3 = line.res3;
-		quan1 = line.quan1 + (line.quan1) * 0.2f * (Character.MP - line.toValue + 5);
-		quan2 = line.quan2 + (line.quan2) * 0.2f * (Character.MP - line.toValue + 5);
-		quan3 = line.quan3 + (line.quan3) * 0.2f * (Character.MP - line.toValue + 5);
+    void UpgradeManaCost() {
+        var line = DBCharUpgrade.Instance.GetStatLine(Skill.StatType.Mana, Character.MP);
+        //Set Upgrade Cost
+        i1 = line.res1;
+        i2 = line.res2;
+        i3 = line.res3;
+        quan1 = Mathf.FloorToInt(line.quan1 + (line.quan1) * 0.1f * (Character.MP - line.toValue + 5));
+        quan2 = Mathf.FloorToInt(line.quan2 + (line.quan2) * 0.1f * (Character.MP - line.toValue + 5));
+        quan3 = Mathf.FloorToInt(line.quan3 + (line.quan3) * 0.1f * (Character.MP - line.toValue + 5));
         //Set items values
-        IsEnoughItems = UIStat[1].UpgradeCost(i1, i2, i3, quan1, quan2, quan3);
+        IsEnoughToMP = UIStat[1].UpgradeCost(i1, i2, i3, quan1, quan2, quan3);
     }
     void UpgradeMana() {
-		var line = DBCharUpgrade.Instance.GetStatLine(Skill.StatType.Mana, Character.MP);
-        if (IsEnoughItems) {
-			Database.Instance.IncreaseItemQuantity(line.res1, 0 - (line.quan1 + (line.quan1) * 0.2f * (Character.MP - line.toValue + 5)));
-			Database.Instance.IncreaseItemQuantity(line.res2, 0 - (line.quan2 + (line.quan2) * 0.2f * (Character.MP - line.toValue + 5)));
-			Database.Instance.IncreaseItemQuantity(line.res3, 0 - (line.quan3 + (line.quan3) * 0.2f * (Character.MP - line.toValue + 5)));
+        var line = DBCharUpgrade.Instance.GetStatLine(Skill.StatType.Mana, Character.MP);
+        if (IsEnoughToMP) {
+            Database.Instance.IncreaseItemQuantity(line.res1, 0 - (line.quan1 + (line.quan1) * 0.1f * (Character.MP - line.toValue + 5)));
+            Database.Instance.IncreaseItemQuantity(line.res2, 0 - (line.quan2 + (line.quan2) * 0.1f * (Character.MP - line.toValue + 5)));
+            Database.Instance.IncreaseItemQuantity(line.res3, 0 - (line.quan3 + (line.quan3) * 0.1f * (Character.MP - line.toValue + 5)));
             Character.MP += 0.5f;
             Database.Instance.SetCharFM_MP(Database.Instance.SelectedPony, Character.MP);
         } else {
