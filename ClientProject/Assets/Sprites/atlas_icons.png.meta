@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e8f4c431080821d4594bd078fb753d1f
-timeCreated: 1501663191
+timeCreated: 1501848864
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -104,7 +104,7 @@ TextureImporter:
     21300194: icon_hitechlogiccircuit
     21300196: icon_hitechmachineblock
     21300198: icon_ailogiccircuit
-    21300200: atlas_icons_100
+    21300200: icon_computeblock
     21300202: atlas_icons_101
     21300204: atlas_icons_102
     21300206: atlas_icons_103
@@ -1203,7 +1203,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: atlas_icons_100
+      name: icon_computeblock
       rect:
         serializedVersion: 2
         x: 512
