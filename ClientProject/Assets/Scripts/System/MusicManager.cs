@@ -1,0 +1,44 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+[RequireComponent(typeof(AudioSource))]
+public class MusicManager : MonoBehaviour {
+
+    private AudioSource music = null;
+    private int listID = 0;
+    private List<AudioClip> clips = new List<AudioClip>();
+
+
+    void Start() {
+        music = GetComponent<AudioSource>();
+    }
+
+    void FixedUpdate() {
+        if (!music.isPlaying) {
+            PlayNextSong();
+        }
+    }
+
+
+    public void SetFolder(string pass, int dbIndex) {
+        music.Stop();
+        listID = dbIndex;
+        clips = new List<AudioClip>();
+        clips.AddRange(Resources.LoadAll<AudioClip>(pass));
+        PlayNextSong();
+    }
+
+    public void StopAllMusic() {
+        music.Stop();
+    }
+
+    void PlayNextSong() {
+        Database.Instance.nowPlaying[listID]++;
+        if (Database.Instance.nowPlaying[listID] >= clips.Count) {
+            Database.Instance.nowPlaying[listID] = 0;
+        }
+        music.clip = clips[Database.Instance.nowPlaying[listID]];
+        music.Play();
+    }
+}
