@@ -39,7 +39,7 @@ public class SkillController : MonoBehaviour {
         _emc = FindObjectOfType<EndModeController>();
         _smc = FindObjectOfType<SimModeController>();
         _uiSkill = FindObjectOfType<UISkills>();
-        //Set all skilt to execute state
+        //Set all skills to execute state
         for (int i = 0; i < Character.CharSkills.GetLength(0); i++) {
             Character.CharSkills[i].IsCooldown = false;
             _uiSkill.ActivateSkill(i);
@@ -47,6 +47,13 @@ public class SkillController : MonoBehaviour {
         if (_emc != null) { _emc.CharacterState = SkillConditionStats; }
         if (_smc != null) { _smc.CharacterState = SkillConditionStats; }
         MPDrain = 0;
+        //Attash FXs to pony
+        for (int i=0; i<4; i++) {
+            if (Character.CharSkills[i].fx != "") {
+                fx[i] = Instantiate(Resources.Load<GameObject>("FXs/" + Character.CharSkills[i].fx), Pony.transform);
+                fx[i].SetActive(false);
+            }
+        }
     }
 
     void Update() {
@@ -147,7 +154,14 @@ public class SkillController : MonoBehaviour {
             GlobalData.Instance.currentMP -= Character.CharSkills[sn].MP_cost;
             if (Character.CharSkills[sn].statType == Skill.StatType.Health) { GlobalData.Instance.currentHP += Character.CharSkills[sn].multiplier; }
             if (Character.CharSkills[sn].statType == Skill.StatType.Mana) { GlobalData.Instance.currentMP = Character.MP * Character.CharSkills[sn].multiplier; }
-            if (Character.CharSkills[sn].statType == Skill.StatType.Stamina) { Database.Instance.IncreaseCurrSTM(Database.Instance.SelectedPony, Character.CharSkills[sn].multiplier); }
+            if (Character.CharSkills[sn].statType == Skill.StatType.Stamina) {
+                Database.Instance.IncreaseCurrSTM(Database.Instance.SelectedPony, Character.CharSkills[sn].multiplier);
+                if (fx[sn] != null) {
+                    fx[sn].SetActive(true);
+                    IEnumerator fxDisable = DisableObject(fx[sn], 2f);
+                    StartCoroutine(fxDisable);
+                }
+            }
             if ((int)Character.CharSkills[sn].statType == 3) { GlobalData.Instance.SPDmlp *= Character.CharSkills[sn].multiplier; }
             if ((int)Character.CharSkills[sn].statType == 4) { GlobalData.Instance.DMGmlp *= Character.CharSkills[sn].multiplier; }
             if ((int)Character.CharSkills[sn].statType > 2) {
@@ -183,6 +197,11 @@ public class SkillController : MonoBehaviour {
             StartCoroutine(endItemsGiving);
             cooldown = _uiSkill.StartCooldown(sn, (int)Character.CharSkills[sn].cooldown);
             StartCoroutine(cooldown);
+            if (fx[sn] != null) {
+                fx[sn].SetActive(true);
+                IEnumerator fxDisable = DisableObject(fx[sn], 2f);
+                StartCoroutine(fxDisable);
+            }
         }
     }
     void SkillFly(int sn, bool active) {
@@ -214,12 +233,16 @@ public class SkillController : MonoBehaviour {
             _uiSkill.DeactivateSkill(sn);
             GlobalData.Instance.timeSpeed = Character.CharSkills[sn].multiplier;
             Time.timeScale = Character.CharSkills[sn].multiplier;
-            if (fx[sn] != null) fx[sn].SetActive(true);
             SoundManager.Instance.PlaySound("a_slowdown");
             IEnumerator endSlowMotion = SlowMotion(Character.CharSkills[sn].duration, Character.CharSkills[sn].cooldown, sn);
             StartCoroutine(endSlowMotion);
             cooldown = _uiSkill.StartCooldown(sn, (int)Character.CharSkills[sn].cooldown);
             StartCoroutine(cooldown);
+            if (fx[sn] != null) {
+                fx[sn].SetActive(true);
+                IEnumerator fxDisable = DisableObject(fx[sn], 2f);
+                StartCoroutine(fxDisable);
+            }
         }
     }
     void SkillConditionStats(int sn, Skill.Condition cond) {
@@ -306,6 +329,11 @@ public class SkillController : MonoBehaviour {
     void OnTriggerEnter(Collider coll) {
         if ((int)Character.CharSkills[0].passiveType == 0 && "EoH_" + Character.CharSkills[0].item == coll.gameObject.tag) {
             Character.CharSkills[0].ItemMultiplier(Character.CharSkills[0].item, Character.CharSkills[0].multiplier - 1);
+            if (fx[0] != null) {
+                fx[0].SetActive(true);
+                IEnumerator fxDisable = DisableObject(fx[0], 2f);
+                StartCoroutine(fxDisable);
+            }
         }
     }
     void OnCollisionEnter(Collision coll) {

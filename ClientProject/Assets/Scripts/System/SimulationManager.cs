@@ -7,6 +7,7 @@ public class SimulationManager : MonoBehaviour {
     public GameObject mainCamera;
 
     void Start() {
+        MusicManager.Instance.SetFolder("Music/Simulation", 0);
         Refresh();
     }
 

@@ -6,19 +6,33 @@ using UnityEngine;
 public class MusicManager : MonoBehaviour {
 
     private AudioSource music = null;
-    private int listID = 0;
+    private int listID = -1;
     private List<AudioClip> clips = new List<AudioClip>();
 
+    private static MusicManager manager;
+
+    #region API
+
+    public static MusicManager Instance {
+        get {
+            if (manager == null) {
+                manager = FindObjectOfType<MusicManager>();
+            }
+            return manager;
+        }
+    }
 
     void Start() {
         music = GetComponent<AudioSource>();
     }
 
     void FixedUpdate() {
-        if (!music.isPlaying) {
+        if (!music.isPlaying && listID >= 0) {
             PlayNextSong();
         }
     }
+
+    #endregion
 
 
     public void SetFolder(string pass, int dbIndex) {

@@ -16,9 +16,10 @@ public class UICodexController : MonoBehaviour {
     public UICodexList firstText;
     public Color selectColor;
 
-	private UICodexList[] codexLists;
+    private UICodexList[] codexLists;
 
     void Start() {
+        MusicManager.Instance.SetFolder("Music/Codex", 0);
         buttonBack.onClick.AddListener(delegate {
             UnityEngine.SceneManagement.SceneManager.LoadScene("menu");
         });
@@ -27,7 +28,7 @@ public class UICodexController : MonoBehaviour {
         HideAllFields();
         //Show in first time
         if (Database.Instance.tutorialState <= 1) {
-			writer.ShowText(firstText.codexList, firstText.action, firstText.nextCodexList, firstText.codexID);
+            writer.ShowText(firstText.codexList, firstText.action, firstText.nextCodexList, firstText.codexID);
             helpTip.SetActive(true);
             Database.Instance.tutorialState++;
         }
@@ -51,28 +52,28 @@ public class UICodexController : MonoBehaviour {
         }
     }
 
-	void CheckCodexStates() {
-		codexLists = FindObjectsOfType<UICodexList>();
-		//Check active
-		foreach (var list in codexLists) {
-			int value = Database.Instance.readenCodex[list.codexID];
-			switch (list.codexList.name) {
-			case "codex_InfoDesk_04": //Deckbuilding Card Game
-				if (Database.Instance.distTotal < 300)
-					value = -1;
-				break;
-			}
-			//Set value
-			Database.Instance.readenCodex[list.codexID] = value;
-			list.gameObject.SetActive(value != -1);
-		}
-	}
+    void CheckCodexStates() {
+        codexLists = FindObjectsOfType<UICodexList>();
+        //Check active
+        foreach (var list in codexLists) {
+            int value = Database.Instance.readenCodex[list.codexID];
+            switch (list.codexList.name) {
+                case "codex_InfoDesk_04": //Deckbuilding Card Game
+                    if (Database.Instance.distTotal < 300)
+                        value = -1;
+                    break;
+            }
+            //Set value
+            Database.Instance.readenCodex[list.codexID] = value;
+            list.gameObject.SetActive(value != -1);
+        }
+    }
 
-	//---------------------
-	public static UICodexController Instance {
-		get {
-			return FindObjectOfType<UICodexController>();
-		}
-	}
+    //---------------------
+    public static UICodexController Instance {
+        get {
+            return FindObjectOfType<UICodexController>();
+        }
+    }
 
 }

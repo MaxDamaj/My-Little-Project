@@ -19,9 +19,9 @@ public class SplashLoading : MonoBehaviour {
 
     void Start() {
         confirmButton.onClick.AddListener(BeginGame);
-		if (FindObjectOfType<Database>() != null) {
-			Destroy(Database.Instance.gameObject);
-		}
+        if (FindObjectOfType<Database>() != null) {
+            Destroy(Database.Instance.gameObject);
+        }
         if (FindObjectOfType<SoundManager>() != null) {
             Destroy(SoundManager.Instance.gameObject);
         }
@@ -30,11 +30,11 @@ public class SplashLoading : MonoBehaviour {
         }
 
         GameObject tmp = Instantiate(DBd.gameObject);
-		tmp.name = "GameDatabase";
+        tmp.name = "GameDatabase";
         DontDestroyOnLoad(tmp);
         tmp = Instantiate(SM.gameObject);
-        tmp.name = "SoundManager"; 
-		DontDestroyOnLoad(tmp);
+        tmp.name = "SoundManager";
+        DontDestroyOnLoad(tmp);
         tmp = Instantiate(DBS.gameObject);
         tmp.name = "Database_Simulation";
         DontDestroyOnLoad(tmp);
@@ -44,7 +44,7 @@ public class SplashLoading : MonoBehaviour {
 
 
     void BeginGame() {
-		loadingScene = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync("menu");
+        loadingScene = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync("menu");
         loadingWindow.gameObject.SetActive(true);
         IEnumerator loading = ProgressWatching(loadingScene);
         StartCoroutine(loading);

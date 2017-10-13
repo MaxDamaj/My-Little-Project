@@ -41,6 +41,8 @@ public class EndModeController : MonoBehaviour {
     #region API
 
     void Start() {
+        MusicManager.Instance.SetFolder("Music/Endurance", 1);
+
         Invoke("FindPony", 0.3f);
         _pony = Database.Instance.GetCharFMInfo(Database.Instance.SelectedPony);
         pauseButton.onClick.AddListener(GamePause);

@@ -18,6 +18,7 @@ public class DatabaseManager : MonoBehaviour {
 
     void Start() {
         parser = GetComponent<SaveParcer>();
+        MusicManager.Instance.SetFolder("Music/Menu", 0);
         if (!Database.Instance.IsLoaded) {
             LoadState();
             Database.Instance.IsLoaded = true;

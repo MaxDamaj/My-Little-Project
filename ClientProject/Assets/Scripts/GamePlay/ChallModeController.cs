@@ -18,6 +18,8 @@ public class ChallModeController : MonoBehaviour {
     private bool IsComplete;
 
     void Start() {
+        MusicManager.Instance.SetFolder("Music/Challenge", 2);
+
         _emc = FindObjectOfType<EndModeController>();
         Invoke("FindPony", 0.4f);
         challenge = DBC.GetChallenge(GlobalData.Instance.nowChallenge);
