@@ -10,10 +10,6 @@ public class DatabaseManager : MonoBehaviour {
     public Transform[] itemsBelt;
     public Transform[] itemsFurnace;
 
-    [Header("Card Game containers")]
-    public Transform playerDeck;
-    public Transform playerStack;
-
     private SaveParcer parser;
 
     void Start() {
@@ -31,21 +27,26 @@ public class DatabaseManager : MonoBehaviour {
 
     //Loading State
     void LoadState() {
+        Database.Instance.takenAchievements = new List<int>();
+
         parser.LoadFromFile();
-        LoadCardsOnDeck();
+
+        for (int i = Database.Instance.takenAchievements.Count; i < DBAchievements.Instance.GetAchievementsCount(); i++) {
+            Database.Instance.takenAchievements.Add(0);
+        }
+
         LoadItems();
         //Time span calculate
         DateTime startDate = new DateTime(2016, 1, 1);
         DateTime currDate = DateTime.Now;
         TimeSpan elapsedSpan = new TimeSpan(currDate.Ticks - startDate.Ticks);
         Database.Instance.timeSpan = (int)elapsedSpan.TotalSeconds - Database.Instance.timeSpan;
-		//Characters
-		parser.LoadCharData();
+        //Characters
+        parser.LoadCharData();
     }
 
     //Save State
     void SaveState() {
-        UpdatePlayerDeck();
         SaveItems();
         //Timespan write
         DateTime startDate = new DateTime(2016, 1, 1);
@@ -62,39 +63,6 @@ public class DatabaseManager : MonoBehaviour {
     }
 
     //-----------------------------------------------------------
-    void LoadCardsOnDeck() {
-        foreach (string item in Database.Instance.playerDeck) {
-            if (item != "") {
-                GameObject tmp = Instantiate(Resources.Load<GameObject>("Cards/" + item));
-                tmp.transform.SetParent(playerDeck);
-                tmp.transform.localScale = Vector3.one;
-                tmp.transform.rotation = playerDeck.rotation;
-                tmp.name = item;
-            }
-        }
-        foreach (string item in Database.Instance.playerStack) {
-            if (item != "") {
-                GameObject tmp = Instantiate(Resources.Load<GameObject>("Cards/" + item));
-                tmp.transform.SetParent(playerStack);
-                tmp.transform.localScale = Vector3.one;
-                tmp.transform.rotation = playerStack.rotation;
-                tmp.name = item;
-            }
-        }
-    }
-    void UpdatePlayerDeck() {
-        if (playerDeck.childCount == 0) {
-            LoadCardsOnDeck();
-        }
-        Database.Instance.playerDeck = new List<string>();
-        Database.Instance.playerStack = new List<string>();
-        for (int i = 0; i < playerDeck.childCount; i++) {
-            Database.Instance.playerDeck.Add(playerDeck.GetChild(i).name);
-        }
-        for (int i = 0; i < playerStack.childCount; i++) {
-            Database.Instance.playerStack.Add(playerStack.GetChild(i).name);
-        }
-    }
     void LoadItems() {
         foreach (string item in Database.Instance.itemsInventory) {
             if (item != "") {
@@ -103,7 +71,7 @@ public class DatabaseManager : MonoBehaviour {
                 tmp.transform.localScale = Vector3.one;
             }
         }
-        for (int i=0; i< Database.Instance.itemsBelt.Count; i++) {
+        for (int i = 0; i < Database.Instance.itemsBelt.Count; i++) {
             string item = Database.Instance.itemsBelt[i];
             if (item != "") {
                 GameObject tmp = Instantiate(Database.Instance.GetUsableItem(item).prefab);

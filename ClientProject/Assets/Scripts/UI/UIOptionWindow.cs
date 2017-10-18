@@ -12,7 +12,6 @@ public class UIOptionWindow : MonoBehaviour {
 
     [Header("Common")]
     public GameObject mainCamera;
-    public UIMessageWindow mWindow;
 
     // Use this for initialization
     void Start() {
@@ -34,7 +33,7 @@ public class UIOptionWindow : MonoBehaviour {
     }
 
     void ShowBuyWindow() {
-        mWindow.ShowMessage("Are you really want to clear game state? You cannot undo this action!", 0, UIAction.clear);
+        UIMessageWindow.Instance.ShowMessage("Are you really want to clear game state? You cannot undo this action!", 0, UIAction.clear);
     }
 
     void OnDestroy() {

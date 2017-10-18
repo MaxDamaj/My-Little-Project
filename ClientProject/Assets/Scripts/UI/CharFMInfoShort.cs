@@ -14,7 +14,6 @@ public class CharFMInfoShort : MonoBehaviour {
     public Text STMText;
     public GameObject priceTag;
     public UIStatUpgrade cost;
-    public UIMessageWindow mWindow;
 
     private CharsFMData Character;
 
@@ -42,8 +41,8 @@ public class CharFMInfoShort : MonoBehaviour {
     void Activate() {
         if (CharNum != Database.Instance.SelectedPony) {
             Database.Instance.SelectedPony = CharNum;
-			Database.Instance.PartyPony[(int)Character.Type] = CharNum;
-			UIPartySwitcher.Instance.ChangeCharacter((int)Character.Type);
+            Database.Instance.PartyPony[(int)Character.Type] = CharNum;
+            UIPartySwitcher.Instance.ChangeCharacter((int)Character.Type);
         } else {
             window.RefreshUI();
             win_anim.SetBool("trigger", true);
@@ -59,11 +58,11 @@ public class CharFMInfoShort : MonoBehaviour {
     }
 
     void ShowBuyWindow() {
-		if (PriceCheck()) {
-			mWindow.ShowMessage("Are you really want to this pony join to your team?", CharNum, UIAction.buying);
-		} else {
-			mWindow.ShowMessage("You don't have enough materials", 0, UIAction.nothing, true, false);
-		}
+        if (PriceCheck()) {
+            UIMessageWindow.Instance.ShowMessage("Are you really want to this pony join to your team?", CharNum, UIAction.buying);
+        } else {
+            UIMessageWindow.Instance.ShowMessage("You don't have enough materials", 0, UIAction.nothing, true, false);
+        }
     }
 
     void OnDestroy() {

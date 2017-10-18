@@ -7,7 +7,6 @@ public class Navigation : MonoBehaviour {
     public UIWindow SendPanel;      //Destination panel
     public UIWindow CurrPanel;      //Current panel
     public UIAction specialAction;  //Is button execute special action
-    public UIMessageWindow mWindow;
 
     private Button NowButton;       //Current button
 
@@ -30,13 +29,13 @@ public class Navigation : MonoBehaviour {
                 UnityEngine.SceneManagement.SceneManager.LoadScene("codex");
                 break;
             case UIAction.exit:
-                mWindow.ShowMessage("Are you really want to quit game?", 0, UIAction.exit);
+                UIMessageWindow.Instance.ShowMessage("Are you really want to quit game?", 0, UIAction.exit);
                 return;
             case UIAction.returnToEquestria:
-                mWindow.ShowMessage("Exit the simulation?", 0, UIAction.returnToEquestria);
+                UIMessageWindow.Instance.ShowMessage("Exit the simulation?", 0, UIAction.returnToEquestria);
                 return;
             case UIAction.runSimulation:
-                mWindow.ShowMessage("Enter into simulation?", 0, UIAction.runSimulation);
+                UIMessageWindow.Instance.ShowMessage("Enter into simulation?", 0, UIAction.runSimulation);
                 return;
         }
         //Show dest. panel, hide current

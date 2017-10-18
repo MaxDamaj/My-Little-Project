@@ -18,7 +18,7 @@ public class ChallModeController : MonoBehaviour {
     private bool IsComplete;
 
     void Start() {
-        MusicManager.Instance.SetFolder("Music/Challenge", 2);
+        MusicManager.Instance.SetFolder("Music/Challenges", 2);
 
         _emc = FindObjectOfType<EndModeController>();
         Invoke("FindPony", 0.4f);

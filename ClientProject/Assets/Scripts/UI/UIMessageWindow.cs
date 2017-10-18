@@ -24,6 +24,7 @@ public class UIMessageWindow : MonoBehaviour {
     [SerializeField]
     DBChallenges DBC = null;
 
+    public GameObject window;
     public Button ButtonYes;
     public Button ButtonNo;
     public Text questionText;
@@ -57,7 +58,7 @@ public class UIMessageWindow : MonoBehaviour {
         ButtonYes.gameObject.SetActive(true);
         ButtonNo.gameObject.SetActive(true);
         questionText.text = text;
-        gameObject.SetActive(true);
+        window.SetActive(true);
     }
     public void ShowMessage(string text, int id, UIAction mAction, bool bYes, bool bNo) {
         ID = id;
@@ -65,7 +66,7 @@ public class UIMessageWindow : MonoBehaviour {
         ButtonYes.gameObject.SetActive(bYes);
         ButtonNo.gameObject.SetActive(bNo);
         questionText.text = text;
-        gameObject.SetActive(true);
+        window.SetActive(true);
     }
 
     private void Confirm() {
@@ -99,11 +100,11 @@ public class UIMessageWindow : MonoBehaviour {
                 UnityEngine.SceneManagement.SceneManager.LoadScene("simulation");
                 break;
         }
-        gameObject.SetActive(false);
+        window.SetActive(false);
     }
 
     private void Decline() {
-        gameObject.SetActive(false);
+        window.SetActive(false);
     }
 
 }

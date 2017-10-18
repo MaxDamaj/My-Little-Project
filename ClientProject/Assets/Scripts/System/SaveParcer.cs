@@ -64,18 +64,13 @@ public class SaveParcer : MonoBehaviour {
         saveFile.Add(SaveMultiline(Database.Instance.passedChallenges, "passedChallenges"));
         saveFile.Add("");
         saveFile.Add("--Achievements--");
-        saveFile.Add(SaveMultiline(Database.Instance.takenAchievements, "takenAchievements"));
+        saveFile.Add(SaveMultiline(Database.Instance.takenAchievements.ToArray(), "takenAchievements"));
         saveFile.Add("");
         saveFile.Add("--Codex--");
         saveFile.Add(SaveMultiline(Database.Instance.readenCodex, "readenCodex"));
         saveFile.Add("");
         saveFile.Add("--Endurance Rewards--");
         saveFile.Add(SaveMultiline(Database.Instance.endRewardsEasy, "enduranceRewardsEasy"));
-        saveFile.Add("");
-
-        saveFile.Add("--Deckbuilding--");
-        saveFile.Add(SaveMultiline(Database.Instance.playerDeck, "cardsInDeck"));
-        saveFile.Add(SaveMultiline(Database.Instance.playerStack, "cardsInStack"));
         saveFile.Add("");
 
         saveFile.Add("--Characters--");
@@ -138,15 +133,11 @@ public class SaveParcer : MonoBehaviour {
         //Challenges
         Database.Instance.passedChallenges = LoadMultilineInt(saveFile, "passedChallenges", Database.Instance.passedChallenges);
         //Achievements
-        Database.Instance.takenAchievements = LoadMultilineInt(saveFile, "takenAchievements", Database.Instance.takenAchievements);
+        Database.Instance.takenAchievements.AddRange(LoadMultilineInt(saveFile, "takenAchievements", Database.Instance.takenAchievements.ToArray()));
         //Codex
         Database.Instance.readenCodex = LoadMultilineInt(saveFile, "readenCodex", Database.Instance.readenCodex);
         //Endurance Rewards
         Database.Instance.endRewardsEasy = LoadMultilineInt(saveFile, "enduranceRewardsEasy", Database.Instance.endRewardsEasy);
-
-        //Deckbuilding
-        Database.Instance.playerDeck = LoadMultiline(saveFile, "cardsInDeck", Database.Instance.playerDeck);
-        Database.Instance.playerStack = LoadMultiline(saveFile, "cardsInStack", Database.Instance.playerStack);
 
         //Simulation
         DBSimulation.Instance.sectionBonusLow = LoadLineInt(saveFile, "obstaclesLow", DBSimulation.Instance.sectionBonusLow);

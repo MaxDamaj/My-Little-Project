@@ -25,6 +25,19 @@ public class DBCharUpgrade : ScriptableObject {
 
     private static DBCharUpgrade dbCharUpgrade;
 
+    #region API
+
+    public static DBCharUpgrade Instance {
+        get {
+            if (dbCharUpgrade == null) {
+                dbCharUpgrade = Resources.Load<DBCharUpgrade>("DBCharUpgrade");
+            }
+            return dbCharUpgrade;
+        }
+    }
+
+    #endregion
+
     public CharUpgradeLine GetStatLine(Skill.StatType stat, float value) {
         int index = 0;
         switch (stat) {
@@ -74,15 +87,6 @@ public class DBCharUpgrade : ScriptableObject {
     }
 
 #endif
-
-    public static DBCharUpgrade Instance {
-        get {
-            if (dbCharUpgrade == null) {
-                dbCharUpgrade = Resources.Load<DBCharUpgrade>("DBCharUpgrade");
-            }
-            return dbCharUpgrade;
-        }
-    }
 
 
 

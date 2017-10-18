@@ -86,6 +86,7 @@ public class Database : MonoBehaviour {
     public static Color COLOR_GREEN = new Color(0.455f, 1.000f, 0.243f);
     public static Color COLOR_RED = new Color(1.000f, 0.243f, 0.243f);
     public static Color COLOR_YELLOW = Color.yellow;
+    public static Color COLOR_GREY = new Color(0.588f, 0.588f, 0.588f);
 
     private static Database database;
 
@@ -102,7 +103,7 @@ public class Database : MonoBehaviour {
     [Header("Common")]
     public int timeSpan;        //time span in seconds between last saving and 01.01.2016
     public int SelectedPony;    //Current selected pony in FreeMode
-    public int[] PartyPony;		//Ponies in your party
+    public int[] PartyPony;     //Ponies in your party
     public bool IsLoaded;       //Is current Database loaded from disk
     public int tutorialState;
     public int[] nowPlaying;    //Current playing music in different modes
@@ -122,7 +123,7 @@ public class Database : MonoBehaviour {
 
     [Header("Lists")]
     public int[] passedChallenges;
-    public int[] takenAchievements;
+    public List<int> takenAchievements;
     public int[] readenCodex;
     public int[] endRewardsEasy;
 
@@ -130,10 +131,6 @@ public class Database : MonoBehaviour {
     public List<string> itemsInventory;
     public List<string> itemsBelt;
     public List<string> itemsFurnace;
-
-    [Header("Card Game")]
-    public List<string> playerDeck;
-    public List<string> playerStack;
 
     public delegate void RefreshArgs(); //variable for event values
     public static event RefreshArgs onRefresh; //Refresh event
