@@ -1,0 +1,4 @@
+ClientProject\Library
+ClientProject\.vs
+ClientProject\*.csproj
+ClientProject\*.sln

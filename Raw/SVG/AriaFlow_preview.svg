@@ -1,0 +1,2515 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 744.09448819 1052.3622047"
+   id="svg5423"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="AriaFlow_raw.svg">
+  <defs
+     id="defs5425">
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4627"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4623"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4619"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4615"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4611"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4607"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4603"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4599"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5159"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5153"
+       effect="spiro" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5129">
+      <stop
+         style="stop-color:#e8c9d5;stop-opacity:1"
+         offset="0"
+         id="stop5131" />
+      <stop
+         style="stop-color:#ffddea;stop-opacity:1"
+         offset="1"
+         id="stop5133" />
+    </linearGradient>
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5127"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5123"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5103"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5099"
+       is_visible="true" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5073">
+      <stop
+         style="stop-color:#ddd2d6;stop-opacity:1"
+         offset="0"
+         id="stop5075" />
+      <stop
+         style="stop-color:#fff2f7;stop-opacity:1"
+         offset="1"
+         id="stop5077" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5065">
+      <stop
+         style="stop-color:#f1b0c8;stop-opacity:1"
+         offset="0"
+         id="stop5067" />
+      <stop
+         style="stop-color:#ffcee0;stop-opacity:1"
+         offset="1"
+         id="stop5069" />
+    </linearGradient>
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5063"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5059"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5055"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5043"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5035"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5030"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5027"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5023"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5019"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5015"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5011"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5007"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5003"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4999"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4995"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4989"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4986"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4983"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4979"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4975"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4971"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4967"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4963"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4959"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4951"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4946"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4942"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4938"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4934"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4930"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4926"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4922"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4918"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4895"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4891"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4886"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4882"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4878"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4874"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4869"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4745"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4741"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4733"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4729"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4978"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4925"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4913"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4909"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4902"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4894"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4890"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4885"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4881"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4877"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4873"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4865"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4861"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4857"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4837"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4833"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4829"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4825"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4821"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4817"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4813"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4809"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4805"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4801"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4797"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4793"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4783"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5357"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5352"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5348"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5344"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5340"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5335"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5330"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5326"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5322"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5318"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5314"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5310"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5306"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5302"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5298"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5294"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5290"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5286"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5275"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5271"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5251"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5247"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5243"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5235"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5231"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5227"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5223"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5219"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5215"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5211"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5207"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5203"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5199"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5192"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5188"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5182"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5172"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5168"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5164"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5160"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5156"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5152"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5148"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5144"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5140"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5136"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5132"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5128"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5124"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5120"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5116"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5112"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5108"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5104"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5100"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5096"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5092"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5088"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5084"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5080"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5076"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5066"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5062"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5042"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5038"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5034"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5026"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5022"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5018"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5014"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5010"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5006"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5002"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4998"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4994"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4990"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4984"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4980"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4974"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4964"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4960"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4956"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4952"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4948"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4944"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4940"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4936"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4932"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4928"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4924"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4920"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4916"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4912"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4908"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4904"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4900"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4896"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4892"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4888"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4884"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4880"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4876"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4872"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4868"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4864"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4854"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4850"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4830"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4826"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4822"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4814"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4810"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4806"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4802"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4798"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4794"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4790"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4786"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4782"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4778"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4772"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4768"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4762"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4752"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4748"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4744"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4740"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4736"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4732"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4728"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4724"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4720"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4716"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4712"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4708"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4704"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4700"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4696"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4692"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4688"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4684"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4680"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4676"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4672"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4668"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4664"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4660"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4656"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4646"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4642"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4622"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4618"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4614"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4606"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4602"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4598"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4594"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4590"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4586"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4582"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4578"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4574"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4570"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4564"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4560"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4554"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4544"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4540"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4536"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4532"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4528"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4524"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4520"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4516"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4512"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4508"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4504"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4500"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4496"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4492"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4488"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4484"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4480"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4476"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4472"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4468"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4464"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4460"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4456"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4452"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4448"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4438"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4434"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4414"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4410"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4406"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4398"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4394"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4390"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4386"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4382"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4378"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4374"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4370"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4366"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4362"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4356"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4352"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4346"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4336"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4332"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4328"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4324"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4320"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4316"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4312"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4308"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4304"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4300"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4296"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4292"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4288"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4284"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4280"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4276"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4272"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4268"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4264"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4260"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4256"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4252"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4248"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5401"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5397"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4889"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5293"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5377"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5948"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5999"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5940"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5932"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5952"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5944"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5936"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5328"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5331"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5334"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5339"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5342"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5345"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5349"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5353"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5356"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5371"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5360"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5363"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5366"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5283"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5279"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5262"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect6005"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5191"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5266"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5170"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5409"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5405"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5258"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5254"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5250"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5246"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5242"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5238"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5234"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5230"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5226"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5222"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5218"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5213"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5421"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5289"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5413"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5417"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5196"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5181"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4741-8"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5258-7"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5254-7"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5250-7"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5246-7"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5242-3"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5238-4"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5234-6"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5230-1"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5226-0"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5222-6"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5218-3"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5213-3"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5293-5"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4895-5"
+       is_visible="true" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5065"
+       id="linearGradient5071"
+       x1="431.54526"
+       y1="622.67474"
+       x2="447.80392"
+       y2="686.17474"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.929344,0,0,1.929344,-566.60954,-967.456)" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5073"
+       id="radialGradient5079"
+       cx="384.67316"
+       cy="611.11633"
+       fx="384.67316"
+       fy="611.11633"
+       r="55.735091"
+       gradientTransform="matrix(0.07321532,1.5761562,-4.086374,0.18981948,2644.6431,-519.03149)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5073"
+       id="radialGradient5087"
+       cx="411.48865"
+       cy="744.05481"
+       fx="411.48865"
+       fy="744.05481"
+       r="80.542633"
+       gradientTransform="matrix(0.2101104,1.9309619,-3.0723491,0.33430619,2434.9191,-671.70881)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5065"
+       id="linearGradient5095"
+       x1="448.64368"
+       y1="746.34845"
+       x2="449.46106"
+       y2="764.55646"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.929344,0,0,1.929344,-566.60954,-967.456)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5065"
+       id="linearGradient5111"
+       x1="383.88892"
+       y1="705.69965"
+       x2="370.92578"
+       y2="744.02808"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.929344,0,0,1.929344,-566.60954,-967.456)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5065"
+       id="linearGradient5119"
+       x1="461.63629"
+       y1="683.11682"
+       x2="480.50491"
+       y2="765.49475"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.929344,0,0,1.929344,-566.60954,-967.456)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5129"
+       id="linearGradient5135"
+       x1="413.49686"
+       y1="811.20587"
+       x2="401.1897"
+       y2="886.20587"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.9293439,0,0,1.9293439,-566.60951,-967.45595)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5065"
+       id="linearGradient5149"
+       x1="611.49054"
+       y1="858.28241"
+       x2="628.7395"
+       y2="889.04156"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.8586151,0.5176084,-0.5176084,1.8586151,-85.411072,-1220.9629)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5129"
+       id="linearGradient5155"
+       gradientUnits="userSpaceOnUse"
+       x1="410.83682"
+       y1="823.1662"
+       x2="401.1897"
+       y2="886.20587"
+       gradientTransform="matrix(1.8743894,-0.4572006,0.4572006,1.8743894,-794.1446,-760.74198)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5073"
+       id="linearGradient5169"
+       x1="333.46729"
+       y1="567.53955"
+       x2="352.10065"
+       y2="536.78955"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.6122716,0,0,1.6122716,-245.15712,-681.14787)" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5065"
+       id="radialGradient5179"
+       cx="390.13611"
+       cy="720.15344"
+       fx="390.13611"
+       fy="720.15344"
+       r="55.286235"
+       gradientTransform="matrix(1.030194,1.2402097,-1.0498418,0.87206274,741.2066,-658.42858)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.89160159"
+     inkscape:cx="340.96448"
+     inkscape:cy="574.15389"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1852"
+     inkscape:window-height="1053"
+     inkscape:window-x="61"
+     inkscape:window-y="-7"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5428">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#f1b0c8;fill-opacity:1;fill-rule:evenodd;stroke:#d085a3;stroke-width:4.4000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 107.39102,195.19684 c -6.67805,11.71495 -12.315298,24.02295 -16.823663,36.73165 -4.697544,13.24198 -8.197251,27.19675 -7.290251,41.21796 0.688197,10.63877 3.883516,20.93335 5.888281,31.40416 1.679681,8.77291 2.5259,17.7052 2.523553,26.63746 11.40546,-16.60814 19.20676,-35.67798 22.71193,-55.51806 2.28532,-12.93545 2.75869,-26.18969 1.40197,-39.25521 l 25.79628,-35.61008 -34.2081,-5.60788 z"
+       id="path4613"
+       inkscape:path-effect="#path-effect4615"
+       inkscape:original-d="m 107.39102,195.19684 c 0,0 -12.670817,26.01137 -16.823663,36.73165 -4.888013,12.61806 -8.312095,35.09943 -7.290251,41.21796 2.038811,12.20786 -1.578635,26.03294 5.888281,31.40416 9.106115,6.55036 2.523553,26.63746 2.523553,26.63746 0,0 18.92679,-38.50211 22.71193,-55.51806 3.53155,-15.8759 1.40197,-39.25521 1.40197,-39.25521 l 25.79628,-35.61008 z"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cssscsccc" />
+    <path
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       style="fill:url(#linearGradient5111);fill-opacity:1;fill-rule:evenodd;stroke:#d085a3;stroke-width:3.40904999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 186.11225,294.39777 c -9.74772,4.575 -18.29774,11.67403 -24.58697,20.41441 -6.28922,8.74038 -10.30383,19.10291 -11.54466,29.79912 -1.795,15.47337 2.12267,30.97995 3.09538,46.52669 0.92239,14.7425 -0.82984,29.626 -4.898,43.82608 -4.91635,17.16072 -13.20431,33.46034 -15.50035,51.16314 -2.70163,20.83 3.51766,42.6677 16.78839,58.94884 -6.68771,-14.61101 -8.32343,-31.47795 -4.56785,-47.10173 4.91346,-20.4407 18.31757,-37.58103 30.37443,-54.80301 17.26236,-24.6575 32.39293,-50.80689 45.16767,-78.06102"
+       id="path5097"
+       inkscape:path-effect="#path-effect5099"
+       inkscape:original-d="m 186.11225,294.39777 c 0,0 -24.61707,30.47729 -36.13163,50.21353 -7.96739,13.65633 1.21659,31.34162 3.09538,46.52669 3.38362,27.34794 -22.27544,23.2471 -4.898,43.82608 8.37899,9.92271 -9.98952,31.05976 -15.50035,51.16314 -5.51085,20.10338 16.78839,58.94884 16.78839,58.94884 0,0 -16.20912,-26.80797 -4.56785,-47.10173 11.64127,-20.29374 34.7335,-48.06103 30.37443,-54.80301 -24.32169,-37.6173 31.04118,-27.01682 45.16767,-78.06102"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csssscssc"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
+    <path
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-ydpi="368"
+       inkscape:export-xdpi="368"
+       sodipodi:nodetypes="csssscssssc"
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 290.49435,173.74007 c 0,0 35.13215,49.92655 50.72739,69.87095 10.05123,12.85429 9.81501,44.94009 9.07616,73.71685 -0.73887,28.77676 -0.84036,65.07494 -4.20034,80.65372 -6.05093,28.05569 27.57379,42.25137 28.23783,66.91195 1.07404,39.89789 -35.03614,99.63312 -35.03614,99.63312 0,0 3.6343,-55.69118 -9.41677,-82.50062 -9.80927,-20.15017 -23.71287,-17.52352 -34.02207,-37.4784 -12.90125,-24.9722 -4.09844,-51.50136 -3.99397,-78.81777 0.0789,-20.70916 14.93522,-13.98201 -1.021,-29.21305 -17.52962,-16.73294 -43.44505,-40.73037 -43.44505,-40.73037"
+       inkscape:path-effect="#path-effect5059"
+       id="path5057"
+       d="m 290.49435,173.74007 c 23.00854,17.92021 40.81321,42.44403 50.72739,69.87095 8.48238,23.46596 11.20987,48.85625 9.07616,73.71685 -1.15735,13.48462 -3.71474,26.81023 -5.23187,40.25912 -1.51712,13.4489 -1.97509,27.19859 1.03153,40.3946 5.39007,23.65693 21.40085,43.63194 28.23783,66.91195 5.29695,18.0362 4.77991,37.73135 -1.45608,55.46478 -6.23599,17.73344 -18.16003,33.4173 -33.58006,44.16834 6.42276,-13.12744 9.00454,-28.10621 7.34718,-42.62635 -1.65736,-14.52015 -7.54815,-28.53184 -16.76395,-39.87427 -10.67192,-13.13457 -25.65537,-22.76769 -34.02207,-37.4784 -6.62233,-11.64367 -8.444,-25.46419 -8.0737,-38.85424 0.3703,-13.39004 2.78922,-26.63068 4.07973,-39.96353 0.94317,-9.74435 1.26977,-19.69494 -1.021,-29.21305 -2.45868,-10.21577 -7.96363,-19.67812 -15.62916,-26.86467 -7.66554,-7.18655 -17.46293,-12.07037 -27.81589,-13.8657"
+       style="fill:url(#linearGradient5119);fill-opacity:1;fill-rule:evenodd;stroke:#d085a3;stroke-width:5.09130287px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-ydpi="368"
+       inkscape:export-xdpi="368"
+       sodipodi:nodetypes="ccsccsc"
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 633.57413,694.10219 -0.37319,-29.0215 c 0,0 -20.35511,-6.8e-4 -31.60015,1.48081 -10.9873,1.44754 -32.81382,12.026 -32.81382,12.026 l 2.92989,25.67539 c 0,0 22.05349,3.65791 32.81219,2.05732 11.08248,-1.64876 29.04508,-12.21802 29.04508,-12.21802 z"
+       inkscape:path-effect="#path-effect4599"
+       id="path4596"
+       d="m 633.57413,694.10219 -0.37319,-29.0215 c -10.53124,-1.03295 -21.21166,-0.53245 -31.60015,1.48081 -11.48545,2.22585 -22.61007,6.30293 -32.81382,12.026 l 2.92989,25.67539 c 10.57324,3.24751 21.91612,3.9587 32.81219,2.05732 10.43522,-1.82096 20.44602,-6.03208 29.04508,-12.21802 z"
+       style="fill:#333333;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:4.56964064px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       style="fill:#ffcee0;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 616.28073,682.76968 C 610.09764,633.06175 598.52726,584.02577 581.83748,536.79697 568.72415,499.68883 552.4556,463.69626 533.26496,429.33504 l -38.27713,1.17412 c 19.87094,44.82872 38.48998,90.21235 55.82813,136.08017 15.84556,41.9192 30.62131,84.24279 44.30801,126.91568 l 21.15676,-10.73533 z"
+       id="path5211-6"
+       inkscape:path-effect="#path-effect5213-3"
+       inkscape:original-d="m 616.28073,682.76968 c 0,0 -18.46188,-98.92089 -34.44325,-145.97271 -12.74546,-37.52464 -48.57252,-107.46193 -48.57252,-107.46193 l -38.27713,1.17412 c 0,0 37.49813,88.21346 55.82813,136.08017 15.33966,40.05782 44.30801,126.91568 44.30801,126.91568 z"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csccscc"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png" />
+    <path
+       sodipodi:nodetypes="csssc"
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 591.65807,586.45279 c 0,0 14.48646,12.23746 22.08113,16.39495 4.66911,2.55598 2.22605,11.15094 4.27102,16.5283 3.35511,8.82244 -1.19995,27.46221 -3.22321,44.29292 -2.02327,16.8307 -1.51474,31.85234 -1.51474,31.85234"
+       inkscape:path-effect="#path-effect5218-3"
+       id="path5216-3"
+       d="m 591.65807,586.45279 c 9.34257,1.70285 17.74871,7.9443 22.08113,16.39495 2.61242,5.09569 3.76907,10.82402 4.27102,16.5283 1.30021,14.77594 -1.60166,29.54879 -3.22321,44.29292 -1.16276,10.57252 -1.66896,21.2172 -1.51474,31.85234"
+       style="fill:#ffcee0;fill-opacity:1;fill-rule:evenodd;stroke:#d085a3;stroke-width:4.56964064px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png" />
+    <path
+       style="fill:#ffcee0;fill-opacity:1;fill-rule:evenodd;stroke:#d085a3;stroke-width:4.56964064px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 585.69082,541.66271 c 6.08267,0.10993 12.11243,2.22765 16.92803,5.94531 4.81559,3.71765 8.39071,9.01494 10.03683,14.87167 1.5588,5.54605 1.40516,11.42689 0.84078,17.16013 -1.94744,19.78299 -8.71877,39.07379 -19.56329,55.73378"
+       id="path5220-1"
+       inkscape:path-effect="#path-effect5222-6"
+       inkscape:original-d="m 585.69082,541.66271 c 0,0 20.39155,14.83095 26.96486,20.81698 4.04144,3.68043 -0.0722,11.40938 0.84078,17.16013 2.99546,18.87013 -19.56329,55.73378 -19.56329,55.73378"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cssc"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png" />
+    <path
+       sodipodi:nodetypes="cssc"
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 562.02908,485.84997 c 0,0 22.01824,11.45621 29.26618,16.34484 4.45647,3.00526 1.3547,11.31999 2.97617,16.87467 5.32057,18.22686 -12.37921,58.35265 -12.37921,58.35265"
+       inkscape:path-effect="#path-effect5226-0"
+       id="path5224-2"
+       d="m 562.02908,485.84997 c 5.94384,-0.87444 12.16616,0.26834 17.41139,3.19774 5.24524,2.92941 9.48179,7.62779 11.85479,13.1471 2.2701,5.27997 2.83015,11.12923 2.97617,16.87467 0.50986,20.06063 -3.76832,40.22694 -12.37921,58.35265"
+       style="fill:#ffcee0;fill-opacity:1;fill-rule:evenodd;stroke:#d085a3;stroke-width:4.56964064px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png" />
+    <path
+       style="fill:#ffcee0;fill-opacity:1;fill-rule:evenodd;stroke:#d085a3;stroke-width:4.56964064px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 533.85228,438.67863 c 5.81629,-0.97639 11.92259,-0.1485 17.26894,2.34131 5.34635,2.4898 9.90972,6.63081 12.90546,11.71098 2.84138,4.81841 4.24964,10.34704 5.16082,15.86613 3.04707,18.45636 0.79778,37.75668 -6.41185,55.01771"
+       id="path5228-7"
+       inkscape:path-effect="#path-effect5230-1"
+       inkscape:original-d="m 533.85228,438.67863 c 0,0 22.65021,9.73335 30.1744,14.05229 4.62585,2.65493 3.20627,10.44665 5.16082,15.86613 6.41288,17.78259 -6.41185,55.01771 -6.41185,55.01771"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cssc"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png" />
+    <path
+       sodipodi:nodetypes="csssc"
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 553.18937,591.086 c 0,0 -1.04408,15.09755 -4.63111,23.75169 -2.20556,5.32079 4.47111,10.23983 5.87283,15.87268 2.29963,9.24114 18.89461,25.55991 33.92334,40.95628 15.02873,15.39637 27.3016,30.0686 27.3016,30.0686"
+       inkscape:path-effect="#path-effect5238-4"
+       id="path5236-0"
+       d="m 553.18937,591.086 c -4.27025,7.04231 -5.94292,15.62098 -4.63111,23.75169 0.90298,5.59673 3.1529,10.89868 5.87283,15.87268 8.53323,15.60494 21.57469,28.15623 33.92334,40.95628 9.40091,9.74455 18.50699,19.77353 27.3016,30.0686"
+       style="fill:#ffcee0;fill-opacity:1;fill-rule:evenodd;stroke:#d085a3;stroke-width:4.56964064px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png" />
+    <path
+       style="fill:url(#linearGradient5149);fill-opacity:1;fill-rule:evenodd;stroke:#d085a3;stroke-width:4.56964064px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 608.08275,685.42668 c 13.12152,11.28202 23.02135,26.27001 28.2481,42.76666 6.57592,20.75489 5.83187,43.45472 13.77564,63.72551 5.33172,13.6054 14.54001,25.6668 26.25933,34.39558 11.71932,8.72878 25.91259,14.09732 40.47503,15.30949 -25.11929,1.85184 -50.78999,-4.80194 -71.84701,-18.62256 -21.05703,-13.82062 -37.37426,-34.7253 -45.66857,-58.5079 -4.20116,-12.04615 -6.384,-24.75698 -6.90875,-37.50391 -0.43651,-10.60339 0.2664,-21.25332 2.09271,-31.70737"
+       id="path5232-3"
+       inkscape:path-effect="#path-effect5234-6"
+       inkscape:original-d="m 608.08275,685.42668 c 0,0 29.49987,26.51962 28.2481,42.76666 -3.55265,46.09726 -14.31553,42.55958 13.77564,63.72551 13.18892,9.93518 66.73436,49.70507 66.73436,49.70507 0,0 -99.63447,-64.83714 -117.51558,-77.13046 -29.77056,-20.46672 0.49642,-3.39889 -6.90875,-37.50391 -3.09756,-14.26635 2.09271,-31.70737 2.09271,-31.70737"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csscssc"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png" />
+    <path
+       style="fill:#333333;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 590.72069,688.34031 -3.08434,-12.75794 c 5.05862,0.1895 10.1348,-0.0925 15.14129,-0.84119 4.95609,-0.74114 9.8437,-1.93954 14.5805,-3.57502 l 4.20592,11.07557 -30.84337,6.09858 z"
+       id="path4605"
+       inkscape:path-effect="#path-effect4607"
+       inkscape:original-d="m 590.72069,688.34031 c 0.0701,-0.77109 -3.08434,-12.75794 -3.08434,-12.75794 0,0 10.14285,-0.0963 15.14129,-0.84119 4.95503,-0.73839 14.5805,-3.57502 14.5805,-3.57502 l 4.20592,11.07557 z"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccsccc" />
+    <path
+       style="fill:#333333;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:4.56964064px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 636.09768,694.38258 -2.47615,-27.05874 c -9.12697,5.53938 -19.19534,9.52324 -29.64152,11.72859 -11.41645,2.41018 -23.27878,2.69103 -34.7965,0.82382 l 2.13686,24.78317 c 10.80226,2.80619 22.18038,3.37521 33.20872,1.66079 11.19662,-1.74058 22.02185,-5.83413 31.56863,-11.93763 l -4e-5,0 z"
+       id="path5240-2"
+       inkscape:path-effect="#path-effect5242-3"
+       inkscape:original-d="m 636.09768,694.38258 -2.47615,-27.05874 c 0,0 -18.39648,10.2471 -29.64152,11.72859 -10.9873,1.44754 -34.7965,0.82382 -34.7965,0.82382 l 2.13686,24.78317 c 0,0 22.45002,3.26138 33.20872,1.66079 11.08248,-1.64876 31.56863,-11.93763 31.56863,-11.93763 z"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccsccscc"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png" />
+    <path
+       style="fill:#ffcee0;fill-opacity:1;fill-rule:evenodd;stroke:#d085a3;stroke-width:4.56964064px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 547.72156,534.0243 c -6.85222,6.22253 -10.89613,15.42752 -10.84381,24.68333 0.0324,5.72248 1.54714,11.33911 3.47053,16.72877 6.50211,18.21995 17.88983,34.67064 32.65372,47.17151"
+       id="path5244-1"
+       inkscape:path-effect="#path-effect5246-7"
+       inkscape:original-d="m 547.72156,534.0243 c 0,0 -6.03054,16.83025 -10.84381,24.68333 -2.95892,4.82829 2.91274,10.91969 3.47053,16.72877 1.82967,19.06105 32.65372,47.17151 32.65372,47.17151"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cssc"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png" />
+    <path
+       sodipodi:nodetypes="cssc"
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 519.28466,479.48521 c 0,0 2.49593,11.96047 -1.97398,20.08698 -2.74789,4.99619 4.89474,10.11648 5.69071,15.90404 2.61153,18.99077 38.55539,38.23077 38.55539,38.23077"
+       inkscape:path-effect="#path-effect5250-7"
+       id="path5248-5"
+       d="m 519.28466,479.48521 c -2.40869,6.36612 -3.09735,13.37376 -1.97398,20.08698 0.93314,5.57644 3.0795,10.88916 5.69071,15.90404 8.49369,16.31233 22.17183,29.87531 38.55539,38.23077"
+       style="fill:#ffcee0;fill-opacity:1;fill-rule:evenodd;stroke:#d085a3;stroke-width:4.56964064px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png" />
+    <path
+       style="fill:#ffcee0;fill-opacity:1;fill-rule:evenodd;stroke:#d085a3;stroke-width:4.56964064px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 481.88286,387.90432 c -5.46746,15.92965 -6.44496,33.37373 -2.79141,49.81448 3.23234,14.54534 10.10066,28.32827 20.12413,39.35301 8.63022,9.49232 19.55217,16.88641 31.57098,21.37338"
+       id="path5252-7"
+       inkscape:path-effect="#path-effect5254-7"
+       inkscape:original-d="m 481.88286,387.90432 c 0,0 -5.4518,35.40306 -2.79141,49.81448 3.03572,16.44214 8.11629,29.44224 20.12413,39.35301 9.45815,7.80651 31.57098,21.37338 31.57098,21.37338"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cssc"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png" />
+    <a
+       id="a4904" />
+    <path
+       style="fill:url(#radialGradient5179);fill-opacity:1;fill-rule:evenodd;stroke:#d085a3;stroke-width:4.56964064px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 551.48805,456.77685 c -3.80257,-9.23446 -8.72634,-18.00663 -14.62872,-26.06248 -9.81638,-13.39786 -22.40614,-24.82466 -36.95881,-32.82989 -14.55267,-8.00522 -31.07364,-12.53715 -47.68279,-12.54043 -16.94693,-0.003 -34.10582,4.86366 -47.62407,15.08401 -16.9672,12.8279 -27.29868,33.99507 -26.97343,55.26324 l 17.80327,14.06013 c -0.4714,-10.17089 3.51935,-20.46985 10.72092,-27.66754 7.20156,-7.19769 17.50266,-11.1829 27.6733,-10.70603 10.99246,0.5154 21.06945,5.87019 31.15729,10.26737 12.87048,5.61011 26.35413,9.81218 40.13308,12.50715"
+       id="path5256-4"
+       inkscape:path-effect="#path-effect5258-7"
+       inkscape:original-d="m 551.48805,456.77685 c 0,0 -8.4791,-20.86789 -14.62872,-26.06248 -17.01417,-14.37199 -64.55806,-38.06738 -84.6416,-45.37032 -24.00473,-8.72904 -33.25921,-7.49698 -47.62407,15.08401 -75.73964,119.05972 -58.87219,116.64359 -26.97343,55.26324 l 17.80327,14.06013 c 0,0 25.79828,-36.49439 38.39422,-38.37357 14.28197,-2.13042 16.8545,7.49648 31.15729,10.26737 12.11732,2.34744 40.13308,12.50715 40.13308,12.50715"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csssccssc"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png" />
+    <path
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-ydpi="368"
+       inkscape:export-xdpi="368"
+       sodipodi:nodetypes="csssc"
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 342.53156,532.71061 c 0,0 -0.74541,-60.82955 -6.70267,-86.38718 -5.08846,-21.83093 -14.67213,-31.93121 -18.01856,-54.00138 -3.37736,-22.27391 21.38232,-41.59265 3.29354,-57.35467 -16.14391,-14.0672 -31.33735,-45.80277 -31.33735,-45.80277"
+       inkscape:path-effect="#path-effect5063"
+       id="path5061"
+       d="m 342.53156,532.71061 c 5.73194,-28.68154 3.38476,-58.93304 -6.70267,-86.38718 -6.57158,-17.88534 -16.44711,-35.01187 -18.01856,-54.00138 -1.58322,-19.13182 5.49178,-38.28373 3.29354,-57.35467 -2.20377,-19.11893 -14.31578,-36.82189 -31.33735,-45.80277"
+       style="fill:none;fill-rule:evenodd;stroke:#d085a3;stroke-width:5.09130287px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       style="fill:none;fill-rule:evenodd;stroke:#d085a3;stroke-width:3.40904999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 147.20845,490.17965 c 2.27156,-11.57871 5.98129,-22.87453 11.01687,-33.54549 5.47435,-11.60077 12.51227,-22.47938 17.00698,-34.4937 5.85006,-15.63715 7.1539,-32.94516 3.71252,-49.28225"
+       id="path5101"
+       inkscape:path-effect="#path-effect5103"
+       inkscape:original-d="m 147.20845,490.17965 c 0,0 5.38131,-19.61607 11.01687,-33.54549 5.63556,-13.92937 20.77498,-26.20379 17.00698,-34.4937 -6.43712,-14.1622 9.13925,-34.60912 3.71252,-49.28225"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cssc"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
+    <path
+       sodipodi:nodetypes="cssssssssssssssscc"
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 206.23274,593.03421 c 0,0 -1.74172,36.0168 -5.17255,53.21502 -4.39968,22.0549 -8.21766,45.56252 -14.68047,67.0458 -4.5019,14.9648 -9.29557,30.97147 -15.28498,45.43559 -5.99141,14.46888 -11.51362,28.31093 -18.28187,42.45724 -4.47958,9.36276 -6.14159,14.64167 -10.99345,23.5222 -2.74766,5.02912 -6.26117,10.81527 -7.58189,16.28069 -0.4195,1.736 -1.52736,4.2683 -0.57055,5.82727 1.56604,2.55152 7.62263,6.61505 10.68611,7.63601 9.12462,3.04092 14.38978,2.51157 23.70282,1.888 10.58328,-0.70861 21.60492,-11.20915 30.62306,-5.94174 25.93014,15.14553 17.54972,-7.78299 22.5016,-13.93952 3.82069,-4.75015 6.66782,-27.2336 8.08482,-34.08233 4.99831,-24.158 3.89528,-34.22339 8.05609,-58.01259 4.57785,-26.17366 8.98674,-51.10375 10.43576,-77.56001 0.56389,-10.29533 0.76514,-21.87946 0.29192,-32.17843 -0.52032,-11.32268 -1.2336,-35.91357 -1.2336,-35.91357 z"
+       inkscape:path-effect="#path-effect5127"
+       id="path5125"
+       d="m 206.23274,593.03421 c -0.78,17.81326 -2.50743,35.585 -5.17255,53.21502 -3.42197,22.6366 -8.3892,45.03341 -14.68047,67.0458 -4.39284,15.37001 -9.4329,30.55987 -15.28498,45.43559 -5.64143,14.34025 -12.03042,28.37221 -18.28187,42.45724 -3.51168,7.9121 -6.98427,15.85019 -10.99345,23.5222 -2.77721,5.3145 -5.8305,10.54577 -7.58189,16.28069 -0.57675,1.88855 -1.00933,3.90199 -0.57055,5.82727 0.25722,1.12862 0.80942,2.18089 1.54154,3.07751 0.73212,0.89663 1.64104,1.64075 2.63118,2.24039 1.98028,1.19927 4.25351,1.81543 6.51339,2.31811 7.76011,1.72613 15.76267,2.27909 23.70282,1.888 10.41769,-0.51312 20.72758,-2.64462 30.62306,-5.94174 8.50098,-2.83248 17.07927,-6.80594 22.5016,-13.93952 3.58972,-4.72261 5.53151,-10.51968 6.55141,-16.36339 1.01989,-5.84371 1.17341,-11.79783 1.53341,-17.71894 1.18551,-19.49872 4.62718,-38.78115 8.05609,-58.01259 4.58222,-25.6999 9.16276,-51.48587 10.43576,-77.56001 0.52317,-10.71586 0.48576,-21.45156 0.29192,-32.17843 -0.21643,-11.97682 -0.6277,-23.95013 -1.2336,-35.91357 l -40.58282,-5.67963 z"
+       style="fill:#ffa8c9;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
+    <path
+       style="fill:url(#linearGradient5135);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 211.43452,599.78692 c -1.07426,17.17602 -2.97947,34.30005 -5.70674,51.29216 -3.36996,20.99636 -7.99534,41.79021 -13.81307,62.24401 -4.02372,14.14648 -8.61673,28.12852 -13.64252,41.95077 -5.10101,14.02913 -10.64799,27.8946 -16.54155,41.60966 -3.63922,8.46892 -7.41265,16.88495 -11.58887,25.10235 -2.38263,4.68821 -4.90856,9.34083 -6.51153,14.3495 -0.28736,0.89788 -0.54531,1.8098 -0.66308,2.74516 -0.11777,0.93535 -0.0917,1.89919 0.18074,2.8017 0.50638,1.67728 1.83279,3.01465 3.35854,3.87591 1.52575,0.86126 3.24933,1.30052 4.96177,1.67096 7.46726,1.61532 15.16837,2.0916 22.79035,1.56758 8.75624,-0.602 17.40305,-2.51884 25.68441,-5.42627 3.22012,-1.13052 6.40293,-2.41803 9.32968,-4.17341 2.92675,-1.75539 5.60179,-3.99908 7.55208,-6.79973 2.05198,-2.94668 3.24246,-6.41901 3.96054,-9.93724 0.71809,-3.51823 0.98614,-7.10986 1.34515,-10.68263 2.29222,-22.81122 8.32376,-45.05987 12.41718,-67.61758 4.42132,-24.36467 6.57971,-49.09269 7.741,-73.82802 0.47523,-10.12222 0.78444,-20.2533 0.82344,-30.38659 0.0427,-11.09879 -0.2388,-22.19883 -0.84408,-33.28119 l -30.83344,-7.0771 z"
+       id="path5121"
+       inkscape:path-effect="#path-effect5123"
+       inkscape:original-d="m 211.43452,599.78692 c 0,0 -2.80639,34.92148 -5.70674,51.29216 -3.7194,20.99368 -8.3495,41.79446 -13.81307,62.24401 -3.80583,14.24475 -8.57916,28.18261 -13.64252,41.95077 -5.06504,13.77267 -10.81978,28.14405 -16.54155,41.60966 -3.78699,8.91226 -7.48718,16.64914 -11.58887,25.10235 -2.32281,4.78714 -5.39499,9.14705 -6.51153,14.3495 -0.35465,1.65247 -1.29121,4.0629 -0.48234,5.54686 1.32389,2.42875 5.73048,4.57502 8.32031,5.54687 7.71379,2.8946 14.91724,2.16115 22.79035,1.56758 8.94695,-0.6745 17.41239,-1.95113 25.68441,-5.42627 6.63978,-2.78943 12.69552,-5.11285 16.88176,-10.97314 3.22995,-4.52162 4.10778,-14.10067 5.30569,-20.61987 4.2255,-22.99555 8.8997,-44.97305 12.41718,-67.61758 3.87005,-24.91426 6.51603,-48.64476 7.741,-73.82802 0.47671,-9.79996 1.22352,-20.58321 0.82344,-30.38659 -0.43986,-10.77789 -0.84408,-33.28119 -0.84408,-33.28119 z"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cssssssssssssssscc"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
+    <path
+       style="fill:#ffa8c9;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 326.28694,601.21972 c 1.63636,11.09543 3.12404,22.2128 4.46248,33.3481 1.59541,13.27316 2.97939,26.5795 3.65166,39.93128 0.97732,19.41049 0.44276,38.93648 -2.42509,58.15881 -2.24186,15.02655 -5.89712,29.80324 -9.72039,44.50717 -2.36719,9.10399 -4.8063,18.20769 -8.09944,27.01913 -2.17297,5.81421 -4.71881,11.50487 -6.37605,17.48654 -0.52615,1.89908 -0.96322,3.89616 -0.57054,5.82726 0.24407,1.20025 0.80553,2.32614 1.56259,3.28895 0.75707,0.96281 1.70625,1.76589 2.74461,2.41548 2.07672,1.29918 4.47557,1.97841 6.86123,2.53451 7.94957,1.85304 16.1431,2.51203 24.30575,2.49092 11.39707,-0.0295 22.7902,-1.37871 33.87883,-4.0124 6.767,-1.60725 13.70489,-3.8563 18.64292,-8.7544 2.63913,-2.61779 4.58063,-5.8927 5.86145,-9.38231 1.28083,-3.4896 1.91627,-7.19361 2.13957,-10.90413 0.44658,-7.42105 -0.73072,-14.82927 -1.36323,-22.23679 -1.69461,-19.84603 0.52235,-39.79966 0.5527,-59.71788 0.0299,-19.60312 -2.06333,-39.17796 -5.59419,-58.4605 -2.22448,-12.14822 -5.01753,-24.18393 -7.55253,-36.27117 -2.47673,-11.80937 -4.70757,-23.6703 -6.69061,-35.57252 l -56.27172,8.30395 z"
+       id="path5157"
+       inkscape:path-effect="#path-effect5159"
+       inkscape:original-d="m 326.28694,601.21972 c 0,0 7.89329,16.14988 4.46248,33.3481 -4.39967,22.0549 10.11449,18.448 3.65166,39.93128 -4.50187,14.96481 3.56433,43.69469 -2.42509,58.15881 -5.9914,14.46888 -2.95214,30.36085 -9.72039,44.50717 -4.4796,9.36277 -3.2476,18.13861 -8.09944,27.01913 -2.74766,5.02912 -5.05531,12.02111 -6.37605,17.48654 -0.41952,1.73599 -1.52736,4.26829 -0.57054,5.82726 1.56602,2.55152 8.10497,7.21799 11.16843,8.23894 9.12463,3.04092 14.9927,3.11449 24.30575,2.49092 10.58327,-0.70862 24.86069,-9.27983 33.87883,-4.0124 25.93014,15.14554 14.38256,-3.02773 18.64292,-8.7544 8.51489,-11.4456 5.22079,-35.6745 6.63779,-42.52323 4.99832,-24.15798 -3.6081,-35.92868 0.5527,-59.71788 4.57785,-26.17368 -7.0432,-32.00423 -5.59419,-58.4605 0.56389,-10.29534 -7.07933,-25.97222 -7.55253,-36.27117 -0.52033,-11.32271 -6.69061,-35.57252 -6.69061,-35.57252 z"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csssssssssscsssscc"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
+    <path
+       sodipodi:nodetypes="csssssssssscsssscc"
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 332.44866,603.5769 c 0,0 2.37237,10.18866 3.43402,26.78038 1.36145,21.2771 5.89231,41.97967 5.43034,63.14147 -0.32181,14.74088 -2.13865,27.48354 -3.79514,42.05942 -1.65702,14.58064 -4.32456,17.36564 -6.6924,31.80362 -1.56714,9.55577 -6.94604,20.96376 -8.92772,30.14818 -1.12224,5.20122 -6.21497,15.88844 -6.06688,21.20728 0.047,1.68944 -1.22957,3.6563 -0.092,4.90631 1.86173,2.04585 2.45877,3.88695 5.20512,4.2174 8.18003,0.98418 22.31163,6.02263 29.81985,3.58027 8.53225,-2.77548 27.30658,-1.31902 34.51947,-6.65542 5.78965,-4.28342 7.04789,-4.29088 7.04789,-4.29088 0,0 1.85514,-32.76005 1.47408,-39.37744 -1.34419,-23.34188 -2.01116,-45.80105 -3.96,-68.63409 -2.14416,-25.12174 -6.88519,-46.51223 -11.66282,-71.26849 -1.8592,-9.63376 -5.01543,-17.27224 -7.72723,-26.70159 -2.98139,-10.36665 -5.69215,-16.57785 -5.69215,-16.57785 z"
+       inkscape:path-effect="#path-effect5153"
+       id="path5151"
+       d="m 332.44866,603.5769 c 1.12527,8.92927 2.26995,17.85609 3.43402,26.78038 2.73465,20.96502 5.58185,41.99939 5.43034,63.14147 -0.10097,14.09034 -1.53624,28.15096 -3.79514,42.05942 -1.73735,10.69717 -3.96238,21.31578 -6.6924,31.80362 -2.64052,10.14401 -5.75134,20.159 -8.92772,30.14818 -2.22894,7.00965 -4.49435,14.02184 -6.06688,21.20728 -0.17737,0.81048 -0.34634,1.62633 -0.39782,2.45439 -0.0515,0.82805 0.0181,1.67376 0.30582,2.45192 0.39946,1.08021 1.20223,1.9771 2.13567,2.6517 0.93344,0.67461 1.99743,1.14477 3.06945,1.5657 9.38505,3.68501 19.74183,3.88351 29.81985,3.58027 11.80684,-0.35525 23.93051,-1.42077 34.51947,-6.65542 2.46879,-1.22044 4.83015,-2.65809 7.04789,-4.29088 0.99902,-13.10025 1.49087,-26.23917 1.47408,-39.37744 -0.0293,-22.92598 -1.60693,-45.82917 -3.96,-68.63409 -2.47284,-23.96561 -5.81311,-47.89657 -11.66282,-71.26849 -2.25015,-8.99023 -4.86874,-17.8859 -7.72723,-26.70159 -1.80219,-5.55803 -3.69995,-11.08506 -5.69215,-16.57785 l -32.31443,5.66143 z"
+       style="fill:url(#linearGradient5155);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
+    <path
+       style="fill:#ffa8c9;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 194.75785,391.01866 c -6.94519,13.66101 -13.10838,27.71954 -18.44935,42.08383 -4.91184,13.21017 -9.13483,26.70397 -11.93781,40.51621 -2.06732,10.18715 -3.35806,20.53406 -3.80019,30.91945 -0.53,12.44927 0.17031,25.01317 3.03531,37.13988 3.1533,13.34699 8.95365,26.09893 17.22281,37.03997 9.3055,12.31224 21.62874,22.1997 35.25192,29.45177 9.25299,4.92568 19.20073,8.69307 29.56376,10.27032 3.84866,0.58577 7.74344,0.86829 11.63635,0.84409 -5.26592,12.68722 -10.19212,25.51544 -14.77153,38.46629 -4.17024,11.79367 -8.05318,23.68992 -11.57606,35.69287 -3.7486,12.77201 -7.09027,25.66868 -9.7673,38.70745 -2.72068,13.25138 -4.75473,26.65751 -5.66746,40.15447 -0.83017,12.2761 -0.72364,24.6892 1.56759,36.77812 1.6733,8.82864 4.53765,17.49894 9.16437,25.20207 5.14733,8.5699 12.65688,15.96129 21.9463,19.65519 6.16042,2.44967 12.95321,3.20952 19.53463,2.41168 7.81458,-0.94734 15.26228,-4.04166 21.94626,-8.19973 8.50526,-5.29108 16.02624,-12.51267 20.39083,-21.52851 2.43283,-5.02544 3.84608,-10.53057 4.24363,-16.09974 0.15019,-2.104 0.15476,-4.24139 -0.32566,-6.29531 -0.48042,-2.05392 -1.4798,-4.03302 -3.07995,-5.40739 -1.75638,-1.50855 -4.10735,-2.18268 -6.41935,-2.30612 -2.31201,-0.12344 -4.61778,0.26004 -6.90091,0.64468 -0.72679,0.12244 -1.45963,0.24557 -2.19618,0.21872 -0.73654,-0.0268 -1.4865,-0.21489 -2.0742,-0.65967 -0.58177,-0.44029 -0.96487,-1.10213 -1.19243,-1.79533 -0.22756,-0.69321 -0.31257,-1.42382 -0.39584,-2.14865 -1.2691,-11.04691 -2.42714,-22.13235 -2.41169,-33.25191 0.0177,-12.76701 1.58254,-25.48186 3.49694,-38.10454 1.94856,-12.84788 4.26215,-25.64128 6.99387,-38.34571 2.8448,-13.23032 6.14207,-26.35994 9.64673,-39.43097 2.43226,-9.0714 4.96473,-18.11594 7.59678,-27.1314 7.32914,-0.39654 14.63614,-1.20209 21.87565,-2.41166 6.72876,-1.12423 13.3992,-2.59742 19.97556,-4.41168 5.50631,16.05984 10.37217,32.33926 14.58212,48.78658 4.03244,15.7538 7.46486,31.67109 9.88787,47.75126 2.3716,15.73899 3.77315,31.614 4.5822,47.51009 0.536,10.5313 0.81248,21.08164 0.5116,31.62228 -0.34411,12.05507 -1.44884,24.11955 -4.00853,35.90476 -1.51934,6.99526 -3.55083,13.88453 -6.19118,20.53815 -1.40138,3.53144 -2.97238,6.99259 -4.49692,10.47263 -0.2803,0.63983 -0.56081,1.28578 -0.70542,1.96918 -0.14461,0.6834 -0.14555,1.41527 0.12318,2.06004 0.24369,0.58469 0.69538,1.06466 1.21142,1.43202 0.51604,0.36735 1.09743,0.63128 1.6801,0.87976 8.24443,3.51587 17.38307,4.33932 26.34582,4.37028 10.47472,0.0362 20.92305,-0.94876 31.35184,-1.92935 10.2432,-0.96314 20.5354,-1.93121 30.50776,-4.46159 5.77635,-1.46569 11.44921,-3.46453 16.6406,-6.39096 1.04007,-0.5863 2.06556,-1.21342 2.96237,-2.00159 0.89682,-0.78817 1.66528,-1.74869 2.09358,-2.86316 0.36087,-0.93901 0.47053,-1.95965 0.4443,-2.96527 -0.0262,-1.00563 -0.18453,-2.0026 -0.34429,-2.9958 -1.69805,-10.55636 -3.59913,-21.07888 -5.39097,-31.61973 -3.34337,-19.66799 -6.30623,-39.39859 -9.53219,-59.08618 -2.99631,-18.2861 -6.21957,-36.53487 -9.64672,-54.74514 -2.76576,-14.69596 -5.66431,-29.36686 -8.68205,-44.01315 -2.69565,-13.08307 -5.50166,-26.2001 -10.12403,-38.73274 -1.34403,-3.64407 -2.84107,-7.23559 -4.60199,-10.6975 -0.83257,-1.6368 -1.74234,-3.26887 -3.05032,-4.55785 -0.65399,-0.64449 -1.405,-1.19705 -2.23997,-1.579 -0.83498,-0.38196 -1.75588,-0.58997 -2.67312,-0.54836 -0.94532,0.0429 -1.86571,0.34832 -2.70363,0.78805 -0.83793,0.43972 -1.59942,1.01154 -2.32914,1.61402 -2.43623,2.01143 -4.56293,4.39704 -6.28248,7.04736 1.50796,-3.48033 2.87604,-7.02126 4.09985,-10.61138 2.86788,-8.41311 4.9405,-17.09164 6.29963,-25.8756 1.38246,-8.93472 2.02815,-17.98578 1.87081,-27.02545 -0.16045,-9.21813 -1.15931,-18.43821 -3.29107,-27.40789 -1.983,-8.34374 -4.94376,-16.45229 -8.76732,-24.12892 -4.3108,-8.65486 -9.75516,-16.80453 -16.61133,-23.62234 -7.20768,-7.16735 -15.93906,-12.79494 -25.44323,-16.39943 -6.2593,-2.37386 -12.85635,-3.87733 -19.5346,-4.34103 -7.76482,-0.53914 -15.55421,0.32251 -23.27271,1.32643 -8.30395,1.08007 -16.58627,2.32643 -24.84032,3.7381 -1.20035,-8.73774 -1.92126,-17.54133 -2.1584,-26.35795 -0.33875,-12.59409 0.30889,-25.19443 0.21696,-37.79274 -0.0817,-11.19953 0.005,-22.41054 1.21795,-33.54452 l 1.20584,-11.07155 -43.65141,24.59915 -37.38103,15.43474 -34.00481,10.85255 z"
+       id="path5053"
+       inkscape:path-effect="#path-effect5055"
+       inkscape:original-d="m 194.75785,391.01866 c 0,0 -13.17022,27.73539 -18.44935,42.08383 -4.87666,13.25449 -8.86738,26.79159 -11.93781,40.51621 -2.27111,10.15164 -3.4634,20.54994 -3.80019,30.91945 -0.40353,12.42446 0.0538,25.15722 3.03531,37.13988 3.30139,13.26752 9.0176,26.28451 17.22281,37.03997 9.32832,12.22762 22.08794,21.94926 35.25192,29.45177 9.18953,5.23735 19.34532,8.16882 29.56376,10.27032 3.86816,0.79554 11.63635,0.84409 11.63635,0.84409 0,0 -10.17727,25.52244 -14.77153,38.46629 -4.07316,11.47564 -8.09902,24.02279 -11.57606,35.69287 -3.8755,13.0074 -7.15067,25.3896 -9.7673,38.70745 -2.62399,13.35518 -4.99027,26.65397 -5.66746,40.15447 -0.60457,12.05289 -0.71884,24.92865 1.56759,36.77812 1.72939,8.96268 4.25673,17.74724 9.16437,25.20207 5.44185,8.26624 12.98076,15.53404 21.9463,19.65519 6.09805,2.80303 12.95835,3.14141 19.53463,2.41168 7.68692,-0.85299 15.40629,-4.07858 21.94626,-8.19973 8.60858,-5.42465 15.6652,-12.64525 20.39083,-21.52851 2.72515,-5.12279 4.17868,-10.35057 4.24363,-16.09974 0.0477,-4.21155 -0.17382,-9.00181 -3.40561,-11.7027 -3.52089,-2.94247 -8.73515,-1.51865 -13.32026,-1.66144 -1.3683,-0.0426 -3.1575,0.24972 -4.27038,-0.44095 -1.22186,-0.75832 -1.20819,-2.55706 -1.58827,-3.94398 -2.98215,-10.88194 -2.61251,-22.14064 -2.41169,-33.25191 0.22799,-12.6129 1.81358,-25.60241 3.49694,-38.10454 1.76007,-13.07178 4.27855,-25.56623 6.99387,-38.34571 3.20127,-15.06655 5.64763,-24.48536 9.64673,-39.43097 1.92666,-7.20038 7.59678,-27.1314 7.59678,-27.1314 0,0 14.70339,-1.16634 21.87565,-2.41166 6.51261,-1.13081 19.97556,-4.41168 19.97556,-4.41168 0,0 10.42709,32.32992 14.58212,48.78658 3.97916,15.76018 7.4561,31.67944 9.88787,47.75126 2.38022,15.73114 3.81761,31.6183 4.5822,47.51009 0.49835,10.35825 0.94814,21.26124 0.5116,31.62228 -0.52301,12.41296 -1.46469,23.90158 -4.00853,35.90476 -1.59698,7.53534 -3.18909,13.23482 -6.19118,20.53815 -1.24411,3.02663 -3.61141,7.32238 -4.49692,10.47263 -0.34874,1.24066 -1.17725,2.88605 -0.58224,4.02922 0.78298,1.50425 1.29844,1.73048 2.89152,2.31178 8.021,2.92685 17.81582,3.99342 26.34582,4.37028 10.21973,0.45155 21.16565,-0.98727 31.35184,-1.92935 10.56419,-0.97701 20.45681,-1.90939 30.50776,-4.46159 5.77319,-1.46599 11.62435,-3.0991 16.6406,-6.39096 2.28314,-1.49829 -1.76593,-4.10877 5.05595,-4.86475 1.44041,-0.15961 0.25685,-4.52035 0.10001,-5.96107 -1.19091,-10.93102 -3.75732,-21.08528 -5.39097,-31.61973 -3.06835,-19.78627 -6.32906,-39.35188 -9.53219,-59.08618 -2.96875,-18.29016 -6.17569,-36.5039 -9.64672,-54.74514 -2.81491,-14.79314 -5.23184,-29.32521 -8.68205,-44.01315 -3.46487,-14.75036 -3.7572,-24.83221 -10.12403,-38.73274 -0.92848,-2.0271 -2.14406,-7.12298 -4.60199,-10.6975 -2.45795,-3.57452 -6.15823,-5.62764 -7.96341,-6.68521 -2.01272,-1.17913 -2.90232,1.45204 -5.03277,2.40207 -3.54398,1.58037 -6.28248,7.04736 -6.28248,7.04736 0,0 3.00215,-6.98177 4.09985,-10.61138 2.57456,-8.51303 4.85477,-17.09993 6.29963,-25.8756 1.45807,-8.85599 2.02403,-18.01165 1.87081,-27.02545 -0.15687,-9.2319 -1.31139,-18.43802 -3.29107,-27.40789 -1.92311,-8.71351 -4.67288,-16.2513 -8.76732,-24.12892 -4.26353,-8.20292 -9.84205,-17.00237 -16.61133,-23.62234 -7.42842,-7.26456 -16.05295,-12.38685 -25.44323,-16.39943 -5.98958,-2.55945 -13.0484,-3.74513 -19.5346,-4.34103 -7.85164,-0.72133 -15.43706,0.4483 -23.27271,1.32643 -8.3674,0.93773 -24.84032,3.7381 -24.84032,3.7381 0,0 -1.74274,-17.51904 -2.1584,-26.35795 -0.59002,-12.54771 0.0567,-25.23215 0.21696,-37.79274 0.12349,-9.67935 1.21795,-33.54452 1.21795,-33.54452 l 1.20584,-11.07155 -43.65141,24.59915 -37.38103,15.43474 z"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cssssssscssssssssssssssssssscscssssssssssssssssssssssscssssssssscssccccc"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
+    <path
+       style="fill:url(#radialGradient5087);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 201.24399,390.14516 c -4.65116,9.47802 -9.01416,19.09745 -13.08097,28.84051 -3.4863,8.35232 -6.75664,16.80026 -9.54976,25.40921 -4.10362,12.64816 -7.1714,25.63455 -9.1088,38.78986 -1.30767,8.87931 -2.10101,17.84023 -2.19623,26.81481 -0.0903,8.51139 0.44941,17.04194 1.89654,25.42989 1.73313,10.04566 4.78227,19.89635 9.42916,28.96968 4.76549,9.30492 11.20533,17.75446 18.94969,24.77701 6.71483,6.08898 14.37719,11.08824 22.47738,15.15662 7.22437,3.62849 14.8357,6.53691 22.73064,8.27684 5.10538,1.12515 10.31887,1.75917 15.54511,1.89047 1.91934,-3.90097 3.90931,-7.7672 5.96859,-11.59614 2.11582,-3.93406 4.30481,-7.82877 6.56547,-11.68142 -0.74979,3.27391 -1.63182,6.51753 -2.64323,9.7203 -2.32463,7.36128 -5.32565,14.4872 -8.18552,21.65752 -4.31587,10.82085 -8.31796,21.76418 -12.22725,32.73846 -2.87928,8.08282 -5.70901,16.18464 -8.3203,24.35797 -3.76126,11.77272 -7.06761,23.6889 -10.00846,35.69287 -2.30779,9.41996 -4.39152,18.89857 -6.0292,28.45783 -1.75028,10.21654 -2.9901,20.52311 -3.61752,30.86949 -0.5853,9.65183 -0.634,19.38425 0.84409,28.94017 1.17465,7.59417 3.32477,15.06875 6.75269,21.94629 3.52495,7.07223 8.44101,13.51982 14.71125,18.32876 6.12675,4.69889 13.62408,7.78839 21.34338,7.95855 6.94657,0.15313 13.76756,-2.02748 20.01693,-5.06453 6.46327,-3.14099 12.52243,-7.2686 17.27884,-12.65527 3.71482,-4.20707 6.60545,-9.17638 8.17044,-14.56619 1.00658,-3.46666 1.46248,-7.09937 1.26437,-10.70377 -0.089,-1.62 -0.31555,-3.25571 -0.95427,-4.74714 -0.63872,-1.49143 -1.72797,-2.83717 -3.19554,-3.52897 -1.03479,-0.48779 -2.20488,-0.63034 -3.34804,-0.58669 -1.14316,0.0437 -2.27095,0.26565 -3.39527,0.47692 -2.20995,0.41526 -4.42768,0.79156 -6.65614,1.09203 -0.49437,0.0667 -0.99293,0.12971 -1.49073,0.0976 -0.49781,-0.0321 -1.00011,-0.16558 -1.40328,-0.45934 -0.40057,-0.29186 -0.68055,-0.72536 -0.86464,-1.18553 -0.18408,-0.46016 -0.27956,-0.95013 -0.37136,-1.43718 -0.66342,-3.51989 -1.18581,-7.06524 -1.63306,-10.61907 -0.73685,-5.85496 -1.27018,-11.73615 -1.56546,-17.6299 -0.46288,-9.23897 -0.34022,-18.50623 0.33466,-27.73214 1.08561,-14.84061 3.59558,-29.54198 6.51153,-44.13374 2.61443,-13.08294 5.55763,-26.09862 8.68204,-39.06923 2.40196,-9.97145 4.91165,-19.91881 7.71739,-29.78425 1.95894,-6.88797 4.06172,-13.73433 6.0292,-20.61986 1.98768,-6.95621 3.83712,-13.95192 5.54686,-20.98161 -0.11169,4.34693 -0.35301,8.69052 -0.72351,13.02307 -0.29919,3.4986 -0.68261,6.98999 -1.14982,10.47014 5.38996,-0.34009 10.77335,-0.78436 16.14614,-1.33249 5.37867,-0.54873 10.77202,-1.20645 15.97915,-2.66144 2.01724,-0.56366 4.05956,-1.27863 5.62961,-2.66495 1.07784,-0.95171 1.8827,-2.18049 2.49991,-3.47916 0.61721,-1.29867 1.0565,-2.67325 1.49402,-4.04294 0.8025,-2.5123 1.60565,-5.02516 2.31429,-7.56553 2.04838,-7.34309 3.30014,-14.89533 3.99388,-22.48714 0.64247,-7.03077 0.80863,-14.10503 0.49696,-21.15821 1.0875,4.74215 1.84872,9.55909 2.27648,14.4055 0.48108,5.45052 0.54029,10.9359 0.24116,16.39943 -0.31351,5.72612 -1.02337,11.44561 -2.44094,17.00234 -0.91069,3.5698 -2.11204,7.06541 -3.58825,10.44085 4.3083,11.31675 8.09376,22.83253 11.34026,34.49831 2.60245,9.35148 4.858,18.79637 6.97112,28.27042 2.58004,11.56747 4.94921,23.18481 6.89191,34.87621 1.57219,9.46165 2.86457,18.96886 3.9429,28.49943 1.30621,11.54459 2.29861,23.12617 2.87835,34.72994 0.5224,10.45602 0.70916,20.94651 -0.0698,31.38655 -0.71354,9.56322 -2.23509,19.05106 -4.09986,28.45781 -0.94001,4.74184 -1.98567,9.51988 -4.09986,13.86716 -1.5711,3.23056 -3.73879,6.24843 -4.46161,9.7673 -0.0917,0.44632 -0.15935,0.9011 -0.13878,1.35627 0.0206,0.45518 0.13345,0.91339 0.37996,1.29659 0.21459,0.33359 0.52276,0.59918 0.85945,0.80888 0.33669,0.20969 0.70302,0.36676 1.0699,0.51754 8.69291,3.57255 18.33936,3.99263 27.7343,3.73811 10.60675,-0.28734 21.18163,-1.37209 31.67827,-2.92331 10.02926,-1.48215 20.24064,-3.48107 28.92554,-8.71129 0.87273,-0.52558 1.73059,-1.08496 2.49153,-1.76237 0.76093,-0.6774 1.42552,-1.47925 1.8495,-2.4056 0.50874,-1.11154 0.65288,-2.36184 0.59987,-3.58312 -0.053,-1.22128 -0.29522,-2.42538 -0.52927,-3.62519 -2.02838,-10.39795 -3.49664,-20.89544 -5.1059,-31.36645 -2.69228,-17.5179 -5.78104,-34.97213 -8.66137,-52.46009 -2.34433,-14.23361 -4.55083,-28.491 -7.11445,-42.68675 -2.74032,-15.1742 -5.88765,-30.2721 -9.16438,-45.33957 -3.08945,-14.20627 -6.29454,-28.3884 -9.7673,-42.50587 -1.21248,-4.92897 -2.56062,-10.05197 -5.90863,-13.86716 -0.55366,-0.63092 -1.1603,-1.22143 -1.85359,-1.69465 -0.69329,-0.47322 -1.47743,-0.82724 -2.30655,-0.9582 -1.16507,-0.18402 -2.36654,0.0805 -3.44495,0.55826 -1.07842,0.47778 -2.05132,1.16112 -3.00629,1.85342 -3.69175,2.67631 -7.23603,5.55603 -10.61139,8.62175 1.46391,-4.52405 2.87087,-9.06652 4.22044,-13.62598 2.02875,-6.85402 3.92894,-13.75108 5.42628,-20.74046 1.65267,-7.71443 2.81228,-15.53358 3.49694,-23.39328 0.83856,-9.6264 0.96323,-19.33828 -0.1206,-28.94016 -1.0715,-9.49266 -3.32958,-18.86299 -6.87329,-27.73433 -3.15758,-7.9047 -7.34757,-15.4246 -12.69707,-22.04559 -3.97681,-4.92202 -8.58197,-9.33195 -13.64252,-13.13092 -5.12501,-3.84737 -10.73183,-7.07607 -16.71208,-9.37923 -8.33609,-3.21046 -17.33027,-4.58829 -26.26187,-4.43383 -7.84706,0.1357 -15.62232,1.43256 -23.36282,2.72849 -9.05823,1.51655 -18.12353,3.03782 -27.06356,5.14195 -2.82809,0.66562 -5.64251,1.38933 -8.44089,2.17051 -0.19288,-11.25823 0.0485,-22.5239 0.72352,-33.76353 0.71039,-11.82916 1.90052,-23.62512 2.65284,-35.45169 0.6843,-10.75726 1.0061,-21.53758 0.96467,-32.3165 l -37.86337,11.81721 -30.62833,13.74659 -23.17747,5.87928 z"
+       id="path5041"
+       inkscape:path-effect="#path-effect5043"
+       inkscape:original-d="m 201.24399,390.14516 c 0,0 -9.08395,19.20708 -13.08097,28.84051 -3.46755,8.35738 -6.95841,16.74005 -9.54976,25.40921 -3.85473,12.8957 -6.97013,25.50135 -9.1088,38.78986 -1.38857,8.62777 -2.08268,17.88402 -2.19623,26.81481 -0.10655,8.37103 0.35875,17.24389 1.89654,25.42989 1.89838,10.10553 4.83779,19.99587 9.42916,28.96968 4.71744,9.22023 11.48175,17.75196 18.94969,24.77701 6.94817,6.5361 14.09212,11.0484 22.47738,15.15662 7.21563,3.53516 14.88897,6.52435 22.73064,8.27684 4.80302,1.07342 15.54511,1.89047 15.54511,1.89047 0,0 3.81907,-7.6141 5.96859,-11.59614 2.03989,-3.77892 6.56547,-11.68142 6.56547,-11.68142 0,0 -1.78277,6.95587 -2.64323,9.7203 -2.43311,7.81689 -5.47983,14.42977 -8.18552,21.65752 -4.11045,10.98028 -8.27723,21.69946 -12.22725,32.73846 -2.865,8.00677 -5.77433,16.16447 -8.3203,24.35797 -3.66659,11.79998 -7.05834,23.69371 -10.00846,35.69287 -2.31506,9.4161 -4.45838,18.8894 -6.0292,28.45783 -1.67837,10.22339 -3.05669,20.52444 -3.61752,30.86949 -0.52224,9.63291 -0.67783,19.41392 0.84409,28.94017 1.21125,7.58177 3.1865,15.21309 6.75269,21.94629 3.66136,6.91284 8.44499,13.77471 14.71125,18.32876 6.19562,4.50268 13.75804,7.61828 21.34338,7.95855 6.99421,0.31373 13.65557,-2.1404 20.01693,-5.06453 6.25993,-2.8775 12.60398,-7.38238 17.27884,-12.65527 4.1033,-4.62821 6.61333,-8.74702 8.17044,-14.56619 1.26773,-4.73775 3.52241,-6.27978 1.26437,-10.70377 -0.87176,-1.70796 -2.29828,-7.77719 -4.14981,-8.27611 -1.55436,-0.41883 -4.24257,-0.40225 -6.74331,-0.10977 -2.50072,0.2926 -5.06974,0.81855 -6.65614,1.09203 -1.65419,0.28515 -1.2791,0.0963 -2.89401,-0.36176 -0.9313,-0.26412 -0.80848,-1.75422 -1.236,-2.62271 -1.51795,-3.08368 -1.27533,-7.2007 -1.63306,-10.61907 -0.82425,-7.87697 -1.3603,-9.89363 -1.56546,-17.6299 -0.20518,-7.73626 -0.16478,-19.82792 0.33466,-27.73214 0.93758,-14.84093 3.81158,-29.5104 6.51153,-44.13374 2.4222,-13.11902 8.68204,-37.86337 8.68204,-39.06923 0,-1.20583 4.88157,-19.66488 7.71739,-29.78425 1.86606,-6.65881 4.10903,-13.72101 6.0292,-20.61986 1.93975,-6.96923 5.54686,-20.98161 5.54686,-20.98161 0,0 -0.44804,8.68409 -0.72351,13.02307 -0.21446,3.37815 -1.14982,10.47014 -1.14982,10.47014 0,0 11.00557,-0.67989 16.14614,-1.33249 5.65403,-0.71782 10.7973,-0.8524 15.97915,-2.66144 2.51378,-0.87757 3.8736,-0.50633 5.62961,-2.66495 1.61326,-1.98314 2.98029,-4.86472 3.99393,-7.5221 1.0136,-2.65741 1.67378,-5.09063 2.31429,-7.56553 1.81952,-7.03071 3.2833,-14.90734 3.99388,-22.48714 0.67159,-7.16388 0.49696,-21.15821 0.49696,-21.15821 0,0 1.81619,9.41118 2.27648,14.4055 0.50173,5.444 0.50972,10.93896 0.24116,16.39943 -0.28019,5.69691 -1.08045,11.46315 -2.44094,17.00234 -0.90445,3.68251 -3.58825,10.44085 -3.58825,10.44085 0,0 7.87162,22.83436 11.34026,34.49831 2.6532,8.92184 4.90892,19.19373 6.97112,28.27042 2.72705,12.00312 4.98666,23.06028 6.89191,34.87621 1.50508,9.33433 2.88864,18.98314 3.9429,28.49943 1.24498,11.23805 2.38921,23.44462 2.87835,34.72994 0.45998,10.613 0.63427,21.10921 -0.0698,31.38655 -0.67683,9.87907 -2.00927,18.94741 -4.09986,28.45781 -1.06463,4.84315 -2.28614,9.25196 -4.09986,13.86716 -1.2098,3.07853 -3.86598,6.51366 -4.46161,9.7673 -0.15993,0.87342 -0.26807,1.92547 0.24118,2.65286 0.86622,1.23728 0.47819,0.90765 1.92935,1.32642 8.24853,2.38026 19.15145,3.54132 27.7343,3.73811 10.55888,0.24205 21.27808,-1.08383 31.67827,-2.92331 9.94942,-1.75971 20.60566,-3.1067 28.92554,-8.71129 2.00018,-1.34739 3.53455,-1.89513 4.34103,-4.16797 0.69946,-1.97125 0.22267,-5.12216 0.0706,-7.20831 -0.76669,-10.52027 -3.40605,-21.09008 -5.1059,-31.36645 -2.93346,-17.73409 -5.7427,-34.9048 -8.66137,-52.46009 -2.35386,-14.15827 -4.49936,-28.50059 -7.11445,-42.68675 -2.79523,-15.16334 -5.86609,-30.27765 -9.16438,-45.33957 -3.145,-14.36192 -4.95876,-28.61221 -9.7673,-42.50587 -1.62333,-4.69037 -2.63185,-10.1392 -5.90863,-13.86716 -1.19264,-1.35687 -2.35836,-2.5219 -4.16014,-2.65285 -1.57933,-0.1148 -5.10152,1.58366 -6.45124,2.41168 -4.23789,2.59986 -10.61139,8.62175 -10.61139,8.62175 0,0 3.01605,-9.26154 4.22044,-13.62598 1.89826,-6.87899 4.00489,-13.97632 5.42628,-20.74046 1.62799,-7.74741 2.89214,-15.7252 3.49694,-23.39328 0.77113,-9.77716 1.07182,-19.40787 -0.1206,-28.94016 -1.19558,-9.5575 -3.29227,-18.85616 -6.87329,-27.73433 -3.15168,-7.81364 -7.51373,-15.40335 -12.69707,-22.04559 -3.883,-4.97593 -8.5756,-9.36739 -13.64252,-13.13092 -5.12816,-3.80903 -10.68831,-7.2529 -16.71208,-9.37923 -8.37159,-2.95509 -17.38691,-4.20749 -26.26187,-4.43383 -7.83797,-0.19987 -15.61269,1.54126 -23.36282,2.72849 -9.07667,1.39046 -18.10175,3.14053 -27.06356,5.14195 -2.8353,0.6332 -8.44089,2.17051 -8.44089,2.17051 0,0 0.18273,-22.51943 0.72352,-33.76353 0.56928,-11.83658 2.03377,-23.61758 2.65284,-35.45169 0.56302,-10.76225 0.96467,-32.3165 0.96467,-32.3165 l -37.86337,11.81721 -30.62833,13.74659 z"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cssssssssscscssssssssssssssssssssssssssscscsssssscssscsssssssssssssssssssssssscssssssssssscsscccc"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
+    <path
+       style="fill:#ffa8c9;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 319.60961,260.82109 c -0.49384,17.24925 -0.79291,34.50408 -0.89713,51.76008 -0.0558,9.23001 -0.0558,18.46036 0,27.69037 -14.48722,12.57476 -30.72879,23.12549 -48.10655,31.25063 -14.59191,6.82259 -29.94493,11.9272 -45.54069,15.95755 -13.41796,3.46755 -27.10807,6.15778 -40.95865,6.63417 -15.15226,0.52117 -30.39291,-1.63738 -44.80451,-6.34569 l 4.29303,-2.87728 c -2.1542,-1.26306 -4.21772,-2.68072 -6.16945,-4.23849 -1.98414,-1.58363 -3.8527,-3.31204 -5.58592,-5.16694 -3.41684,0.79428 -7.0195,0.77711 -10.42862,-0.0497 -4.75932,-1.15427 -9.06493,-3.86136 -12.50948,-7.34253 -5.15858,-5.21343 -8.41754,-12.08507 -10.196526,-19.20026 -0.412128,-1.64834 -0.750832,-3.32312 -0.833418,-5.02019 -0.08258,-1.69707 0.09751,-3.42345 0.696052,-5.01361 0.818231,-2.17382 2.380632,-3.99878 4.147162,-5.50688 2.57297,-2.19656 5.63943,-3.81172 8.9062,-4.69106 -4.13584,-10.27308 -7.38227,-20.90406 -9.69107,-31.73507 -2.203033,-10.33482 -3.552968,-20.85763 -3.889699,-31.41928 -0.462225,-14.49781 0.984242,-29.00659 3.382799,-43.31209 2.28087,-13.60361 5.55547,-27.38193 13.07671,-38.94443 8.08343,-12.42677 20.4878,-21.38838 33.26825,-28.90015 13.77225,-8.0947 28.60369,-14.94104 44.434,-17.08586 16.16221,-2.18979 32.73583,0.65128 48.01997,6.34403 6.65145,2.47741 13.11419,5.49621 19.15112,9.22915 4.91733,3.04063 9.54411,6.55092 13.79685,10.46753 2.35277,-8.89347 5.78019,-17.50211 10.18395,-25.57901 7.00826,-12.85378 16.48959,-24.33147 27.65328,-33.80286 1.67667,-1.4225 3.40588,-2.81032 5.35627,-3.82559 1.95038,-1.015258 4.15193,-1.645662 6.34284,-1.459441 2.18845,0.186012 4.25277,1.178675 5.98536,2.528491 1.73259,1.34983 3.16223,3.04714 4.48569,4.79995 3.5376,4.68526 6.40471,9.84856 8.87348,15.17504 5.14089,11.09172 8.58659,22.94616 10.46354,35.0264 2.18469,14.06085 2.24849,28.45303 0.13963,42.52546 -1.63013,10.8779 -4.5649,21.58967 -9.115,31.60379 -3.51362,7.73299 -7.98307,15.03111 -13.27429,21.67548 l -10.65518,8.84829 z"
+       id="path4727"
+       inkscape:path-effect="#path-effect4729"
+       inkscape:original-d="m 319.60961,260.82109 c 0,0 0.79164,35.10487 -0.89713,51.76008 -1.17431,11.58108 0,27.69037 0,27.69037 0,0 -32.63724,23.95814 -48.10655,31.25063 -14.04996,6.62338 -30.4163,12.41866 -45.54069,15.95755 -13.5439,3.16908 -27.05128,6.37709 -40.95865,6.63417 -14.86487,0.27473 -44.80451,-6.34569 -44.80451,-6.34569 l 4.29303,-2.87728 c 0,0 -3.88983,-2.36737 -6.16945,-4.23849 -1.60921,-1.3209 -5.58592,-5.16694 -5.58592,-5.16694 0,0 -6.81317,0.85342 -10.42862,-0.0497 -4.78245,-1.19434 -9.06262,-3.81873 -12.50948,-7.34253 -4.80486,-4.9121 -8.35954,-12.54479 -10.196526,-19.20026 -0.932781,-3.37953 -1.234227,-6.55298 -0.137366,-10.0338 1.001704,-3.17902 1.727472,-3.66014 4.147162,-5.50688 2.12909,-1.62497 8.9062,-4.69106 8.9062,-4.69106 0,0 -7.30017,-20.28595 -9.69107,-31.73507 -2.082067,-9.97025 -3.498497,-20.70225 -3.889699,-31.41928 -0.520005,-14.24567 0.442117,-29.20529 3.382799,-43.31209 2.82767,-13.56456 6.35202,-27.03765 13.07671,-38.94443 6.90053,-12.21809 21.72265,-20.92534 33.26825,-28.90015 13.72781,-9.48211 28.28504,-14.61429 44.434,-17.08586 18.28687,-2.79881 30.72661,-0.22725 48.01997,6.34403 10.01795,3.80674 13.72912,5.3979 19.15112,9.22915 4.67473,3.30324 13.79685,10.46753 13.79685,10.46753 0,0 5.82981,-17.43399 10.18395,-25.57901 5.21648,-9.75824 26.56553,-32.7151 27.65328,-33.80286 1.0878,-1.08778 4.05468,-5.928271 11.69911,-5.285031 7.28145,0.6127 5.90211,1.625851 10.47105,7.328441 16.5646,20.67463 9.79918,14.8509 8.87348,15.17504 -0.92568,0.32414 8.69106,28.24537 10.46354,35.0264 4.08368,15.62297 1.53808,22.72896 0.13963,42.52546 -0.88463,12.52317 -3.806,20.22719 -9.115,31.60379 -3.57385,7.65838 -13.27429,21.67548 -13.27429,21.67548 z"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cscsssccscssssscsssssssscsssssssscc"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
+    <path
+       style="fill:url(#linearGradient5169);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 318.29922,261.62707 c 6.34928,-7.96132 11.78936,-16.64717 16.1807,-25.83477 4.97092,-10.4002 8.59603,-21.44374 10.74183,-32.76937 2.9787,-15.72167 3.08861,-31.99973 0.13606,-47.72634 -2.35436,-12.54039 -6.64215,-24.70223 -12.50945,-36.03269 -1.13594,-2.19363 -2.34773,-4.38063 -4.02049,-6.19839 -1.67275,-1.81777 -3.866,-3.25624 -6.31342,-3.59162 -2.12914,-0.29177 -4.3101,0.26948 -6.22377,1.24736 -1.91366,0.97788 -3.59214,2.35539 -5.19793,3.78361 -8.05936,7.16818 -14.65248,15.84033 -20.53183,24.88297 -6.49608,9.99119 -12.18609,20.50632 -16.99656,31.40964 -6.79663,14.22656 -10.74932,29.80479 -11.55765,45.55077 -0.51928,10.11539 0.24971,20.29622 2.28254,30.21884 l 54.00997,15.05999 z"
+       id="path4731"
+       inkscape:path-effect="#path-effect4733"
+       inkscape:original-d="m 318.29922,261.62707 c 0,0 11.82815,-16.5303 16.1807,-25.83477 4.83472,-10.33528 8.99633,-21.16987 10.74183,-32.76937 2.31347,-15.37369 2.77532,-32.16643 0.13606,-47.72634 -2.11423,-12.46413 -5.99302,-26.13363 -12.50945,-36.03269 -3.13693,-4.76527 -4.65082,-9.28937 -10.33391,-9.79001 -7.21316,-0.63547 -6.2932,-0.081 -11.4217,5.03097 -5.21774,5.20089 -15.16353,16.73918 -20.53183,24.88297 -6.52878,9.90417 -16.99656,31.40964 -16.99656,31.40964 0,0 -10.79754,30.47622 -11.55765,45.55077 -0.5233,10.37781 2.28254,30.21884 2.28254,30.21884 z"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cssssssscscc"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
+    <path
+       style="fill:#ffa8c9;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 324.37814,144.61111 c 2.37845,9.48679 3.46062,19.29766 3.20703,29.07477 -0.23569,9.08684 -1.62657,18.1531 -4.27148,26.84969 -2.58237,8.49094 -6.35852,16.61787 -11.18273,24.06714 2.91629,-8.6267 5.3402,-17.41983 7.25603,-26.32232 1.78583,-8.29841 3.13037,-16.69297 3.98303,-25.13843 0.95658,-9.47482 1.29358,-19.01214 1.00812,-28.53085 z"
+       id="path4739"
+       inkscape:path-effect="#path-effect4741"
+       inkscape:original-d="m 324.37814,144.61111 c 0,0 3.35258,19.44557 3.20703,29.07477 -0.13914,9.20999 -1.71163,18.00151 -4.27148,26.84969 -2.43636,8.42147 -11.18273,24.06714 -11.18273,24.06714 0,0 5.46952,-17.40827 7.25603,-26.32232 1.6868,-8.41663 3.1771,-16.59234 3.98303,-25.13843 0.88121,-9.34457 1.00812,-28.53085 1.00812,-28.53085 z"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csscssc"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
+    <path
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 103.74759,266.35677 c -0.81586,0.96567 -1.99927,1.61286 -3.25252,1.77873 -1.230457,0.16286 -2.537091,-0.14971 -3.49769,-0.93571 -0.861285,-0.70474 -1.413832,-1.77419 -1.490273,-2.88443 -0.143024,1.67886 0.344901,3.40404 1.346055,4.7593 0.700153,0.9478 1.649345,1.71765 2.740184,2.1633 1.433224,0.58552 3.095334,0.58699 4.529584,0.004 l -0.37534,-4.88519 z"
+       id="path4916"
+       inkscape:path-effect="#path-effect4918"
+       inkscape:original-d="m 103.74759,266.35677 c 0,0 -2.1044,1.63575 -3.25252,1.77873 -1.2779,0.15912 -2.506224,-0.11397 -3.49769,-0.93571 -0.833207,-0.69063 -1.490273,-2.88443 -1.490273,-2.88443 0,0 0.430074,3.3885 1.346055,4.7593 0.646552,0.96761 1.628377,1.81952 2.740184,2.1633 1.565214,0.48397 4.529584,0.004 4.529584,0.004 z"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csscsscc"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
+    <path
+       sodipodi:nodetypes="csscsscc"
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 103.88533,273.93163 c 0,0 -2.10934,2.25414 -3.18524,2.67962 -1.197515,0.47359 -2.455168,0.51618 -3.620581,-0.0314 -0.979392,-0.46037 -2.164073,-2.42023 -2.164073,-2.42023 0,0 1.263586,3.17336 2.493169,4.2716 0.867967,0.77523 2.031592,1.35464 3.194035,1.40953 1.63651,0.0771 4.38669,-1.12872 4.38669,-1.12872 z"
+       inkscape:path-effect="#path-effect4922"
+       id="path4920"
+       d="m 103.88533,273.93163 c -0.70606,1.22756 -1.85495,2.19408 -3.18524,2.67962 -1.162435,0.42428 -2.491401,0.47478 -3.620581,-0.0314 -1.017147,-0.45596 -1.824269,-1.35862 -2.164073,-2.42023 0.281259,1.66129 1.184994,3.20968 2.493169,4.2716 0.914881,0.74266 2.02641,1.25077 3.194035,1.40953 1.5341,0.20859 3.14379,-0.2056 4.38669,-1.12872 l -1.104,-4.7804 z"
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
+    <path
+       style="fill:url(#radialGradient5079);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 149.89732,345.38607 c 0.80944,5.08149 -0.0884,10.41981 -2.51546,14.95698 -2.29246,4.28546 -6.02562,7.89266 -10.60587,9.51806 -4.43881,1.5752 -9.40055,1.21647 -13.86921,-0.27195 -4.84477,-1.6137 -9.27386,-4.56099 -12.44146,-8.56625 -3.82726,-4.83935 -5.67314,-10.9652 -6.6345,-17.0597 -0.0917,-0.58144 -0.17636,-1.16673 -0.17312,-1.75535 0.003,-0.58862 0.0975,-1.18453 0.34888,-1.71677 0.25078,-0.53093 0.65023,-0.98175 1.10541,-1.35269 0.45517,-0.37093 0.96655,-0.66649 1.48489,-0.94235 2.55114,-1.35772 5.30986,-2.2698 8.00707,-3.30749 2.6972,-1.0377 5.38086,-2.22813 7.62295,-4.05153 2.654,-2.15839 4.59687,-5.17702 5.46222,-8.48663 -1.5969,1.60629 -3.48769,2.91949 -5.5505,3.85495 -1.94521,0.88213 -4.04223,1.42832 -6.17061,1.60719 -1.54141,-3.78575 -2.94475,-7.62771 -4.20627,-11.51569 -3.28284,-10.1176 -5.60232,-20.54416 -6.98779,-31.09041 -1.96421,-14.95161 -2.04783,-30.14928 -0.24827,-45.12159 0.32703,-7.02755 1.02369,-14.03789 2.08616,-20.99236 1.48627,-9.72854 3.73865,-19.48326 8.3972,-28.15226 4.03386,-7.50654 9.77447,-13.99741 16.18747,-19.60933 7.01496,-6.13869 14.86339,-11.28523 23.09872,-15.65243 10.17077,-5.39356 21.01009,-9.6326 32.30438,-11.86286 10.49138,-2.07171 21.32982,-2.39002 31.91978,-0.9021 9.87932,1.38807 19.50841,4.33495 28.65079,8.32802 9.12143,3.98392 17.78509,9.01479 25.76636,14.96217 l 6.7803,41.31322 38.58314,54.10496 -2.762,83.45638 c -9.62945,6.16703 -19.54486,11.88752 -29.7037,17.13693 -6.56171,3.39066 -13.22914,6.58672 -20.06787,9.37676 -14.45227,5.89618 -29.59546,9.94876 -44.85838,13.21622 -9.99941,2.14066 -20.09028,3.95366 -30.28604,4.73925 -8.68343,0.66906 -17.44305,0.58813 -26.07073,-0.60045 -5.25507,-0.72395 -10.45362,-1.85781 -15.53287,-3.38788 2.90713,-2.65704 5.29807,-5.87678 7.00109,-9.42797 1.42414,-2.96966 2.37347,-6.20326 2.446,-9.49594 0.10422,-4.7315 -1.59361,-9.3305 -3.77418,-13.53087 -1.39682,-2.69066 -3.00113,-5.27357 -4.79398,-7.71824 z"
+       id="path4743"
+       inkscape:path-effect="#path-effect4745"
+       inkscape:original-d="m 149.89732,345.38607 c 0,0 -0.14479,10.64835 -2.51546,14.95698 -2.28999,4.16173 -6.15337,7.86295 -10.60587,9.51806 -4.33419,1.61113 -9.45005,1.08903 -13.86921,-0.27195 -4.75771,-1.46522 -9.28532,-4.71636 -12.44146,-8.56625 -3.40435,-4.15263 -5.33522,-11.84955 -6.6345,-17.0597 -0.50743,-2.03488 -0.87608,-1.47184 0.17576,-3.47212 1.17019,-2.22524 0.32624,-1.20187 2.5903,-2.29504 3.8749,-1.87095 12.15929,-4.42145 15.63002,-7.35902 2.72516,-2.30656 5.46222,-8.48663 5.46222,-8.48663 0,0 -3.65226,2.92252 -5.5505,3.85495 -1.89824,0.93248 -6.17061,1.60719 -6.17061,1.60719 0,0 -1.53709,-2.73855 -4.20627,-11.51569 -2.66919,-8.77712 -5.99461,-23.79674 -6.98779,-31.09041 -1.98639,-14.58729 -0.24827,-45.12159 -0.24827,-45.12159 0,0 -1.8593,-14.41062 2.08616,-20.99236 3.94544,-6.58177 4.45174,-21.57049 8.3972,-28.15226 3.94545,-6.58174 12.24201,-13.02756 16.18747,-19.60933 3.94543,-6.58176 15.10582,-11.62987 23.09872,-15.65243 10.07295,-5.06942 22.36952,-12.97233 32.30438,-11.86286 9.93484,1.10946 21.98493,-2.01155 31.91978,-0.9021 9.93485,1.10946 18.71592,7.21858 28.65079,8.32802 9.93484,1.10946 25.76636,14.96217 25.76636,14.96217 l 6.7803,41.31322 38.58314,54.10496 -2.762,83.45638 c -9.18886,2.98479 -23.59338,13.26502 -29.7037,17.13693 -6.11035,3.87192 -14.33772,6.81305 -20.06787,9.37676 -11.46023,5.12743 215.54482,76.2069 -44.85838,13.21622 -9.39065,-2.27157 -17.4531,4.28514 -30.28604,4.73925 -5.74405,0.20323 -20.68915,0.0302 -26.07073,-0.60045 -5.38159,-0.63072 -15.53287,-3.38788 -15.53287,-3.38788 0,0 5.46022,-3.12391 7.00109,-9.42797 0.53105,-2.17266 3.02077,-4.8556 2.446,-9.49594 -0.43992,-3.55174 -2.07966,-10.37857 -3.77418,-13.53087 -1.22496,-2.27882 -4.79398,-7.71824 -4.79398,-7.71824 z"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csssssssscscsscsssssssccccssssscsssc"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
+    <path
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-ydpi="368"
+       inkscape:export-xdpi="368"
+       style="fill:#333333;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.31875181px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 315.75589,472.48344 -1.35075,-13.91337 c -5.24503,-0.97641 -10.65534,-1.05866 -15.92763,-0.24215 -5.47138,0.84735 -10.79142,2.6629 -15.63932,5.3372 l 1.86922,12.66322 c 5.34435,0.91222 10.82564,1.01784 16.20117,0.3122 5.113,-0.67118 10.12917,-2.07566 14.84731,-4.1571 z"
+       id="path4609"
+       inkscape:path-effect="#path-effect4611"
+       inkscape:original-d="m 315.75589,472.48344 -1.35075,-13.91337 c 0,0 -10.07063,-1.05627 -15.92763,-0.24215 -5.85699,0.81413 -15.63932,5.3372 -15.63932,5.3372 l 1.86922,12.66322 c 0,0 10.46466,1.20085 16.20117,0.3122 5.73651,-0.88865 14.84731,-4.1571 14.84731,-4.1571 z"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccsccsc" />
+    <g
+       transform="matrix(-1.4930165,-3.7987702,-3.903445,1.2317631,1146.6182,1443.269)"
+       id="g4839"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png">
+      <path
+         inkscape:export-ydpi="368"
+         inkscape:export-xdpi="368"
+         sodipodi:nodetypes="csccscc"
+         inkscape:connector-curvature="0"
+         inkscape:original-d="m 291.45757,103.71808 c 0,0 9.96007,-1.32564 14.21093,-3.11654 3.02896,-1.27611 8.28979,-5.339191 8.28979,-5.339191 l 3.51262,4.2854 c 0,0 -7.21964,4.478021 -11.24039,5.690451 -4.6053,1.3887 -14.33151,1.68606 -14.33151,1.68606 z"
+         inkscape:path-effect="#path-effect5999"
+         id="path4843"
+         d="m 291.45757,103.71808 c 4.8863,-0.0155 9.76661,-1.08574 14.21093,-3.11654 2.99979,-1.370728 5.80108,-3.174952 8.28979,-5.339191 l 3.51262,4.2854 c -3.40269,2.493301 -7.21657,4.424071 -11.24039,5.690451 -4.61533,1.45254 -9.50509,2.0278 -14.33151,1.68606 l -0.44144,-3.20618 z"
+         style="fill:#ffcee0;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:export-ydpi="368"
+         inkscape:export-xdpi="368"
+         sodipodi:nodetypes="csssc"
+         inkscape:connector-curvature="0"
+         inkscape:original-d="m 304.04,101.85715 c 0,0 -0.37192,-2.039868 -2.08446,-1.911901 -3.05059,0.227951 -2.31982,-1.556546 -4.28465,0.921851 -0.28517,0.35971 -2.09496,1.4336 -3.77847,2.34573 -1.68351,0.91213 -3.29572,1.73433 -3.29572,1.73433"
+         inkscape:path-effect="#path-effect5948"
+         id="path4841"
+         d="m 304.04,101.85715 c -0.35741,-0.90816 -1.14887,-1.63411 -2.08446,-1.911901 -0.71997,-0.213776 -1.49895,-0.169196 -2.22465,0.02425 -0.7257,0.193442 -1.40513,0.529902 -2.06,0.897602 -1.2928,0.72588 -2.5089,1.57995 -3.77847,2.34573 -1.0636,0.64154 -2.16467,1.22096 -3.29572,1.73433"
+         style="fill:#ffcee0;fill-opacity:1;fill-rule:evenodd;stroke:#d085a3;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:export-ydpi="368"
+         inkscape:export-xdpi="368"
+         style="fill:#ffcee0;fill-opacity:1;fill-rule:evenodd;stroke:#d085a3;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 310.46239,98.677873 c -0.60398,-0.569331 -1.4016,-0.92941 -2.22809,-1.005858 -0.75912,-0.07022 -1.52851,0.09422 -2.22792,0.397558 -0.6994,0.303342 -1.33324,0.741868 -1.919,1.229796 -1.47586,1.229371 -2.67181,2.792811 -3.47207,4.538981"
+         id="path4845"
+         inkscape:path-effect="#path-effect5940"
+         inkscape:original-d="m 310.46239,98.677873 c 0,0 -0.57641,-1.476092 -2.22809,-1.005858 -2.94218,0.837637 -2.72151,-1.195977 -4.14692,1.627354 -0.41377,0.819541 -3.47207,4.538981 -3.47207,4.538981"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cssc" />
+      <path
+         inkscape:export-ydpi="368"
+         inkscape:export-xdpi="368"
+         sodipodi:nodetypes="cssc"
+         inkscape:connector-curvature="0"
+         inkscape:original-d="m 316.88139,94.194608 c 0,0 -1.63046,-1.179682 -3.08012,-0.259 -2.58232,1.640032 -3.00304,-1.082912 -3.56636,2.029267 -0.16352,0.903392 -2.03733,5.339175 -2.03733,5.339175"
+         inkscape:path-effect="#path-effect5932"
+         id="path4847"
+         d="m 316.88139,94.194608 c -0.97841,-0.361123 -2.05514,-0.451663 -3.08012,-0.259 -1.36706,0.256964 -2.61775,1.011899 -3.56636,2.029267 -1.33187,1.428411 -2.07908,3.386614 -2.03733,5.339175"
+         style="fill:#ffcee0;fill-opacity:1;fill-rule:evenodd;stroke:#d085a3;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:export-ydpi="368"
+         inkscape:export-xdpi="368"
+         sodipodi:nodetypes="csssc"
+         inkscape:connector-curvature="0"
+         inkscape:original-d="m 304.98822,104.13119 c 0,0 1.15352,1.77074 -1.7238,2.57522 -1.53295,0.42861 -2.82228,1.86616 -5.38112,1.02875 -2.55884,-0.83741 -6.57408,-4.28467 -3.62793,-0.86554 1.09074,1.26585 -3.71584,-0.35835 -3.71584,-0.35835"
+         inkscape:path-effect="#path-effect5952"
+         id="path4849"
+         d="m 304.98822,104.13119 c -0.27606,1.01439 -0.8912,1.93336 -1.7238,2.57522 -0.74416,0.57368 -1.64782,0.92263 -2.57521,1.0737 -0.9274,0.15106 -1.87911,0.10975 -2.80591,-0.045 -1.22665,-0.20475 -2.41195,-0.60481 -3.62793,-0.86554 -1.21939,-0.26146 -2.46895,-0.38197 -3.71584,-0.35835"
+         style="fill:#ffcee0;fill-opacity:1;fill-rule:evenodd;stroke:#d085a3;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:export-ydpi="368"
+         inkscape:export-xdpi="368"
+         style="fill:#ffcee0;fill-opacity:1;fill-rule:evenodd;stroke:#d085a3;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 313.20067,101.01052 c -0.24788,1.42458 -0.98515,2.75933 -2.05903,3.72766 -1.15589,1.04229 -2.66435,1.64347 -4.20322,1.87654 -1.53887,0.23308 -3.11269,0.11588 -4.64694,-0.14587 -1.31802,-0.22486 -2.6179,-0.55593 -3.8829,-0.98895"
+         id="path4851"
+         inkscape:path-effect="#path-effect5944"
+         inkscape:original-d="m 313.20067,101.01052 c 0,0 0.7205,2.63204 -2.05903,3.72766 -2.96169,1.16747 -5.904,2.93676 -8.85016,1.73067 -1.55571,-0.63687 -3.8829,-0.98895 -3.8829,-0.98895"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cssc" />
+      <path
+         inkscape:export-ydpi="368"
+         inkscape:export-xdpi="368"
+         sodipodi:nodetypes="cssc"
+         inkscape:connector-curvature="0"
+         inkscape:original-d="m 321.13124,96.11944 c 0,0 0.0667,3.787653 -2.53671,5.25348 -2.77398,1.56193 -5.44636,3.71737 -8.52991,2.92598 -1.62824,-0.4179 -3.98172,-0.44808 -3.98172,-0.44808"
+         inkscape:path-effect="#path-effect5936"
+         id="path4853"
+         d="m 321.13124,96.11944 c -0.19985,1.974571 -1.11464,3.869074 -2.53671,5.25348 -1.10504,1.07577 -2.49404,1.83822 -3.96478,2.30227 -1.47074,0.46404 -3.02298,0.63711 -4.56513,0.62371 -1.33795,-0.0116 -2.67465,-0.16205 -3.98172,-0.44808"
+         style="fill:#ffcee0;fill-opacity:1;fill-rule:evenodd;stroke:#d085a3;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <path
+       style="fill:#ffa8c9;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 133.85795,342.11272 c 0.64761,1.56497 0.97709,3.26081 0.96257,4.95442 -0.006,0.70953 -0.0726,1.42223 -0.2585,2.10699 -0.18595,0.68476 -0.49475,1.34243 -0.9513,1.8856 -0.65553,0.77991 -1.59947,1.29481 -2.59703,1.50184 -0.99755,0.20703 -2.04475,0.11678 -3.01905,-0.18108 -1.80224,-0.55097 -3.37079,-1.8289 -4.2746,-3.48262 1.29723,0.52369 2.73087,0.70515 4.11767,0.5212 1.08961,-0.14453 2.15243,-0.51436 3.07847,-1.10647 0.92603,-0.59211 1.7125,-1.4083 2.24045,-2.37236 0.63377,-1.15728 0.88359,-2.52071 0.70132,-3.82752 z"
+       id="path4739-5"
+       inkscape:path-effect="#path-effect4741-8"
+       inkscape:original-d="m 133.85795,342.11272 c 0,0 1.43064,3.01441 0.96257,4.95442 -0.23403,0.97001 -0.73713,2.98723 -1.2098,3.99259 -0.47266,1.00537 -3.46434,0.86291 -5.61608,1.32076 -4.0959,0.87155 -4.2746,-3.48262 -4.2746,-3.48262 0,0 0.19327,1.93345 4.11767,0.5212 3.70544,-1.33339 2.02694,-1.56449 5.31892,-3.47883 3.59956,-2.09323 0.70132,-3.82753 0.70132,-3.82752 z"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cssscssc"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
+    <path
+       style="fill:url(#linearGradient5071);fill-opacity:1;fill-rule:evenodd;stroke:#d085a3;stroke-width:4.08256435px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 299.05111,376.29559 c 3.24255,-6.07998 5.881,-12.48194 7.86391,-19.08106 2.60488,-8.66906 4.07428,-17.66465 4.58836,-26.702 0.88135,-15.49388 -1.03847,-31.05914 -4.5601,-46.17322 -8.47104,-36.3559 -26.37429,-70.47181 -51.47977,-98.09834 l -14.82012,17.46296 c 14.89812,19.17248 25.90316,41.35706 32.15455,64.81891 3.00067,11.2617 4.91323,22.78574 7.71686,34.0981 1.445,5.83043 3.13457,11.65239 3.50397,17.64784 0.60595,9.83457 -2.36936,19.58261 -2.22647,29.4348 0.0917,6.31946 1.48553,12.61718 4.06919,18.38508"
+       id="path4855"
+       inkscape:path-effect="#path-effect4857"
+       inkscape:original-d="m 299.05111,376.29559 c 0,0 7.50395,-13.01013 7.86391,-19.08106 0.5836,-9.84085 1.45312,-17.43517 4.58836,-26.702 6.22675,-18.40425 4.02298,-27.90634 -4.5601,-46.17322 -4.85583,-10.33429 -51.47977,-98.09834 -51.47977,-98.09834 l -14.82012,17.46296 c 0,0 28.95172,49.36844 32.15455,64.81891 2.08891,10.07673 3.4472,24.56808 7.71686,34.0981 4.93589,11.01712 2.76475,5.87472 3.50397,17.64784 0.49019,7.80719 -111.76989,-61.38481 -2.22647,29.4348 6.46393,5.35906 4.06919,18.38508 4.06919,18.38508"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csssccssssc"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png" />
+    <path
+       sodipodi:nodetypes="ssssssssscsssss"
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 247.0174,257.36462 c 2.44676,0.3014 17.44728,-1.36907 19.58396,-0.48072 0.96005,0.39913 1.73167,1.07255 1.72636,1.85496 -0.008,1.10277 -2.53445,1.69907 -3.8883,2.26086 -3.32835,1.38112 -44.07749,8.11418 -47.9173,7.78824 -7.2252,-0.61327 -20.05174,7.66548 -31.04899,2.68894 -5.86624,-2.65463 -8.01482,-1.48884 -9.51885,-1.88192 -1.50406,-0.39306 -2.36357,-2.34501 -3.20413,-4.43644 -0.88135,-2.1929 -1.27956,-6.38647 -0.50564,-10.16776 0.77395,-3.78132 2.92396,-6.0626 2.92396,-6.0626 0,0 0.79039,6.73903 1.81522,10.37551 1.02485,3.63649 2.62411,4.37443 4.1059,6.37739 2.17282,2.93713 0.0369,-1.16897 4.01145,0.61556 3.03027,1.36053 16.16033,1.02446 29.99576,-1.65784 13.83547,-2.68228 28.37629,-7.71076 31.9206,-7.27418 z"
+       inkscape:path-effect="#path-effect4926"
+       id="path4924"
+       d="m 247.0174,257.36462 c 3.22575,-0.87647 6.47285,-1.75797 9.80374,-2.03869 3.33089,-0.28073 6.78641,0.0711 9.78022,1.55797 0.3949,0.19613 0.78496,0.41449 1.1055,0.71725 0.32054,0.30277 0.56897,0.69985 0.62086,1.13771 0.0503,0.42461 -0.0903,0.8606 -0.34571,1.20354 -0.25537,0.34294 -0.61876,0.59664 -1.01351,0.76096 -0.78948,0.32864 -1.67399,0.3074 -2.52908,0.29636 -16.21394,-0.20936 -31.92693,5.0968 -47.9173,7.78824 -10.25244,1.72565 -20.65699,2.37772 -31.04899,2.68894 -1.64876,0.0494 -3.30707,0.0897 -4.93994,-0.14387 -1.63287,-0.23361 -3.25347,-0.75618 -4.57891,-1.73805 -1.48488,-1.09998 -2.52104,-2.7194 -3.20413,-4.43644 -1.27595,-3.20729 -1.39207,-6.83174 -0.50564,-10.16776 0.57964,-2.18144 1.57772,-4.25089 2.92396,-6.0626 0.3016,3.50254 0.90974,6.97862 1.81522,10.37551 0.33672,1.2632 0.71946,2.52746 1.35948,3.66739 0.64002,1.13993 1.56129,2.15816 2.74642,2.71 1.23636,0.5757 2.64768,0.60444 4.01145,0.61556 10.02316,0.0817 20.07411,-0.23264 29.99576,-1.65784 10.80931,-1.55271 21.38241,-4.41085 31.9206,-7.27418 z"
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
+    <path
+       sodipodi:nodetypes="csscsscc"
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 261.98083,311.25671 c 0,0 3.67523,-0.73451 4.80761,-0.972 1.26033,-0.26452 4.02116,0.18251 5.07727,0.91924 0.88752,0.61925 9.93993,8.66655 9.93993,8.66655 0,0 -8.04752,-10.24277 -9.07384,-11.533 -0.72456,-0.91074 -5.12389,-1.86658 -6.26036,-2.11711 -1.59993,-0.35263 -4.47856,0.13351 -4.47856,0.13351 z"
+       inkscape:path-effect="#path-effect4942"
+       id="path4940"
+       d="m 261.98083,311.25671 c 1.51928,-0.63155 3.16232,-0.96374 4.80761,-0.972 1.72864,-0.009 3.4493,0.33788 5.07727,0.91924 4.23795,1.51341 7.86327,4.6743 9.93993,8.66655 -1.37368,-4.8256 -4.70701,-9.06232 -9.07384,-11.533 -1.92978,-1.09184 -4.0592,-1.85053 -6.26036,-2.11711 -1.48828,-0.18024 -3.00366,-0.13507 -4.47856,0.13351 l -0.012,4.90281 z"
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
+    <path
+       sodipodi:nodetypes="csssssscsccscc"
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 177.71624,284.07364 c 0,0 -2.91947,8.98266 -2.49389,13.24515 0.22699,2.27348 -0.24171,13.44528 2.75819,21.75737 2.99993,8.31212 10.28244,14.45031 10.99918,16.61974 0.78751,2.38369 14.47247,-0.79134 17.59137,2.95126 3.1189,3.74262 30.33215,-6.94143 40.20782,-10.66699 4.32707,-1.63237 3.22662,-7.484 9.8398,-9.68753 6.61318,-2.2035 6.30296,-8.27782 6.30296,-8.27782 0,0 3.44255,-5.04594 4.22298,-7.73631 1.33339,-4.59663 3.71824,-15.98136 3.71824,-15.98136 l -6.98871,-27.31637 c 0,0 -42.12663,12.96212 -44.31784,10.68654 -2.34308,-2.43331 -41.8402,14.40632 -41.8402,14.40632 z"
+       inkscape:path-effect="#path-effect4975"
+       id="path4973"
+       d="m 177.71624,284.07364 c -1.38364,4.28679 -2.22376,8.7487 -2.49389,13.24515 -0.44067,7.33534 0.63914,14.72097 2.75819,21.75737 0.9808,3.2568 2.19322,6.46757 3.95979,9.37411 1.76658,2.90654 4.11442,5.50974 7.03939,7.24563 2.59318,1.53898 5.5653,2.35589 8.55745,2.73012 2.99215,0.37424 6.02012,0.32124 9.03392,0.22114 7.04126,-0.23388 14.10736,-0.72635 20.98088,-2.2719 6.87352,-1.54555 13.57998,-4.18252 19.22694,-8.39509 3.69792,-2.75861 6.88435,-6.14495 9.8398,-9.68753 2.22243,-2.66393 4.32619,-5.42685 6.30296,-8.27782 1.64715,-2.43807 3.0632,-5.0322 4.22298,-7.73631 2.16713,-5.0528 3.43236,-10.49087 3.71824,-15.98136 l -6.98871,-27.31637 c -14.93287,2.84737 -29.72837,6.41507 -44.31784,10.68654 -14.16123,4.14609 -28.12832,8.95521 -41.8402,14.40632 l 1e-4,0 z"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
+    <path
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 255.94051,318.46088 c 1.59715,0.39501 3.11607,1.10372 4.44484,2.07391 1.39619,1.01942 2.5756,2.31968 3.53834,3.75554 1.29162,1.92636 2.20197,4.10729 2.66319,6.38027 0.82089,-2.65205 0.72645,-5.57814 -0.26372,-8.17174 -0.79284,-2.07672 -2.13781,-3.92205 -3.7785,-5.42189 -1.10566,-1.01074 -2.3478,-1.87198 -3.68208,-2.55297 l -2.92207,3.93688 z"
+       id="path4936"
+       inkscape:path-effect="#path-effect4938"
+       inkscape:original-d="m 255.94051,318.46088 c 0,0 3.39286,1.5923 4.44484,2.07391 1.17096,0.53594 3.12638,2.53552 3.53834,3.75554 0.34613,1.02534 2.66319,6.38027 2.66319,6.38027 0,0 -0.20452,-6.52412 -0.26372,-8.17174 -0.0419,-1.163 -3.0131,-4.54525 -3.7785,-5.42189 -1.0776,-1.23405 -3.68208,-2.55297 -3.68208,-2.55297 z"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csscsscc"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
+    <path
+       style="fill:#bce7f1;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 218.95595,271.29175 c -0.29015,4.20773 -0.27731,8.43633 0.0384,12.64222 0.48563,6.46959 1.69459,12.90345 3.86947,19.01584 2.55465,7.17971 6.54517,14.00536 12.40626,18.8759 3.36881,2.79947 7.31003,4.90707 11.50883,6.15446 3.70284,-2.78656 7.09559,-5.98486 10.0956,-9.51699 2.2445,-2.64261 4.26945,-5.47163 6.04716,-8.44836 1.64715,-2.43807 3.06319,-5.0322 4.22297,-7.73631 2.16713,-5.0528 3.43236,-10.49087 3.71826,-15.98136 l -6.98872,-27.31637 c -4.70583,1.49078 -9.43027,2.92279 -14.17186,4.29558 -10.17476,2.94581 -20.42848,5.61888 -30.74644,8.01539 l 7e-5,0 z"
+       id="path4961"
+       inkscape:path-effect="#path-effect4963"
+       inkscape:original-d="m 218.95595,271.29175 c 0,0 -0.38712,8.37973 0.0384,12.64222 0.454,4.54693 2.43599,14.67695 3.86947,19.01584 0.78751,2.38368 9.28735,15.13329 12.40626,18.8759 3.11892,3.74261 11.50883,6.15446 11.50883,6.15446 0,0 3.48243,-7.31346 10.0956,-9.51699 6.61317,-2.20352 6.04716,-8.44836 6.04716,-8.44836 0,0 3.44256,-5.04594 4.22297,-7.73631 1.3334,-4.59663 3.71826,-15.98136 3.71826,-15.98136 l -6.98872,-27.31637 c 0,0 -11.98064,6.57118 -14.17186,4.29558 -2.34307,-2.43331 -30.74644,8.01539 -30.74644,8.01539 z"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cssscscsccsc"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
+    <path
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 265.4138,256.12806 c -21.35606,3.8764 -42.53227,8.74351 -63.43773,14.58044 -6.99014,1.95169 -13.96696,4.0177 -20.66064,6.82231 -1.26861,0.53154 -2.53227,1.0925 -3.68886,1.83695 -1.15659,0.74444 -2.20941,1.68345 -2.93553,2.85164 -0.57665,0.92771 -0.93307,1.97394 -1.23695,3.02315 -2.36933,8.18068 -1.77659,16.97056 0.10176,25.27773 1.35601,5.9971 3.41251,11.93125 6.96357,16.95061 2.30951,3.26446 5.22849,6.09622 8.56148,8.30568 -2.74535,-2.69368 -5.14292,-5.74142 -7.11448,-9.04381 -3.23792,-5.42356 -5.31158,-11.52345 -6.17976,-17.78008 -0.82514,-5.94648 -0.57054,-12.01687 0.44701,-17.93346 0.15918,-0.92555 0.33801,-1.85209 0.65026,-2.7378 0.31226,-0.88571 0.76412,-1.73432 1.41431,-2.41199 0.84299,-0.87862 1.96744,-1.42322 3.07489,-1.92935 7.67284,-3.50667 15.75023,-6.03902 23.84582,-8.41193 20.26344,-5.93946 40.80194,-10.94038 61.52764,-14.98137 l -1.33279,-4.41872 z"
+       id="path4944"
+       inkscape:path-effect="#path-effect4946"
+       inkscape:original-d="m 265.4138,256.12806 c 0,0 -48.41442,10.82905 -63.43773,14.58044 -9.84122,2.45742 -11.22862,3.09059 -20.66064,6.82231 -5.67321,2.24457 -2.75667,-0.228 -6.62439,4.68859 -1.32624,1.68586 -1.01425,0.88976 -1.23695,3.02315 -0.82633,7.91564 -1.13442,17.41567 0.10176,25.27773 0.82126,5.22353 4.24655,12.137 6.96357,16.95061 1.98387,3.5147 8.56148,8.30568 8.56148,8.30568 0,0 -5.53224,-5.54975 -7.11448,-9.04381 -2.40328,-5.30715 -5.74642,-12.09331 -6.17976,-17.78008 -0.48112,-6.31384 -0.23476,-13.27968 0.44701,-17.93346 0.53863,-3.67654 -0.41117,-2.37891 2.06457,-5.14979 4.33654,-4.85358 -3.09419,0.28677 3.07489,-1.92935 10.17421,-3.6549 13.35914,-5.78444 23.84582,-8.41193 12.86164,-3.22257 61.52764,-14.98137 61.52764,-14.98137 z"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csssssscsssssscc"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 113.4276,263.84462 c -3.63914,-0.43718 -7.35765,-0.20477 -10.91404,0.68213 0.3334,3.37026 0.68869,6.73835 1.06582,10.10399 0.88629,7.90956 1.89456,15.81366 3.45327,23.6186 1.43714,7.19621 3.34181,14.30116 5.75544,21.23119 0.97731,2.80607 2.03787,5.58315 3.1798,8.32635 1.40946,-0.11673 2.80561,-0.39339 4.15307,-0.82297 2.61479,-0.83361 5.04233,-2.24906 7.05573,-4.11406 l 4.54038,-9.699 1.87586,-22.59542 -5.96861,-21.14591 c -4.15387,-3.02888 -9.09253,-4.97172 -14.19672,-5.5849 z"
+       id="path4949"
+       inkscape:path-effect="#path-effect4951"
+       inkscape:original-d="m 113.4276,263.84462 c -3.24969,-0.48198 -10.91404,0.68213 -10.91404,0.68213 0,0 0.77796,6.73299 1.06582,10.10399 0.67703,7.92773 1.83393,15.82214 3.45327,23.6186 1.48889,7.16847 3.50835,14.26311 5.75544,21.23119 0.91185,2.82756 3.1798,8.32635 3.1798,8.32635 0,0 2.84936,-0.37453 4.15307,-0.82297 2.44352,-0.84051 7.05573,-4.11406 7.05573,-4.11406 l 4.54038,-9.699 1.87586,-22.59542 -5.96861,-21.14591 c 0,0 -8.87094,-4.79498 -14.19672,-5.5849 z"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="scssscsccccs"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
+    <path
+       sodipodi:nodetypes="ccsccc"
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 239.54222,286.38558 -20.1684,1.37672 c 0,0 0.53285,4.23176 0.99798,6.19896 0.60364,2.55302 2.58913,9.28131 2.58913,9.28131 l 17.86927,-11.85508 z"
+       inkscape:path-effect="#path-effect4967"
+       id="path4965"
+       d="m 239.54222,286.38558 -20.1684,1.37672 c 0.24082,2.07972 0.57391,4.14875 0.99798,6.19896 0.65108,3.14775 1.51679,6.25108 2.58913,9.28131 l 17.86927,-11.85508 -1.28798,-5.00191 z"
+       style="fill:#def3f8;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
+    <path
+       sodipodi:nodetypes="ccsccc"
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 240.06573,291.88783 -17.09838,11.35354 c 0,0 1.96631,3.8058 2.43145,5.77301 0.60364,2.55303 4.23999,6.91656 4.23999,6.91656 l 12.7319,-20.30973 z"
+       inkscape:path-effect="#path-effect4971"
+       id="path4969"
+       d="m 240.06573,291.88783 -17.09838,11.35354 c 0.68248,1.97497 1.49531,3.90488 2.43145,5.77301 1.213,2.42061 2.6332,4.73735 4.23999,6.91656 l 12.7319,-20.30973 -2.30496,-3.73338 z"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
+    <path
+       sodipodi:nodetypes="csssscsccsc"
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 236.98326,262.30823 c 0,0 -0.0856,8.62092 0.33994,12.88339 0.45398,4.54694 0.14493,9.73301 1.57836,14.07191 0.78751,2.38367 2.65525,8.07912 5.77414,11.82172 3.11892,3.74262 7.73015,5.95442 9.18125,8.00291 1.15819,1.635 9.0648,0.92666 9.0648,0.92666 0,0 3.44256,-5.04594 4.22297,-7.73631 1.3334,-4.59663 3.71824,-15.98136 3.71824,-15.98136 l -6.9887,-27.31637 c 0,0 -12.70414,4.9433 -14.89536,2.6677 -2.34308,-2.43332 -11.99564,0.65975 -11.99564,0.65975 z"
+       inkscape:path-effect="#path-effect4959"
+       id="path4957"
+       d="m 236.98326,262.30823 c 0.0875,4.29509 0.20086,8.58966 0.33994,12.88339 0.15317,4.72875 0.3446,9.50438 1.57836,14.07191 1.14988,4.25701 3.1912,8.24781 5.77414,11.82172 2.40796,3.3318 5.39862,6.3933 9.18125,8.00291 2.83733,1.20736 6.04187,1.53495 9.0648,0.92666 1.64715,-2.43807 3.06319,-5.0322 4.22297,-7.73631 2.16712,-5.0528 3.43235,-10.49087 3.71824,-15.98136 l -6.9887,-27.31637 c -4.89681,1.22632 -9.87732,2.11831 -14.89536,2.6677 -3.98275,0.43604 -7.9891,0.65639 -11.99564,0.65975 z"
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
+    <path
+       style="fill:#ffcee0;fill-opacity:1;fill-rule:nonzero;stroke:#d085a3;stroke-width:4.4810915px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 273.48303,170.97612 c 1.51569,6.64902 3.86068,13.10855 6.96339,19.18144 7.06048,13.81938 17.87933,25.39065 25.45252,38.93585 9.37932,16.77559 13.45643,35.99347 15.79252,55.07054 2.88676,23.57391 3.30052,47.44174 1.39219,71.11495 -1.87214,23.2243 -5.97818,46.26799 -12.24301,68.70958 2.73021,-35.06859 0.32014,-70.53316 -7.12938,-104.90997 -4.58099,-21.1396 -11.0882,-41.94059 -20.60689,-61.36384 -6.77119,-13.81687 -15.06387,-26.91388 -24.96846,-38.68902 -11.46245,-13.62723 -25.35043,-25.62175 -41.80784,-32.42195 -10.75024,-4.44199 -22.44692,-6.5774 -34.07325,-6.2206 9.15717,1.24448 18.19105,3.39436 26.92717,6.40812 9.54602,3.29316 18.80164,7.6582 26.8383,13.77241 14.22505,10.82228 23.96541,26.62599 30.66963,43.19486 14.00302,34.60719 15.70956,74.04744 4.74811,109.73482 3.00077,-37.62626 -7.22221,-76.17698 -28.47322,-107.37209 -8.69822,-12.76843 -19.36665,-24.47732 -32.6351,-32.39186 -19.57354,-11.67548 -43.77718,-14.25058 -66.11992,-9.75144 -16.81937,3.3869 -33.42769,11.07672 -43.95596,24.6236 -7.359759,9.46991 -11.287945,21.14302 -14.114294,32.79879 -4.21934,17.40042 -6.269774,35.3256 -6.088824,53.22936 -4.082838,-18.52179 -5.737342,-37.57738 -4.907851,-56.52568 0.935092,-21.36058 5.102248,-42.79273 14.357068,-62.06699 6.634235,-13.81658 15.970841,-26.52494 28.193671,-35.77228 8.54832,-6.46734 18.44549,-11.17247 28.89691,-13.55326 9.21622,-2.09942 18.84134,-2.38789 28.16675,-0.84418 -7.20124,-1.7234 -14.62283,-2.52383 -22.02594,-2.37553 -13.24656,0.26536 -26.42211,3.6031 -38.19735,9.67646 13.61048,-9.78625 29.35121,-16.59349 45.8036,-19.80825 20.62526,-4.03013 42.01956,-2.42006 62.60753,1.79645 18.44761,3.77816 36.46887,9.63411 53.61366,17.42159"
+       id="path5291-5"
+       inkscape:path-effect="#path-effect5293-5"
+       inkscape:original-d="m 273.48303,170.97612 c 0,0 -0.004,11.21967 6.96339,19.18144 13.55563,15.49175 18.26676,20.97781 25.45252,38.93585 6.6236,16.55337 2.39587,41.31014 15.79252,55.07054 10.79689,11.09004 7.82873,38.64286 1.39219,71.11495 -6.43656,32.47204 -12.24301,68.70958 -12.24301,68.70958 0,0 20.08231,-92.15295 -7.12938,-104.90997 -17.57049,-8.23722 -10.32114,-47.41545 -20.60689,-61.36384 -11.08961,-15.03844 -13.62002,-23.7717 -24.96846,-38.68902 -12.35235,-16.23689 -20.46266,-23.79522 -41.80784,-32.42195 -15.18678,-6.13776 -34.07325,-6.2206 -34.07325,-6.2206 0,0 17.75596,0.48786 26.92717,6.40812 11.61588,7.49828 14.63549,6.88086 26.8383,13.77241 17.99426,10.16222 10.08599,36.79966 30.66963,43.19486 14.50164,4.50553 4.74811,109.73482 4.74811,109.73482 0,0 -6.4517,-103.37056 -28.47322,-107.37209 -18.68692,-3.39577 -14.62566,-26.33908 -32.6351,-32.39186 -20.97573,-7.04969 -48.58178,-14.83034 -66.11992,-9.75144 -3.76851,1.09133 -26.86025,1.66132 -43.95596,24.6236 -8.547846,11.48113 -8.590668,15.83334 -14.114294,32.79879 -5.523642,16.96545 -6.088824,53.22936 -6.088824,53.22936 0,0 -30.456568,-62.7868 -4.907851,-56.52568 31.284939,7.66689 40.071319,-35.56012 14.357068,-62.06699 -67.732883,-69.82072 61.187021,33.31808 28.193671,-35.77228 -6.12149,-12.81885 14.46989,-10.82045 28.89691,-13.55326 10.74918,-2.03615 28.16675,-0.84418 28.16675,-0.84418 0,0 -11.44149,-0.31356 -22.02594,-2.37553 -6.43489,-1.25345 -38.19735,9.67646 -38.19735,9.67646 0,0 34.29199,-21.28476 45.8036,-19.80825 12.43685,1.59514 50.47117,-0.87838 62.60753,1.79645 11.7429,2.58818 53.61366,17.42159 53.61366,17.42159"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csssscsssscssscssssscsssscscssc"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png" />
+    <path
+       style="fill:url(#linearGradient5095);fill-opacity:1;fill-rule:evenodd;stroke:#d085a3;stroke-width:4.08256435px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 305.78166,469.7165 c 4.93862,5.67114 8.00992,12.94213 8.63244,20.43641 0.78723,9.47715 -2.21852,18.79673 -4.62917,27.99591 -2.06171,7.86761 -3.71035,15.84842 -4.77675,23.91147 -2.16088,16.3385 -1.91291,32.99357 0.73343,49.2605 -5.46865,-17.8994 -10.4072,-35.96076 -14.807,-54.15242 -3.21353,-13.28684 -6.15871,-26.89497 -5.00661,-40.51626 0.74849,-8.84946 3.24334,-17.5478 7.29914,-25.44866"
+       id="path4859"
+       inkscape:path-effect="#path-effect4861"
+       inkscape:original-d="m 305.78166,469.7165 c 0,0 7.74529,13.22938 8.63244,20.43641 1.17116,9.5149 -2.93194,18.69572 -4.62917,27.99591 -1.46017,7.99977 -7.35494,10.39411 -4.77675,23.91147 2.44623,12.8265 0.73343,49.2605 0.73343,49.2605 0,0 -9.04989,-37.78294 -14.807,-54.15242 -4.46483,-12.69581 -5.8684,-27.40196 -5.00661,-40.51626 0.87076,-13.25043 7.29914,-25.44866 7.29914,-25.44866"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cssscssc"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png" />
+    <path
+       sodipodi:nodetypes="ccsccc"
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 291.86937,473.9681 c 0.0701,-0.77109 -1.10166,-11.46919 -1.10166,-11.46919 0,0 2.80691,0.30024 7.80535,-0.44465 4.95503,-0.73839 7.54196,-1.74104 7.54196,-1.74104 l 2.52064,10.4312 z"
+       inkscape:path-effect="#path-effect4623"
+       id="path4621"
+       d="m 291.86937,473.9681 -1.10166,-11.46919 c 2.60811,0.0744 5.22256,-0.0746 7.80535,-0.44465 2.55707,-0.36638 5.08304,-0.9495 7.54196,-1.74104 l 2.52064,10.4312 -16.76629,3.22368 z"
+       style="fill:#333333;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       sodipodi:nodetypes="ccsccscc"
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 315.85502,472.58257 -1.23958,-13.45171 c 0,0 -9.47084,4.292 -15.32784,5.10612 -5.85699,0.81413 -16.44941,0.059 -16.44941,0.059 l 1.47268,12.32974 c 0,0 10.8612,1.49825 16.59771,0.6096 5.73651,-0.88865 14.94644,-4.65278 14.94644,-4.65278 z"
+       inkscape:path-effect="#path-effect4865"
+       id="path4863"
+       d="m 315.85502,472.58257 -1.23958,-13.45171 c -4.79879,2.49288 -9.99275,4.22313 -15.32784,5.10612 -5.43286,0.89917 -11.01024,0.91918 -16.44941,0.059 l 1.47268,12.32974 c 5.441,1.16551 11.08587,1.37283 16.59771,0.6096 5.19194,-0.71894 10.26379,-2.29779 14.94644,-4.65278 l 0,3e-5 z"
+       style="fill:#333333;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.31875181px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png" />
+    <path
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 107.02567,239.48128 c -0.85148,0.0648 -1.73412,0.14794 -2.47251,0.57688 -0.33304,0.19347 -0.62848,0.4555 -0.84435,0.77448 -0.21587,0.31898 -0.35025,0.69564 -0.36572,1.08048 -0.0233,0.58037 0.22505,1.15006 0.60092,1.59289 0.37586,0.44283 0.87138,0.76971 1.39001,1.03124 1.21499,0.61269 2.57781,0.8912 3.93653,0.96511 1.35873,0.0739 2.7202,-0.0504 4.07182,-0.20761 2.61884,-0.30454 5.23571,-0.736 7.74005,-1.56022 2.50435,-0.82422 4.90263,-2.05529 6.85781,-3.824 3.18031,-2.877 4.99543,-6.99503 5.9776,-11.16957 1.0652,-4.52741 1.24865,-9.26054 0.53708,-13.85682 -0.21515,4.59989 -1.49463,9.14673 -3.70991,13.18379 -1.69434,3.08772 -3.98202,5.92214 -6.96926,7.78793 -2.44886,1.52953 -5.2793,2.35646 -8.12887,2.82158 -2.84957,0.46511 -5.74224,0.58483 -8.6212,0.80384 z"
+       id="path4867"
+       inkscape:path-effect="#path-effect4869"
+       inkscape:original-d="m 107.02567,239.48128 c -1.71503,0.30141 -0.97483,-0.31145 -2.47251,0.57688 -0.67293,0.39913 -1.21379,1.07255 -1.21007,1.85496 0.006,1.10277 1.04197,2.06233 1.99093,2.62413 2.33296,1.38112 5.31689,1.08344 8.00835,0.7575 5.06444,-0.61327 6.88946,-0.40768 14.59786,-5.38422 8.22376,-5.30925 4.79924,-6.98669 5.9776,-11.16957 1.23553,-4.38578 0.53708,-13.85682 0.53708,-13.85682 0,0 -1.63263,9.1778 -3.70991,13.18379 -1.52303,2.93713 -4.18326,6.00341 -6.96926,7.78793 -4.24808,2.72104 -11.78137,2.75223 -16.75007,3.62542 z"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ssssssscsss"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
+    <path
+       sodipodi:nodetypes="cssscsscsc"
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 109.6495,264.10855 c 0,0 0.26711,12.74474 0.6927,17.00721 0.454,4.54695 2.46289,13.7008 3.89635,18.0397 1.57502,4.76737 3.65843,11.70977 6.5607,15.80679 1.15816,1.63499 6.37283,7.99532 6.37283,7.99532 0,0 5.69711,-11.97468 5.86183,-14.856 0.2459,-4.30092 0.68171,-15.6631 0.41075,-19.99389 -0.20827,-3.32976 -1.01979,-9.89199 -1.01979,-9.89199 0,0 -0.70604,-6.09013 -2.89725,-8.36571 -2.34307,-2.43333 -19.87812,-5.74143 -19.87812,-5.74143 z"
+       inkscape:path-effect="#path-effect4891"
+       id="path4888"
+       d="m 109.6495,264.10855 c -0.26717,5.67477 -0.0351,11.37296 0.6927,17.00721 0.78892,6.10755 2.15836,12.13175 3.89635,18.0397 1.61477,5.4891 3.56988,10.92902 6.5607,15.80679 1.78598,2.91278 3.93168,5.60476 6.37283,7.99532 2.88276,-4.51468 4.88507,-9.58925 5.86183,-14.856 1.21885,-6.57211 0.84399,-13.32376 0.41075,-19.99389 -0.21496,-3.30959 -0.44411,-6.62577 -1.01979,-9.89199 -0.51543,-2.92437 -1.32756,-5.84506 -2.89725,-8.36571 -1.9968,-3.20652 -5.20865,-5.63555 -8.83774,-6.68375 -3.62908,-1.04819 -7.64143,-0.70573 -11.04038,0.94232 z"
+       style="fill:#bce7f1;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
+    <path
+       style="fill:#def3f8;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 121.87544,288.30406 -10.11948,0.9855 c 0.41057,2.03105 0.87551,4.0511 1.39413,6.05728 0.62706,2.42565 1.33263,4.831 2.11522,7.21103 l 8.19654,-9.42243 -1.58641,-4.83138 z"
+       id="path4893"
+       inkscape:path-effect="#path-effect4895"
+       inkscape:original-d="m 121.87544,288.30406 -10.11948,0.9855 c 0,0 0.92899,4.09007 1.39413,6.05728 0.60364,2.55302 2.11522,7.21103 2.11522,7.21103 l 8.19654,-9.42243 z"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccsccc"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 123.2261,293.32495 -7.97794,9.17783 c 0.61215,1.87746 1.30433,3.72883 2.07402,5.54739 0.86847,2.05196 1.83565,4.06213 2.89706,6.02126 l 4.62727,-17.13887 -1.62041,-3.60761 z"
+       id="path4893-5"
+       inkscape:path-effect="#path-effect4895-5"
+       inkscape:original-d="m 123.2261,293.32495 -7.97794,9.17783 c 0,0 1.60888,3.58018 2.07402,5.54739 0.60364,2.55301 2.89706,6.02126 2.89706,6.02126 l 4.62727,-17.13887 z"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccsccc"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
+    <path
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 119.09958,265.26432 c -0.30199,4.29204 -0.18797,8.61324 0.33993,12.88338 0.56781,4.59293 1.61337,9.12207 3.02539,13.52929 1.46438,4.57065 3.34727,9.05718 6.15275,12.95134 1.2314,1.70926 2.63443,3.2948 4.18113,4.72505 0.58112,-2.68431 0.94529,-5.41556 1.08778,-8.15835 0.22662,-4.36227 -0.10684,-8.73207 -0.4419,-13.08735 -0.25433,-3.30592 -0.51017,-6.6157 -1.01979,-9.89199 -0.45789,-2.94372 -1.15948,-5.94593 -2.89725,-8.36571 -1.16187,-1.61787 -2.76389,-2.91639 -4.58723,-3.71819 -1.82334,-0.8018 -3.86315,-1.10475 -5.84081,-0.86747 z"
+       id="path4884"
+       inkscape:path-effect="#path-effect4886"
+       inkscape:original-d="m 119.09958,265.26432 c 0,0 -0.0856,8.62092 0.33993,12.88338 0.45399,4.54695 1.59191,9.19036 3.02539,13.52929 1.57499,4.76735 3.25049,8.85433 6.15275,12.95134 1.15818,1.63498 4.18113,4.72505 4.18113,4.72505 0,0 0.92309,-5.27703 1.08778,-8.15835 0.2459,-4.30092 -0.17094,-8.75656 -0.4419,-13.08735 -0.20827,-3.32976 -1.01979,-9.89199 -1.01979,-9.89199 0,0 -0.70604,-6.09013 -2.89725,-8.36571 -2.34307,-2.43333 -10.42804,-4.58566 -10.42804,-4.58566 z"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cssscsscsc"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 132.35546,278.80952 0.79322,2.83637 0.22458,3.75092 c -0.76571,-0.30365 -1.43331,-0.84947 -1.88308,-1.53956 -0.46674,-0.71614 -0.6949,-1.57328 -0.72113,-2.42769 -0.0178,-0.5813 0.0612,-1.18394 0.36054,-1.68258 0.27113,-0.4517 0.71892,-0.79413 1.22587,-0.93746 z"
+       id="path4876"
+       inkscape:path-effect="#path-effect4878"
+       inkscape:original-d="m 132.35546,278.80952 0.79322,2.83637 0.22458,3.75092 c 0,0 -1.41662,-0.80145 -1.88308,-1.53956 -0.43054,-0.68121 -0.70335,-1.62203 -0.72113,-2.42769 -0.0107,-0.56347 0.0734,-1.1977 0.36054,-1.68258 0.22534,-0.38032 1.2259,-0.93746 1.22587,-0.93746 z"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccsssc"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
+    <path
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 133.42011,286.0636 c 0.0742,-3.14774 0.0156,-6.2986 -0.17538,-9.44141 -0.13281,-2.18534 -0.35349,-4.44622 -1.44221,-6.3457 -0.6354,-1.10858 -1.54253,-2.04337 -2.54753,-2.83246 -1.005,-0.78909 -2.11013,-1.44013 -3.22128,-2.07103 -2.2883,-1.29929 -4.63584,-2.53158 -7.14987,-3.30885 -3.36052,-1.03898 -6.94161,-1.23567 -10.44503,-0.92162 -2.09095,0.18744 -4.25108,0.54659 -6.24958,-0.0962 -1.59673,-0.51357 -2.937785,-1.63018 -4.038174,-2.89606 -1.230018,-1.415 -2.21095,-3.04593 -2.884402,-4.79568 0.370935,1.79989 0.885898,3.57008 1.538349,5.28807 0.604887,1.59275 1.356203,3.18105 2.591146,4.35479 0.901211,0.85655 2.041191,1.46034 3.257321,1.71897 1.73585,0.36915 3.53171,0.04 5.29979,-0.11265 2.64246,-0.22821 5.31829,-0.0562 7.9122,0.49726 2.40308,0.51273 4.7263,1.34821 6.9954,2.29101 2.09126,0.8689 4.20248,1.87303 5.72899,3.54579 1.33707,1.46517 2.12931,3.34149 2.7601,5.22208 1.0746,3.20372 1.65102,6.55056 2.07015,9.90361 l 1e-5,8e-5 z"
+       id="path4872"
+       inkscape:path-effect="#path-effect4874"
+       inkscape:original-d="m 133.42011,286.0636 c 0,0 0.16379,-6.7054 -0.17538,-9.44141 -0.26693,-2.15269 -0.31786,-4.49065 -1.44221,-6.3457 -1.3081,-2.15825 -3.65523,-3.52432 -5.76881,-4.90349 -2.0287,-1.3238 -4.81757,-2.65433 -7.14987,-3.30885 -3.56476,-1.00035 -6.74826,-0.71673 -10.44503,-0.92162 -2.08024,-0.1154 -4.26023,0.52297 -6.24958,-0.0962 -1.54468,-0.48069 -2.931849,-1.71571 -4.038174,-2.89606 -1.315743,-1.40379 -2.884402,-4.79568 -2.884402,-4.79568 0,0 0.88375,3.57299 1.538349,5.28807 0.582708,1.52677 1.471375,3.16455 2.591146,4.35479 0.904371,0.9613 1.968101,1.43626 3.257321,1.71897 1.6639,0.3649 3.59646,-0.13027 5.29979,-0.11265 2.67224,0.0278 5.28354,0.0162 7.9122,0.49726 2.51603,0.46087 4.65726,1.25372 6.9954,2.29101 2.12107,0.94098 4.08139,1.91186 5.72899,3.54579 1.16768,1.15799 2.13171,3.70237 2.7601,5.22208 1.27378,3.13856 1.6377,6.57378 2.07015,9.90361 z"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cssssssscssssssscc"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
+    <path
+       sodipodi:nodetypes="sssszssss"
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 118.62224,267.69376 c 0.61096,0.76847 4.77789,3.80578 4.94036,4.77397 0.10367,0.61765 2.06177,3.9878 2.63085,6.59497 0.56905,2.60717 -0.42091,5.1652 -0.97853,5.45028 -0.72191,0.36908 -4.28334,-0.35587 -5.24842,-0.92767 -0.96507,-0.57182 -3.04443,-31.73092 -4.2564,-4.60326 -0.60598,13.56384 -0.70478,2.03792 -2.58023,-6.65499 -1.87543,-8.69286 -6.41129,-14.79065 1.92097,-5.25952 0.29095,0.33282 2.55039,-0.65796 3.5714,0.62622 z"
+       inkscape:path-effect="#path-effect4882"
+       id="path4880"
+       d="m 118.62224,267.69376 c 2.01533,1.13616 3.70556,2.81751 4.94036,4.77397 1.26869,2.01015 2.05843,4.28789 2.63085,6.59497 0.23691,0.95484 0.43969,1.93682 0.34709,2.91625 -0.0463,0.48971 -0.16772,0.97502 -0.38635,1.41566 -0.21863,0.44064 -0.5367,0.8357 -0.93927,1.11837 -0.38948,0.27348 -0.85142,0.43709 -1.32365,0.49615 -0.47222,0.0591 -0.95448,0.0155 -1.41585,-0.10115 -0.92274,-0.23341 -1.74851,-0.75022 -2.50892,-1.32267 -1.67837,-1.2635 -3.12023,-2.83621 -4.2564,-4.60326 -1.29583,-2.01535 -2.19575,-4.29004 -2.58023,-6.65499 -0.16253,-0.99974 -0.23141,-2.03848 0.0408,-3.01409 0.1361,-0.4878 0.35807,-0.9546 0.67526,-1.34941 0.31719,-0.3948 0.73163,-0.71579 1.20491,-0.89602 0.58382,-0.22233 1.2359,-0.22354 1.84541,-0.0865 0.60951,0.13698 1.1818,0.40598 1.72599,0.71277 z"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 131.81299,375.50398 c 3.75451,-0.54116 7.37543,-1.98718 10.46989,-4.18115 2.76274,-1.95878 5.10546,-4.51143 6.79861,-7.44448 1.77913,-3.08198 2.83508,-6.57838 3.05937,-10.12995 1.10406,2.22337 1.93922,4.58012 2.4815,7.00257 0.66065,2.95122 0.88048,6.05811 0.1277,8.98719 -0.67905,2.6422 -2.11735,5.02788 -3.73098,7.22754 -2.14669,2.9263 -4.63749,5.59994 -7.40466,7.94819 -2.08184,-1.16997 -4.0744,-2.49876 -5.95465,-3.97101 -2.09831,-1.64299 -4.05663,-3.46469 -5.84682,-5.4389 l 4e-5,0 z"
+       id="path4928"
+       inkscape:path-effect="#path-effect4930"
+       inkscape:original-d="m 131.81299,375.50398 c 0,0 7.36954,-2.12291 10.46989,-4.18115 2.89853,-1.92428 5.10585,-4.48956 6.79861,-7.44448 1.7517,-3.05782 3.05937,-10.12995 3.05937,-10.12995 0,0 2.56123,3.18703 2.4815,7.00257 -0.0452,2.17096 0.70267,5.89 0.1277,8.98719 -0.57496,3.09718 -2.60886,5.36851 -3.73098,7.22754 -1.87182,3.10095 -7.40466,7.94819 -7.40466,7.94819 0,0 -4.08272,-2.49189 -5.95465,-3.97101 -2.08851,-1.65024 -5.84682,-5.4389 -5.84682,-5.4389 z"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csscssscsc"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 243.37302,265.53045 c 1.6011,1.31244 3.03988,2.82271 4.27319,4.48553 0.99511,1.34166 1.86802,2.80951 2.26768,4.43141 0.39966,1.6219 0.28366,3.42154 -0.59109,4.8446 -0.524,0.85246 -1.29826,1.53758 -2.17366,2.02229 -0.87539,0.48471 -1.84993,0.77473 -2.83919,0.92516 -1.95503,0.2973 -3.96829,0.0554 -5.86029,-0.51976 -2.59882,-0.79005 -4.99358,-2.20527 -7.00985,-4.02536 -2.43869,-2.20141 -4.3325,-5.002 -5.4673,-8.08512 l 17.40051,-4.07875 z"
+       id="path4932"
+       inkscape:path-effect="#path-effect4934"
+       inkscape:original-d="m 243.37302,265.53045 c 0,0 4.11072,3.51734 4.27319,4.48553 0.10367,0.61766 1.10753,6.66884 1.67659,9.27601 0.56908,2.60716 -4.45524,2.66237 -5.01285,2.94745 -0.7219,0.36909 -4.89524,0.0521 -5.86029,-0.51976 -0.96507,-0.57181 -5.79789,-31.15302 -7.00985,-4.02536 -0.60599,13.56382 -5.4673,-8.08512 -5.4673,-8.08512 1.05599,-20.24618 -0.22801,-6.05872 17.40051,-4.07875 z"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cssszscc"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
+    <path
+       inkscape:export-ydpi="368"
+       inkscape:export-xdpi="368"
+       sodipodi:nodetypes="cscc"
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 189.66557,274.47539 c 0,0 -11.95072,1.58815 -14.39022,1.2249 -2.43199,-0.36205 -9.89569,-2.01487 -9.89569,-2.01487 l 12.27797,6.86872"
+       inkscape:path-effect="#path-effect4979"
+       id="path4977"
+       d="m 189.66557,274.47539 c -4.6826,1.21196 -9.57014,1.62799 -14.39022,1.2249 -3.36226,-0.28118 -6.69117,-0.95898 -9.89569,-2.01487 l 12.27797,6.86872"
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png" />
+    <path
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 201.6034,271.58137 c -4.68261,1.21197 -9.57016,1.628 -14.39025,1.22491 -3.36225,-0.28118 -6.69117,-0.95899 -9.89568,-2.01488 l 12.27797,6.86872"
+       id="path5032"
+       inkscape:path-effect="#path-effect5035"
+       inkscape:original-d="m 201.6034,271.58137 c 0,0 -11.95072,1.58814 -14.39025,1.22491 -2.43199,-0.36207 -9.89568,-2.01488 -9.89568,-2.01488 l 12.27797,6.86872"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cscc"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png" />
+    <g
+       inkscape:export-ydpi="368"
+       inkscape:export-xdpi="368"
+       transform="matrix(2.2904803,-1.217254,1.3011168,4.2055671,-371.40169,294.01276)"
+       id="g5137"
+       inkscape:export-filename="P:\Games\My Little Kingdom\Samples.Used\E58_AriaFlow.png">
+      <path
+         style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="path5139"
+         sodipodi:type="arc"
+         sodipodi:cx="260.67789"
+         sodipodi:cy="128.60478"
+         sodipodi:rx="6.7839279"
+         sodipodi:ry="6.6548705"
+         sodipodi:start="5.9070319"
+         sodipodi:end="5.9070035"
+         d="m 266.98751,126.16015 a 6.7839279,6.6548705 0 0 1 -3.81753,8.63421 6.7839279,6.6548705 0 0 1 -8.80168,-3.74485 6.7839279,6.6548705 0 0 1 3.81741,-8.63427 6.7839279,6.6548705 0 0 1 8.80173,3.74473 l -6.30955,2.44481 z" />
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#ffcee0;stroke-width:2.79999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 252.00514,130.33075 c 2.91964,0.5004 5.93617,0.42901 8.82887,-0.20894 3.03949,-0.67032 5.93955,-1.96637 8.46644,-3.7837"
+         id="path5141"
+         inkscape:path-effect="#path-effect6005"
+         inkscape:original-d="m 252.00514,130.33075 c 0,0 5.03977,0.53492 8.82887,-0.20894 3.70162,-0.72668 8.46644,-3.7837 8.46644,-3.7837"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="csc" />
+    </g>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 588.26432,676.3294 c 4.98741,-0.16951 9.96167,-0.72448 14.86381,-1.65831 4.92851,-0.93886 9.78402,-2.26066 14.50834,-3.94958"
+       id="path4601"
+       inkscape:path-effect="#path-effect4603"
+       inkscape:original-d="m 588.26432,676.3294 c 0,0 10.25522,-0.87808 14.86381,-1.65831 4.60445,-0.77953 14.50834,-3.94958 14.50834,-3.94958"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csc" />
+    <path
+       sodipodi:nodetypes="csc"
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 290.45886,462.69129 c 0,0 2.82015,0.16284 7.42874,-0.61739 4.60445,-0.77953 8.56027,-1.91733 8.56027,-1.91733"
+       inkscape:path-effect="#path-effect4619"
+       id="path4617"
+       d="m 290.45886,462.69129 c 2.48595,-0.0492 4.96877,-0.25556 7.42874,-0.61739 2.89566,-0.42592 5.75959,-1.06738 8.56027,-1.91733"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+</svg>
