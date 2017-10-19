@@ -12,10 +12,6 @@ public class ItemsController : MonoBehaviour {
     public UIFXComponent[] uifx;
     public Text infoText;
 
-    [Header("Cards Decks")]
-    public Transform playerDeck;
-    public Transform enemyDeck;
-
     private EndModeController _emc;
 
     private static ItemsController controller;

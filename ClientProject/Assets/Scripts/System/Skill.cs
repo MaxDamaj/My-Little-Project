@@ -73,6 +73,7 @@ public class Skill : MonoBehaviour {
     public string[] items;          //items array what skill are affected
     public GameObject obj;          //skill attached object
     public string fx;               //skill spawned fx by pool manager
+    public string sound;            //sound played by using this skill
     public FXTarget fxTarget;       //FX spawn position
 
     public void ItemMultiplier(string i, float q) {

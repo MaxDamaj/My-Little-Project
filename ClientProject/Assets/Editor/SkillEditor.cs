@@ -28,6 +28,7 @@ public class SkillEditor : Editor {
     SerializedProperty items;
     SerializedProperty obj;
     SerializedProperty fx;
+    SerializedProperty sound;
 
     void OnEnable() {
         serObj = new SerializedObject(target);
@@ -53,6 +54,7 @@ public class SkillEditor : Editor {
         items = serObj.FindProperty("items");
         obj = serObj.FindProperty("obj");
         fx = serObj.FindProperty("fx");
+        sound = serObj.FindProperty("sound");
 
     }
 
@@ -100,6 +102,7 @@ public class SkillEditor : Editor {
             EditorGUILayout.PropertyField(DMGmlp, new GUIContent(" Damage multiplier"));
             EditorGUILayout.EndHorizontal();
             EditorGUILayout.PropertyField(fx, new GUIContent(" FX object"));
+            EditorGUILayout.PropertyField(sound, new GUIContent(" Sound"));
         }
         //Fields for Projectile skill
         if (3 == skillType.intValue) {
@@ -110,6 +113,7 @@ public class SkillEditor : Editor {
             }
             EditorGUILayout.PropertyField(obj, new GUIContent(" Projectile"));
             EditorGUILayout.PropertyField(fx, new GUIContent(" FX object"));
+            EditorGUILayout.PropertyField(sound, new GUIContent(" Sound"));
         }
         //Fields for Changing Stats skill
         if (4 == skillType.intValue) {
@@ -120,6 +124,7 @@ public class SkillEditor : Editor {
             EditorGUILayout.EndHorizontal();
             EditorGUILayout.PropertyField(MP_cost, new GUIContent(" MP cost"));
             EditorGUILayout.PropertyField(fx, new GUIContent(" FX object"));
+            EditorGUILayout.PropertyField(sound, new GUIContent(" Sound"));
         }
         //Fields for Restoration Stats skill
         if (5 == skillType.intValue) {
@@ -130,6 +135,7 @@ public class SkillEditor : Editor {
             EditorGUILayout.PropertyField(multiplier, new GUIContent(" Value"));
             EditorGUILayout.EndHorizontal();
             EditorGUILayout.PropertyField(fx, new GUIContent(" FX object"));
+            EditorGUILayout.PropertyField(sound, new GUIContent(" Sound"));
         }
         //Fields for Items Giving skill
         if (6 == skillType.intValue) {
@@ -137,6 +143,7 @@ public class SkillEditor : Editor {
             EditorGUILayout.PropertyField(items, new GUIContent(" Items"), true); //this is array
             EditorGUILayout.PropertyField(multiplier, new GUIContent(" Quantity"));
             EditorGUILayout.PropertyField(fx, new GUIContent(" FX object"));
+            EditorGUILayout.PropertyField(sound, new GUIContent(" Sound"));
         }
         //Fields for Fly skill
         if (7 == skillType.intValue) {
@@ -146,6 +153,7 @@ public class SkillEditor : Editor {
             EditorGUILayout.PropertyField(DMGmlp, new GUIContent(" Damage multiplier"));
             EditorGUILayout.EndHorizontal();
             EditorGUILayout.PropertyField(fx, new GUIContent(" FX object"));
+            EditorGUILayout.PropertyField(sound, new GUIContent(" Sound"));
         }
         //Fields for Slow Motion skill
         if (8 == skillType.intValue) {
@@ -153,6 +161,7 @@ public class SkillEditor : Editor {
             EditorGUILayout.PropertyField(cooldown, new GUIContent(" Cooldown"));
             EditorGUILayout.PropertyField(multiplier, new GUIContent(" Value"));
             EditorGUILayout.PropertyField(fx, new GUIContent(" FX object"));
+            EditorGUILayout.PropertyField(sound, new GUIContent(" Sound"));
         }
 
         serObj.ApplyModifiedProperties();

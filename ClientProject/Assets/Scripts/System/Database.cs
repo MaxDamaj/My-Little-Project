@@ -46,7 +46,6 @@ public class CharsFMData {
     public string CharName;
     public Color CharColor;
     public Sprite CharIcon;
-    public Sprite CharCardIcon;
     public PonyType Type;
     public int Rank;
     public float HP;
@@ -270,9 +269,6 @@ public class Database : MonoBehaviour {
     }
     public PonyType GetCharType(int id) {
         return _freeModeChars[id].Type;
-    }
-    public Sprite GetCharCardIcon(int id) {
-        return _freeModeChars[id].CharCardIcon;
     }
     public int GetUnlockedCharsCount() {
         int count = 0;

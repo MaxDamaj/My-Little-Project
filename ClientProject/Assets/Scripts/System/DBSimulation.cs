@@ -13,10 +13,6 @@ public class DBSimulation : MonoBehaviour {
 
     public EnduranceSection section;
 
-    [Header("Card Game")]
-    public List<string> playerDeck;
-    public List<string> enemyDeck;
-
     private static DBSimulation database;
 
 

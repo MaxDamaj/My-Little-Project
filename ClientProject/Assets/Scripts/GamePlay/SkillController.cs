@@ -110,7 +110,7 @@ public class SkillController : MonoBehaviour {
     void SkillDash(int sn) {
         if ((int)Character.CharSkills[sn].skillType == 1 && GlobalData.Instance.currentMP >= Character.CharSkills[sn].MP_cost && !Character.CharSkills[sn].IsCooldown) {
             Character.CharSkills[sn].IsCooldown = true;
-            SoundManager.Instance.PlaySound("a_dash");
+            SoundManager.Instance.PlaySound(Character.CharSkills[sn].sound);
             GlobalData.Instance.currentMP -= Character.CharSkills[sn].MP_cost;
             GlobalData.Instance.SPDmlp = GlobalData.Instance.SPDmlp * Character.CharSkills[sn].SPDmlp;
             GlobalData.Instance.DMGmlp = GlobalData.Instance.DMGmlp * Character.CharSkills[sn].DMGmlp;
@@ -127,12 +127,10 @@ public class SkillController : MonoBehaviour {
             GameObject spark_cl;
             Vector3 v3 = new Vector3(Pony.transform.position.x + 0.75f, Pony.transform.position.y, Pony.transform.position.z);
             if (Character.CharSkills[sn].projType == Skill.ProjectileType.Autofire) {
-                SoundManager.Instance.PlaySound("a_gun");
-                v3 = new Vector3(Pony.transform.position.x + 0.7f, Pony.transform.position.y - 0.1f, Pony.transform.position.z);
+                v3 = new Vector3(Pony.transform.position.x + 0.65f, Pony.transform.position.y - 0.1f, Pony.transform.position.z);
                 holdTimer = Character.CharSkills[sn].duration;
-            } else {
-                SoundManager.Instance.PlaySound("a_shoot");
             }
+            SoundManager.Instance.PlaySound(Character.CharSkills[sn].sound);
             if (fx[sn] != null) {
                 fx[sn].SetActive(true);
                 IEnumerator fxDisable = DisableObject(fx[sn], 0.15f);
@@ -140,13 +138,7 @@ public class SkillController : MonoBehaviour {
             }
             GlobalData.Instance.currentMP -= Character.CharSkills[sn].MP_cost;
             spark_cl = (GameObject)Instantiate(Character.CharSkills[sn].obj, v3, Character.CharSkills[sn].obj.transform.rotation);
-            if (Character.CharSkills[sn].projType == Skill.ProjectileType.Light)
-                spark_cl.GetComponent<Rigidbody>().AddForce(new Vector3(250f, 0f, 0f));
-            if (Character.CharSkills[sn].projType == Skill.ProjectileType.Heavy)
-                spark_cl.GetComponent<Rigidbody>().AddForce(new Vector3(400f, 100f, 0f));
-            if (Character.CharSkills[sn].projType == Skill.ProjectileType.Autofire)
-                spark_cl.GetComponent<Rigidbody>().AddForce(new Vector3(100f, 0f, 0f));
-            Destroy(spark_cl, lifetime);
+            spark_cl.GetComponent<Projectile>().DestroyObject(lifetime);
         }
     }
     void SkillStatChange(int sn) {
@@ -214,7 +206,7 @@ public class SkillController : MonoBehaviour {
                 GlobalData.Instance.DMGmlp = GlobalData.Instance.DMGmlp * Character.CharSkills[sn].DMGmlp;
                 Pony.GetComponentInChildren<Animator>().SetBool("fly", true);
                 Pony.GetComponent<Rigidbody>().velocity = Vector3.zero;
-                SoundManager.Instance.SetMuteState("a_wings", false);
+                SoundManager.Instance.SetMuteState(Character.CharSkills[sn].sound, false);
             }
             if (!active && Pony.GetComponentInChildren<Animator>().GetBool("fly")) {
                 Pony.GetComponent<Rigidbody>().useGravity = true;
@@ -223,7 +215,7 @@ public class SkillController : MonoBehaviour {
                 MPDrain = 0;
                 GlobalData.Instance.SPDmlp = GlobalData.Instance.SPDmlp / Character.CharSkills[sn].SPDmlp;
                 GlobalData.Instance.DMGmlp = GlobalData.Instance.DMGmlp / Character.CharSkills[sn].DMGmlp;
-                SoundManager.Instance.SetMuteState("a_wings", true);
+                SoundManager.Instance.SetMuteState(Character.CharSkills[sn].sound, true);
             }
         }
     }
@@ -233,16 +225,12 @@ public class SkillController : MonoBehaviour {
             _uiSkill.DeactivateSkill(sn);
             GlobalData.Instance.timeSpeed = Character.CharSkills[sn].multiplier;
             Time.timeScale = Character.CharSkills[sn].multiplier;
-            SoundManager.Instance.PlaySound("a_slowdown");
+            SoundManager.Instance.PlaySound(Character.CharSkills[sn].sound);
+            if (fx[sn] != null) fx[sn].SetActive(true);
             IEnumerator endSlowMotion = SlowMotion(Character.CharSkills[sn].duration, Character.CharSkills[sn].cooldown, sn);
             StartCoroutine(endSlowMotion);
             cooldown = _uiSkill.StartCooldown(sn, (int)Character.CharSkills[sn].cooldown);
             StartCoroutine(cooldown);
-            if (fx[sn] != null) {
-                fx[sn].SetActive(true);
-                IEnumerator fxDisable = DisableObject(fx[sn], 2f);
-                StartCoroutine(fxDisable);
-            }
         }
     }
     void SkillConditionStats(int sn, Skill.Condition cond) {

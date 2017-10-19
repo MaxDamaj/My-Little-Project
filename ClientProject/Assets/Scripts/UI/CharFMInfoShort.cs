@@ -10,6 +10,7 @@ public class CharFMInfoShort : MonoBehaviour {
     public Animator win_anim;
 
     public Text CharName;
+    public Image CharIcon;
     public Text HPText, MPText, SPDText;
     public Text STMText;
     public GameObject priceTag;
@@ -29,6 +30,7 @@ public class CharFMInfoShort : MonoBehaviour {
         Character = Database.Instance.GetCharFMInfo(CharNum);
         CharName.text = Character.CharName;
         CharName.color = Character.CharColor;
+        CharIcon.sprite = Character.CharIcon;
         HPText.text = "" + Character.HP;
         MPText.text = "" + Character.MP;
         SPDText.text = "" + Character.SPD;
