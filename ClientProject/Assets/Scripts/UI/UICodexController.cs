@@ -57,9 +57,25 @@ public class UICodexController : MonoBehaviour {
         //Check active
         foreach (var list in codexLists) {
             int value = Database.Instance.readenCodex[list.codexID];
-            switch (list.codexList.name) {
-                case "codex_InfoDesk_04": //Deckbuilding Card Game
-                    if (Database.Instance.distTotal < 300)
+            switch (list.codexList.condition) {
+                case AchieveType.TotalDist:
+                    if (Database.Instance.distTotal < list.codexList.condValue)
+                        value = -1;
+                    break;
+                case AchieveType.CharsOwned:
+                    if (Database.Instance.GetUnlockedCharsCount() < list.codexList.condValue)
+                        value = -1;
+                    break;
+                case AchieveType.ComponentsCount:
+                    if (Database.Instance.GetItemQuantity(list.codexList.condLine) < list.codexList.condValue)
+                        value = -1;
+                    break;
+                case AchieveType.TargetCharOwned:
+                    if (Database.Instance.GetCharFMRank(list.codexList.condLine) == -1)
+                        value = -1;
+                    break;
+                case AchieveType.CraftedComps:
+                    if (Database.Instance.craftedComps < list.codexList.condValue)
                         value = -1;
                     break;
             }

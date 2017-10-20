@@ -109,6 +109,7 @@ public class Database : MonoBehaviour {
     public float cameraShift;   //Current camera shifting position in gamemode
     public int paramBloom;      //Camera using Antialising
     public int paramSSAO;       //Camera using Ambient Obscurance
+    public float musicVolume;   //Game music volume value
     public int furnaceSlots;    //Number of furnace slots
 
     [Header("Statistic")]
@@ -119,11 +120,12 @@ public class Database : MonoBehaviour {
     public int obstWithDamage;  //Wrecked obstacles with recieving damage
     public int obstNonDamage;   //Wrecked obstacles without recieving damage
     public int distEndEasy;
+    public int craftedComps;
 
     [Header("Lists")]
     public int[] passedChallenges;
     public List<int> takenAchievements;
-    public int[] readenCodex;
+    public List<int> readenCodex;
     public int[] endRewardsEasy;
 
     [Header("Items")]
@@ -266,6 +268,9 @@ public class Database : MonoBehaviour {
     }
     public int GetCharFMRank(int id) {
         return _freeModeChars[id].Rank;
+    }
+    public int GetCharFMRank(string name) {
+        return _freeModeChars.Find(x => x.CharName == name).Rank;
     }
     public PonyType GetCharType(int id) {
         return _freeModeChars[id].Type;

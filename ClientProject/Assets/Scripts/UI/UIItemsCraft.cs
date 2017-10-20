@@ -185,8 +185,12 @@ public class UIItemsCraft : MonoBehaviour {
             GameObject tmp = Instantiate(result.prefab);
             tmp.transform.SetParent(furnaseResult);
             tmp.transform.localScale = Vector3.one;
+            Database.Instance.craftedComps++;
+            AchievementsController.Instance.CheckStates();
         } else {
             Database.Instance.IncreaseItemQuantity(result.ItemName, result.exitQuantity);
+            Database.Instance.craftedComps++;
+            AchievementsController.Instance.CheckStates();
             ShowNotification(result.ItemName + " crafted!", Database.COLOR_GREEN);
         }
 

@@ -7,7 +7,7 @@ using UnityEditor;
 #endif
 
 public enum AchieveType {
-    Nothing, TotalDist, EndDist, ChallDist, TotalObst, DamObst, NonDamObst, PassChallInTotal, TotalPS, CharsOwned
+    Nothing, TotalDist, EndDist, ChallDist, TotalObst, DamObst, NonDamObst, PassChallInTotal, TotalPS, CharsOwned, ComponentsCount, TargetCharOwned, CraftedComps
 };
 
 [Serializable]

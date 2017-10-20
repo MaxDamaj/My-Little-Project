@@ -8,22 +8,26 @@ using UnityEditor;
 
 [Serializable]
 public class CodexRow {
-	public string header;
-	public Color headerColor;
-	[Multiline]
-	public string text;
+    public string header;
+    public Color headerColor;
+    [Multiline]
+    public string text;
 }
 
 public class CodexList : ScriptableObject {
 
-	public List<CodexRow> codexRows;
+    public List<CodexRow> codexRows;
+    [Header("Shown Condition")]
+    public AchieveType condition;
+    public float condValue;
+    public string condLine;
 
-	#if UNITY_EDITOR
-	[MenuItem("Assets/Create new Codex list")]
-	private static void CreateGDContainer() {
-		var obj = ScriptableObject.CreateInstance<CodexList>();
-		AssetDatabase.CreateAsset(obj, "Assets/Resources/Codex/_NewCodexList.asset");
-		AssetDatabase.SaveAssets();
-	}
-	#endif
+#if UNITY_EDITOR
+    [MenuItem("Assets/Create new Codex list")]
+    private static void CreateGDContainer() {
+        var obj = ScriptableObject.CreateInstance<CodexList>();
+        AssetDatabase.CreateAsset(obj, "Assets/Resources/Codex/_NewCodexList.asset");
+        AssetDatabase.SaveAssets();
+    }
+#endif
 }

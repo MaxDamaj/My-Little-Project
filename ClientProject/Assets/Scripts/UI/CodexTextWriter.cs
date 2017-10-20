@@ -9,8 +9,6 @@ public class CodexTextWriter : MonoBehaviour {
     public Button moveToButton;
     public Transform container;
 
-    private float printDelay = 0.05f;
-    private IEnumerator writer;
     private CodexActionType action;
     private CodexList codexList;
     private UICodexList nextCodexList;
@@ -20,17 +18,10 @@ public class CodexTextWriter : MonoBehaviour {
         text.gameObject.SetActive(false);
         moveToButton.gameObject.SetActive(false);
     }
-    void Update() {
-        if (Input.GetAxis("Jump") > 0.01f) {
-            printDelay = 0;
-        }
-    }
 
     void OnEnable() {
-        printDelay = 0.05f;
         if (codexList != null) {
-            writer = WriteText();
-            StartCoroutine(writer);
+            WriteText();
         }
     }
     void OnDisable() {
@@ -51,12 +42,12 @@ public class CodexTextWriter : MonoBehaviour {
         }
     }
 
-	public void ShowText(CodexList list, CodexActionType act, UICodexList nextList, int index) {
+    public void ShowText(CodexList list, CodexActionType act, UICodexList nextList, int index) {
         OnDisable();
         codexList = list;
         action = act;
         nextCodexList = nextList;
-		Database.Instance.readenCodex[index] = 1;
+        Database.Instance.readenCodex[index] = 1;
         if (gameObject.activeSelf) {
             OnEnable();
         } else {
@@ -64,7 +55,7 @@ public class CodexTextWriter : MonoBehaviour {
         }
     }
 
-    IEnumerator WriteText() {
+    void WriteText() {
         for (int i = 0; i < codexList.codexRows.Count; i++) {
             //Print new row
             GameObject tmp = Instantiate(header.gameObject); //header
@@ -81,10 +72,7 @@ public class CodexTextWriter : MonoBehaviour {
             newText.text = "";
             for (int j = 0; j < codexList.codexRows[i].text.Length; j++) {
                 newText.text = string.Concat(newText.text, codexList.codexRows[i].text.Substring(j, 1));
-                yield return new WaitForSeconds(printDelay);
             }
-
-            yield return new WaitForSeconds(printDelay);
         }
         if (action != CodexActionType.none) {
             GameObject tmp = Instantiate(moveToButton.gameObject); //button
@@ -93,7 +81,6 @@ public class CodexTextWriter : MonoBehaviour {
             tmp.SetActive(true);
             tmp.GetComponent<Button>().onClick.AddListener(ListAction);
         }
-        yield return new WaitForSeconds(printDelay);
     }
 
 }

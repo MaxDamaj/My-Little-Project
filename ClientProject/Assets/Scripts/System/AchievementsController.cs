@@ -35,7 +35,7 @@ public class AchievementsController : MonoBehaviour {
 
     #endregion
 
-    void CheckStates() {
+    public void CheckStates() {
         for (int i = 0; i < DBAchievements.Instance.GetAchievementsCount(); i++) {
             Achievement achievement = DBAchievements.Instance.GetAchievement(i);
             if (ReturnAchievementProgress(achievement.condition, achievement.value) >= 1 && Database.Instance.takenAchievements[i] == 0) {
@@ -69,6 +69,8 @@ public class AchievementsController : MonoBehaviour {
                 return UIPSCalculation.PartyStrength / value;
             case AchieveType.CharsOwned:
                 return Database.Instance.GetUnlockedCharsCount() / value;
+            case AchieveType.CraftedComps:
+                return Database.Instance.craftedComps / value;
         }
         return 0;
     }

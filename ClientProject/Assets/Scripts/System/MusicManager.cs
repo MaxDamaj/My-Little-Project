@@ -47,6 +47,10 @@ public class MusicManager : MonoBehaviour {
         music.Stop();
     }
 
+    public void SetMusicVolume(float value) {
+        music.volume = value;
+    }
+
     void PlayNextSong() {
         Database.Instance.nowPlaying[listID]++;
         if (Database.Instance.nowPlaying[listID] >= clips.Count) {

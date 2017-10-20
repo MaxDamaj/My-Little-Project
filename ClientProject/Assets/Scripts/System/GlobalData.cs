@@ -10,6 +10,7 @@ public class GlobalData : ScriptableObject {
     public int nowChallenge;
     public int itemsInventoryCount;
     public int itemsBeltCount;
+    public int codexPagesCount;
 
     [Header("Ingame params")]
     public float SPDmlp;        //Speed multiplier. Used in PonyController

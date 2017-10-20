@@ -28,11 +28,15 @@ public class DatabaseManager : MonoBehaviour {
     //Loading State
     void LoadState() {
         Database.Instance.takenAchievements = new List<int>();
+        Database.Instance.readenCodex = new List<int>();
 
         parser.LoadFromFile();
 
         for (int i = Database.Instance.takenAchievements.Count; i < DBAchievements.Instance.GetAchievementsCount(); i++) {
             Database.Instance.takenAchievements.Add(0);
+        }
+        for (int i = Database.Instance.readenCodex.Count; i < GlobalData.Instance.codexPagesCount; i++) {
+            Database.Instance.readenCodex.Add(0);
         }
 
         LoadItems();

@@ -36,6 +36,7 @@ public class SaveParcer : MonoBehaviour {
         saveFile.Add(SaveMultiline(Database.Instance.PartyPony, "partyPonies"));
         saveFile.Add("timeSpan:" + Database.Instance.timeSpan);
         saveFile.Add("furnaceSlots:" + Database.Instance.furnaceSlots);
+        saveFile.Add("musicVolume:" + Database.Instance.musicVolume);
         saveFile.Add("");
 
         saveFile.Add("--Statistic--");
@@ -46,6 +47,7 @@ public class SaveParcer : MonoBehaviour {
         saveFile.Add("obstaclesWithDamage:" + Database.Instance.obstWithDamage);
         saveFile.Add("obstaclesNonDamage:" + Database.Instance.obstNonDamage);
         saveFile.Add("enduranceDistanceEasy:" + Database.Instance.distEndEasy);
+        saveFile.Add("craftedComponents:" + Database.Instance.craftedComps);
         saveFile.Add("");
 
         saveFile.Add("--Materials--");
@@ -67,7 +69,7 @@ public class SaveParcer : MonoBehaviour {
         saveFile.Add(SaveMultiline(Database.Instance.takenAchievements.ToArray(), "takenAchievements"));
         saveFile.Add("");
         saveFile.Add("--Codex--");
-        saveFile.Add(SaveMultiline(Database.Instance.readenCodex, "readenCodex"));
+        saveFile.Add(SaveMultiline(Database.Instance.readenCodex.ToArray(), "readenCodex"));
         saveFile.Add("");
         saveFile.Add("--Endurance Rewards--");
         saveFile.Add(SaveMultiline(Database.Instance.endRewardsEasy, "enduranceRewardsEasy"));
@@ -110,6 +112,7 @@ public class SaveParcer : MonoBehaviour {
         Database.Instance.PartyPony = LoadMultilineInt(saveFile, "partyPonies", Database.Instance.PartyPony);
         Database.Instance.timeSpan = LoadLineInt(saveFile, "timeSpan", Database.Instance.timeSpan);
         Database.Instance.furnaceSlots = LoadLineInt(saveFile, "furnaceSlots", Database.Instance.furnaceSlots);
+        Database.Instance.musicVolume = LoadLineFloat(saveFile, "musicVolume", Database.Instance.musicVolume);
 
         //Statistic
         Database.Instance.distTotal = LoadLineInt(saveFile, "totalDistance", Database.Instance.distTotal);
@@ -119,6 +122,7 @@ public class SaveParcer : MonoBehaviour {
         Database.Instance.obstWithDamage = LoadLineInt(saveFile, "obstaclesWithDamage", Database.Instance.obstWithDamage);
         Database.Instance.obstNonDamage = LoadLineInt(saveFile, "obstaclesNonDamage", Database.Instance.obstNonDamage);
         Database.Instance.distEndEasy = LoadLineInt(saveFile, "enduranceDistanceEasy", Database.Instance.distEndEasy);
+        Database.Instance.craftedComps = LoadLineInt(saveFile, "craftedComponents", Database.Instance.craftedComps);
 
         //Materials
         for (int i = 0; i < Database.Instance.ArrayItemsGetLenght(); i++) {
@@ -135,7 +139,7 @@ public class SaveParcer : MonoBehaviour {
         //Achievements
         Database.Instance.takenAchievements.AddRange(LoadMultilineInt(saveFile, "takenAchievements", Database.Instance.takenAchievements.ToArray()));
         //Codex
-        Database.Instance.readenCodex = LoadMultilineInt(saveFile, "readenCodex", Database.Instance.readenCodex);
+        Database.Instance.readenCodex.AddRange(LoadMultilineInt(saveFile, "readenCodex", Database.Instance.readenCodex.ToArray()));
         //Endurance Rewards
         Database.Instance.endRewardsEasy = LoadMultilineInt(saveFile, "enduranceRewardsEasy", Database.Instance.endRewardsEasy);
 
