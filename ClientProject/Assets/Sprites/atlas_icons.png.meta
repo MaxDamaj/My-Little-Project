@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e8f4c431080821d4594bd078fb753d1f
-timeCreated: 1501848864
+timeCreated: 1508761531
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -274,6 +274,7 @@ TextureImporter:
     21300534: icon_iridium
     21300536: icon_pixel
     21300538: icon_flow
+    21300540: icon_cyclotrone
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -1475,6 +1476,19 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
+    - serializedVersion: 2
+      name: icon_cyclotrone
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 

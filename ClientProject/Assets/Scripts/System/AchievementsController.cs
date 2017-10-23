@@ -36,6 +36,8 @@ public class AchievementsController : MonoBehaviour {
     #endregion
 
     public void CheckStates() {
+        bool IsNewAchievementGain = false;
+        string messageString = "You are gain achievements: ";
         for (int i = 0; i < DBAchievements.Instance.GetAchievementsCount(); i++) {
             Achievement achievement = DBAchievements.Instance.GetAchievement(i);
             if (ReturnAchievementProgress(achievement.condition, achievement.value) >= 1 && Database.Instance.takenAchievements[i] == 0) {
@@ -45,8 +47,12 @@ public class AchievementsController : MonoBehaviour {
                 if (achievement.reward.res3 != string.Empty) { Database.Instance.IncreaseItemQuantity(achievement.reward.res3, achievement.reward.quan3); }
                 //Show message
                 Database.Instance.takenAchievements[i] = 1;
-                UIMessageWindow.Instance.ShowMessage("You are gain achievement -" + achievement.title + "-", 0, UIAction.nothing, true, false);
+                messageString += "\r\n-" + achievement.title + "-";
+                IsNewAchievementGain = true;
             }
+        }
+        if (IsNewAchievementGain) {
+            UIMessageWindow.Instance.ShowMessage(messageString, 0, UIAction.nothing, true, false);
         }
         Invoke("SortAchievements", 0.5f);
     }

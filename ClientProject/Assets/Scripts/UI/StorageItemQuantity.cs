@@ -16,26 +16,26 @@ public class StorageItemQuantity : MonoBehaviour {
 
     void Start() {
         Database.onRefresh += RefreshUI;
-		_itemName = transform.parent.name;
+        _itemName = transform.parent.name;
         RefreshUI();
     }
 
     private void RefreshUI() {
-		//Show quantity
-		int count = Mathf.FloorToInt(Database.Instance.GetItemQuantity(_itemName));
-		if (count <= 0) {
-			quantity.text = "";
-		}
-		if (count > 0) {
-			quantity.text = "" + count;
-		}
-		if (count >= 1000) {
-			quantity.text = "" + Mathf.FloorToInt(count/1000) + "k";
-		}
-		if (count >= 1000000) {
-			quantity.text = "" + Mathf.FloorToInt(count/1000000) + "M";
-		}
-		//Hide if inactive
+        //Show quantity
+        int count = Mathf.FloorToInt(Database.Instance.GetItemQuantity(_itemName));
+        if (count <= 0) {
+            quantity.text = "";
+        }
+        if (count > 0) {
+            quantity.text = "" + count;
+        }
+        if (count >= 1000) {
+            quantity.text = "" + Mathf.FloorToInt(count / 1000) + "k";
+        }
+        if (count >= 1000000) {
+            quantity.text = "" + Mathf.FloorToInt(count / 1000000) + "M";
+        }
+        //Hide if inactive
         if (quantity.text == "") {
             icon.color = UNACTIVE_COLOR;
             quantity.color = UNACTIVE_COLOR;

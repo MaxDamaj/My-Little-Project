@@ -121,6 +121,7 @@ public class Database : MonoBehaviour {
     public int obstNonDamage;   //Wrecked obstacles without recieving damage
     public int distEndEasy;
     public int craftedComps;
+    public int storyLevel;      //Current level your time machine
 
     [Header("Lists")]
     public int[] passedChallenges;

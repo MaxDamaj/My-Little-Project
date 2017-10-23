@@ -19,7 +19,7 @@ public class UIOptionWindow : MonoBehaviour {
     // Use this for initialization
     void Start() {
         clearButton.onClick.AddListener(ShowBuyWindow);
-        Invoke("SetValues", 0.4f);
+        Invoke("SetValues", 0.35f);
     }
 
     void SetValues() {
@@ -28,6 +28,7 @@ public class UIOptionWindow : MonoBehaviour {
         bloomCheck.isOn = Database.Instance.paramBloom == 1;
         IsChangesAllow = true;
         SSAOCheck.isOn = Database.Instance.paramSSAO == 1;
+        RefreshUI();
     }
 
     public void RefreshUI() {

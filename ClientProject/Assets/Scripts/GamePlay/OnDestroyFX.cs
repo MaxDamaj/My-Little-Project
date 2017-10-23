@@ -10,47 +10,64 @@ public class OnDestroyFX : MonoBehaviour {
     [SerializeField]
     private float _fxDestroyDelay = 3;
 
+    public string objectType = "Bits";
+
     void Start() {
         PonyController.onPlayerPickup += ExecuteFX;
     }
 
     void ExecuteFX(string tag, GameObject target) {
         if (tag == "Player" && gameObject == target) {
-            switch (gameObject.tag) {
-                case "Bit":
+            switch (objectType) {
+                case "Bits":
                     SoundManager.Instance.PlaySound("a_coins");
                     PickupPopup.Instance.ShowPopupInfo("Bits");
                     Database.Instance.IncreaseItemQuantity("Bits", 1);
                     break;
-                case "EoH_Laughter":
+                case "Laughter":
                     SoundManager.Instance.PlaySound("a_beeps");
                     PickupPopup.Instance.ShowPopupInfo("Laughter");
                     Database.Instance.IncreaseItemQuantity("Laughter", 1);
                     break;
-                case "EoH_Generosity":
+                case "Generosity":
                     SoundManager.Instance.PlaySound("a_beeps");
                     PickupPopup.Instance.ShowPopupInfo("Generosity");
                     Database.Instance.IncreaseItemQuantity("Generosity", 1);
                     break;
-                case "EoH_Honesty":
+                case "Honesty":
                     SoundManager.Instance.PlaySound("a_beeps");
                     PickupPopup.Instance.ShowPopupInfo("Honesty");
                     Database.Instance.IncreaseItemQuantity("Honesty", 1);
                     break;
-                case "EoH_Kindness":
+                case "Kindness":
                     SoundManager.Instance.PlaySound("a_beeps");
                     PickupPopup.Instance.ShowPopupInfo("Kindness");
                     Database.Instance.IncreaseItemQuantity("Kindness", 1);
                     break;
-                case "EoH_Loyalty":
+                case "Loyalty":
                     SoundManager.Instance.PlaySound("a_beeps");
                     PickupPopup.Instance.ShowPopupInfo("Loyalty");
                     Database.Instance.IncreaseItemQuantity("Loyalty", 1);
                     break;
-                case "EoH_Magic":
+                case "Magic":
                     SoundManager.Instance.PlaySound("a_beeps");
                     PickupPopup.Instance.ShowPopupInfo("Magic");
                     Database.Instance.IncreaseItemQuantity("Magic", 1);
+                    break;
+                case "Iron":
+                    SoundManager.Instance.PlaySound("a_beeps");
+                    PickupPopup.Instance.ShowPopupInfo("Iron");
+                    Database.Instance.IncreaseItemQuantity("Iron", 1);
+                    break;
+                case "Copper":
+                    SoundManager.Instance.PlaySound("a_beeps");
+                    PickupPopup.Instance.ShowPopupInfo("Copper");
+                    Database.Instance.IncreaseItemQuantity("Copper", 1);
+                    break;
+                case "Tin":
+                    SoundManager.Instance.PlaySound("a_beeps");
+                    PickupPopup.Instance.ShowPopupInfo("Tin");
+                    Database.Instance.IncreaseItemQuantity("Tin", 1);
                     break;
                 case "Pixel":
                     SoundManager.Instance.PlaySound("a_coins");

@@ -41,7 +41,7 @@ public class PonyController : MonoBehaviour {
         //Movement
         _rigidbody.velocity = new Vector3((_pony.SPD * GlobalData.Instance.SPDmlp) / 10, _rigidbody.velocity.y, m_shift - 0.015f);
         if (s_shift == 0) {
-            m_shift = Input.GetAxis("Vertical") * (_pony.SPD * GlobalData.Instance.SPDmlp) / 10 / 2;
+            m_shift = Input.GetAxisRaw("Vertical") * (_pony.SPD * GlobalData.Instance.SPDmlp) / 10 / 2;
         } else {
             m_shift = s_shift * (_pony.SPD * GlobalData.Instance.SPDmlp) / 10 / 2;
         }
