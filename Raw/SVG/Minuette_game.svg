@@ -15,10 +15,14 @@
    viewBox="0 0 744.09448819 1052.3622047"
    id="svg5423"
    version="1.1"
-   inkscape:version="0.92.1 r15371"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="Minuette_game.svg">
   <defs
      id="defs5425">
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5032"
+       effect="spiro" />
     <inkscape:path-effect
        effect="spiro"
        id="path-effect5467"
@@ -2166,17 +2170,6 @@
        y1="153.03566"
        x2="155.47899"
        y2="124.24705" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient5025"
-       id="radialGradient5232"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.29398136,-0.43135856,0.81767697,0.55726676,81.438929,284.50953)"
-       cx="179.21564"
-       cy="58.884632"
-       fx="179.21564"
-       fy="58.884632"
-       r="10.518215" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4834"
@@ -2257,6 +2250,17 @@
        y1="154.98154"
        x2="153.84589"
        y2="150.93436" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5025"
+       id="radialGradient5036"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.29398136,-0.43135856,0.81767697,0.55726676,81.358846,284.53485)"
+       cx="179.21564"
+       cy="58.884632"
+       fx="179.21564"
+       fy="58.884632"
+       r="10.518215" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -2265,15 +2269,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="199.19774"
-     inkscape:cy="878.79213"
+     inkscape:zoom="2"
+     inkscape:cx="194.16099"
+     inkscape:cy="880.09065"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1832"
-     inkscape:window-height="1057"
-     inkscape:window-x="80"
+     inkscape:window-width="1856"
+     inkscape:window-height="1058"
+     inkscape:window-x="56"
      inkscape:window-y="-8"
      inkscape:window-maximized="1" />
   <metadata
@@ -2293,9 +2297,9 @@
      inkscape:groupmode="layer"
      id="layer1">
     <path
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\g5100.png"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png"
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 352.95189,151.01137 c -0.72931,-0.0894 -1.47349,-0.0564 -2.192,0.0973 -1.02764,0.21984 -2.00112,0.68856 -2.81382,1.35481 0.86342,-0.35727 1.77715,-0.59272 2.70571,-0.69722 0.83813,-0.0943 1.6882,-0.0821 2.52326,0.0364 z"
+       d="m 352.95189,151.01137 c -0.72931,-0.0894 -1.47349,-0.0564 -2.192,0.0973 -1.02764,0.21984 -2.00112,0.68856 -2.81382,1.35481 0.86342,-0.35727 1.77715,-0.59272 2.70571,-0.69722 0.83813,-0.0943 1.6882,-0.0821 2.52326,0.0364 l -0.22315,-0.79129 z"
        id="path4912"
        inkscape:path-effect="#path-effect4914"
        inkscape:original-d="m 352.95189,151.01137 c 0,0 -1.48065,-0.0884 -2.192,0.0973 -0.97145,0.25357 -2.81382,1.35481 -2.81382,1.35481 0,0 1.83814,-0.58236 2.70571,-0.69722 0.8339,-0.11037 2.52326,0.0364 2.52326,0.0364 z"
@@ -2311,57 +2315,24 @@
        inkscape:original-d="m 351.51494,149.36795 c 0,0 -1.48066,-0.0884 -2.192,0.0973 -0.97145,0.25357 -2.81382,1.3548 -2.81382,1.3548 0,0 1.83814,-0.58235 2.7057,-0.69721 0.83391,-0.11037 2.52326,0.0364 2.52326,0.0364 z"
        inkscape:path-effect="#path-effect4918"
        id="path4916"
-       d="m 351.51494,149.36795 c -0.72931,-0.0894 -1.47349,-0.0564 -2.192,0.0973 -1.02764,0.21984 -2.00112,0.68855 -2.81382,1.3548 0.86342,-0.35727 1.77714,-0.59272 2.7057,-0.69721 0.83813,-0.0943 1.6882,-0.0821 2.52326,0.0364 z"
+       d="m 351.51494,149.36795 c -0.72931,-0.0894 -1.47349,-0.0564 -2.192,0.0973 -1.02764,0.21984 -2.00112,0.68855 -2.81382,1.3548 0.86342,-0.35727 1.77714,-0.59272 2.7057,-0.69721 0.83813,-0.0943 1.6882,-0.0821 2.52326,0.0364 l -0.22314,-0.79129 z"
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\g5100.png" />
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
     <path
        inkscape:export-ydpi="368"
        inkscape:export-xdpi="368"
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 350.81609,147.38336 c -0.72931,-0.0894 -1.47349,-0.0564 -2.192,0.0973 -1.02764,0.21984 -2.00112,0.68855 -2.81382,1.3548 0.86343,-0.35724 1.77716,-0.59268 2.70571,-0.69719 0.83813,-0.0943 1.68819,-0.0821 2.52326,0.0363 z"
+       d="m 350.81609,147.38336 c -0.72931,-0.0894 -1.47349,-0.0564 -2.192,0.0973 -1.02764,0.21984 -2.00112,0.68855 -2.81382,1.3548 0.86343,-0.35724 1.77716,-0.59268 2.70571,-0.69719 0.83813,-0.0943 1.68819,-0.0821 2.52326,0.0363 l -0.22315,-0.79121 z"
        id="path4920"
        inkscape:path-effect="#path-effect4922"
        inkscape:original-d="m 350.81609,147.38336 c 0,0 -1.48065,-0.0884 -2.192,0.0973 -0.97146,0.25358 -2.81382,1.3548 -2.81382,1.3548 0,0 1.83815,-0.58236 2.70571,-0.69719 0.8339,-0.11047 2.52326,0.0363 2.52326,0.0363 z"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cscscc"
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\g5100.png" />
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
     <path
-       inkscape:export-ydpi="368"
-       inkscape:export-xdpi="368"
-       sodipodi:nodetypes="cscscc"
-       inkscape:connector-curvature="0"
-       inkscape:original-d="m 321.84501,151.88584 c 0,0 -1.4463,-0.32921 -2.17843,-0.26226 -0.99983,0.0914 -2.9974,0.87673 -2.9974,0.87673 0,0 1.9086,-0.27412 2.78327,-0.24565 0.84073,0.0274 2.48339,0.44826 2.48339,0.44826 z"
-       inkscape:path-effect="#path-effect4901"
-       id="path4899"
-       d="m 321.84501,151.88584 c -0.70488,-0.20744 -1.44445,-0.29647 -2.17843,-0.26226 -1.04975,0.0489 -2.08675,0.35225 -2.9974,0.87673 0.9102,-0.21135 1.85012,-0.29431 2.78327,-0.24565 0.84228,0.0439 1.67891,0.19494 2.48339,0.44826 z"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png"
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\g5100.png" />
-    <path
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\g5100.png"
-       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 320.69596,150.02968 c -0.70488,-0.20744 -1.44445,-0.29647 -2.17843,-0.26226 -1.04975,0.0489 -2.08675,0.35225 -2.9974,0.87673 0.9102,-0.21135 1.85012,-0.29431 2.78327,-0.24565 0.84228,0.0439 1.67891,0.19494 2.48339,0.44826 z"
-       id="path4908"
-       inkscape:path-effect="#path-effect4910"
-       inkscape:original-d="m 320.69596,150.02968 c 0,0 -1.4463,-0.32921 -2.17843,-0.26226 -0.99983,0.0914 -2.9974,0.87673 -2.9974,0.87673 0,0 1.9086,-0.27412 2.78327,-0.24565 0.84073,0.0274 2.48339,0.44826 2.48339,0.44826 z"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cscscc"
-       inkscape:export-xdpi="368"
-       inkscape:export-ydpi="368" />
-    <path
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\g5100.png"
-       sodipodi:nodetypes="cscscc"
-       inkscape:connector-curvature="0"
-       inkscape:original-d="m 320.33085,147.95756 c 0,0 -1.4463,-0.32921 -2.17843,-0.26227 -0.99984,0.0914 -2.9974,0.87672 -2.9974,0.87672 0,0 1.90861,-0.27412 2.78327,-0.24563 0.84074,0.0273 2.4834,0.44824 2.4834,0.44824 z"
-       inkscape:path-effect="#path-effect4905"
-       id="path4903"
-       d="m 320.33085,147.95756 c -0.70488,-0.20744 -1.44445,-0.29648 -2.17843,-0.26227 -1.04975,0.0489 -2.08675,0.35224 -2.9974,0.87672 0.9102,-0.21134 1.85012,-0.29429 2.78327,-0.24563 0.84228,0.0439 1.67892,0.19493 2.4834,0.44824 z"
-       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       inkscape:export-xdpi="368"
-       inkscape:export-ydpi="368" />
-    <path
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\g5100.png"
-       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 286.72001,149.82334 c -0.70488,-0.20744 -1.44445,-0.29647 -2.17843,-0.26226 -1.04975,0.0489 -2.08675,0.35225 -2.9974,0.87673 0.9102,-0.21135 1.85012,-0.29431 2.78327,-0.24565 0.84228,0.0439 1.67891,0.19494 2.48339,0.44826 z"
+       d="m 286.72001,149.82334 c -0.70488,-0.20744 -1.44445,-0.29647 -2.17843,-0.26226 -1.04975,0.0489 -2.08675,0.35225 -2.9974,0.87673 0.9102,-0.21135 1.85012,-0.29431 2.78327,-0.24565 0.84228,0.0439 1.67891,0.19494 2.48339,0.44826 l -0.0908,-0.81708 z"
        id="path4894"
        inkscape:path-effect="#path-effect4897"
        inkscape:original-d="m 286.72001,149.82334 c 0,0 -1.4463,-0.32921 -2.17843,-0.26226 -0.99983,0.0914 -2.9974,0.87673 -2.9974,0.87673 0,0 1.9086,-0.27412 2.78327,-0.24565 0.84073,0.0274 2.48339,0.44826 2.48339,0.44826 z"
@@ -2373,13 +2344,13 @@
        inkscape:export-ydpi="368"
        inkscape:export-xdpi="368"
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 285.20585,145.89506 c -0.70488,-0.20744 -1.44445,-0.29648 -2.17843,-0.26227 -1.04975,0.0489 -2.08675,0.35224 -2.9974,0.87672 0.9102,-0.21134 1.85012,-0.29429 2.78327,-0.24563 0.84228,0.0439 1.67892,0.19493 2.4834,0.44824 z"
+       d="m 285.20585,145.89506 c -0.70488,-0.20744 -1.44445,-0.29648 -2.17843,-0.26227 -1.04975,0.0489 -2.08675,0.35224 -2.9974,0.87672 0.9102,-0.21134 1.85012,-0.29429 2.78327,-0.24563 0.84228,0.0439 1.67892,0.19493 2.4834,0.44824 l -0.0908,-0.81706 z"
        id="path4946"
        inkscape:path-effect="#path-effect4834"
        inkscape:original-d="m 285.20585,145.89506 c 0,0 -1.4463,-0.32921 -2.17843,-0.26227 -0.99984,0.0914 -2.9974,0.87672 -2.9974,0.87672 0,0 1.90861,-0.27412 2.78327,-0.24563 0.84074,0.0273 2.4834,0.44824 2.4834,0.44824 z"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cscscc"
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\g5100.png" />
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
     <path
        inkscape:export-ydpi="368"
        inkscape:export-xdpi="368"
@@ -2388,9 +2359,9 @@
        inkscape:original-d="m 285.57096,147.96718 c 0,0 -1.4463,-0.32921 -2.17843,-0.26226 -0.99983,0.0914 -2.9974,0.87673 -2.9974,0.87673 0,0 1.9086,-0.27412 2.78327,-0.24565 0.84073,0.0274 2.48339,0.44826 2.48339,0.44826 z"
        inkscape:path-effect="#path-effect4831"
        id="path4948"
-       d="m 285.57096,147.96718 c -0.70488,-0.20744 -1.44445,-0.29647 -2.17843,-0.26226 -1.04975,0.0489 -2.08675,0.35225 -2.9974,0.87673 0.9102,-0.21135 1.85012,-0.29431 2.78327,-0.24565 0.84228,0.0439 1.67891,0.19494 2.48339,0.44826 z"
+       d="m 285.57096,147.96718 c -0.70488,-0.20744 -1.44445,-0.29647 -2.17843,-0.26226 -1.04975,0.0489 -2.08675,0.35225 -2.9974,0.87673 0.9102,-0.21135 1.85012,-0.29431 2.78327,-0.24565 0.84228,0.0439 1.67891,0.19494 2.48339,0.44826 l -0.0908,-0.81708 z"
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\g5100.png" />
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
     <path
        style="fill:#d2d5f1;fill-opacity:1;fill-rule:evenodd;stroke:#a2a5d8;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 119.71533,83.103987 c -3.96375,-3.858082 -9.15737,-6.433027 -14.62774,-7.25228 -7.01253,-1.050211 -14.279923,0.780509 -20.417705,4.331023 -5.976691,3.457329 -10.985194,8.514769 -14.584077,14.407307 -3.027914,4.957676 -5.064708,10.468113 -6.540735,16.086673 -1.344515,5.11795 -2.236995,10.34566 -3.56215,15.46866 -1.325154,5.123 -3.113084,10.19649 -6.07219,14.58338 -3.563431,5.28281 -8.797883,9.42022 -14.760843,11.66726 l 22.273857,-2.82842 13.435036,-9.36917 11.313708,-25.8094 19.545619,-31.577159 13.90018,1.693899"
@@ -2570,7 +2541,7 @@
        inkscape:original-d="m 167.35528,86.35259 -18.21294,-1.4974 -26.67864,25.22379 c 0,0 10.35501,4.22559 14.80838,4.75813 7.63383,0.91285 20.08581,-2.76257 20.08581,-2.76257 z"
        inkscape:path-effect="#path-effect5417-6"
        id="path5415-0"
-       d="m 167.35528,86.35259 -18.21294,-1.4974 -26.67864,25.22379 c 4.56678,2.52279 9.62682,4.14865 14.80838,4.75813 6.78461,0.79804 13.76856,-0.16253 20.08581,-2.76257 z"
+       d="m 167.35528,86.35259 -18.21294,-1.4974 -26.67864,25.22379 c 4.56678,2.52279 9.62682,4.14865 14.80838,4.75813 6.78461,0.79804 13.76856,-0.16253 20.08581,-2.76257 l 9.99739,-25.72195 z"
        style="fill:#fff2f7;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png" />
     <path
@@ -2581,7 +2552,7 @@
        inkscape:original-d="m 190.15598,47.602379 -37.95797,-4.92522 -0.22401,42.959881 13.39905,1.39829 z"
        inkscape:path-effect="#path-effect5413-3"
        id="path5411-8"
-       d="m 190.15598,47.602379 -37.95797,-4.92522 -0.22401,42.959881 13.39905,1.39829 z"
+       d="m 190.15598,47.602379 -37.95797,-4.92522 -0.22401,42.959881 13.39905,1.39829 24.78293,-39.432951 z"
        style="fill:#fff2f7;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png" />
     <path
@@ -2650,17 +2621,6 @@
        inkscape:export-ydpi="368"
        inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png" />
     <path
-       inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png"
-       sodipodi:nodetypes="cscscc"
-       inkscape:connector-curvature="0"
-       inkscape:original-d="m 170.77955,58.775398 c 0,0 -1.4463,-0.32921 -2.17843,-0.26227 -0.99984,0.0914 -2.9974,0.87672 -2.9974,0.87672 0,0 1.90861,-0.27412 2.78327,-0.24563 0.84074,0.0273 2.4834,0.44824 2.4834,0.44824 z"
-       inkscape:path-effect="#path-effect4930"
-       id="path4928"
-       d="m 170.77955,58.775398 c -0.70488,-0.207441 -1.44445,-0.296481 -2.17843,-0.26227 -1.04975,0.04893 -2.08675,0.352245 -2.9974,0.87672 0.9102,-0.211338 1.85012,-0.294288 2.78327,-0.24563 0.84228,0.04392 1.67892,0.194928 2.4834,0.44824 z"
-       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       inkscape:export-xdpi="368"
-       inkscape:export-ydpi="368" />
-    <path
        style="opacity:1;fill:none;fill-rule:evenodd;stroke:#447dc0;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
        d="m 193.3629,79.06721 c -1.02532,-0.152933 -2.02353,-0.485914 -2.93533,-0.97916 -0.6626,-0.358441 -1.27962,-0.801039 -1.83154,-1.31379"
        id="path5281-3"
@@ -2688,116 +2648,6 @@
        inkscape:export-ydpi="368"
        inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png" />
     <path
-       inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png"
-       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 171.14466,60.847518 c -0.70488,-0.207437 -1.44445,-0.296473 -2.17843,-0.26226 -1.04975,0.04893 -2.08675,0.352252 -2.9974,0.87673 0.9102,-0.211352 1.85012,-0.294309 2.78327,-0.24565 0.84228,0.04392 1.67891,0.194936 2.48339,0.44826 z"
-       id="path4933"
-       inkscape:path-effect="#path-effect4935"
-       inkscape:original-d="m 171.14466,60.847518 c 0,0 -1.4463,-0.32921 -2.17843,-0.26226 -0.99983,0.0914 -2.9974,0.87673 -2.9974,0.87673 0,0 1.9086,-0.27412 2.78327,-0.24565 0.84073,0.0274 2.48339,0.44826 2.48339,0.44826 z"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cscscc"
-       inkscape:export-xdpi="368"
-       inkscape:export-ydpi="368" />
-    <path
-       inkscape:export-ydpi="368"
-       inkscape:export-xdpi="368"
-       sodipodi:nodetypes="cscscc"
-       inkscape:connector-curvature="0"
-       inkscape:original-d="m 172.29371,62.703678 c 0,0 -1.4463,-0.32921 -2.17843,-0.26226 -0.99983,0.0914 -2.9974,0.87673 -2.9974,0.87673 0,0 1.9086,-0.27412 2.78327,-0.24565 0.84073,0.0274 2.48339,0.44826 2.48339,0.44826 z"
-       inkscape:path-effect="#path-effect4926"
-       id="path4924"
-       d="m 172.29371,62.703678 c -0.70488,-0.207437 -1.44445,-0.296473 -2.17843,-0.26226 -1.04975,0.04893 -2.08675,0.352252 -2.9974,0.87673 0.9102,-0.211352 1.85012,-0.294309 2.78327,-0.24565 0.84228,0.04392 1.67891,0.194936 2.48339,0.44826 z"
-       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path4799"
-       d="m 184.92955,70.631842 c -1.94675,0.374373 -3.96835,0.449245 -5.91507,0.149737 -1.27285,-0.224622 -2.54572,-0.598992 -3.6688,-1.347734 -1.27286,-0.823614 -2.24619,-2.021597 -3.06979,-3.294458 -0.82365,-1.347734 -1.57236,-2.845215 -2.09649,-4.342695 -0.52409,-1.497454 -0.82361,-3.069799 -0.97334,-4.642137 -0.075,-1.572345 0,-3.14469 0.22462,-4.64216 l 12.42901,7.112987 3.06986,11.00645 z"
-       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.97335601px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       inkscape:export-xdpi="368"
-       inkscape:export-ydpi="368"
-       inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path4801"
-       d="m 178.41551,58.502292 c -0.67388,3.069788 -0.075,6.513994 1.57234,8.909967 1.57236,2.395969 3.89344,3.294458 5.91503,2.321094 l -2.02159,-8.161273 z"
-       style="fill:#447dc0;fill-opacity:1;fill-rule:nonzero;stroke:#447dc0;stroke-width:1.12310314px;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       inkscape:export-xdpi="368"
-       inkscape:export-ydpi="368"
-       inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path4803"
-       d="m 183.43204,64.716792 -5.24116,0.149736 c 0.14963,0.524117 0.29962,1.048236 0.5241,1.572356 0.22462,0.449244 0.52412,0.973361 0.82364,1.422605 l 4.94168,-0.973361 z"
-       style="fill:#85aad6;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-opacity:1"
-       inkscape:export-xdpi="368"
-       inkscape:export-ydpi="368"
-       inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path4807"
-       d="m 184.10591,66.963014 -4.56729,0.898489 c 0.14962,0.37437 0.44923,0.748739 0.67386,0.973361 0.29961,0.299508 0.52409,0.449245 0.8236,0.673867 l 3.89347,-0.973361 z"
-       style="fill:#d4e1f1;fill-opacity:1;fill-rule:evenodd;stroke:none"
-       inkscape:export-xdpi="368"
-       inkscape:export-ydpi="368"
-       inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png" />
-    <path
-       style="fill:url(#radialGradient5033);fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
-       d="m 168.60077,51.717711 2.20971,-2.519068 6.58494,-0.707107 9.104,5.214913 3.13778,7.468815 -0.66291,4.419418 -6.67332,-5.524272 -7.15946,-4.640388 z"
-       id="path5023"
-       inkscape:connector-curvature="0"
-       inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png"
-       inkscape:export-xdpi="368"
-       inkscape:export-ydpi="368" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path4811"
-       d="m 185.75315,62.770063 c 0.59892,0.149736 1.27278,0.149736 1.94665,0.149736 0.52409,0 1.04822,-0.07489 1.57235,-0.149736"
-       style="fill:none;stroke:#000000;stroke-width:0.82360893px;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       inkscape:export-xdpi="368"
-       inkscape:export-ydpi="368"
-       inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path4813"
-       d="m 184.25568,61.422329 c 0.59898,0.149736 1.27285,0.299509 1.87176,0.224622 0.44924,0 0.97334,0 1.42258,-0.149736"
-       style="fill:none;stroke:#000000;stroke-width:0.82360893px;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       inkscape:export-xdpi="368"
-       inkscape:export-ydpi="368"
-       inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path4815"
-       d="m 182.38382,60.149503 c 0.59898,0.149735 1.198,0.224622 1.79697,0.224622 0.52414,0.07489 1.04823,0.07489 1.57236,0"
-       style="fill:none;stroke:#000000;stroke-width:0.82360893px;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       inkscape:export-xdpi="368"
-       inkscape:export-ydpi="368"
-       inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path4817"
-       d="m 188.97264,65.46553 c -2.39596,-2.171347 -4.94158,-4.192947 -7.5622,-6.06476 -4.0432,-2.920071 -8.46068,-5.46577 -12.95313,-7.6371"
-       style="fill:none;stroke:#000000;stroke-width:0.97335601px;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       inkscape:export-xdpi="368"
-       inkscape:export-ydpi="368"
-       inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path4819"
-       d="m 182.68332,66.588642 c 0.075,1.946728 1.19797,3.519084 2.47085,3.519084 1.34763,-0.07489 2.32101,-1.722106 2.24612,-3.743707 -0.14963,-2.0216 -1.27285,-3.593956 -2.54563,-3.519081 -1.27284,0.07489 -2.24622,1.722103 -2.17134,3.743704 z"
-       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.04822958px;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       inkscape:export-xdpi="368"
-       inkscape:export-ydpi="368"
-       inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path4821"
-       d="m 183.58182,65.690153 c 0,0.748741 0.37436,1.347733 0.8236,1.347733 0.37435,0 0.67387,-0.673867 0.67387,-1.422605 -0.075,-0.748742 -0.44925,-1.272862 -0.82361,-1.272862 -0.44925,0 -0.74875,0.598995 -0.67386,1.347734 z"
-       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.37436768px;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       inkscape:export-xdpi="368"
-       inkscape:export-ydpi="368"
-       inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png" />
-    <path
        style="opacity:1;fill:#7abde7;fill-opacity:1;fill-rule:evenodd;stroke:#447dc0;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
        d="m 128.22704,229.00243 c -0.72767,2.10466 -1.51748,4.18784 -2.36806,6.2459 -0.86601,2.09539 -1.82797,4.21413 -3.42066,5.82781 -2.08962,2.11717 -5.03058,3.13739 -7.44449,4.87577 -1.38032,0.99404 -2.58591,2.22478 -3.58281,3.60304 -1.9032,2.63125 -3.02455,5.7583 -3.70959,8.93263 -0.68505,3.17433 -0.95507,6.4208 -1.30229,9.64959 -0.29067,2.7029 -0.63684,5.40617 -0.6685,8.12447 -0.0317,2.71829 0.26013,5.47082 1.20839,8.01855 0.27745,0.74544 0.61082,1.47331 0.8042,2.24485 0.19337,0.77154 0.23826,1.60797 -0.058,2.34614 -0.17996,0.44838 -0.48042,0.84397 -0.84521,1.16077 -0.36478,0.31679 -0.79272,0.5565 -1.24338,0.73067 -0.90132,0.34834 -1.87988,0.43515 -2.84447,0.49245 -2.75136,0.16344 -5.525381,0.11352 -8.244292,-0.33838 -1.206251,-0.20048 -2.412192,-0.48425 -3.50628,-1.03033 -1.013955,-0.50609 -1.929525,-1.24949 -2.51517,-2.21967 -0.603057,-0.99902 -0.829255,-2.18949 -0.831975,-3.35641 -0.0027,-1.16693 0.2061,-2.3229 0.418875,-3.47027 1.928123,-10.39722 4.267213,-20.80514 8.5624,-30.46802 0.452652,-1.01833 0.928769,-2.03123 1.539336,-2.96349 0.610566,-0.93225 1.362556,-1.78622 2.288736,-2.40596 1.31822,-0.88207 2.97124,-1.24978 4.53908,-1.0097 -1.5625,-4.84063 -2.65186,-9.83385 -3.2475,-14.88542 -0.15681,-1.3299 -0.27963,-2.67081 -0.19035,-4.00694 0.15795,-2.36379 0.97945,-4.64793 2.11811,-6.72541 0.98272,-1.79297 2.21286,-3.46203 3.72669,-4.83637 1.51384,-1.37434 3.31815,-2.44865 5.28696,-3.00027 3.48736,-0.97709 7.22368,-0.27145 10.68192,0.80416 6.05148,1.88217 11.74973,4.89348 16.7141,8.83277"
        id="path4892"
@@ -2807,7 +2657,7 @@
        sodipodi:nodetypes="csssssssssssssscsssssc"
        inkscape:export-xdpi="368.4726"
        inkscape:export-ydpi="368.4726"
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\path5956.png" />
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
     <path
        inkscape:export-ydpi="368.4726"
        inkscape:export-xdpi="368.4726"
@@ -2818,7 +2668,7 @@
        id="path7129"
        d="m 169.59053,263.38681 c 3.85106,0.95561 7.80851,1.48182 11.77548,1.56575 3.21053,0.0679 6.45164,-0.15759 9.54404,-1.02315 2.66251,-0.74523 5.20651,-1.97264 7.34384,-3.72653 0.74162,-0.60857 1.43986,-1.28731 1.94822,-2.1009 0.50835,-0.81359 0.8178,-1.77521 0.73541,-2.73102 -0.0827,-0.95895 -0.57124,-1.8763 -1.32085,-2.48003 -0.74962,-0.60374 -1.75001,-0.8856 -2.70455,-0.76201 0.75498,-3.32472 1.21096,-6.71728 1.36064,-10.12336 0.15725,-3.57829 -0.0308,-7.21309 -1.07901,-10.63801 -1.74134,-5.68938 -6.01388,-10.64639 -11.55894,-12.8036 -3.59425,-1.39828 -7.55979,-1.61372 -11.39632,-1.2202 -3.76088,0.38576 -7.48004,1.34903 -10.86712,3.02854 -1.01358,0.50259 -1.99592,1.06818 -2.93947,1.69242 l -8.99492,16.6101 c -0.13617,2.56 -0.24115,5.12166 -0.31492,7.68422 -0.14984,5.2052 -0.17084,10.41412 -0.063,15.62036"
        style="opacity:1;fill:#84c8f3;fill-opacity:1;fill-rule:evenodd;stroke:#447dc0;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\path5956.png" />
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
     <path
        inkscape:export-ydpi="368.4726"
        inkscape:export-xdpi="368.4726"
@@ -2834,7 +2684,7 @@
        sodipodi:type="arc"
        id="path7133"
        style="opacity:1;fill:#ef4e91;fill-opacity:1;stroke:#447dc0;stroke-width:0.89999998;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\path5956.png" />
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
     <path
        style="fill:#84c8f3;fill-opacity:1;fill-rule:evenodd;stroke:#447dc0;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
        d="m 161.05955,293.02669 c 0,0 -0.35713,-7.31615 -1.40012,-10.18612 -1.6967,-4.66879 -4.07303,-7.02186 -4.07303,-7.02186 0,0 -3.44566,2.81349 -5.45876,5.30726 -2.8086,3.47924 -3.59681,5.7902 -4.24902,9.41991 -0.6435,3.58124 -0.42413,6.54444 0.59364,9.90599 1.41531,4.67458 4.29696,8.53677 4.29696,8.53677"
@@ -2842,7 +2692,8 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cscsssc"
        inkscape:export-xdpi="368.4726"
-       inkscape:export-ydpi="368.4726" />
+       inkscape:export-ydpi="368.4726"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
     <path
        style="fill:#447dc0;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 149.78415,293.04398 c -0.0296,-1.92724 0.39347,-3.85998 1.22549,-5.59862 -0.31599,1.86716 -0.45715,3.76387 -0.42103,5.65724 0.0356,1.86375 0.24288,3.72419 0.61848,5.55005 -0.9015,-1.725 -1.39306,-3.66253 -1.42294,-5.60867 z"
@@ -2850,7 +2701,10 @@
        inkscape:path-effect="#path-effect4889-5"
        inkscape:original-d="m 149.78415,293.04398 c -0.0817,-2.05197 1.22549,-5.59862 1.22549,-5.59862 0,0 -0.46588,3.76682 -0.42103,5.65724 0.044,1.85505 0.61848,5.55005 0.61848,5.55005 0,0 -1.35051,-3.79092 -1.42294,-5.60867 z"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="scscs" />
+       sodipodi:nodetypes="scscs"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368" />
     <path
        inkscape:export-ydpi="368.4726"
        inkscape:export-xdpi="368.4726"
@@ -2860,7 +2714,8 @@
        inkscape:path-effect="#path-effect4779"
        id="path7143"
        d="m 181.1418,299.6191 c 3.91281,-5.09714 7.59592,-10.37061 11.03441,-15.79903 0.43284,-0.68333 0.87125,-1.3936 0.99754,-2.19256 0.0631,-0.39949 0.0439,-0.81637 -0.0927,-1.19704 -0.13661,-0.38067 -0.39568,-0.72274 -0.74532,-0.92602 -0.24987,-0.14527 -0.53924,-0.21686 -0.82817,-0.22457 -0.28893,-0.008 -0.57755,0.047 -0.85083,0.14111 -0.54655,0.18823 -1.0258,0.52819 -1.49512,0.86568 -4.90029,3.52379 -9.6449,7.26408 -14.21534,11.2063"
-       style="opacity:1;fill:#84c8f3;fill-opacity:1;fill-rule:evenodd;stroke:#447dc0;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       style="opacity:1;fill:#84c8f3;fill-opacity:1;fill-rule:evenodd;stroke:#447dc0;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
     <path
        inkscape:export-ydpi="368.4726"
        inkscape:export-xdpi="368.4726"
@@ -2869,7 +2724,8 @@
        inkscape:path-effect="#path-effect4774"
        id="path7145"
        d="m 190.20328,287.16286 -2.38035,-5.88774"
-       style="opacity:1;fill:none;fill-rule:evenodd;stroke:#447dc0;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       style="opacity:1;fill:none;fill-rule:evenodd;stroke:#447dc0;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
     <path
        inkscape:export-ydpi="368.4726"
        inkscape:export-xdpi="368.4726"
@@ -2878,7 +2734,8 @@
        inkscape:path-effect="#path-effect4769"
        id="path7147"
        d="m 185.79694,293.03253 -2.44525,-8.55728"
-       style="opacity:1;fill:none;fill-rule:evenodd;stroke:#447dc0;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       style="opacity:1;fill:none;fill-rule:evenodd;stroke:#447dc0;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
     <path
        inkscape:export-ydpi="368.4726"
        inkscape:export-xdpi="368.4726"
@@ -2889,7 +2746,7 @@
        id="path7153"
        d="m 234.97012,253.05828 c 0.27702,3.94581 0.65103,7.88481 1.12159,11.81224 0.65918,5.5018 1.50768,10.98003 2.1299,16.48613 0.51501,4.55735 0.87511,9.13441 1.56868,13.66802 0.3999,2.61396 0.91205,5.23488 0.81741,7.87756 -0.0187,0.52274 -0.0617,1.04761 -0.19078,1.55451 -0.12907,0.5069 -0.34781,0.99765 -0.68799,1.395 -0.43841,0.51209 -1.05765,0.84432 -1.70313,1.0387 -0.64549,0.19438 -1.32177,0.26054 -1.99373,0.31442 -3.58943,0.2878 -7.2109,0.25211 -10.78004,-0.22547 -0.68706,-0.0919 -1.37675,-0.20137 -2.02969,-0.43412 -0.65295,-0.23274 -1.27267,-0.59707 -1.71663,-1.12942 -0.52652,-0.63134 -0.7722,-1.45879 -0.83622,-2.27837 -0.064,-0.81958 0.0403,-1.64189 0.14242,-2.45759 0.74175,-5.92318 1.38076,-11.85888 1.96708,-17.79946 0.40945,-4.14856 0.79322,-8.29965 1.20921,-12.44756 0.4789,-4.77513 1.00049,-9.54597 1.56471,-14.31177"
        style="opacity:1;fill:#84c8f3;fill-opacity:1;fill-rule:evenodd;stroke:#447dc0;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\path5956.png" />
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
     <path
        style="opacity:1;fill:#7abde7;fill-opacity:1;fill-rule:evenodd;stroke:#447dc0;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
        d="m 265.34658,252.91699 c 0.27702,3.94581 0.65103,7.88481 1.12159,11.81224 0.65918,5.5018 1.50768,10.98003 2.1299,16.48613 0.51501,4.55735 0.87511,9.13441 1.56868,13.66802 0.3999,2.61396 0.91205,5.23488 0.81741,7.87756 -0.0187,0.52274 -0.0617,1.04761 -0.19078,1.55451 -0.12907,0.5069 -0.34781,0.99765 -0.68799,1.395 -0.43841,0.51209 -1.05765,0.84432 -1.70313,1.0387 -0.64549,0.19438 -1.32177,0.26054 -1.99373,0.31442 -3.58943,0.2878 -7.2109,0.25211 -10.78004,-0.22547 -0.68706,-0.0919 -1.37675,-0.20137 -2.02969,-0.43412 -0.65295,-0.23274 -1.27267,-0.59707 -1.71663,-1.12942 -0.52652,-0.63134 -0.7722,-1.45879 -0.83622,-2.27837 -0.064,-0.81958 0.0403,-1.64189 0.14242,-2.45759 0.74175,-5.92318 1.38076,-11.85888 1.96708,-17.79946 0.40945,-4.14856 0.79322,-8.29965 1.20921,-12.44756 0.4789,-4.77513 1.00049,-9.54597 1.56471,-14.31177"
@@ -2900,7 +2757,7 @@
        sodipodi:nodetypes="csssssssssssc"
        inkscape:export-xdpi="368.4726"
        inkscape:export-ydpi="368.4726"
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\path5956.png" />
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
     <path
        inkscape:export-ydpi="368"
        inkscape:export-xdpi="368"
@@ -2911,7 +2768,7 @@
        id="path7169"
        d="m 362.81841,227.68169 c -5.95467,-4.8096 -14.1053,-6.78085 -21.59973,-5.22395 -5.21041,1.08242 -9.96831,3.74095 -14.30429,6.82628 -4.04059,2.87514 -7.82491,6.18329 -10.76717,10.17526 -4.31068,5.8486 -6.64603,12.93257 -8.07811,20.05558 -1.22983,6.11704 -1.85657,12.40242 -4.01341,18.25723 -3.42825,9.3061 -10.79936,17.08587 -19.90713,21.01078 l 26.67914,-0.35801 13.14735,-30.69739 7.26664,-22.86571 14.27976,-13.38641 15.88269,-3.40001"
        style="fill:#d2d5f1;fill-opacity:1;fill-rule:evenodd;stroke:#a2a5d8;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\path5956.png" />
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
     <path
        inkscape:export-ydpi="368"
        inkscape:export-xdpi="368"
@@ -2922,7 +2779,7 @@
        id="path7173"
        d="m 360.95753,227.95434 c -5.51396,-0.68659 -11.21087,0.16033 -16.28664,2.42123 -6.16749,2.74718 -11.37921,7.5921 -14.5605,13.54729 -3.54836,6.64231 -4.51747,14.30843 -6.62699,21.53761 -2.22604,7.62849 -5.83698,14.95903 -11.26567,20.76234 -7.30983,7.81425 -17.84536,12.5149 -28.54338,12.73521 6.08788,1.77881 12.48174,2.50529 18.81351,2.13761 5.34603,-0.31044 10.66753,-1.40542 15.60476,-3.4791 4.71611,-1.98081 9.07511,-4.86551 12.58125,-8.59006 5.79019,-6.15088 9.05855,-14.42396 9.94743,-22.82453 0.52639,-4.97475 0.26281,-10.00476 0.72003,-14.98635 0.45722,-4.98159 1.72547,-10.0764 4.88338,-13.9562 3.35734,-4.12483 8.76683,-6.48984 14.07463,-6.1534"
        style="fill:#3a39b3;fill-opacity:1;fill-rule:evenodd;stroke:#30309a;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\path5956.png" />
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
     <path
        inkscape:export-ydpi="368"
        inkscape:export-xdpi="368"
@@ -2933,7 +2790,7 @@
        id="path7177"
        d="m 384.0882,234.40928 c 3.3162,0.43417 6.56791,1.35775 9.61722,2.73157 2.73699,1.23311 5.30361,2.82326 7.72096,4.60318 3.92177,2.88765 7.46716,6.28586 10.51839,10.08175 -0.34615,-4.62122 -2.02143,-9.13532 -4.77392,-12.8635 -1.36496,-1.84881 -2.9887,-3.50628 -4.80906,-4.90897 4.08382,1.39302 7.9489,3.42522 11.41141,5.99992 3.12762,2.32568 5.9305,5.09757 8.22434,8.24862 1.96252,2.69592 3.54915,5.66506 4.69974,8.79486 1.02873,-5.7324 0.24057,-11.77706 -2.22368,-17.05401 -1.41675,-3.03385 -3.36598,-5.804 -5.62271,-8.27758 -3.15151,-3.45434 -7.00181,-6.39202 -11.45537,-7.81688 -2.80646,-0.89789 -5.78201,-1.17481 -8.72815,-1.12307 -3.65369,0.0642 -7.31515,0.63185 -10.74916,1.88131 -1.58561,0.57692 -3.11894,1.29745 -4.57508,2.14989"
        style="fill:#3a39b3;fill-opacity:1;fill-rule:evenodd;stroke:#30309a;stroke-width:0.90702093px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\path5956.png" />
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
     <path
        inkscape:export-ydpi="368"
        inkscape:export-xdpi="368"
@@ -2944,7 +2801,7 @@
        id="path7181"
        d="m 425.20377,302.2506 c 0.74874,-7.86189 -1.31415,-15.96249 -5.73202,-22.50866 -2.20662,-3.26966 -5.04795,-6.20484 -8.58686,-7.94724 -3.22771,-1.58918 -6.91663,-2.11857 -10.50427,-1.84941 -3.1487,0.23623 -6.25116,1.0744 -9.09045,2.4559 2.1722,-1.61838 4.6638,-2.80632 7.28874,-3.4751 2.29539,-0.58482 4.69117,-0.77348 7.04981,-0.55514 -3.71575,-1.10998 -7.72922,-1.20532 -11.49349,-0.27303 -5.19472,1.28656 -9.72921,4.4287 -13.85099,7.8421 -4.97715,4.12176 -9.54753,8.73004 -13.67459,13.70279 -2.69277,3.24456 -5.20763,6.66015 -7.17661,10.3886 -3.65657,6.92407 -5.34287,14.87862 -4.78546,22.68903 0.38345,5.37288 1.79755,10.62279 2.36233,15.97964 1.08674,10.30763 -1.07673,20.93403 -6.10705,29.99626 8.54466,-4.44923 14.70939,-13.19406 16.02856,-22.73694 0.4965,-3.59167 0.37167,-7.23594 0.35884,-10.86174 -0.0128,-3.62581 0.14051,-7.25019 0.39988,-10.86673 l 1.25156,-17.45138 6.25657,-15.31803 10.90187,-10.12049 c 5.65668,-0.94585 11.50518,-0.72897 17.07627,0.63325 6.32334,1.54616 12.4007,4.66709 16.64103,9.6062 2.62077,3.05266 4.48655,6.7487 5.38633,10.67012 z"
        style="fill:#d2d5f1;fill-opacity:1;fill-rule:evenodd;stroke:#a2a5d8;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\path5956.png" />
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
     <path
        inkscape:export-ydpi="368"
        inkscape:export-xdpi="368"
@@ -2955,7 +2812,7 @@
        id="path7185"
        d="m 375.14715,291.48303 c -3.4465,4.61832 -6.1715,9.77397 -8.0461,15.22311 -1.95678,5.688 -2.98685,11.71431 -2.80527,17.72675 0.18415,6.09756 1.60257,12.14169 1.33721,18.23625 -0.45394,10.42569 -6.16666,20.48904 -14.88599,26.22267 4.82403,-1.00334 9.35239,-3.38925 12.90759,-6.80078 3.5552,-3.41153 6.12578,-7.83768 7.32714,-12.61625 1.02392,-4.07277 1.0625,-8.32492 0.92566,-12.5222 -0.0792,-2.43039 -0.21536,-4.85971 -0.45798,-7.27926 -0.32846,-3.27552 -0.85214,-6.53146 -1.56734,-9.74478 0.46139,1.25031 1.09413,2.43726 1.87499,3.51727 1.5664,2.16648 3.73692,3.89134 6.20121,4.92794 -2.05382,-2.15908 -3.63011,-4.76997 -4.58418,-7.59301 -0.70094,-2.07404 -1.06666,-4.24806 -1.28669,-6.42626 -0.78189,-7.74032 0.27373,-15.66015 3.05567,-22.92546"
        style="fill:#3a39b3;fill-opacity:1;fill-rule:evenodd;stroke:#30309a;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\path5956.png" />
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
     <path
        inkscape:export-ydpi="368.4726"
        inkscape:export-xdpi="368.4726"
@@ -2966,7 +2823,7 @@
        id="path4907"
        d="m 283.07157,184.72179 c -0.329,4.6936 -0.48779,9.39913 -0.47594,14.10423 0.008,3.36906 0.10458,6.74039 0.41034,10.09556 0.132,1.44844 0.30302,2.89333 0.51283,4.33256 -3.14807,-1.47874 -6.30865,-2.93082 -9.48131,-4.35603 -3.4333,-1.5423 -6.91398,-3.06388 -10.60315,-3.80968 -2.85649,-0.57747 -5.88501,-0.66669 -8.629,0.31492 -3.11477,1.11425 -5.63775,3.5428 -7.36928,6.36152 -1.75054,2.84966 -2.7741,6.16641 -2.77135,9.5108 0.002,2.71036 0.67905,5.41763 1.95254,7.81018 2.18491,1.6798 4.53113,3.1497 6.99585,4.38289 3.43549,1.7189 7.09133,2.97361 10.8182,3.90509 3.41673,0.85397 6.89902,1.43932 10.40338,1.78967 3.57834,0.35775 7.21353,0.46852 10.75115,-0.17778 4.51271,-0.82445 8.84199,-2.93616 11.99377,-6.26942 1.80466,-1.90857 3.20488,-4.19096 4.13692,-6.64672 1.13448,-2.98917 1.57397,-6.20739 1.6219,-9.40424 0.0538,-3.58903 -0.37453,-7.16505 -0.69999,-10.7397 -0.40596,-4.45884 -0.65254,-8.93219 -0.73911,-13.40863"
        style="opacity:1;fill:#84c8f3;fill-opacity:1;fill-rule:evenodd;stroke:#447dc0;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\path5956.png" />
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
     <path
        inkscape:export-ydpi="368.4726"
        inkscape:export-xdpi="368.4726"
@@ -2977,7 +2834,7 @@
        id="path5052"
        d="m 365.33041,156.60782 c -0.57943,0.3305 -1.13875,0.69624 -1.67385,1.09453 -0.4061,0.30227 -0.79826,0.62328 -1.1748,0.96166"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.59087855;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\path5956.png" />
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
     <path
        inkscape:export-ydpi="368.4726"
        inkscape:export-xdpi="368.4726"
@@ -2988,7 +2845,7 @@
        inkscape:original-d="m 367.16579,156.28894 c 0,0 -1.06605,0.6404 -1.61214,1.05351 -0.47115,0.35664 -0.98581,0.86905 -0.98581,0.86905"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="csc"
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\path5956.png" />
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
     <path
        inkscape:export-ydpi="368.4726"
        inkscape:export-xdpi="368.4726"
@@ -2999,7 +2856,7 @@
        id="path5058"
        d="m 370.55751,154.98579 c -2.02471,1.25219 -4.3979,1.9342 -6.77849,1.94801 -3.68015,0.0214 -7.30322,-1.57576 -9.92187,-4.16162 -2.63913,-2.60608 -4.27761,-6.20139 -4.51303,-9.90291"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\path5956.png" />
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
     <path
        inkscape:export-ydpi="368.4726"
        inkscape:export-xdpi="368.4726"
@@ -3010,180 +2867,226 @@
        id="path5060"
        d="m 368.90191,155.96172 c -0.54327,0.33029 -1.06965,0.68836 -1.57639,1.07234 -0.39126,0.29648 -0.77082,0.6084 -1.13749,0.93479"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.59087855;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\path5956.png" />
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
     <path
        inkscape:export-ydpi="368"
        inkscape:export-xdpi="368"
        style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.97335601px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 299.42955,157.75684 c -1.94675,0.37437 -3.96835,0.44925 -5.91507,0.14974 -1.27285,-0.22462 -2.54572,-0.59899 -3.6688,-1.34774 -1.27286,-0.82361 -2.24619,-2.02159 -3.06979,-3.29445 -0.82365,-1.34774 -1.57236,-2.84522 -2.09649,-4.3427 -0.52409,-1.49745 -0.82361,-3.0698 -0.97334,-4.64214 -0.075,-1.57234 0,-3.14469 0.22462,-4.64216 l 12.42901,7.11299 3.06986,11.00645 z"
        id="path8686"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
     <path
        inkscape:export-ydpi="368"
        inkscape:export-xdpi="368"
        style="fill:#447dc0;fill-opacity:1;fill-rule:nonzero;stroke:#447dc0;stroke-width:1.12310314px;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 292.91551,145.62729 c -0.67388,3.06979 -0.075,6.514 1.57234,8.90997 1.57236,2.39597 3.89344,3.29446 5.91503,2.32109 l -2.02159,-8.16127 z"
        id="path8688"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
     <path
        inkscape:export-ydpi="368"
        inkscape:export-xdpi="368"
        style="fill:#85aad6;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-opacity:1"
        d="m 297.93204,151.84179 -5.24116,0.14974 c 0.14963,0.52411 0.29962,1.04823 0.5241,1.57235 0.22462,0.44925 0.52412,0.97336 0.82364,1.42261 l 4.94168,-0.97336 z"
        id="path8690"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
     <path
        inkscape:export-ydpi="368"
        inkscape:export-xdpi="368"
        style="fill:#d4e1f1;fill-opacity:1;fill-rule:evenodd;stroke:none"
        d="m 298.60591,154.08801 -4.56729,0.89849 c 0.14962,0.37437 0.44923,0.74874 0.67386,0.97336 0.29961,0.29951 0.52409,0.44925 0.8236,0.67387 l 3.89347,-0.97336 z"
        id="path8692"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
     <path
        inkscape:export-ydpi="368"
        inkscape:export-xdpi="368"
        style="fill:none;stroke:#000000;stroke-width:0.82360893px;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 300.25315,149.89506 c 0.59892,0.14974 1.27278,0.14974 1.94665,0.14974 0.52409,0 1.04822,-0.0749 1.57235,-0.14974"
        id="path8694"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
     <path
        inkscape:export-ydpi="368"
        inkscape:export-xdpi="368"
        style="fill:none;stroke:#000000;stroke-width:0.82360893px;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 298.75568,148.54733 c 0.59898,0.14973 1.27285,0.29951 1.87176,0.22462 0.44924,0 0.97334,0 1.42258,-0.14974"
        id="path8696"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
     <path
        inkscape:export-ydpi="368"
        inkscape:export-xdpi="368"
        style="fill:none;stroke:#000000;stroke-width:0.82360893px;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 296.88382,147.2745 c 0.59898,0.14974 1.198,0.22462 1.79697,0.22462 0.52414,0.0749 1.04823,0.0749 1.57236,0"
        id="path8698"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
     <path
        inkscape:export-ydpi="368"
        inkscape:export-xdpi="368"
        style="fill:none;stroke:#000000;stroke-width:0.97335601px;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 303.47264,152.59053 c -2.39596,-2.17135 -4.94158,-4.19295 -7.5622,-6.06476 -4.0432,-2.92007 -8.46068,-5.46577 -12.95313,-7.6371"
        id="path8700"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
     <path
        inkscape:export-ydpi="368"
        inkscape:export-xdpi="368"
        style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.04822958px;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 297.18332,153.71364 c 0.075,1.94673 1.19797,3.51909 2.47085,3.51909 1.34763,-0.0749 2.32101,-1.72211 2.24612,-3.74371 -0.14963,-2.0216 -1.27285,-3.59396 -2.54563,-3.51908 -1.27284,0.0749 -2.24622,1.7221 -2.17134,3.7437 z"
        id="path8702"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
     <path
        inkscape:export-ydpi="368"
        inkscape:export-xdpi="368"
        style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.37436768px;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 298.08182,152.81515 c 0,0.74874 0.37436,1.34774 0.8236,1.34774 0.37435,0 0.67387,-0.67387 0.67387,-1.42261 -0.075,-0.74874 -0.44925,-1.27286 -0.82361,-1.27286 -0.44925,0 -0.74875,0.59899 -0.67386,1.34773 z"
        id="path8704"
-       inkscape:connector-curvature="0" />
-    <path
        inkscape:connector-curvature="0"
-       id="path8730"
-       d="m 334.50277,159.62924 c -1.94675,0.37437 -3.96835,0.44925 -5.91507,0.14974 -1.27285,-0.22462 -2.54572,-0.59899 -3.6688,-1.34774 -1.27286,-0.82361 -2.24619,-2.02159 -3.06979,-3.29445 -0.82365,-1.34774 -1.57236,-2.84522 -2.09649,-4.3427 -0.52409,-1.49745 -0.82361,-3.0698 -0.97334,-4.64214 -0.075,-1.57234 0,-3.14469 0.22462,-4.64216 l 12.42901,7.11299 3.06986,11.00645 z"
-       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.97335601px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       inkscape:export-xdpi="368"
-       inkscape:export-ydpi="368"
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\path5956.png" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path8732"
-       d="m 327.98873,147.49969 c -0.67388,3.06979 -0.075,6.514 1.57234,8.90997 1.57236,2.39597 3.89344,3.29446 5.91503,2.32109 l -2.02159,-8.16127 z"
-       style="fill:#447dc0;fill-opacity:1;fill-rule:nonzero;stroke:#447dc0;stroke-width:1.12310314px;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       inkscape:export-xdpi="368"
-       inkscape:export-ydpi="368"
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\path5956.png" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path8734"
-       d="m 333.00526,153.71419 -5.24116,0.14974 c 0.14963,0.52411 0.29962,1.04823 0.5241,1.57235 0.22462,0.44925 0.52412,0.97336 0.82364,1.42261 l 4.94168,-0.97336 z"
-       style="fill:#85aad6;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-opacity:1"
-       inkscape:export-xdpi="368"
-       inkscape:export-ydpi="368"
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\path5956.png" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path8736"
-       d="m 333.67913,155.96041 -4.56729,0.89849 c 0.14962,0.37437 0.44923,0.74874 0.67386,0.97336 0.29961,0.29951 0.52409,0.44925 0.8236,0.67387 l 3.89347,-0.97336 z"
-       style="fill:#d4e1f1;fill-opacity:1;fill-rule:evenodd;stroke:none"
-       inkscape:export-xdpi="368"
-       inkscape:export-ydpi="368"
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\path5956.png" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path8746"
-       d="m 332.25654,155.58604 c 0.075,1.94673 1.19797,3.51909 2.47085,3.51909 1.34763,-0.0749 2.32101,-1.72211 2.24612,-3.74371 -0.14963,-2.0216 -1.27285,-3.59396 -2.54563,-3.51908 -1.27284,0.0749 -2.24622,1.7221 -2.17134,3.7437 z"
-       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.04822958px;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       inkscape:export-xdpi="368"
-       inkscape:export-ydpi="368"
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\path5956.png" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path8748"
-       d="m 333.15504,154.68755 c 0,0.74874 0.37436,1.34774 0.8236,1.34774 0.37435,0 0.67387,-0.67387 0.67387,-1.42261 -0.075,-0.74874 -0.44925,-1.27286 -0.82361,-1.27286 -0.44925,0 -0.74875,0.59899 -0.67386,1.34773 z"
-       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.37436768px;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       inkscape:export-xdpi="368"
-       inkscape:export-ydpi="368"
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\path5956.png" />
-    <path
-       inkscape:export-ydpi="368.4726"
-       inkscape:export-xdpi="368.4726"
-       sodipodi:nodetypes="csscssc"
-       inkscape:connector-curvature="0"
-       inkscape:original-d="m 338.67927,154.29344 c 0,0 -3.43338,0.55315 -5.11069,-0.95079 -1.67732,-1.50393 -8.2252,-3.71715 -9.96158,-4.75726 -3.64181,-2.18149 -6.14112,-6.40847 -6.14112,-6.40847 0,0 6.41408,0.40533 9.38903,1.5606 2.26309,0.87883 4.80855,2.9789 6.71092,4.48718 2.18759,1.73442 5.11344,6.06874 5.11344,6.06874 z"
-       inkscape:path-effect="#path-effect5294-0"
-       id="path5016"
-       d="m 338.67927,154.29344 c -1.72516,-0.18088 -3.4359,-0.49915 -5.11069,-0.95079 -3.57395,-0.96379 -6.9931,-2.54589 -9.96158,-4.75726 -2.38364,-1.77569 -4.46855,-3.95137 -6.14112,-6.40847 3.19425,-0.25459 6.44889,0.28639 9.38903,1.5606 2.48069,1.07509 4.72177,2.65609 6.71092,4.48718 1.95142,1.79636 3.67412,3.8409 5.11344,6.06874 z"
-       style="fill:#84c8f3;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\path5956.png" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.59087855;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 334.34386,153.32538 c -0.66669,0.022 -1.33205,0.0845 -1.99117,0.18706 -0.50023,0.0779 -0.99686,0.17881 -1.48779,0.3024"
-       id="path5018"
-       inkscape:path-effect="#path-effect5298-0"
-       inkscape:original-d="m 334.34386,153.32538 c 0,0 -1.29992,0.0942 -1.99117,0.18706 -0.5967,0.08 -1.48779,0.3024 -1.48779,0.3024"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="csc"
-       inkscape:export-xdpi="368.4726"
-       inkscape:export-ydpi="368.4726"
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\path5956.png" />
-    <path
-       sodipodi:nodetypes="csc"
-       inkscape:connector-curvature="0"
-       inkscape:original-d="m 336.11598,153.89973 c 0,0 -1.24169,0.069 -1.91745,0.17957 -0.58312,0.0956 -1.27742,0.30867 -1.27742,0.30867"
-       inkscape:path-effect="#path-effect5302-8"
-       id="path5020"
-       d="m 336.11598,153.89973 c -0.64271,0.005 -1.28497,0.0652 -1.91745,0.17957 -0.43132,0.078 -0.85809,0.18109 -1.27742,0.30867"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.59087855;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       inkscape:export-xdpi="368.4726"
-       inkscape:export-ydpi="368.4726"
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\path5956.png" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 338.67927,154.29344 c -1.72516,-0.18088 -3.4359,-0.49915 -5.11069,-0.95079 -3.57395,-0.96379 -6.9931,-2.54589 -9.96158,-4.75726 -2.38364,-1.77569 -4.46855,-3.95137 -6.14112,-6.40847"
-       id="path5024"
-       inkscape:path-effect="#path-effect5310-6"
-       inkscape:original-d="m 338.67927,154.29344 c 0,0 -3.43338,0.55315 -5.11069,-0.95079 -1.67732,-1.50393 -8.2252,-3.71715 -9.96158,-4.75726 -3.64181,-2.18149 -6.14112,-6.40847 -6.14112,-6.40847"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cssc"
-       inkscape:export-xdpi="368.4726"
-       inkscape:export-ydpi="368.4726"
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\path5956.png" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.59087855;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 337.80421,154.42039 c -0.63462,0.0386 -1.26726,0.10974 -1.89462,0.21291 -0.48439,0.0797 -0.96564,0.17844 -1.44225,0.29603"
-       id="path5026"
-       inkscape:path-effect="#path-effect5314-1"
-       inkscape:original-d="m 337.80421,154.42039 c 0,0 -1.2303,0.0905 -1.89462,0.21291 -0.57316,0.10594 -1.44225,0.29603 -1.44225,0.29603"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="csc"
-       inkscape:export-xdpi="368.4726"
-       inkscape:export-ydpi="368.4726"
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\path5956.png" />
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
+    <g
+       id="g4938">
+      <path
+         inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 321.84501,151.88584 c -0.70488,-0.20744 -1.44445,-0.29647 -2.17843,-0.26226 -1.04975,0.0489 -2.08675,0.35225 -2.9974,0.87673 0.9102,-0.21135 1.85012,-0.29431 2.78327,-0.24565 0.84228,0.0439 1.67891,0.19494 2.48339,0.44826 l -0.0908,-0.81708 z"
+         id="path4899"
+         inkscape:path-effect="#path-effect4901"
+         inkscape:original-d="m 321.84501,151.88584 c 0,0 -1.4463,-0.32921 -2.17843,-0.26226 -0.99983,0.0914 -2.9974,0.87673 -2.9974,0.87673 0,0 1.9086,-0.27412 2.78327,-0.24565 0.84073,0.0274 2.48339,0.44826 2.48339,0.44826 z"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cscscc"
+         inkscape:export-xdpi="368"
+         inkscape:export-ydpi="368" />
+      <path
+         inkscape:export-ydpi="368"
+         inkscape:export-xdpi="368"
+         sodipodi:nodetypes="cscscc"
+         inkscape:connector-curvature="0"
+         inkscape:original-d="m 320.69596,150.02968 c 0,0 -1.4463,-0.32921 -2.17843,-0.26226 -0.99983,0.0914 -2.9974,0.87673 -2.9974,0.87673 0,0 1.9086,-0.27412 2.78327,-0.24565 0.84073,0.0274 2.48339,0.44826 2.48339,0.44826 z"
+         inkscape:path-effect="#path-effect4910"
+         id="path4908"
+         d="m 320.69596,150.02968 c -0.70488,-0.20744 -1.44445,-0.29647 -2.17843,-0.26226 -1.04975,0.0489 -2.08675,0.35225 -2.9974,0.87673 0.9102,-0.21135 1.85012,-0.29431 2.78327,-0.24565 0.84228,0.0439 1.67891,0.19494 2.48339,0.44826 l -0.0908,-0.81708 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
+      <path
+         inkscape:export-ydpi="368"
+         inkscape:export-xdpi="368"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 320.33085,147.95756 c -0.70488,-0.20744 -1.44445,-0.29648 -2.17843,-0.26227 -1.04975,0.0489 -2.08675,0.35224 -2.9974,0.87672 0.9102,-0.21134 1.85012,-0.29429 2.78327,-0.24563 0.84228,0.0439 1.67892,0.19493 2.4834,0.44824 l -0.0908,-0.81706 z"
+         id="path4903"
+         inkscape:path-effect="#path-effect4905"
+         inkscape:original-d="m 320.33085,147.95756 c 0,0 -1.4463,-0.32921 -2.17843,-0.26227 -0.99984,0.0914 -2.9974,0.87672 -2.9974,0.87672 0,0 1.90861,-0.27412 2.78327,-0.24563 0.84074,0.0273 2.4834,0.44824 2.4834,0.44824 z"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cscscc"
+         inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
+      <path
+         inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png"
+         inkscape:export-ydpi="368"
+         inkscape:export-xdpi="368"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.97335601px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 334.50277,159.62924 c -1.94675,0.37437 -3.96835,0.44925 -5.91507,0.14974 -1.27285,-0.22462 -2.54572,-0.59899 -3.6688,-1.34774 -1.27286,-0.82361 -2.24619,-2.02159 -3.06979,-3.29445 -0.82365,-1.34774 -1.57236,-2.84522 -2.09649,-4.3427 -0.52409,-1.49745 -0.82361,-3.0698 -0.97334,-4.64214 -0.075,-1.57234 0,-3.14469 0.22462,-4.64216 l 12.42901,7.11299 3.06986,11.00645 z"
+         id="path8730"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png"
+         inkscape:export-ydpi="368"
+         inkscape:export-xdpi="368"
+         style="fill:#447dc0;fill-opacity:1;fill-rule:nonzero;stroke:#447dc0;stroke-width:1.12310314px;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 327.98873,147.49969 c -0.67388,3.06979 -0.075,6.514 1.57234,8.90997 1.57236,2.39597 3.89344,3.29446 5.91503,2.32109 l -2.02159,-8.16127 z"
+         id="path8732"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png"
+         inkscape:export-ydpi="368"
+         inkscape:export-xdpi="368"
+         style="fill:#85aad6;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-opacity:1"
+         d="m 333.00526,153.71419 -5.24116,0.14974 c 0.14963,0.52411 0.29962,1.04823 0.5241,1.57235 0.22462,0.44925 0.52412,0.97336 0.82364,1.42261 l 4.94168,-0.97336 z"
+         id="path8734"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png"
+         inkscape:export-ydpi="368"
+         inkscape:export-xdpi="368"
+         style="fill:#d4e1f1;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         d="m 333.67913,155.96041 -4.56729,0.89849 c 0.14962,0.37437 0.44923,0.74874 0.67386,0.97336 0.29961,0.29951 0.52409,0.44925 0.8236,0.67387 l 3.89347,-0.97336 z"
+         id="path8736"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png"
+         inkscape:export-ydpi="368"
+         inkscape:export-xdpi="368"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.04822958px;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 332.25654,155.58604 c 0.075,1.94673 1.19797,3.51909 2.47085,3.51909 1.34763,-0.0749 2.32101,-1.72211 2.24612,-3.74371 -0.14963,-2.0216 -1.27285,-3.59396 -2.54563,-3.51908 -1.27284,0.0749 -2.24622,1.7221 -2.17134,3.7437 z"
+         id="path8746"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png"
+         inkscape:export-ydpi="368"
+         inkscape:export-xdpi="368"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.37436768px;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 333.15504,154.68755 c 0,0.74874 0.37436,1.34774 0.8236,1.34774 0.37435,0 0.67387,-0.67387 0.67387,-1.42261 -0.075,-0.74874 -0.44925,-1.27286 -0.82361,-1.27286 -0.44925,0 -0.74875,0.59899 -0.67386,1.34773 z"
+         id="path8748"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png"
+         style="fill:#84c8f3;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 338.67927,154.29344 c -1.72516,-0.18088 -3.4359,-0.49915 -5.11069,-0.95079 -3.57395,-0.96379 -6.9931,-2.54589 -9.96158,-4.75726 -2.38364,-1.77569 -4.46855,-3.95137 -6.14112,-6.40847 3.19425,-0.25459 6.44889,0.28639 9.38903,1.5606 2.48069,1.07509 4.72177,2.65609 6.71092,4.48718 1.95142,1.79636 3.67412,3.8409 5.11344,6.06874 z"
+         id="path5016"
+         inkscape:path-effect="#path-effect5294-0"
+         inkscape:original-d="m 338.67927,154.29344 c 0,0 -3.43338,0.55315 -5.11069,-0.95079 -1.67732,-1.50393 -8.2252,-3.71715 -9.96158,-4.75726 -3.64181,-2.18149 -6.14112,-6.40847 -6.14112,-6.40847 0,0 6.41408,0.40533 9.38903,1.5606 2.26309,0.87883 4.80855,2.9789 6.71092,4.48718 2.18759,1.73442 5.11344,6.06874 5.11344,6.06874 z"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="csscssc"
+         inkscape:export-xdpi="368.4726"
+         inkscape:export-ydpi="368.4726" />
+      <path
+         inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png"
+         inkscape:export-ydpi="368.4726"
+         inkscape:export-xdpi="368.4726"
+         sodipodi:nodetypes="csc"
+         inkscape:connector-curvature="0"
+         inkscape:original-d="m 334.34386,153.32538 c 0,0 -1.29992,0.0942 -1.99117,0.18706 -0.5967,0.08 -1.48779,0.3024 -1.48779,0.3024"
+         inkscape:path-effect="#path-effect5298-0"
+         id="path5018"
+         d="m 334.34386,153.32538 c -0.66669,0.022 -1.33205,0.0845 -1.99117,0.18706 -0.50023,0.0779 -0.99686,0.17881 -1.48779,0.3024"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.59087855;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png"
+         inkscape:export-ydpi="368.4726"
+         inkscape:export-xdpi="368.4726"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.59087855;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 336.11598,153.89973 c -0.64271,0.005 -1.28497,0.0652 -1.91745,0.17957 -0.43132,0.078 -0.85809,0.18109 -1.27742,0.30867"
+         id="path5020"
+         inkscape:path-effect="#path-effect5302-8"
+         inkscape:original-d="m 336.11598,153.89973 c 0,0 -1.24169,0.069 -1.91745,0.17957 -0.58312,0.0956 -1.27742,0.30867 -1.27742,0.30867"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="csc" />
+      <path
+         inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png"
+         inkscape:export-ydpi="368.4726"
+         inkscape:export-xdpi="368.4726"
+         sodipodi:nodetypes="cssc"
+         inkscape:connector-curvature="0"
+         inkscape:original-d="m 338.67927,154.29344 c 0,0 -3.43338,0.55315 -5.11069,-0.95079 -1.67732,-1.50393 -8.2252,-3.71715 -9.96158,-4.75726 -3.64181,-2.18149 -6.14112,-6.40847 -6.14112,-6.40847"
+         inkscape:path-effect="#path-effect5310-6"
+         id="path5024"
+         d="m 338.67927,154.29344 c -1.72516,-0.18088 -3.4359,-0.49915 -5.11069,-0.95079 -3.57395,-0.96379 -6.9931,-2.54589 -9.96158,-4.75726 -2.38364,-1.77569 -4.46855,-3.95137 -6.14112,-6.40847"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png"
+         inkscape:export-ydpi="368.4726"
+         inkscape:export-xdpi="368.4726"
+         sodipodi:nodetypes="csc"
+         inkscape:connector-curvature="0"
+         inkscape:original-d="m 337.80421,154.42039 c 0,0 -1.2303,0.0905 -1.89462,0.21291 -0.57316,0.10594 -1.44225,0.29603 -1.44225,0.29603"
+         inkscape:path-effect="#path-effect5314-1"
+         id="path5026"
+         d="m 337.80421,154.42039 c -0.63462,0.0386 -1.26726,0.10974 -1.89462,0.21291 -0.48439,0.0797 -0.96564,0.17844 -1.44225,0.29603"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.59087855;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
     <path
        inkscape:export-ydpi="368.4726"
        inkscape:export-xdpi="368.4726"
@@ -3194,7 +3097,7 @@
        id="path8779"
        d="m 330.98711,205.13722 c -1.02532,-0.15293 -2.02353,-0.48591 -2.93533,-0.97916 -0.6626,-0.35844 -1.27962,-0.80104 -1.83154,-1.31379"
        style="opacity:1;fill:none;fill-rule:evenodd;stroke:#447dc0;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
-       inkscape:export-filename="P:\Games\My Little Adventure\raws\path5956.png" />
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
     <path
        style="fill:url(#linearGradient4840);fill-opacity:1;fill-rule:evenodd;stroke:#333333;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 160.6976,122.29896 c 0,0 1.28215,10.18916 1.92937,15.18004 0.66126,5.09909 1.80125,15.10055 1.80125,15.10055 0,0 -6.00894,1.10088 -9.3995,1.26148 -3.1215,0.14785 -9.53078,-1.13832 -9.53078,-1.13832 0,0 1.14231,-10.45707 1.66866,-15.69024 0.48306,-4.80271 1.36688,-14.41618 1.36688,-14.41618 0,0 3.8367,0.31141 5.85952,0.32583 2.01659,0.0144 6.3046,-0.62316 6.3046,-0.62316 z"
@@ -3458,14 +3361,14 @@
        inkscape:original-d="m 114.28786,92.009906 c 0,0 0.0934,-2.382021 0.49372,-3.67792 0.34229,-1.108004 1.22136,-2.825287 1.22136,-2.825287 l 1.82176,0.389246 c 0,0 -0.84005,1.757446 -1.17716,2.804759 -0.41183,1.279467 -0.72541,3.508726 -0.72541,3.508726 z"
        inkscape:path-effect="#path-effect4979"
        id="path5263"
-       d="m 114.28786,92.009906 c -0.0208,-1.241458 0.14627,-2.485892 0.49372,-3.67792 0.28785,-0.98755 0.69917,-1.939041 1.22136,-2.825287 l 1.82176,0.389246 c -0.4744,0.897607 -0.86885,1.837446 -1.17716,2.804759 -0.36335,1.139989 -0.60692,2.318114 -0.72541,3.508726 z"
+       d="m 114.28786,92.009906 c -0.0208,-1.241458 0.14627,-2.485892 0.49372,-3.67792 0.28785,-0.98755 0.69917,-1.939041 1.22136,-2.825287 l 1.82176,0.389246 c -0.4744,0.897607 -0.86885,1.837446 -1.17716,2.804759 -0.36335,1.139989 -0.60692,2.318114 -0.72541,3.508726 l -1.63427,-0.199524 z"
        style="fill:url(#linearGradient5279);fill-opacity:1;fill-rule:evenodd;stroke:#333333;stroke-width:0.69999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        inkscape:export-ydpi="368"
        inkscape:export-xdpi="368"
        inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png"
        style="fill:url(#linearGradient5281);fill-opacity:1;fill-rule:evenodd;stroke:#333333;stroke-width:0.69999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 128.61594,94.088495 c -0.0754,-1.239341 0.0367,-2.489921 0.3314,-3.696083 0.24411,-0.999261 0.61317,-1.96793 1.09586,-2.876295 l 1.83712,0.308705 c -0.43444,0.917613 -0.78715,1.873899 -1.0526,2.853842 -0.31283,1.154873 -0.50433,2.342575 -0.57031,3.537248 z"
+       d="m 128.61594,94.088495 c -0.0754,-1.239341 0.0367,-2.489921 0.3314,-3.696083 0.24411,-0.999261 0.61317,-1.96793 1.09586,-2.876295 l 1.83712,0.308705 c -0.43444,0.917613 -0.78715,1.873899 -1.0526,2.853842 -0.31283,1.154873 -0.50433,2.342575 -0.57031,3.537248 l -1.64147,-0.127417 z"
        id="path5265"
        inkscape:path-effect="#path-effect5000"
        inkscape:original-d="m 128.61594,94.088495 c 0,0 -0.0115,-2.383823 0.3314,-3.696083 0.2932,-1.121993 1.09586,-2.876295 1.09586,-2.876295 l 1.83712,0.308705 c 0,0 -0.7619,1.792709 -1.0526,2.853842 -0.35513,1.29635 -0.57031,3.537248 -0.57031,3.537248 z"
@@ -3502,7 +3405,7 @@
        inkscape:original-d="m 146.54332,143.78012 c 0,0 2.55091,-0.005 5.73075,0.0669 1.62559,0.0368 2.73618,-0.88449 5.14151,-1.38348 2.59332,-0.53799 5.57417,-1.07604 5.57417,-1.07604 l -0.33929,-2.64757 c 0,0 -2.97867,0.43624 -5.29424,1.06291 -2.31557,0.62667 -3.73256,1.62968 -5.26475,1.63247 -3.18065,0.006 -5.27757,-0.11492 -5.27757,-0.11492 z"
        inkscape:path-effect="#path-effect4069"
        id="path5351"
-       d="m 146.54332,143.78012 c 1.88422,0.37589 3.83827,0.3987 5.73075,0.0669 1.74911,-0.30666 3.43016,-0.90945 5.14151,-1.38348 1.82561,-0.50568 3.69151,-0.86587 5.57417,-1.07604 l -0.33929,-2.64757 c -1.79536,0.16843 -3.57299,0.52532 -5.29424,1.06291 -1.75525,0.54821 -3.45893,1.28543 -5.26475,1.63247 -1.74095,0.33458 -3.55283,0.29512 -5.27757,-0.11492 z"
+       d="m 146.54332,143.78012 c 1.88422,0.37589 3.83827,0.3987 5.73075,0.0669 1.74911,-0.30666 3.43016,-0.90945 5.14151,-1.38348 1.82561,-0.50568 3.69151,-0.86587 5.57417,-1.07604 l -0.33929,-2.64757 c -1.79536,0.16843 -3.57299,0.52532 -5.29424,1.06291 -1.75525,0.54821 -3.45893,1.28543 -5.26475,1.63247 -1.74095,0.33458 -3.55283,0.29512 -5.27757,-0.11492 l -0.27058,2.45973 z"
        style="fill:url(#linearGradient5371);fill-opacity:1;fill-rule:evenodd;stroke:#333333;stroke-width:0.69999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png"
        inkscape:export-xdpi="368"
@@ -3695,7 +3598,7 @@
     </g>
     <path
        style="fill:#d2d5f1;fill-opacity:1;fill-rule:evenodd;stroke:#a2a5d8;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 201.41838,55.687058 c 0.74874,-7.861895 -1.31414,-15.962494 -5.73202,-22.508666 -2.20663,-3.269657 -5.04795,-6.204832 -8.58686,-7.947234 -3.22771,-1.589179 -6.91663,-2.118568 -10.50427,-1.849412 -3.1487,0.236226 -6.25116,1.074397 -9.09045,2.455902 2.1722,-1.61838 4.6638,-2.806315 7.28874,-3.4751 2.29539,-0.584822 4.69117,-0.773481 7.04981,-0.555146 -3.71575,-1.109972 -7.72922,-1.20531 -11.49349,-0.273022 -5.19472,1.286565 -9.72921,4.428705 -13.85099,7.8421 -4.97715,4.121758 -9.54753,8.730031 -13.67459,13.702785 -2.69277,3.244563 -5.20763,6.660153 -7.17661,10.388602 -3.65657,6.924065 -5.34287,14.878619 -4.78546,22.689027 0.38345,5.372878 1.79755,10.622784 2.36233,15.979637 1.08674,10.307629 -1.07673,20.934029 -6.10705,29.996269 8.54466,-4.44923 14.70939,-13.19406 16.02856,-22.736941 0.4965,-3.59167 0.37168,-7.235942 0.35884,-10.861744 -0.0128,-3.625802 0.14051,-7.250191 0.39988,-10.866727 l 1.25156,-17.451387 6.25657,-15.318024 10.90187,-10.120492 17.07627,0.633252 16.64103,9.606194 z"
+       d="m 201.41838,55.687058 c 0.74874,-7.861895 -1.31414,-15.962494 -5.73202,-22.508666 -2.20663,-3.269657 -5.04795,-6.204832 -8.58686,-7.947234 -3.22771,-1.589179 -6.91663,-2.118568 -10.50427,-1.849412 -3.1487,0.236226 -6.25116,1.074397 -9.09045,2.455902 2.1722,-1.61838 4.6638,-2.806315 7.28874,-3.4751 2.29539,-0.584822 4.69117,-0.773481 7.04981,-0.555146 -3.71575,-1.109972 -7.72922,-1.20531 -11.49349,-0.273022 -5.19472,1.286565 -9.72921,4.428705 -13.85099,7.8421 -4.97715,4.121758 -9.54753,8.730031 -13.67459,13.702785 -2.69277,3.244563 -5.20763,6.660153 -7.17661,10.388602 -3.65657,6.924065 -5.34287,14.878619 -4.78546,22.689027 0.38345,5.372878 1.79755,10.622784 2.36233,15.979637 1.08674,10.307629 -1.07673,20.934029 -6.10705,29.996269 8.54466,-4.44923 14.70939,-13.19406 16.02856,-22.736941 0.4965,-3.59167 0.37168,-7.235942 0.35884,-10.861744 -0.0128,-3.625802 0.14051,-7.250191 0.39988,-10.866727 l 1.25156,-17.451387 6.25657,-15.318024 10.90187,-10.120492 17.07627,0.633252 16.64103,9.606194 5.38633,10.670127 z"
        id="path4932"
        inkscape:path-effect="#path-effect4934"
        inkscape:original-d="m 201.41838,55.687058 c 0,0 -2.034,-17.244791 -5.73202,-22.508666 -2.30551,-3.281728 -4.94211,-6.273656 -8.58686,-7.947234 -4.23436,-1.944303 -6.10155,-1.354948 -10.50427,-1.849412 -2.73784,-0.307484 -9.09045,2.455902 -9.09045,2.455902 0,0 5.04615,-1.572892 7.28874,-3.4751 1.84242,-1.562786 7.04981,-0.555146 7.04981,-0.555146 0,0 -8.17701,-1.803694 -11.49349,-0.273022 -4.59635,2.121371 -9.1621,5.933938 -13.85099,7.8421 -7.02663,2.859512 -8.55273,8.106632 -13.67459,13.702785 -3.87001,4.228349 -5.05206,5.064868 -7.17661,10.388602 -2.67536,6.703961 -2.15672,15.966638 -4.78546,22.689027 -2.00102,5.117143 4.96493,11.140669 2.36233,15.979637 -2.80433,5.214038 -6.10705,29.996269 -6.10705,29.996269 0,0 15.94121,-14.30206 16.02856,-22.736941 0.0807,-7.794086 0.75872,-21.728471 0.75872,-21.728471 l 1.25156,-17.451387 6.25657,-15.318024 10.90187,-10.120492 17.07627,0.633252 16.64103,9.606194 z"
@@ -3784,7 +3687,10 @@
     </g>
     <g
        id="g5241"
-       transform="matrix(1.2537369,0,0,1.2537369,-16.934058,74.534604)">
+       transform="matrix(1.2537369,0,0,1.2537369,-16.934058,74.534604)"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368">
       <path
          sodipodi:nodetypes="csssssssssccccssssssssssccc"
          inkscape:connector-curvature="0"
@@ -3898,11 +3804,12 @@
        inkscape:path-effect="#path-effect5264"
        id="path5262"
        d="m 70.873594,228.44884 c -0.668024,2.12531 -1.459139,4.21192 -2.36806,6.2459 -0.921915,2.06306 -1.976656,4.08971 -3.42066,5.82781 -1.804721,2.17228 -4.148184,3.81524 -6.31075,5.63159 -1.29951,1.09146 -2.546686,2.25898 -3.5828,3.60304 -1.98651,2.57692 -3.128431,5.71811 -3.796795,8.90245 -0.668363,3.18434 -0.890122,6.44231 -1.215085,9.67977 -0.271437,2.70421 -0.616255,5.40669 -0.652093,8.12425 -0.03584,2.71756 0.246325,5.4708 1.191983,8.01877 0.276743,0.74565 0.609978,1.47351 0.803464,2.24497 0.193486,0.77146 0.238749,1.60781 -0.05727,2.34602 -0.179829,0.44845 -0.48024,0.84413 -0.845012,1.16097 -0.364771,0.31684 -0.792736,0.55656 -1.243419,0.73072 -0.901367,0.34831 -1.879999,0.43498 -2.844629,0.4922 -2.751367,0.1632 -5.525378,0.11348 -8.24429,-0.33838 -1.206253,-0.20047 -2.41219,-0.48424 -3.506275,-1.03033 -1.013953,-0.50609 -1.929523,-1.24949 -2.51517,-2.21967 -0.603058,-0.99902 -0.829257,-2.18949 -0.831977,-3.35641 -0.0027,-1.16693 0.206101,-2.3229 0.418877,-3.47027 1.92813,-10.39722 4.267212,-20.80514 8.562395,-30.46802 0.452651,-1.01833 0.928768,-2.03123 1.539334,-2.96349 0.610567,-0.93225 1.362557,-1.78622 2.288736,-2.40596 1.318219,-0.88207 2.971243,-1.24978 4.53908,-1.0097 -1.697662,-4.80045 -2.791471,-9.81409 -3.2475,-14.88542 -0.183797,-2.04394 -0.264027,-4.10805 -0.0122,-6.14473 0.289974,-2.34519 1.021862,-4.63203 2.11811,-6.72541 0.950039,-1.81418 2.179805,-3.49223 3.700681,-4.86364 1.520877,-1.37141 3.338167,-2.43078 5.312969,-2.973 3.491128,-0.95855 7.222758,-0.26404 10.68191,0.80416 6.05605,1.87014 11.75711,4.88293 16.714116,8.83277"
-       style="opacity:1;fill:url(#linearGradient5266);fill-opacity:1;fill-rule:evenodd;stroke:#447dc0;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1" />
+       style="opacity:1;fill:url(#linearGradient5266);fill-opacity:1;fill-rule:evenodd;stroke:#447dc0;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png" />
     <g
        inkscape:export-ydpi="368"
        inkscape:export-xdpi="368"
-       inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png"
        id="g5181"
        transform="translate(-63.955453,128.11643)">
       <path
@@ -3957,7 +3864,7 @@
     <g
        transform="translate(-7.6078812,127.78498)"
        id="g5220"
-       inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png"
        inkscape:export-xdpi="368"
        inkscape:export-ydpi="368">
       <path
@@ -4012,15 +3919,7 @@
     <path
        inkscape:export-ydpi="368"
        inkscape:export-xdpi="368"
-       inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png"
-       inkscape:connector-curvature="0"
-       id="path5230"
-       d="m 172.19732,233.54334 2.20971,-2.51907 6.58494,-0.70711 9.104,5.21491 3.13778,7.46882 -0.66291,4.41942 -6.67332,-5.52427 -7.15946,-4.64039 z"
-       style="fill:url(#radialGradient5232);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <path
-       inkscape:export-ydpi="368"
-       inkscape:export-xdpi="368"
-       inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png"
        sodipodi:nodetypes="cssccsscc"
        inkscape:connector-curvature="0"
        id="path5242"
@@ -4029,7 +3928,7 @@
     <path
        inkscape:export-ydpi="368"
        inkscape:export-xdpi="368"
-       inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png"
        style="fill:#3a39b3;fill-opacity:1;fill-rule:evenodd;stroke:#333333;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 282.01152,222.59931 c 0,0 4.51619,1.96328 7.15939,2.66919 3.08068,0.82275 5.10458,1.35392 7.13221,1.68907 2.30959,0.38177 4.81472,0.66763 4.81472,0.66763 l -1.69102,2.78596 c 0,0 -3.86875,-0.77057 -6.47688,-1.25693 -2.51145,-0.46833 -4.90542,-1.33917 -6.49778,-1.81787 -1.59623,-0.47985 -4.12814,-1.42455 -4.12814,-1.42455 z"
        id="path5266"
@@ -4038,7 +3937,7 @@
     <path
        inkscape:export-ydpi="368"
        inkscape:export-xdpi="368"
-       inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png"
        style="fill:url(#linearGradient5382);fill-opacity:1;fill-rule:evenodd;stroke:#333333;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 282.4043,212.65629 c 0,0 0.40715,7.23336 1.05437,12.22425 0.66126,5.09909 -0.004,14.42063 -0.004,14.42063 0,0 -4.47769,0.35088 -9.2745,-0.11352 -3.11045,-0.30114 -8.71828,-1.51332 -8.71828,-1.51332 0,0 5.76731,-8.89457 6.29366,-14.12775 0.48306,-4.80271 2.4743,-14.56852 2.4743,-14.56852 0,0 2.64586,1.1732 4.48062,2.02505 1.96077,1.38394 0.9514,0.3087 3.69383,1.65318 z"
        id="path5268"
@@ -4047,7 +3946,7 @@
     <path
        inkscape:export-ydpi="368"
        inkscape:export-xdpi="368"
-       inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png"
        style="fill:#d2d5f1;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 298.32902,229.31546 c -0.23103,0.0194 -0.57764,-0.30717 -0.58999,-0.53868 -0.0134,-0.25036 0.31362,-0.59022 0.56433,-0.58998 0.22043,2.1e-4 0.52357,0.33545 0.53013,0.55578 0.007,0.2279 -0.27727,0.55374 -0.50447,0.57288 z"
        id="path5270"
@@ -4056,7 +3955,7 @@
     <path
        inkscape:export-ydpi="368"
        inkscape:export-xdpi="368"
-       inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png"
        sodipodi:nodetypes="sssss"
        inkscape:connector-curvature="0"
        id="path5272"
@@ -4065,7 +3964,7 @@
     <path
        inkscape:export-ydpi="368"
        inkscape:export-xdpi="368"
-       inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png"
        style="fill:#d2d5f1;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 288.82727,227.26043 c -0.23103,0.0194 -0.57764,-0.30717 -0.58999,-0.53868 -0.0134,-0.25036 0.31362,-0.59022 0.56433,-0.58998 0.22043,2.1e-4 0.52357,0.33545 0.53013,0.55578 0.007,0.2279 -0.27727,0.55374 -0.50447,0.57288 z"
        id="path5274"
@@ -4074,7 +3973,7 @@
     <path
        inkscape:export-ydpi="368"
        inkscape:export-xdpi="368"
-       inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png"
        sodipodi:nodetypes="sssss"
        inkscape:connector-curvature="0"
        id="path5276"
@@ -4083,7 +3982,7 @@
     <path
        inkscape:export-ydpi="368"
        inkscape:export-xdpi="368"
-       inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png"
        style="fill:#d2d5f1;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 296.09721,220.96276 c -0.23103,0.0194 -0.57764,-0.30717 -0.58999,-0.53868 -0.0134,-0.25036 0.31362,-0.59022 0.56433,-0.58998 0.22043,2.1e-4 0.52357,0.33545 0.53013,0.55578 0.007,0.2279 -0.27727,0.55374 -0.50447,0.57288 z"
        id="path5278"
@@ -4092,7 +3991,7 @@
     <path
        inkscape:export-ydpi="368"
        inkscape:export-xdpi="368"
-       inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png"
        sodipodi:nodetypes="sssss"
        inkscape:connector-curvature="0"
        id="path5280"
@@ -4101,7 +4000,7 @@
     <path
        inkscape:export-ydpi="368"
        inkscape:export-xdpi="368"
-       inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png"
        sodipodi:nodetypes="csc"
        inkscape:connector-curvature="0"
        id="path5317"
@@ -4110,7 +4009,7 @@
     <g
        inkscape:export-ydpi="368"
        inkscape:export-xdpi="368"
-       inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png"
        style="stroke:#202020;stroke-opacity:0.35858585"
        transform="translate(135.44978,124.78171)"
        id="g5339">
@@ -4178,7 +4077,7 @@
     <g
        inkscape:export-ydpi="368"
        inkscape:export-xdpi="368"
-       inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png"
        id="g5362"
        transform="translate(135.30832,124.49377)">
       <path
@@ -4244,7 +4143,10 @@
     </g>
     <g
        id="g5413"
-       transform="translate(39.774757,119.65573)">
+       transform="translate(39.774757,119.65573)"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368">
       <image
          y="192.60559"
          x="-282.11017"
@@ -4322,14 +4224,14 @@
          inkscape:original-d="m 249.59618,216.50367 c 0,0 0.0934,-2.38202 0.49372,-3.67792 0.34229,-1.108 1.22136,-2.82528 1.22136,-2.82528 l 1.82176,0.38924 c 0,0 -0.84005,1.75745 -1.17716,2.80476 -0.41183,1.27947 -0.72541,3.50873 -0.72541,3.50873 z"
          inkscape:path-effect="#path-effect5303"
          id="path5301"
-         d="m 249.59618,216.50367 c -0.0208,-1.24146 0.14627,-2.48589 0.49372,-3.67792 0.28785,-0.98755 0.69917,-1.93904 1.22136,-2.82528 l 1.82176,0.38924 c -0.4744,0.89761 -0.86885,1.83745 -1.17716,2.80476 -0.36335,1.13999 -0.60692,2.31812 -0.72541,3.50873 z"
+         d="m 249.59618,216.50367 c -0.0208,-1.24146 0.14627,-2.48589 0.49372,-3.67792 0.28785,-0.98755 0.69917,-1.93904 1.22136,-2.82528 l 1.82176,0.38924 c -0.4744,0.89761 -0.86885,1.83745 -1.17716,2.80476 -0.36335,1.13999 -0.60692,2.31812 -0.72541,3.50873 l -1.63427,-0.19953 z"
          style="fill:url(#linearGradient5388);fill-opacity:1;fill-rule:evenodd;stroke:#333333;stroke-width:0.69999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <path
          inkscape:export-ydpi="368"
          inkscape:export-xdpi="368"
          inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png"
          style="fill:url(#linearGradient5390);fill-opacity:1;fill-rule:evenodd;stroke:#333333;stroke-width:0.69999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m 263.92426,218.58226 c -0.0754,-1.23934 0.0367,-2.48992 0.3314,-3.69608 0.24411,-0.99926 0.61317,-1.96793 1.09586,-2.8763 l 1.83712,0.30871 c -0.43444,0.91761 -0.78715,1.8739 -1.0526,2.85384 -0.31283,1.15487 -0.50433,2.34258 -0.57031,3.53725 z"
+         d="m 263.92426,218.58226 c -0.0754,-1.23934 0.0367,-2.48992 0.3314,-3.69608 0.24411,-0.99926 0.61317,-1.96793 1.09586,-2.8763 l 1.83712,0.30871 c -0.43444,0.91761 -0.78715,1.8739 -1.0526,2.85384 -0.31283,1.15487 -0.50433,2.34258 -0.57031,3.53725 l -1.64147,-0.12742 z"
          id="path5305"
          inkscape:path-effect="#path-effect5307"
          inkscape:original-d="m 263.92426,218.58226 c 0,0 -0.0115,-2.38382 0.3314,-3.69608 0.2932,-1.12199 1.09586,-2.8763 1.09586,-2.8763 l 1.83712,0.30871 c 0,0 -0.7619,1.79271 -1.0526,2.85384 -0.35513,1.29635 -0.57031,3.53725 -0.57031,3.53725 z"
@@ -4410,7 +4312,7 @@
     <g
        inkscape:export-ydpi="368"
        inkscape:export-xdpi="368"
-       inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png"
        transform="translate(102.8609,146.28206)"
        id="g5435">
       <path
@@ -4464,7 +4366,10 @@
     </g>
     <g
        id="g5488"
-       transform="translate(54.096025,-56.173516)">
+       transform="translate(54.096025,-56.173516)"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368">
       <path
          style="fill:url(#linearGradient5471);fill-opacity:1;fill-rule:evenodd;stroke:#333333;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m 182.28996,323.34136 c 0,0 1.28215,10.18916 1.92937,15.18004 0.66126,5.09909 1.80125,15.10055 1.80125,15.10055 0,0 -6.00894,1.10088 -9.3995,1.26148 -3.1215,0.14785 -9.53078,-1.13832 -9.53078,-1.13832 0,0 1.14231,-10.45707 1.66866,-15.69024 0.48306,-4.80271 1.36688,-14.41618 1.36688,-14.41618 0,0 3.8367,0.31141 5.85952,0.32583 2.01659,0.0144 6.3046,-0.62316 6.3046,-0.62316 z"
@@ -4543,7 +4448,7 @@
          inkscape:original-d="m 168.13568,344.82252 c 0,0 2.55091,-0.005 5.73075,0.0669 1.62559,0.0368 2.73618,-0.88449 5.14151,-1.38348 2.59332,-0.53799 5.57417,-1.07604 5.57417,-1.07604 l -0.33929,-2.64757 c 0,0 -2.97867,0.43624 -5.29424,1.06291 -2.31557,0.62667 -3.73256,1.62968 -5.26475,1.63247 -3.18065,0.006 -5.27757,-0.11492 -5.27757,-0.11492 z"
          inkscape:path-effect="#path-effect5455"
          id="path5453"
-         d="m 168.13568,344.82252 c 1.88422,0.37589 3.83827,0.3987 5.73075,0.0669 1.74911,-0.30666 3.43016,-0.90945 5.14151,-1.38348 1.82561,-0.50568 3.69151,-0.86587 5.57417,-1.07604 l -0.33929,-2.64757 c -1.79536,0.16843 -3.57299,0.52532 -5.29424,1.06291 -1.75525,0.54821 -3.45893,1.28543 -5.26475,1.63247 -1.74095,0.33458 -3.55283,0.29512 -5.27757,-0.11492 z"
+         d="m 168.13568,344.82252 c 1.88422,0.37589 3.83827,0.3987 5.73075,0.0669 1.74911,-0.30666 3.43016,-0.90945 5.14151,-1.38348 1.82561,-0.50568 3.69151,-0.86587 5.57417,-1.07604 l -0.33929,-2.64757 c -1.79536,0.16843 -3.57299,0.52532 -5.29424,1.06291 -1.75525,0.54821 -3.45893,1.28543 -5.26475,1.63247 -1.74095,0.33458 -3.55283,0.29512 -5.27757,-0.11492 l -0.27058,2.45973 z"
          style="fill:url(#linearGradient5473);fill-opacity:1;fill-rule:evenodd;stroke:#333333;stroke-width:0.69999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png"
          inkscape:export-xdpi="368"
@@ -4601,5 +4506,139 @@
          inkscape:export-xdpi="368"
          inkscape:export-ydpi="368" />
     </g>
+    <path
+       style="fill:url(#radialGradient5033);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 168.60077,51.717711 2.20971,-2.519068 6.58494,-0.707107 9.104,5.214913 3.13778,7.468815 -0.66291,4.419418 c 0,0 -6.5308,-1.289665 -9.11082,-2.586772 -3.38337,-1.700992 -5.7041,-3.380744 -8.59696,-5.640388 -1.67102,-1.305256 -2.66574,-5.649811 -2.66574,-5.649811 z"
+       id="path5023"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png"
+       inkscape:export-xdpi="368"
+       inkscape:export-ydpi="368"
+       sodipodi:nodetypes="ccccccssc" />
+    <g
+       id="g5015">
+      <path
+         inkscape:export-ydpi="368"
+         inkscape:export-xdpi="368"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 170.77955,58.775398 c -0.70488,-0.207441 -1.44445,-0.296481 -2.17843,-0.26227 -1.04975,0.04893 -2.08675,0.352245 -2.9974,0.87672 0.9102,-0.211338 1.85012,-0.294288 2.78327,-0.24563 0.84228,0.04392 1.67892,0.194928 2.4834,0.44824 l -0.0908,-0.81706 z"
+         id="path4928"
+         inkscape:path-effect="#path-effect4930"
+         inkscape:original-d="m 170.77955,58.775398 c 0,0 -1.4463,-0.32921 -2.17843,-0.26227 -0.99984,0.0914 -2.9974,0.87672 -2.9974,0.87672 0,0 1.90861,-0.27412 2.78327,-0.24563 0.84074,0.0273 2.4834,0.44824 2.4834,0.44824 z"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cscscc"
+         inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png" />
+      <path
+         inkscape:export-ydpi="368"
+         inkscape:export-xdpi="368"
+         sodipodi:nodetypes="cscscc"
+         inkscape:connector-curvature="0"
+         inkscape:original-d="m 171.14466,60.847518 c 0,0 -1.4463,-0.32921 -2.17843,-0.26226 -0.99983,0.0914 -2.9974,0.87673 -2.9974,0.87673 0,0 1.9086,-0.27412 2.78327,-0.24565 0.84073,0.0274 2.48339,0.44826 2.48339,0.44826 z"
+         inkscape:path-effect="#path-effect4935"
+         id="path4933"
+         d="m 171.14466,60.847518 c -0.70488,-0.207437 -1.44445,-0.296473 -2.17843,-0.26226 -1.04975,0.04893 -2.08675,0.352252 -2.9974,0.87673 0.9102,-0.211352 1.85012,-0.294309 2.78327,-0.24565 0.84228,0.04392 1.67891,0.194936 2.48339,0.44826 l -0.0908,-0.81708 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png" />
+      <path
+         inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 172.29371,62.703678 c -0.70488,-0.207437 -1.44445,-0.296473 -2.17843,-0.26226 -1.04975,0.04893 -2.08675,0.352252 -2.9974,0.87673 0.9102,-0.211352 1.85012,-0.294309 2.78327,-0.24565 0.84228,0.04392 1.67891,0.194936 2.48339,0.44826 l -0.0908,-0.81708 z"
+         id="path4924"
+         inkscape:path-effect="#path-effect4926"
+         inkscape:original-d="m 172.29371,62.703678 c 0,0 -1.4463,-0.32921 -2.17843,-0.26226 -0.99983,0.0914 -2.9974,0.87673 -2.9974,0.87673 0,0 1.9086,-0.27412 2.78327,-0.24565 0.84073,0.0274 2.48339,0.44826 2.48339,0.44826 z"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cscscc"
+         inkscape:export-xdpi="368"
+         inkscape:export-ydpi="368" />
+      <path
+         inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png"
+         inkscape:export-ydpi="368"
+         inkscape:export-xdpi="368"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.97335601px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 184.92955,70.631842 c -1.94675,0.374373 -3.96835,0.449245 -5.91507,0.149737 -1.27285,-0.224622 -2.54572,-0.598992 -3.6688,-1.347734 -1.27286,-0.823614 -2.24619,-2.021597 -3.06979,-3.294458 -0.82365,-1.347734 -1.57236,-2.845215 -2.09649,-4.342695 -0.52409,-1.497454 -0.82361,-3.069799 -0.97334,-4.642137 -0.075,-1.572345 0,-3.14469 0.22462,-4.64216 l 12.42901,7.112987 3.06986,11.00645 z"
+         id="path4799"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png"
+         inkscape:export-ydpi="368"
+         inkscape:export-xdpi="368"
+         style="fill:#447dc0;fill-opacity:1;fill-rule:nonzero;stroke:#447dc0;stroke-width:1.12310314px;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 178.41551,58.502292 c -0.67388,3.069788 -0.075,6.513994 1.57234,8.909967 1.57236,2.395969 3.89344,3.294458 5.91503,2.321094 l -2.02159,-8.161273 z"
+         id="path4801"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png"
+         inkscape:export-ydpi="368"
+         inkscape:export-xdpi="368"
+         style="fill:#85aad6;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-opacity:1"
+         d="m 183.43204,64.716792 -5.24116,0.149736 c 0.14963,0.524117 0.29962,1.048236 0.5241,1.572356 0.22462,0.449244 0.52412,0.973361 0.82364,1.422605 l 4.94168,-0.973361 z"
+         id="path4803"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png"
+         inkscape:export-ydpi="368"
+         inkscape:export-xdpi="368"
+         style="fill:#d4e1f1;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         d="m 184.10591,66.963014 -4.56729,0.898489 c 0.14962,0.37437 0.44923,0.748739 0.67386,0.973361 0.29961,0.299508 0.52409,0.449245 0.8236,0.673867 l 3.89347,-0.973361 z"
+         id="path4807"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png"
+         inkscape:export-ydpi="368"
+         inkscape:export-xdpi="368"
+         style="fill:none;stroke:#000000;stroke-width:0.82360893px;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 185.75315,62.770063 c 0.59892,0.149736 1.27278,0.149736 1.94665,0.149736 0.52409,0 1.04822,-0.07489 1.57235,-0.149736"
+         id="path4811"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png"
+         inkscape:export-ydpi="368"
+         inkscape:export-xdpi="368"
+         style="fill:none;stroke:#000000;stroke-width:0.82360893px;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 184.25568,61.422329 c 0.59898,0.149736 1.27285,0.299509 1.87176,0.224622 0.44924,0 0.97334,0 1.42258,-0.149736"
+         id="path4813"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png"
+         inkscape:export-ydpi="368"
+         inkscape:export-xdpi="368"
+         style="fill:none;stroke:#000000;stroke-width:0.82360893px;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 182.38382,60.149503 c 0.59898,0.149735 1.198,0.224622 1.79697,0.224622 0.52414,0.07489 1.04823,0.07489 1.57236,0"
+         id="path4815"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png"
+         inkscape:export-ydpi="368"
+         inkscape:export-xdpi="368"
+         style="fill:none;stroke:#000000;stroke-width:0.97335601px;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 188.97264,65.46553 c -2.39596,-2.171347 -4.94158,-4.192947 -7.5622,-6.06476 -4.0432,-2.920071 -8.46068,-5.46577 -12.95313,-7.6371"
+         id="path4817"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png"
+         inkscape:export-ydpi="368"
+         inkscape:export-xdpi="368"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.04822958px;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 182.68332,66.588642 c 0.075,1.946728 1.19797,3.519084 2.47085,3.519084 1.34763,-0.07489 2.32101,-1.722106 2.24612,-3.743707 -0.14963,-2.0216 -1.27285,-3.593956 -2.54563,-3.519081 -1.27284,0.07489 -2.24622,1.722103 -2.17134,3.743704 z"
+         id="path4819"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:export-filename="D:\MaxDamaj\My-Little-Project\Raw\minuette_game.png"
+         inkscape:export-ydpi="368"
+         inkscape:export-xdpi="368"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.37436768px;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 183.58182,65.690153 c 0,0.748741 0.37436,1.347733 0.8236,1.347733 0.37435,0 0.67387,-0.673867 0.67387,-1.422605 -0.075,-0.748742 -0.44925,-1.272862 -0.82361,-1.272862 -0.44925,0 -0.74875,0.598995 -0.67386,1.347734 z"
+         id="path4821"
+         inkscape:connector-curvature="0" />
+    </g>
+    <path
+       sodipodi:nodetypes="ccccccssc"
+       inkscape:export-ydpi="368"
+       inkscape:export-xdpi="368"
+       inkscape:export-filename="P:\Projects\My-Little-Project\Raw\bitmap.png"
+       inkscape:connector-curvature="0"
+       id="path5034"
+       d="m 172.11724,233.56866 2.20971,-2.51907 6.58494,-0.7071 9.104,5.21491 3.13778,7.46881 -0.66291,4.41942 c 0,0 -6.5308,-1.28966 -9.11082,-2.58677 -3.38337,-1.70099 -5.7041,-3.38074 -8.59696,-5.64039 -1.67102,-1.30525 -2.66574,-5.64981 -2.66574,-5.64981 z"
+       style="fill:url(#radialGradient5036);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
   </g>
 </svg>
