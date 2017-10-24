@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour {
 
-    public Skill.ProjectileType type;
     public Vector3 force;
 
     public GameObject fx = null;

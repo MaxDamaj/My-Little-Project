@@ -38,12 +38,6 @@ public class Skill : MonoBehaviour {
         MPHigh = 4      //MP >= 50%
     };
 
-    public enum ProjectileType {
-        Light = 1,      //No gravity, go straight
-        Heavy = 2,      //With gravity, go curved
-        Autofire = 3    //No gravity, shoot while key pressed
-    };
-
     public enum FXTarget {
         None = 0,       //FX not spawned
         Body = 1,       //FX attached to chacter root
@@ -59,10 +53,9 @@ public class Skill : MonoBehaviour {
     public SkillType skillType;     //enum skill type
     public PassiveType passiveType; //enum passive skill type
     public StatType statType;       //enum stat type. Set multiplier to affected
-    public ProjectileType projType; //enum projectile type
     public Condition condition;     //enum special condition for passive skills
     //Common variables
-    public float duration;          //Skill effect duration. Not affected to projectiles and passives
+    public float duration;          //Skill effect duration. Projectiles autofire delay
     public float MP_cost;           //Skill mana cost
     public float cooldown;          //Skill cooldown in second
     public float chance = 1;        //chance to succeed execute ability
@@ -75,6 +68,7 @@ public class Skill : MonoBehaviour {
     public string fx;               //skill spawned fx by pool manager
     public string sound;            //sound played by using this skill
     public FXTarget fxTarget;       //FX spawn position
+    public Vector3 projPosition;    //Projectile spawn point
 
     public void ItemMultiplier(string i, float q) {
         if (Random.Range(0.0f, 1.0f) <= chance) {

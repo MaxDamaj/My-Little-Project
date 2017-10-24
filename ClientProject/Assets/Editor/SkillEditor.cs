@@ -14,7 +14,6 @@ public class SkillEditor : Editor {
     SerializedProperty skillType;
     SerializedProperty passiveType;
     SerializedProperty statType;
-    SerializedProperty projType;
     SerializedProperty condition;
 
     SerializedProperty MP_cost;
@@ -29,6 +28,7 @@ public class SkillEditor : Editor {
     SerializedProperty obj;
     SerializedProperty fx;
     SerializedProperty sound;
+    SerializedProperty projPosition;
 
     void OnEnable() {
         serObj = new SerializedObject(target);
@@ -40,7 +40,6 @@ public class SkillEditor : Editor {
         skillType = serObj.FindProperty("skillType");
         passiveType = serObj.FindProperty("passiveType");
         statType = serObj.FindProperty("statType");
-        projType = serObj.FindProperty("projType");
         condition = serObj.FindProperty("condition");
 
         MP_cost = serObj.FindProperty("MP_cost");
@@ -55,6 +54,7 @@ public class SkillEditor : Editor {
         obj = serObj.FindProperty("obj");
         fx = serObj.FindProperty("fx");
         sound = serObj.FindProperty("sound");
+        projPosition = serObj.FindProperty("projPosition");
 
     }
 
@@ -106,14 +106,13 @@ public class SkillEditor : Editor {
         }
         //Fields for Projectile skill
         if (3 == skillType.intValue) {
-            EditorGUILayout.PropertyField(projType, new GUIContent(" Projectile Type"));
             EditorGUILayout.PropertyField(MP_cost, new GUIContent(" MP cost"));
-            if (3 == projType.intValue) {
-                EditorGUILayout.PropertyField(duration, new GUIContent(" Delay"));
-            }
+            EditorGUILayout.PropertyField(duration, new GUIContent(" Delay"));
+            EditorGUILayout.PropertyField(cooldown, new GUIContent(" Lifetime"));
             EditorGUILayout.PropertyField(obj, new GUIContent(" Projectile"));
             EditorGUILayout.PropertyField(fx, new GUIContent(" FX object"));
             EditorGUILayout.PropertyField(sound, new GUIContent(" Sound"));
+            EditorGUILayout.PropertyField(projPosition, new GUIContent(" Position"));
         }
         //Fields for Changing Stats skill
         if (4 == skillType.intValue) {

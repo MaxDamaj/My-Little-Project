@@ -48,7 +48,7 @@ public class SkillController : MonoBehaviour {
         if (_smc != null) { _smc.CharacterState = SkillConditionStats; }
         MPDrain = 0;
         //Attash FXs to pony
-        for (int i=0; i<4; i++) {
+        for (int i = 0; i < 4; i++) {
             if (Character.CharSkills[i].fx != "") {
                 fx[i] = Instantiate(Resources.Load<GameObject>("FXs/" + Character.CharSkills[i].fx), Pony.transform);
                 fx[i].SetActive(false);
@@ -79,7 +79,7 @@ public class SkillController : MonoBehaviour {
 
     public void SkillXDown() {
         SkillDash(1);
-        SkillProjectile(1, 2);
+        SkillProjectile(1);
         SkillFly(1, true);
     }
     public void SkillXHold() {
@@ -89,7 +89,7 @@ public class SkillController : MonoBehaviour {
             SkillFly(1, false);
         }
         if (holdTimer <= 0) {
-            SkillProjectile(1, 2);
+            SkillProjectile(1);
         }
     }
     public void SkillXUp() {
@@ -97,7 +97,7 @@ public class SkillController : MonoBehaviour {
     }
     public void SkillYDown() {
         SkillStatChange(2);
-        SkillProjectile(2, 3);
+        SkillProjectile(2);
     }
     public void SkillBDown() {
         SkillRestoreStat(3);
@@ -122,14 +122,11 @@ public class SkillController : MonoBehaviour {
             StartCoroutine(cooldown);
         }
     }
-    void SkillProjectile(int sn, float lifetime) {
+    void SkillProjectile(int sn) {
         if ((int)Character.CharSkills[sn].skillType == 3 && GlobalData.Instance.currentMP >= Character.CharSkills[sn].MP_cost) {
             GameObject spark_cl;
-            Vector3 v3 = new Vector3(Pony.transform.position.x + 0.75f, Pony.transform.position.y, Pony.transform.position.z);
-            if (Character.CharSkills[sn].projType == Skill.ProjectileType.Autofire) {
-                v3 = new Vector3(Pony.transform.position.x + 0.65f, Pony.transform.position.y - 0.1f, Pony.transform.position.z);
-                holdTimer = Character.CharSkills[sn].duration;
-            }
+            Vector3 v3 = Pony.transform.position + Character.CharSkills[sn].projPosition;
+            holdTimer = Character.CharSkills[sn].duration;
             SoundManager.Instance.PlaySound(Character.CharSkills[sn].sound);
             if (fx[sn] != null) {
                 fx[sn].SetActive(true);
@@ -137,8 +134,8 @@ public class SkillController : MonoBehaviour {
                 StartCoroutine(fxDisable);
             }
             GlobalData.Instance.currentMP -= Character.CharSkills[sn].MP_cost;
-            spark_cl = (GameObject)Instantiate(Character.CharSkills[sn].obj, v3, Character.CharSkills[sn].obj.transform.rotation);
-            spark_cl.GetComponent<Projectile>().DestroyObject(lifetime);
+            spark_cl = Instantiate(Character.CharSkills[sn].obj, v3, Character.CharSkills[sn].obj.transform.rotation);
+            spark_cl.GetComponent<Projectile>().DestroyObject(Character.CharSkills[sn].cooldown);
         }
     }
     void SkillStatChange(int sn) {
@@ -335,6 +332,6 @@ public class SkillController : MonoBehaviour {
                 PickupPopup.Instance.ShowPopupInfo(it);
             }
         }
-    }  
+    }
 
 }
