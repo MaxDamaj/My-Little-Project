@@ -34,7 +34,7 @@ public class TerrainCHL : MonoBehaviour {
 
     void SpawnNewSection() {
         //Move Trigger
-        transform.position = new Vector3(transform.position.x + 20, 0, 0);
+        transform.position = new Vector3(transform.position.x + 20, transform.position.y, 0);
 
         //Spawn Terrain
         int sel = Random.Range(0, challenge.roads.GetLength(0));
@@ -43,11 +43,11 @@ public class TerrainCHL : MonoBehaviour {
         sel = Random.Range(0, challenge.bonuses.GetLength(0));
         Destroy(Instantiate(challenge.bonuses[sel], transform.position, challenge.bonuses[sel].transform.rotation), 45);
         //Spawn Border
-        Destroy(Instantiate(challenge.border, new Vector3(transform.position.x + 20, -0.6f, 20f), challenge.border.transform.rotation), 45);
+        Destroy(Instantiate(challenge.border, new Vector3(transform.position.x + 20, transform.position.y - 0.6f, 20f), challenge.border.transform.rotation), 45);
         //Spawn Packs
         if (eoh_counter <= 0) {
             sel = Random.Range(0, challenge.packs.GetLength(0));
-            Destroy(Instantiate(challenge.packs[sel], new Vector3(transform.position.x - 10f, 0.55f, 0f), challenge.packs[sel].transform.rotation), 30);
+            Destroy(Instantiate(challenge.packs[sel], new Vector3(transform.position.x - 10f, transform.position.y + 0.55f, 0f), challenge.packs[sel].transform.rotation), 30);
             eoh_counter = challenge.packsSpawnDelay;
         }
         eoh_counter--;

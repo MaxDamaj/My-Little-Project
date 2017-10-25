@@ -46,6 +46,7 @@ public class CharsFMData {
     public string CharName;
     public Color CharColor;
     public Sprite CharIcon;
+    public Sprite CharPreviewIcon;
     public PonyType Type;
     public int Rank;
     public float HP;
@@ -59,11 +60,14 @@ public class CharsFMData {
     public Skill[] CharSkills;
     public string[] costItems;
     public float[] costPrises;
+    [Multiline]
+    public string description;
 
     CharsFMData(CharsFMData character) {
         CharName = character.CharName;
         CharColor = character.CharColor;
         CharIcon = character.CharIcon;
+        CharPreviewIcon = character.CharPreviewIcon;
         Type = character.Type;
         Rank = character.Rank;
         HP = character.HP;
@@ -77,6 +81,7 @@ public class CharsFMData {
         CharSkills = character.CharSkills;
         costItems = character.costItems;
         costPrises = character.costPrises;
+        description = character.description;
     }
 }
 

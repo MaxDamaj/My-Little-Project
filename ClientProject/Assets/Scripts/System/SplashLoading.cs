@@ -11,6 +11,12 @@ public class SplashLoading : MonoBehaviour {
     [SerializeField]
     DBSimulation DBS = null;
 
+    [Header("UI")]
+
+    public Image charIcon;
+    public Text charText;
+    public Text charDescription;
+
     public Button confirmButton;
     public Slider loadingProgress;
     public RectTransform loadingWindow;
@@ -38,6 +44,13 @@ public class SplashLoading : MonoBehaviour {
         tmp = Instantiate(DBS.gameObject);
         tmp.name = "Database_Simulation";
         DontDestroyOnLoad(tmp);
+
+        //Set random character info
+        CharsFMData character = Database.Instance.GetCharFMInfo(Random.Range(0, 3)); //Only first three characters
+        charIcon.sprite = character.CharPreviewIcon;
+        charText.text = character.CharName;
+        charText.color = character.CharColor;
+        charDescription.text = character.description;
 
         SoundManager.Instance.UpdateSoundList();
     }
