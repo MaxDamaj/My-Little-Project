@@ -1,0 +1,337 @@
+fileFormatVersion: 2
+guid: 39deebb128415274f98300aab936bcab
+timeCreated: 1509092424
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: body
+    100004: cutiemark
+    100006: Ear
+    100008: ear
+    100010: eye
+    100012: FL_01
+    100014: FLLeg
+    100016: flLeg
+    100018: FR_01
+    100020: FRLeg
+    100022: frLeg
+    100024: hair_1_1
+    100026: hair_1_2
+    100028: hair_1_3
+    100030: hair_2_1
+    100032: hair_2_2
+    100034: hair_3_1
+    100036: hair_3_2
+    100038: Head
+    100040: head
+    100042: Hip
+    100044: mane1
+    100046: mane2
+    100048: mouth
+    100050: Neck
+    100052: pony
+    100054: RL_01
+    100056: RL_02
+    100058: RLLeg
+    100060: rlLeg
+    100062: rocket
+    100064: RR_01
+    100066: RR_02
+    100068: RRLeg
+    100070: rrLeg
+    100072: Tail
+    100074: tail
+    100076: Tail_01
+    100078: Tail_02
+    100080: Tail_03
+    100082: wing0
+    100084: wing0 1
+    100086: wing1
+    100088: wing1_1
+    100090: wing1_2
+    100092: wing2
+    100094: wing2_1
+    100096: wing2_2
+    400000: //RootNode
+    400002: body
+    400004: cutiemark
+    400006: Ear
+    400008: ear
+    400010: eye
+    400012: FL_01
+    400014: FLLeg
+    400016: flLeg
+    400018: FR_01
+    400020: FRLeg
+    400022: frLeg
+    400024: hair_1_1
+    400026: hair_1_2
+    400028: hair_1_3
+    400030: hair_2_1
+    400032: hair_2_2
+    400034: hair_3_1
+    400036: hair_3_2
+    400038: Head
+    400040: head
+    400042: Hip
+    400044: mane1
+    400046: mane2
+    400048: mouth
+    400050: Neck
+    400052: pony
+    400054: RL_01
+    400056: RL_02
+    400058: RLLeg
+    400060: rlLeg
+    400062: rocket
+    400064: RR_01
+    400066: RR_02
+    400068: RRLeg
+    400070: rrLeg
+    400072: Tail
+    400074: tail
+    400076: Tail_01
+    400078: Tail_02
+    400080: Tail_03
+    400082: wing0
+    400084: wing0 1
+    400086: wing1
+    400088: wing1_1
+    400090: wing1_2
+    400092: wing2
+    400094: wing2_1
+    400096: wing2_2
+    4300000: body
+    4300002: flLeg
+    4300004: frLeg
+    4300006: ear
+    4300008: head
+    4300010: rlLeg
+    4300012: rrLeg
+    4300014: eye
+    4300016: mouth
+    4300018: cutiemark
+    4300020: wing0
+    4300022: wing1
+    4300024: wing2
+    4300026: tail
+    4300028: mane1
+    4300030: mane2
+    4300032: rocket
+    7400000: jump
+    9500000: //RootNode
+    13700000: body
+    13700002: cutiemark
+    13700004: ear
+    13700006: eye
+    13700008: flLeg
+    13700010: frLeg
+    13700012: head
+    13700014: mane1
+    13700016: mane2
+    13700018: mouth
+    13700020: rlLeg
+    13700022: rocket
+    13700024: rrLeg
+    13700026: tail
+    13700028: wing0 1
+    13700030: wing1
+    13700032: wing2
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: jump
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hip
+        weight: 1
+      - path: Hip/FLLeg
+        weight: 1
+      - path: Hip/FLLeg/FL_01
+        weight: 1
+      - path: Hip/FRLeg
+        weight: 1
+      - path: Hip/FRLeg/FR_01
+        weight: 1
+      - path: Hip/Neck
+        weight: 1
+      - path: Hip/Neck/Head
+        weight: 1
+      - path: Hip/Neck/Head/Ear
+        weight: 1
+      - path: Hip/Neck/Head/hair_1_1
+        weight: 1
+      - path: Hip/Neck/Head/hair_1_1/hair_1_2
+        weight: 1
+      - path: Hip/Neck/Head/hair_1_1/hair_1_2/hair_1_3
+        weight: 1
+      - path: Hip/Neck/Head/hair_3_1
+        weight: 1
+      - path: Hip/Neck/Head/hair_3_1/hair_2_1
+        weight: 1
+      - path: Hip/Neck/Head/hair_3_1/hair_2_1/hair_2_2
+        weight: 1
+      - path: Hip/Neck/Head/hair_3_1/hair_3_2
+        weight: 1
+      - path: Hip/RLLeg
+        weight: 1
+      - path: Hip/RLLeg/RL_01
+        weight: 1
+      - path: Hip/RLLeg/RL_01/RL_02
+        weight: 1
+      - path: Hip/RRLeg
+        weight: 1
+      - path: Hip/RRLeg/RR_01
+        weight: 1
+      - path: Hip/RRLeg/RR_01/RR_02
+        weight: 1
+      - path: Hip/Tail
+        weight: 1
+      - path: Hip/Tail/Tail_01
+        weight: 1
+      - path: Hip/Tail/Tail_01/Tail_02
+        weight: 1
+      - path: Hip/Tail/Tail_01/Tail_02/Tail_03
+        weight: 1
+      - path: Hip/wing0
+        weight: 1
+      - path: Hip/wing1_1
+        weight: 1
+      - path: Hip/wing1_1/wing1_2
+        weight: 1
+      - path: Hip/wing2_1
+        weight: 1
+      - path: Hip/wing2_1/wing2_2
+        weight: 1
+      - path: pony
+        weight: 1
+      - path: pony/body
+        weight: 1
+      - path: pony/cutiemark
+        weight: 1
+      - path: pony/ear
+        weight: 1
+      - path: pony/eye
+        weight: 1
+      - path: pony/flLeg
+        weight: 1
+      - path: pony/frLeg
+        weight: 1
+      - path: pony/head
+        weight: 1
+      - path: pony/mane1
+        weight: 1
+      - path: pony/mane2
+        weight: 1
+      - path: pony/mouth
+        weight: 1
+      - path: pony/rlLeg
+        weight: 1
+      - path: pony/rocket
+        weight: 1
+      - path: pony/rrLeg
+        weight: 1
+      - path: pony/tail
+        weight: 1
+      - path: pony/wing0 1
+        weight: 1
+      - path: pony/wing1
+        weight: 1
+      - path: pony/wing2
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
