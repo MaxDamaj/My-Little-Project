@@ -121,6 +121,7 @@ ModelImporter:
     4300030: mane2
     4300032: rocket
     7400000: jump
+    7400002: jump_fall
     9500000: //RootNode
     13700000: body
     13700002: cutiemark
@@ -166,6 +167,132 @@ ModelImporter:
       name: jump
       takeName: Take 001
       firstFrame: 1
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hip
+        weight: 1
+      - path: Hip/FLLeg
+        weight: 1
+      - path: Hip/FLLeg/FL_01
+        weight: 1
+      - path: Hip/FRLeg
+        weight: 1
+      - path: Hip/FRLeg/FR_01
+        weight: 1
+      - path: Hip/Neck
+        weight: 1
+      - path: Hip/Neck/Head
+        weight: 1
+      - path: Hip/Neck/Head/Ear
+        weight: 1
+      - path: Hip/Neck/Head/hair_1_1
+        weight: 1
+      - path: Hip/Neck/Head/hair_1_1/hair_1_2
+        weight: 1
+      - path: Hip/Neck/Head/hair_1_1/hair_1_2/hair_1_3
+        weight: 1
+      - path: Hip/Neck/Head/hair_3_1
+        weight: 1
+      - path: Hip/Neck/Head/hair_3_1/hair_2_1
+        weight: 1
+      - path: Hip/Neck/Head/hair_3_1/hair_2_1/hair_2_2
+        weight: 1
+      - path: Hip/Neck/Head/hair_3_1/hair_3_2
+        weight: 1
+      - path: Hip/RLLeg
+        weight: 1
+      - path: Hip/RLLeg/RL_01
+        weight: 1
+      - path: Hip/RLLeg/RL_01/RL_02
+        weight: 1
+      - path: Hip/RRLeg
+        weight: 1
+      - path: Hip/RRLeg/RR_01
+        weight: 1
+      - path: Hip/RRLeg/RR_01/RR_02
+        weight: 1
+      - path: Hip/Tail
+        weight: 1
+      - path: Hip/Tail/Tail_01
+        weight: 1
+      - path: Hip/Tail/Tail_01/Tail_02
+        weight: 1
+      - path: Hip/Tail/Tail_01/Tail_02/Tail_03
+        weight: 1
+      - path: Hip/wing0
+        weight: 1
+      - path: Hip/wing1_1
+        weight: 1
+      - path: Hip/wing1_1/wing1_2
+        weight: 1
+      - path: Hip/wing2_1
+        weight: 1
+      - path: Hip/wing2_1/wing2_2
+        weight: 1
+      - path: pony
+        weight: 1
+      - path: pony/body
+        weight: 1
+      - path: pony/cutiemark
+        weight: 1
+      - path: pony/ear
+        weight: 1
+      - path: pony/eye
+        weight: 1
+      - path: pony/flLeg
+        weight: 1
+      - path: pony/frLeg
+        weight: 1
+      - path: pony/head
+        weight: 1
+      - path: pony/mane1
+        weight: 1
+      - path: pony/mane2
+        weight: 1
+      - path: pony/mouth
+        weight: 1
+      - path: pony/rlLeg
+        weight: 1
+      - path: pony/rocket
+        weight: 1
+      - path: pony/rrLeg
+        weight: 1
+      - path: pony/tail
+        weight: 1
+      - path: pony/wing0 1
+        weight: 1
+      - path: pony/wing1
+        weight: 1
+      - path: pony/wing2
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: jump_fall
+      takeName: Take 001
+      firstFrame: 14
       lastFrame: 20
       wrapMode: 0
       orientationOffsetY: 0

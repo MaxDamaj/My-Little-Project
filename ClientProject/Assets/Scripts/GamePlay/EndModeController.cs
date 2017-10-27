@@ -55,6 +55,7 @@ public class EndModeController : MonoBehaviour {
         GlobalData.Instance.currentHP = _pony.HP;
         GlobalData.Instance.currentMP = 0;
         GlobalData.Instance.currentMP_rec = _pony.MPRecovery;
+        GlobalData.Instance.isMPProtection = false;
         //Set STM value
         stamina.text = "" + Mathf.RoundToInt(Database.Instance.GetCurrSTM(Database.Instance.SelectedPony));
         deltaCam = mainCamera.position.x;

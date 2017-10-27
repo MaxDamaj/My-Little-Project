@@ -7,13 +7,14 @@ public class Skill : MonoBehaviour {
     public enum SkillType {
         Passive = 0,        //Passive skill
         Dash = 1,           //Increase pony speed and decrease recieved damage. Pony can jump
-        AirDash = 2,
-        Projectile = 3,
+        AirDash = 2,        //Increase pony speed and decrease recieved damage. Perform only in midair
+        Projectile = 3,     //Pony shoot various projectiles
         ChangeStat = 4,     //Changing pony stat value
         RestoreStat = 5,    //HP/MP restoration speed
         ItemsGiving = 6,    //Gave items
-        Fly = 7,
-        SlowMotion = 8
+        Fly = 7,            //Wings or jetpack flying. Perform only in midair
+        SlowMotion = 8,
+        MPProtection = 9    //Pony lose MP not HP while hitting obstacles
     };
 
     public enum PassiveType {

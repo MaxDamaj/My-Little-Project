@@ -95,7 +95,11 @@ public class PonyController : MonoBehaviour {
         Database.Instance.obstTotal++;
         if (obstacle.position.x - transform.position.x > shift) {
             //SoundManager.Instance.PlaySound("a_thump");
-            GlobalData.Instance.currentHP -= damage * GlobalData.Instance.DMGmlp;
+            if (GlobalData.Instance.isMPProtection && GlobalData.Instance.currentMP >= damage) {
+                GlobalData.Instance.currentMP -= damage * GlobalData.Instance.DMGmlp;
+            } else {
+                GlobalData.Instance.currentHP -= damage * GlobalData.Instance.DMGmlp;
+            }
             _cpf.shake_intensity = camShaking * GlobalData.Instance.DMGmlp;
             if (!SkillController.Instance.IsSimulation) Database.Instance.obstWithDamage++;
         } else {

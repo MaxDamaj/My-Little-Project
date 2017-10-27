@@ -162,6 +162,13 @@ public class SkillEditor : Editor {
             EditorGUILayout.PropertyField(fx, new GUIContent(" FX object"));
             EditorGUILayout.PropertyField(sound, new GUIContent(" Sound"));
         }
+        //Fields for MP Protection skill
+        if (9 == skillType.intValue) {
+            EditorGUILayout.PropertyField(duration, new GUIContent(" Duration"));
+            EditorGUILayout.PropertyField(cooldown, new GUIContent(" Cooldown"));
+            EditorGUILayout.PropertyField(fx, new GUIContent(" FX object"));
+            EditorGUILayout.PropertyField(sound, new GUIContent(" Sound"));
+        }
 
         serObj.ApplyModifiedProperties();
     }

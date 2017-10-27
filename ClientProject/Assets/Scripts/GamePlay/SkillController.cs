@@ -103,6 +103,7 @@ public class SkillController : MonoBehaviour {
         SkillRestoreStat(3);
         SkillItemGiving(3);
         SkillSlowMotion(3);
+        SkillMPProtection(3);
     }
 
     #region Skills
@@ -260,6 +261,19 @@ public class SkillController : MonoBehaviour {
             }
         }
     }
+    void SkillMPProtection(int sn) {
+        if (Character.CharSkills[sn].skillType == Skill.SkillType.MPProtection && !Character.CharSkills[sn].IsCooldown) {
+            Character.CharSkills[sn].IsCooldown = true;
+            _uiSkill.DeactivateSkill(sn);
+            GlobalData.Instance.isMPProtection = true;
+            SoundManager.Instance.PlaySound(Character.CharSkills[sn].sound);
+            if (fx[sn] != null) fx[sn].SetActive(true);
+            IEnumerator endProtection = DisableProtection(Character.CharSkills[sn].duration, Character.CharSkills[sn].cooldown, sn);
+            StartCoroutine(endProtection);
+            cooldown = _uiSkill.StartCooldown(sn, (int)Character.CharSkills[sn].cooldown);
+            StartCoroutine(cooldown);
+        }
+    }
 
     #endregion
 
@@ -306,6 +320,14 @@ public class SkillController : MonoBehaviour {
     IEnumerator DisableObject(GameObject obj, float delay) {
         yield return new WaitForSeconds(delay);
         obj.SetActive(false);
+    }
+    IEnumerator DisableProtection(float duration, float cooldown, int num) {
+        yield return new WaitForSeconds(duration);
+        if (fx[num] != null) fx[num].SetActive(false);
+        GlobalData.Instance.isMPProtection = false;
+        yield return new WaitForSeconds(cooldown - duration);
+        Character.CharSkills[num].IsCooldown = false;
+        _uiSkill.ActivateSkill(num);
     }
 
     #endregion
