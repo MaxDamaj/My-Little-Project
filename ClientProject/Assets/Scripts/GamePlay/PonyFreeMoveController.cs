@@ -5,45 +5,51 @@ public class PonyFreeMoveController : MonoBehaviour {
 
     public Transform ponyBody;
 
+    public float maxSpeed = 3f;
+
     //private SoundManager SM;
 
     //private CharsFMData _pony;
     private Rigidbody _rigidbody;
     private Animator anim;
     private float jump_recover;
-    private float m_shift;
     private Transform _start_position;
+    private Camera _mainCamera;
 
     void Start() {
         //SM = FindObjectOfType<SoundManager>();
         _rigidbody = GetComponent<Rigidbody>();
         _start_position = _rigidbody.transform;
+        _mainCamera = Camera.main;
 
         //_pony = Database.Instance.GetCharFMInfo(Database.Instance.SelectedPony);
-
         anim = GetComponentInChildren<Animator>();
 
         jump_recover = 20;
     }
 
     void FixedUpdate() {
-
         if (jump_recover > 0) { jump_recover--; }
+
         //Scale to another direction
-        if (Input.GetAxis("Horizontal") > 0.01f) {
+        if (Input.GetAxis("Vertical") > 0.01f) {
             ponyBody.localScale = new Vector3(0.55f, 0.55f, 0.55f);
+            _mainCamera.transform.localPosition = new Vector3(1, 1.2f, -2.2f);
         }
-        if (Input.GetAxis("Horizontal") < -0.01f) {
+        if (Input.GetAxis("Vertical") < -0.01f) {
             ponyBody.localScale = new Vector3(0.55f, 0.55f, -0.55f);
+            _mainCamera.transform.localPosition = new Vector3(-1, 1.2f, -2.2f);
         }
+
         //Moving
-        _rigidbody.velocity = new Vector3(Input.GetAxis("Horizontal") * 3, _rigidbody.velocity.y, m_shift);
-        anim.SetFloat("speed", Mathf.Abs(Input.GetAxis("Horizontal")));
-        if (anim.GetBool("ground")) {
-            m_shift = Input.GetAxis("Vertical") * 3 * Input.GetAxis("Horizontal") * ponyBody.localScale.z;
-        } else {
-            m_shift = Input.GetAxis("Vertical") * 2;
+        if (_rigidbody.velocity.magnitude < maxSpeed) {
+            _rigidbody.AddRelativeForce(Input.GetAxisRaw("Vertical") * 0.5f, 0, 0, ForceMode.VelocityChange);
         }
+        if (Input.GetAxisRaw("Vertical") == 0) {
+            _rigidbody.velocity = new Vector3(0, _rigidbody.velocity.y, 0);
+        }
+        anim.SetFloat("speed", Mathf.Abs(Input.GetAxisRaw("Vertical")));
+        _rigidbody.angularVelocity = new Vector3(0, Input.GetAxisRaw("Horizontal") * 1.5f, 0);
 
         //Jumping
         if (Input.GetAxis("Jump") > 0.01f && jump_recover <= 0) {
@@ -59,8 +65,8 @@ public class PonyFreeMoveController : MonoBehaviour {
     //----Colliders-Work----------------------------------------
     void OnCollisionStay(Collision coll) {
         //Walls Collider fix
-        if (coll.gameObject.tag == "FarWall" && m_shift > 0f) m_shift = 0;
-        if (coll.gameObject.tag == "NearWall" && m_shift < 0f) m_shift = 0;
+        //if (coll.gameObject.tag == "FarWall" && m_shift > 0f) m_shift = 0;
+        //if (coll.gameObject.tag == "NearWall" && m_shift < 0f) m_shift = 0;
         //Fall down
         if (coll.gameObject.tag == "Bottom") {
             gameObject.transform.position = _start_position.position;
