@@ -14,6 +14,22 @@ public class PonyFreeMoveController : MonoBehaviour {
     private Vector3 _start_position;
     private Camera _mainCamera;
 
+    private static PonyFreeMoveController controller;
+
+    public delegate void PickupArgs(string tag, GameObject target);
+    public static event PickupArgs onPlayerPickup; // event for picking up items
+
+    #region API
+
+    public static PonyFreeMoveController Instance {
+        get {
+            if (controller == null) {
+                controller = FindObjectOfType<PonyFreeMoveController>();
+            }
+            return controller;
+        }
+    }
+
     void Start() {
         SoundManager.Instance.UpdateSoundList();
         _rigidbody = GetComponent<Rigidbody>();
@@ -47,7 +63,7 @@ public class PonyFreeMoveController : MonoBehaviour {
             _rigidbody.velocity = new Vector3(0, _rigidbody.velocity.y, 0);
         }*/
         anim.SetFloat("speed", Mathf.Abs(Input.GetAxisRaw("Vertical")));
-        anim.SetFloat("speed", _rigidbody.velocity.sqrMagnitude/11f);
+        anim.SetFloat("speed", _rigidbody.velocity.sqrMagnitude / 11f);
         _rigidbody.angularVelocity = new Vector3(0, Input.GetAxisRaw("Horizontal") * 1.5f, 0);
 
         //Jumping
@@ -69,11 +85,11 @@ public class PonyFreeMoveController : MonoBehaviour {
 
     }
 
-    //----Colliders-Work----------------------------------------
+    #endregion
+
+    #region Colliders
+
     void OnCollisionStay(Collision coll) {
-        //Walls Collider fix
-        //if (coll.gameObject.tag == "FarWall" && m_shift > 0f) m_shift = 0;
-        //if (coll.gameObject.tag == "NearWall" && m_shift < 0f) m_shift = 0;
         //Fall down
         if (coll.gameObject.tag == "Bottom") {
             gameObject.transform.position = _start_position;
@@ -89,4 +105,28 @@ public class PonyFreeMoveController : MonoBehaviour {
                 break;
         }
     }
+
+    //Bonuses picking up
+    void OnTriggerEnter(Collider coll) {
+        //Run pickup event
+        if (coll.gameObject.name != "trigger") onPlayerPickup(gameObject.tag, coll.gameObject);
+    }
+
+    void CalculateObstacle(Transform obstacle, float shift, float damage, float camShaking) {
+        Database.Instance.obstTotal++;
+        if (obstacle.position.x - transform.position.x > shift) {
+            //SoundManager.Instance.PlaySound("a_thump");
+            if (GlobalData.Instance.isMPProtection && GlobalData.Instance.currentMP >= damage) {
+                GlobalData.Instance.currentMP -= damage * GlobalData.Instance.DMGmlp;
+            } else {
+                GlobalData.Instance.currentHP -= damage * GlobalData.Instance.DMGmlp;
+            }
+            //_cpf.shake_intensity = camShaking * GlobalData.Instance.DMGmlp;
+            if (!SkillController.Instance.IsSimulation) Database.Instance.obstWithDamage++;
+        } else {
+            if (!SkillController.Instance.IsSimulation) Database.Instance.obstNonDamage++;
+        }
+    }
+
+    #endregion
 }

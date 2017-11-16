@@ -37,6 +37,9 @@ public class Navigation : MonoBehaviour {
             case UIAction.runSimulation:
                 UIMessageWindow.Instance.ShowMessage("Enter into simulation?", 0, UIAction.runSimulation);
                 return;
+            case UIAction.startRaceCource:
+                UIMessageWindow.Instance.ShowMessage("Start test Race cource?", 0, UIAction.startRaceCource);
+                return;
         }
         //Show dest. panel, hide current
         if (CurrPanel != null) {

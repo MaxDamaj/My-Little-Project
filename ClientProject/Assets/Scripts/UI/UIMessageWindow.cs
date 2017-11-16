@@ -14,7 +14,8 @@ public enum UIAction {
     startEndurance = 7,
     hideLeftPanels = 8,
     loadCodex = 9,
-    runSimulation = 10
+    runSimulation = 10,
+    startRaceCource = 11
 };
 
 public class UIMessageWindow : MonoBehaviour {  
@@ -99,6 +100,9 @@ public class UIMessageWindow : MonoBehaviour {
                 break;
             case UIAction.runSimulation:
                 UnityEngine.SceneManagement.SceneManager.LoadScene("simulation");
+                break;
+            case UIAction.startRaceCource:
+                UnityEngine.SceneManagement.SceneManager.LoadScene("freemode");
                 break;
         }
         window.SetActive(false);
