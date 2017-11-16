@@ -7,19 +7,17 @@ public class PonyFreeMoveController : MonoBehaviour {
 
     public float maxSpeed = 3f;
 
-    //private SoundManager SM;
-
     //private CharsFMData _pony;
     private Rigidbody _rigidbody;
     private Animator anim;
     private float jump_recover;
-    private Transform _start_position;
+    private Vector3 _start_position;
     private Camera _mainCamera;
 
     void Start() {
-        //SM = FindObjectOfType<SoundManager>();
+        SoundManager.Instance.UpdateSoundList();
         _rigidbody = GetComponent<Rigidbody>();
-        _start_position = _rigidbody.transform;
+        _start_position = _rigidbody.transform.position;
         _mainCamera = Camera.main;
 
         //_pony = Database.Instance.GetCharFMInfo(Database.Instance.SelectedPony);
@@ -43,12 +41,13 @@ public class PonyFreeMoveController : MonoBehaviour {
 
         //Moving
         if (_rigidbody.velocity.magnitude < maxSpeed) {
-            _rigidbody.AddRelativeForce(Input.GetAxisRaw("Vertical") * 0.5f, 0, 0, ForceMode.VelocityChange);
+            _rigidbody.AddRelativeForce(Input.GetAxisRaw("Vertical") * 0.4f, 0, 0, ForceMode.VelocityChange);
         }
-        if (Input.GetAxisRaw("Vertical") == 0) {
+        /*if (Input.GetAxisRaw("Vertical") == 0) {
             _rigidbody.velocity = new Vector3(0, _rigidbody.velocity.y, 0);
-        }
+        }*/
         anim.SetFloat("speed", Mathf.Abs(Input.GetAxisRaw("Vertical")));
+        anim.SetFloat("speed", _rigidbody.velocity.sqrMagnitude/11f);
         _rigidbody.angularVelocity = new Vector3(0, Input.GetAxisRaw("Horizontal") * 1.5f, 0);
 
         //Jumping
@@ -57,9 +56,17 @@ public class PonyFreeMoveController : MonoBehaviour {
                 jump_recover = 20;
                 anim.SetBool("ground", false);
                 _rigidbody.AddForce(new Vector3(0f, 220f, 0f));
-                //SM.SetMuteState("a_run", true);
+                SoundManager.Instance.SetMuteState("a_run", true);
             }
         }
+
+        //Sound of running
+        if (!anim.GetBool("ground")) {
+            SoundManager.Instance.SetMuteState("a_run", true);
+        } else {
+            SoundManager.Instance.SetMuteState("a_run", _rigidbody.velocity.sqrMagnitude < 10);
+        }
+
     }
 
     //----Colliders-Work----------------------------------------
@@ -69,7 +76,7 @@ public class PonyFreeMoveController : MonoBehaviour {
         //if (coll.gameObject.tag == "NearWall" && m_shift < 0f) m_shift = 0;
         //Fall down
         if (coll.gameObject.tag == "Bottom") {
-            gameObject.transform.position = _start_position.position;
+            gameObject.transform.position = _start_position;
         }
     }
 
@@ -77,8 +84,8 @@ public class PonyFreeMoveController : MonoBehaviour {
         switch (coll.gameObject.tag) {
             case "Ground":
                 anim.SetBool("ground", true);
-                //SM.SetMuteState("a_run", false);
-                //SM.PlaySound("a_landing");
+                SoundManager.Instance.SetMuteState("a_run", false);
+                SoundManager.Instance.PlaySound("a_landing");
                 break;
         }
     }
