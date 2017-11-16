@@ -34,11 +34,11 @@ public class PonyFreeMoveController : MonoBehaviour {
         //Scale to another direction
         if (Input.GetAxis("Vertical") > 0.01f) {
             ponyBody.localScale = new Vector3(0.55f, 0.55f, 0.55f);
-            _mainCamera.transform.localPosition = new Vector3(1, 1.2f, -2.2f);
+            _mainCamera.transform.localPosition = new Vector3(1.4f, 1.3f, -2.8f);
         }
         if (Input.GetAxis("Vertical") < -0.01f) {
             ponyBody.localScale = new Vector3(0.55f, 0.55f, -0.55f);
-            _mainCamera.transform.localPosition = new Vector3(-1, 1.2f, -2.2f);
+            _mainCamera.transform.localPosition = new Vector3(-1.4f, 1.3f, -2.8f);
         }
 
         //Moving
