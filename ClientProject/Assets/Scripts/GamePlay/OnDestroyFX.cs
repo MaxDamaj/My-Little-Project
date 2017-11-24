@@ -11,6 +11,8 @@ public class OnDestroyFX : MonoBehaviour {
     private float _fxDestroyDelay = 3;
 
     public string objectType = "Bits";
+    public string sound = "a_beeps";
+    public bool isShowPopup = false;
 
     void Start() {
         PonyController.onPlayerPickup += ExecuteFX;
@@ -18,7 +20,10 @@ public class OnDestroyFX : MonoBehaviour {
 
     void ExecuteFX(string tag, GameObject target) {
         if (tag == "Player" && gameObject == target) {
-            switch (objectType) {
+            SoundManager.Instance.PlaySound(sound);
+            if (isShowPopup) { PickupPopup.Instance.ShowPopupInfo(objectType); }
+            Database.Instance.IncreaseItemQuantity(objectType, 1);
+            /*switch (objectType) {
                 case "Bits":
                     SoundManager.Instance.PlaySound("a_coins");
                     PickupPopup.Instance.ShowPopupInfo("Bits");
@@ -77,7 +82,7 @@ public class OnDestroyFX : MonoBehaviour {
                     SoundManager.Instance.PlaySound("a_beeps");
                     DBSimulation.Instance.IncreaseItemQuantity("Flow", 1);
                     break;
-            }
+            }*/
             Destroy(Instantiate(fx, transform.position, fx.transform.rotation), _fxDestroyDelay);
             Destroy(gameObject, _objectDestroyDelay);
         }
