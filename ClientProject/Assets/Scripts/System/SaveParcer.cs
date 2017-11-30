@@ -228,7 +228,7 @@ public class SaveParcer : MonoBehaviour {
     string GetCharStats(int index) {
         CharsFMData character = Database.Instance.GetCharFMInfo(index);
         string line = character.CharName;
-        line += ":" + character.HP + "," + character.MP + "," + character.Rank + "," + character.STMCurrent + "," + character.Rank;
+        line += ":" + character.HP + "," + character.MP + "," + character.Rank + "," + character.STMCurrent + "," + character.Rank + "," + character.LUCK;
         return line;
     }
     public void LoadCharData() {
@@ -240,6 +240,7 @@ public class SaveParcer : MonoBehaviour {
                 Database.Instance.SetCharFMRank(i, int.Parse(line[2]));
                 Database.Instance.SetCurrSTM(i, float.Parse(line[3]));
                 Database.Instance.SetCharFMRank(i, int.Parse(line[4]));
+                Database.Instance.SetCharFMLuck(i, float.Parse(line[5]));
                 //Correcting on-time stamina
                 Database.Instance.IncreaseCurrSTM(i, Database.Instance.timeSpan);
             }

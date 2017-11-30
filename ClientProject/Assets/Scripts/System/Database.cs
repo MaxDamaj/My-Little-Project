@@ -52,6 +52,7 @@ public class CharsFMData {
     public float HP;
     public float MP;
     public float SPD;
+    public float LUCK;
     public float STMCurrent;
     public float STMMax;
     public float MPRecovery;
@@ -73,6 +74,7 @@ public class CharsFMData {
         HP = character.HP;
         MP = character.MP;
         SPD = character.SPD;
+        LUCK = character.LUCK;
         STMCurrent = character.STMCurrent;
         STMMax = character.STMMax;
         MPRecovery = character.MPRecovery;
@@ -303,6 +305,10 @@ public class Database : MonoBehaviour {
     }
     public void SetCharFMRank(int id, int rank) {
         _freeModeChars[id].Rank = rank;
+        if (onRefresh != null) { onRefresh(); }
+    }
+    public void SetCharFMLuck(int id, float LUCK) {
+        _freeModeChars[id].LUCK = LUCK;
         if (onRefresh != null) { onRefresh(); }
     }
     //Stamina

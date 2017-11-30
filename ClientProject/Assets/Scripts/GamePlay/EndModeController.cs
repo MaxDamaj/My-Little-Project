@@ -22,9 +22,6 @@ public class EndModeController : MonoBehaviour {
     public Image[] SkillIcons;
     public Text stamina;
     public Text charName;
-    //SplashSideImage
-    public Image splashGrad;
-    public Animator splashText;
 
     public Transform mainCamera;
     public Animator[] flashingUI;
@@ -116,10 +113,6 @@ public class EndModeController : MonoBehaviour {
         flashingUI[1].SetFloat("value", ponyHP.fillAmount);
         flashingUI[2].SetFloat("value", ponyMP.fillAmount);
         flashingUI[3].SetFloat("value", ponyMP.fillAmount);
-        //Splash Image controller
-        if (ponyHP.fillAmount < 0.4f && !splashGrad.gameObject.activeSelf) { splashGrad.gameObject.SetActive(true); }
-        if (ponyHP.fillAmount > 0.4f && splashGrad.gameObject.activeSelf) { splashGrad.gameObject.SetActive(false); }
-        splashText.SetFloat("value", ponyHP.fillAmount);
         //MP recovery
         if (GlobalData.Instance.currentMP < _pony.MP) GlobalData.Instance.currentMP += GlobalData.Instance.currentMP_rec;
         if (GlobalData.Instance.currentMP > _pony.MP) GlobalData.Instance.currentMP = _pony.MP;
