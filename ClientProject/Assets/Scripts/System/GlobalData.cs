@@ -18,6 +18,7 @@ public class GlobalData : ScriptableObject {
     public float DMGmlp;        //Damage multiplier. Used in PonyController
     public float timeSpeed;     //Current time length. Used in slowing motions skills
     public bool isMPProtection; //Is pony lose mana not health while hitting obstacles
+    public float PickupMlp;     //Pickup items multiplier
     public float currentHP;
     public float currentMP;
     public float currentMP_rec; //MP recovery value
