@@ -58,6 +58,7 @@ public class UIItemsCraft : MonoBehaviour {
         warningText.gameObject.SetActive(false);
         recipeButton.onClick.AddListener(delegate { craftTable.gameObject.SetActive(true); });
         Database.onRefresh += RefreshUI;
+        RefreshUI();
     }
 
     void OnDestroy() {
@@ -101,7 +102,7 @@ public class UIItemsCraft : MonoBehaviour {
         for (int i = 0; i < furnace.Count; i++) {
             furnace[i].parent.gameObject.SetActive(Database.Instance.furnaceSlots > i);
         }
-        SetFurnaceUpgradeStats();      
+        SetFurnaceUpgradeStats();
         HideWarningText();
 
         List<CraftComponent> item = new List<CraftComponent>();
@@ -201,7 +202,7 @@ public class UIItemsCraft : MonoBehaviour {
         if (IsEnoughItem) {
             Database.Instance.furnaceSlots++;
             craftTable.SetRecipes();
-            var upgrade = DBCharUpgrade.Instance.FurnaceUpgrade[Database.Instance.furnaceSlots];
+            var upgrade = DBCharUpgrade.Instance.FurnaceUpgrade[Database.Instance.furnaceSlots-2];
             Database.Instance.IncreaseItemQuantity(upgrade.res1, -upgrade.quan1);
             Database.Instance.IncreaseItemQuantity(upgrade.res2, -upgrade.quan2);
             RefreshUI();
