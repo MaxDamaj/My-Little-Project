@@ -66,7 +66,13 @@ public class TerrainEDR : MonoBehaviour {
         lastTerrain = section.terrains[sel];
         //Spawn Bonuses
         sel = UnityEngine.Random.Range(0, section.obstacles.Count);
-        Destroy(Instantiate(section.obstacles[sel], transform.position, section.obstacles[sel].transform.rotation), 45);
+        Destroy(Instantiate(section.obstacles[sel], new Vector3(transform.position.x - 7.5f, transform.position.y, transform.position.z), section.obstacles[sel].transform.rotation), 45);
+        sel = UnityEngine.Random.Range(0, section.obstacles.Count);
+        Destroy(Instantiate(section.obstacles[sel], new Vector3(transform.position.x - 2.5f, transform.position.y, transform.position.z), section.obstacles[sel].transform.rotation), 45);
+        sel = UnityEngine.Random.Range(0, section.obstacles.Count);
+        Destroy(Instantiate(section.obstacles[sel], new Vector3(transform.position.x + 2.5f, transform.position.y, transform.position.z), section.obstacles[sel].transform.rotation), 45);
+        sel = UnityEngine.Random.Range(0, section.obstacles.Count);
+        Destroy(Instantiate(section.obstacles[sel], new Vector3(transform.position.x + 7.5f, transform.position.y, transform.position.z), section.obstacles[sel].transform.rotation), 45);
         //Spawn Border
         Destroy(Instantiate(section.border, new Vector3(transform.position.x + 20, -0.6f, 20f), section.border.transform.rotation), 45);
         //Skybox change
