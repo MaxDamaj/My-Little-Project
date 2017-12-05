@@ -48,8 +48,6 @@ public class MenuNavigation : MonoBehaviour {
         if (!IsSimulation) {
             CharsFMData pony = Database.Instance.GetCharFMInfo(Database.Instance.SelectedPony);
             RefreshPreviewMesh(pony);
-        } else {
-            ItemsController.Instance.HideItemWindow();
         }
         
     }

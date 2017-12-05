@@ -28,7 +28,8 @@ public class Skill : MonoBehaviour {
         Mana = 1,
         Stamina = 2,
         Speed = 3,
-        Damage = 4     //Taken damage. 1 by default
+        Damage = 4,     //Taken damage. 1 by default
+        Luck = 5
     };
 
     public enum Condition {

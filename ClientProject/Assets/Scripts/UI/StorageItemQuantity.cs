@@ -30,10 +30,14 @@ public class StorageItemQuantity : MonoBehaviour {
             quantity.text = "" + count;
         }
         if (count >= 1000) {
-            quantity.text = "" + Mathf.FloorToInt(count / 1000) + "k";
+            int v1 = Mathf.FloorToInt(count / 1000);
+            int v2 = Mathf.FloorToInt(count / 100) - v1*10;
+            quantity.text = "" + v1 + "." + v2 + "k";
         }
         if (count >= 1000000) {
-            quantity.text = "" + Mathf.FloorToInt(count / 1000000) + "M";
+            int v1 = Mathf.FloorToInt(count / 1e6f);
+            int v2 = Mathf.FloorToInt(count / 1e5f) - v1 * 10;
+            quantity.text = "" + v1 + "." + v2 + "M";
         }
         //Hide if inactive
         if (quantity.text == "") {

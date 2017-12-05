@@ -10,6 +10,7 @@ public class DBCharUpgrade : ScriptableObject {
 
     public List<CharUpgradeLine> HPUpgrade;
     public List<CharUpgradeLine> MPUpgrade;
+    public List<CharUpgradeLine> LuckUpgrade;
     public List<CharUpgradeLine> FurnaceUpgrade;
 
     [Serializable]
@@ -47,6 +48,9 @@ public class DBCharUpgrade : ScriptableObject {
             case Skill.StatType.Mana:
                 index = MPUpgrade.FindIndex(x => x.toValue > value);
                 return MPUpgrade[index];
+            case Skill.StatType.Luck:
+                index = LuckUpgrade.FindIndex(x => x.toValue > value);
+                return LuckUpgrade[index];
         }
         return HPUpgrade[0];
     }

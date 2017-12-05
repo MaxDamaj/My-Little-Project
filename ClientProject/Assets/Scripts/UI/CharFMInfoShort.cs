@@ -11,7 +11,7 @@ public class CharFMInfoShort : MonoBehaviour {
 
     public Text CharName;
     public Image CharIcon;
-    public Text HPText, MPText, SPDText;
+    public Text HPText, MPText, SPDText, LUCKText;
     public Text STMText;
     public GameObject priceTag;
     public UIStatUpgrade cost;
@@ -34,6 +34,7 @@ public class CharFMInfoShort : MonoBehaviour {
         HPText.text = "" + Character.HP;
         MPText.text = "" + Character.MP;
         SPDText.text = "" + Character.SPD;
+        LUCKText.text = "" + Character.LUCK+ "%";
         STMText.text = Mathf.RoundToInt(Character.STMCurrent) + "/" + Character.STMMax;
         if (Character.Rank >= 0) { priceTag.SetActive(false); } else { priceTag.SetActive(true); }
         if (cost != null) { cost.UpgradeCost(Character.costItems[0], Character.costItems[1], Character.costItems[2], Character.costPrises[0], Character.costPrises[1], Character.costPrises[2]); }

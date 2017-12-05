@@ -207,14 +207,13 @@ public class Bloom : PostEffectBase {
                 BlendFlares(rtFlares4, secondQuarterRezColor);
             } else {
 
-                //Vignette (0.975f, rtFlares4, rtFlares4);	
+                //Vignette (0.975f, rtFlares4, rtFlares4);
                 //DrawBorder(rtFlares4, screenBlend, 8);
 
                 float flareXRot = 1.0f * Mathf.Cos(flareRotation);
                 float flareyRot = 1.0f * Mathf.Sin(flareRotation);
 
                 float stretchWidth = (hollyStretchWidth * 1.0f / widthOverHeight) * oneOverBaseSize;
-                float stretchWidthY = hollyStretchWidth * oneOverBaseSize;
 
                 blurAndFlaresMaterial.SetVector("_Offsets", new Vector4(flareXRot, flareyRot, 0.0f, 0.0f));
                 blurAndFlaresMaterial.SetVector("_Threshhold", new Vector4(lensflareThreshhold, 1.0f, 0.0f, 0.0f));
@@ -256,11 +255,11 @@ public class Bloom : PostEffectBase {
                 }
 
                 if (lensflareMode == LensFlareStyle.Anamorphic)
-                    // anamorphic lens flares															
+                    // anamorphic lens flares
                     AddTo(1.0f, quarterRezColor, secondQuarterRezColor);
                 else {
 
-                    // "combined" lens flares													
+                    // "combined" lens flares
 
                     Vignette(1.0f, quarterRezColor, rtFlares4);
 

@@ -28,8 +28,6 @@ public class UsableItem {
     public List<string> costItems;
     public float[] costPrices;
     public float exitQuantity = 1;
-    public GameObject prefab;
-    public bool IsItem;
 
     public float GetCostItemQuantity(string title) {
         float value = 0;
@@ -135,11 +133,6 @@ public class Database : MonoBehaviour {
     public List<int> takenAchievements;
     public List<int> readenCodex;
     public int[] endRewardsEasy;
-
-    [Header("Items")]
-    public List<string> itemsInventory;
-    public List<string> itemsBelt;
-    public List<string> itemsFurnace;
 
     public delegate void RefreshArgs(); //variable for event values
     public static event RefreshArgs onRefresh; //Refresh event
@@ -309,6 +302,8 @@ public class Database : MonoBehaviour {
     }
     public void SetCharFMLuck(int id, float LUCK) {
         _freeModeChars[id].LUCK = LUCK;
+        if (_freeModeChars[id].LUCK < 0) _freeModeChars[id].LUCK = 0;
+        if (_freeModeChars[id].LUCK > 100) _freeModeChars[id].LUCK = 100;
         if (onRefresh != null) { onRefresh(); }
     }
     //Stamina

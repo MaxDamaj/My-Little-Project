@@ -66,7 +66,7 @@ public class UIParticleSystem : MaskableGraphic {
 #endif
 
             // automatically set scaling
-            _particleSystem.scalingMode = ParticleSystemScalingMode.Hierarchy;
+            //_particleSystem.scalingMode = ParticleSystemScalingMode.Hierarchy;
 
             _particles = null;
         }

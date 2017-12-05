@@ -31,7 +31,6 @@ public class BloomEditor : Editor {
     SerializedProperty flareColorC;
     SerializedProperty flareColorD;
 
-    SerializedProperty blurWidth;
     SerializedProperty lensFlareVignetteMask;
 
     void OnEnable() {
@@ -59,7 +58,6 @@ public class BloomEditor : Editor {
         flareColorB = serObj.FindProperty("flareColorB");
         flareColorC = serObj.FindProperty("flareColorC");
         flareColorD = serObj.FindProperty("flareColorD");
-        blurWidth = serObj.FindProperty("blurWidth");
         lensFlareVignetteMask = serObj.FindProperty("lensFlareVignetteMask");
 
         tweakMode = serObj.FindProperty("tweakMode");

@@ -22,6 +22,7 @@ public class EndModeController : MonoBehaviour {
     public Image[] SkillIcons;
     public Text stamina;
     public Text charName;
+    public Image charLuck;
 
     public Transform mainCamera;
     public Animator[] flashingUI;
@@ -122,8 +123,12 @@ public class EndModeController : MonoBehaviour {
         //Set HP and MP lines
         ponyHP.fillAmount = GlobalData.Instance.currentHP / _pony.HP;
         ponyMP.fillAmount = GlobalData.Instance.currentMP / _pony.MP;
+        charLuck.fillAmount = _pony.LUCK / 100f;
         //Set new maincamera x pos
         deltaCam = mainCamera.position.x;
+        //Low HP screen effects
+        mainCamera.GetComponent<ColorCorrectionCurves>().saturation = GlobalData.Instance.currentHP > _pony.HP / 2 ? 1 : GlobalData.Instance.currentHP / (_pony.HP / 2);
+        mainCamera.GetComponent<ScreenOverlay>().intensity = GlobalData.Instance.currentHP > _pony.HP / 2 ? 1 : (10 - 10*(GlobalData.Instance.currentHP / (_pony.HP / 2)));
         //KO screen draw
         if (GlobalData.Instance.currentHP <= 0) { ShowKOWindow(); }
         if (Database.Instance.GetCurrSTM(Database.Instance.SelectedPony) <= 0) { ShowSTMOutWindow(); }

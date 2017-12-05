@@ -23,7 +23,6 @@ public class UICodexController : MonoBehaviour {
         buttonBack.onClick.AddListener(delegate {
             UnityEngine.SceneManagement.SceneManager.LoadScene("menu");
         });
-        ItemsController.Instance.HideItemWindow();
         helpTip.SetActive(false);
         HideAllFields();
         //Show in first time

@@ -57,12 +57,6 @@ public class SaveParcer : MonoBehaviour {
         }
         saveFile.Add("");
 
-        saveFile.Add("--Items--");
-        saveFile.Add(SaveMultiline(Database.Instance.itemsInventory, "itemsInventory"));
-        saveFile.Add(SaveMultiline(Database.Instance.itemsBelt, "itemsBelt"));
-        saveFile.Add(SaveMultiline(Database.Instance.itemsFurnace, "itemsFurnace"));
-        saveFile.Add("");
-
         saveFile.Add("--Challenges--");
         saveFile.Add(SaveMultiline(Database.Instance.passedChallenges, "passedChallenges"));
         saveFile.Add("");
@@ -130,11 +124,6 @@ public class SaveParcer : MonoBehaviour {
         for (int i = 0; i < Database.Instance.ArrayItemsGetLenght(); i++) {
             Database.Instance.SetItemQuantity(i, LoadLineFloat(saveFile, Database.Instance.GetItemTitle(i), Database.Instance.GetItemQuantity(i)));
         }
-
-        //Inventory
-        Database.Instance.itemsInventory = LoadMultiline(saveFile, "itemsInventory", Database.Instance.itemsInventory);
-        Database.Instance.itemsBelt = LoadMultiline(saveFile, "itemsBelt", Database.Instance.itemsBelt);
-        Database.Instance.itemsFurnace = LoadMultiline(saveFile, "itemsFurnace", Database.Instance.itemsFurnace);
 
         //Challenges
         Database.Instance.passedChallenges = LoadMultilineInt(saveFile, "passedChallenges", Database.Instance.passedChallenges);

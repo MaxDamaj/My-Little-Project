@@ -13,14 +13,11 @@ public class UIItemsCraft : MonoBehaviour {
     public List<Transform> furnace;
     public Text[] itemsCount;
     public Transform furnaseResult;
-    public Transform inventory;
-    public Transform[] belt;
     public Text warningText;
     public UIStatUpgrade upgradeStat;
     public Button recipeButton;
     public Image[] recipeItemSamples;
 
-    private ItemsController IC;
     private bool IsEnoughItem = false;
     private static UIItemsCraft _uiItemCraft;
 
@@ -36,23 +33,6 @@ public class UIItemsCraft : MonoBehaviour {
     }
 
     void Start() {
-        IC = FindObjectOfType<ItemsController>();
-
-        //Move inused items in furnace
-        if (IC.inventory.childCount > 0) {
-            int count = IC.inventory.childCount;
-            for (int i = 0; i < count; i++) {
-                IC.inventory.GetChild(0).SetParent(inventory);
-            }
-        }
-        for (int i = 0; i < IC.belt.GetLength(0); i++) {
-            if (IC.belt[i].childCount > 0) IC.belt[i].GetChild(0).SetParent(belt[i]);
-        }
-        for (int i = 0; i < IC.furnace.GetLength(0); i++) {
-            if (IC.furnace[i].childCount > 0) IC.furnace[i].GetChild(0).SetParent(furnace[i]);
-        }
-        IC.itemWindow.anchoredPosition = new Vector2(0, 200);
-
         meltButton.onClick.AddListener(Melting);
         upgradeButton.onClick.AddListener(Upgrade);
         warningText.gameObject.SetActive(false);
@@ -63,36 +43,6 @@ public class UIItemsCraft : MonoBehaviour {
 
     void OnDestroy() {
         Database.onRefresh -= RefreshUI;
-        if (IC == null) return;
-        //Move all items in itemController
-        IC.itemWindow.anchoredPosition = new Vector2(0, 0);
-        if (inventory.childCount > 0) {
-            int count = inventory.childCount;
-            for (int i = 0; i < count; i++) {
-                string item = inventory.GetChild(i).GetComponent<CraftComponent>().title;
-                GameObject tmp = Instantiate(Database.Instance.GetUsableItem(item).prefab);
-                tmp.transform.SetParent(IC.inventory);
-                tmp.transform.localScale = Vector3.one;
-            }
-        }
-        for (int i = 0; i < belt.GetLength(0); i++) {
-            if (belt[i].childCount > 0) {
-                string item = belt[i].GetChild(0).GetComponent<CraftComponent>().title;
-                GameObject tmp = Instantiate(Database.Instance.GetUsableItem(item).prefab);
-                tmp.transform.SetParent(IC.belt[i]);
-                tmp.transform.localScale = Vector3.one;
-            }
-        }
-        for (int i = 0; i < furnace.Count; i++) {
-            if (furnace[i].childCount > 0) {
-                if (furnace[i].GetChild(0).GetComponent<CraftComponent>().IsItem) {
-                    string item = furnace[i].GetChild(0).GetComponent<CraftComponent>().title;
-                    GameObject tmp = Instantiate(Database.Instance.GetUsableItem(item).prefab);
-                    tmp.transform.SetParent(IC.furnace[i]);
-                    tmp.transform.localScale = Vector3.one;
-                }
-            }
-        }
     }
 
     #endregion
@@ -116,7 +66,7 @@ public class UIItemsCraft : MonoBehaviour {
             itemsCount[i].text = "";
         }
 
-        if (item.Count < 2) return;     
+        if (item.Count < 2) return;
 
         UsableItem result = null;
         if (item.Count == 2) { result = Database.Instance.GetUsableItem(item[0].title, item[1].title); }
@@ -169,10 +119,6 @@ public class UIItemsCraft : MonoBehaviour {
             ShowNotification("Take your created item from furnace first!", Database.COLOR_RED);
             return;
         }
-        if (inventory.childCount >= 7 && result.IsItem) {
-            ShowNotification("You can store only 7 items in inventory!", Database.COLOR_RED);
-            return;
-        }
 
         //Create item
         foreach (var res in item) {
@@ -182,18 +128,10 @@ public class UIItemsCraft : MonoBehaviour {
                 Destroy(res.gameObject);
             }
         }
-        if (result.IsItem) {
-            GameObject tmp = Instantiate(result.prefab);
-            tmp.transform.SetParent(furnaseResult);
-            tmp.transform.localScale = Vector3.one;
-            Database.Instance.craftedComps++;
-            AchievementsController.Instance.CheckStates();
-        } else {
-            Database.Instance.IncreaseItemQuantity(result.ItemName, result.exitQuantity);
-            Database.Instance.craftedComps++;
-            AchievementsController.Instance.CheckStates();
-            ShowNotification(result.ItemName + " crafted!", Database.COLOR_GREEN);
-        }
+        Database.Instance.IncreaseItemQuantity(result.ItemName, result.exitQuantity);
+        Database.Instance.craftedComps++;
+        AchievementsController.Instance.CheckStates();
+        ShowNotification(result.ItemName + " crafted!", Database.COLOR_GREEN);
 
 
     }
@@ -202,7 +140,7 @@ public class UIItemsCraft : MonoBehaviour {
         if (IsEnoughItem) {
             Database.Instance.furnaceSlots++;
             craftTable.SetRecipes();
-            var upgrade = DBCharUpgrade.Instance.FurnaceUpgrade[Database.Instance.furnaceSlots-2];
+            var upgrade = DBCharUpgrade.Instance.FurnaceUpgrade[Database.Instance.furnaceSlots - 2];
             Database.Instance.IncreaseItemQuantity(upgrade.res1, -upgrade.quan1);
             Database.Instance.IncreaseItemQuantity(upgrade.res2, -upgrade.quan2);
             RefreshUI();

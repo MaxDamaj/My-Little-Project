@@ -19,7 +19,12 @@ public class UISlotSpinning : MonoBehaviour {
     private bool isSpinning;
     private bool trigger;
 
+    private string forceStopIcon = "";
+    private int forceStopDigit = -1;
+
     private SpinValue spinValue;
+
+    #region API
 
     void Start() {
         digit.text = "" + Random.Range(0, 10);
@@ -35,14 +40,46 @@ public class UISlotSpinning : MonoBehaviour {
                 icon.rectTransform.anchoredPosition = new Vector2(0, icon.rectTransform.anchoredPosition.y - speed);
                 if (icon.rectTransform.anchoredPosition.y <= -50) {
                     icon.rectTransform.anchoredPosition = new Vector2(0, icon.rectTransform.anchoredPosition.y + 300);
-                    if (trigger) { trigger = false; isSpinning = false; }
+                    CheckStopState();
                 }
+            }
+        }
+    }
+
+    #endregion
+
+    void CheckStopState() {
+        if (trigger) {
+            if (forceStopIcon != "") {
+                if (forceStopIcon == GetSpinValue().spinIcon) {
+                    trigger = false; isSpinning = false;
+                }
+            } else {
+                trigger = false; isSpinning = false;
+            }
+
+            if (forceStopDigit != -1) {
+                digit.text = forceStopDigit.ToString();
+                forceStopDigit = -1;
             }
         }
     }
 
     public void StopSpinning() {
         trigger = true;
+    }
+    public void StopSpinning(string Icon) {
+        trigger = true;
+        forceStopIcon = Icon;
+    }
+    public void StopSpinning(int Digit) {
+        trigger = true;
+        forceStopDigit = Digit;
+    }
+    public void StopSpinning(string Icon, int Digit) {
+        trigger = true;
+        forceStopIcon = Icon;
+        forceStopDigit = Digit;
     }
 
     public void StartSpinning() {
@@ -55,5 +92,8 @@ public class UISlotSpinning : MonoBehaviour {
         spinValue.spinIcon = icons.Find(x => x.rectTransform.localPosition.y < 10 && x.rectTransform.localPosition.y > -10).name;
         spinValue.spinNumber = int.Parse(digit.text);
         return spinValue;
+    }
+    public bool IsSlotSpinning() {
+        return isSpinning;
     }
 }
