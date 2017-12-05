@@ -83,25 +83,32 @@ public class AchievementsController : MonoBehaviour {
 
     public void SortAchievements() {
         List<UIAchievement> achList = new List<UIAchievement>();
+        achList.AddRange(container.GetComponentsInChildren<UIAchievement>());
+        List<UIAchievement> achTaken = achList.FindAll(x => x.progressBar.fillAmount == 1);
+        foreach (var ach in achList) {
+            ach.transform.SetParent(container.parent);
+        }
+        achList.RemoveAll(x => x.progressBar.fillAmount == 1);
 
         //Show inprogress achievements first
-        achList.AddRange(container.GetComponentsInChildren<UIAchievement>());
-        achList.RemoveAll(x => x.progressBar.fillAmount == 1);
-        float maxValue = 0;
-        for (int i = 0; i < achList.Count; i++) {
-            if (achList[i].progressBar.fillAmount > maxValue) {
-                maxValue = achList[i].progressBar.fillAmount;
-                achList[i].transform.SetAsFirstSibling();
+        while (achList.Count > 0) {
+            float maxValue = 0;
+            int index = 0;
+            for (int i = 0; i < achList.Count; i++) {
+                if (achList[i].progressBar.fillAmount > maxValue) {
+                    maxValue = achList[i].progressBar.fillAmount;
+                    index = i;
+                }
             }
+            achList[index].transform.SetParent(container);
+            achList.Remove(achList[index]);
         }
 
         //Show taken achievements last
-        achList = new List<UIAchievement>();
-        achList.AddRange(container.GetComponentsInChildren<UIAchievement>());
-        achList.RemoveAll(x => x.progressBar.fillAmount < 1);
-        for (int i = 0; i < achList.Count; i++) {
-            achList[i].transform.SetAsLastSibling();
+        foreach(var ach in achTaken) {
+            ach.transform.SetParent(container);
         }
+
     }
 
 

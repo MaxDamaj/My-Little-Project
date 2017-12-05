@@ -46,16 +46,16 @@ public class CharFMInfoFull : MonoBehaviour {
         HPText.text = "" + Character.HP;
         MPText.text = "" + Character.MP;
         SPDText.text = "" + Character.SPD;
-        LUCKText.text = "" + Character.LUCK + "%";
+        LUCKText.text = "" + Character.LUCK;
         STMText.text = Mathf.RoundToInt(Character.STMCurrent) + "/" + Character.STMMax;
         //Show Upgrade values
-        upgText[0].text = "+" + 0.5f + 0.5f * Character.Rank / 10;
-        upgText[1].text = "+" + 0.5f + 0.5f * Character.Rank / 10;
+        upgText[0].text = "+0.5";
+        upgText[1].text = "+0.5";
         if (Character.LUCK > 90) {
             upgButton[2].transform.parent.gameObject.SetActive(false);
         } else {
             upgButton[2].transform.parent.gameObject.SetActive(true);
-            upgText[2].text = "+10%";
+            upgText[2].text = "+10";
         }
         //------------
         _uiSkills.RefreshUI();

@@ -57,13 +57,8 @@ public class PostEffectBase : MonoBehaviour {
         return CheckSupport(false);
     }
 
-    bool CheckResources() {
-        Debug.LogWarning("CheckResources () for " + this.ToString() + " should be overwritten.");
-        return isSupported;
-    }
-
     void Start() {
-        CheckResources();
+
     }
 
     public bool CheckSupport(bool needDepth) {

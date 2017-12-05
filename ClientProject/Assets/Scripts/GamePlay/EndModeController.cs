@@ -172,6 +172,7 @@ public class EndModeController : MonoBehaviour {
             pauseText.text = "Resume";
             retireButton.gameObject.SetActive(true);
             SetInfoScreenState("", true);
+            SoundManager.Instance.SetMuteState("a_run", true);
             Time.timeScale = 0f;
         }
     }
@@ -189,6 +190,7 @@ public class EndModeController : MonoBehaviour {
                 }
             }
         }
+        SoundManager.Instance.SetMuteState("a_run", true);
         UnityEngine.SceneManagement.SceneManager.LoadScene("menu");
     }
 

@@ -16,12 +16,13 @@ public class SlotMachine : MonoBehaviour {
     void Start() {
         character = Database.Instance.GetCharFMInfo(Database.Instance.SelectedPony);
         rewardText.text = "";
-        foreach (var slot in slots) {
-            slot.StartSpinning();
+        if (character.LUCK > 0) {
+            foreach (var slot in slots) {
+                slot.StartSpinning();
+            }
+            IEnumerator action = Action();
+            StartCoroutine(action);
         }
-        IEnumerator action = Action();
-        StartCoroutine(action);
-
     }
 
     IEnumerator Action() {
@@ -59,6 +60,7 @@ public class SlotMachine : MonoBehaviour {
             yield return new WaitForSeconds(2f);
             rewardText.text = "";
             Database.Instance.SetCharFMLuck(Database.Instance.SelectedPony, character.LUCK - 1);
+            if (character.LUCK <= 0) break;
             foreach (var slot in slots) {
                 slot.StartSpinning();
             }

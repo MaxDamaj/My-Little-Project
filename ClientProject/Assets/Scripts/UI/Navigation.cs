@@ -8,11 +8,8 @@ public class Navigation : MonoBehaviour {
     public UIWindow CurrPanel;      //Current panel
     public UIAction specialAction;  //Is button execute special action
 
-    private Button NowButton;       //Current button
-
     void Start() {
-        NowButton = gameObject.GetComponent<Button>();
-        NowButton.onClick.AddListener(Activation);
+        gameObject.GetComponent<Button>().onClick.AddListener(Activation);
     }
 
     void Activation() {

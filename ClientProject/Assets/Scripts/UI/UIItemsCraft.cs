@@ -139,7 +139,6 @@ public class UIItemsCraft : MonoBehaviour {
     void Upgrade() {
         if (IsEnoughItem) {
             Database.Instance.furnaceSlots++;
-            craftTable.SetRecipes();
             var upgrade = DBCharUpgrade.Instance.FurnaceUpgrade[Database.Instance.furnaceSlots - 2];
             Database.Instance.IncreaseItemQuantity(upgrade.res1, -upgrade.quan1);
             Database.Instance.IncreaseItemQuantity(upgrade.res2, -upgrade.quan2);
