@@ -46,7 +46,7 @@ public class SplashLoading : MonoBehaviour {
         DontDestroyOnLoad(tmp);
 
         //Set random character info
-        CharsFMData character = Database.Instance.GetCharFMInfo(Random.Range(0, 3)); //Only first three characters
+        CharsFMData character = Database.Instance.GetCharFMInfo(Random.Range(0, 6)); //Some first characters
         charIcon.sprite = character.CharPreviewIcon;
         charText.text = character.CharName;
         charText.color = character.CharColor;

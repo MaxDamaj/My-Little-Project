@@ -139,7 +139,7 @@ public class UIItemsCraft : MonoBehaviour {
     void Upgrade() {
         if (IsEnoughItem) {
             Database.Instance.furnaceSlots++;
-            var upgrade = DBCharUpgrade.Instance.FurnaceUpgrade[Database.Instance.furnaceSlots - 2];
+            var upgrade = DBCharUpgrade.Instance.FurnaceUpgrade.Find(x => x.toValue == Database.Instance.furnaceSlots);
             Database.Instance.IncreaseItemQuantity(upgrade.res1, -upgrade.quan1);
             Database.Instance.IncreaseItemQuantity(upgrade.res2, -upgrade.quan2);
             RefreshUI();
