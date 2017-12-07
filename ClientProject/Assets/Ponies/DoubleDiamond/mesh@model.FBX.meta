@@ -1,0 +1,525 @@
+fileFormatVersion: 2
+guid: c2f053956b679e545adae50d26b21ae5
+timeCreated: 1512669316
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: body
+    100002: cutiemark
+    100004: Ear
+    100006: ear
+    100008: eye
+    100010: FL_01
+    100012: FLLeg
+    100014: flLeg
+    100016: FR_01
+    100018: FRLeg
+    100020: frLeg
+    100022: googles
+    100024: Head
+    100026: head
+    100028: Hip
+    100030: mane1
+    100032: Mane1_1
+    100034: Mane1_2
+    100036: mane2
+    100038: Mane2_1
+    100040: Mane2_2
+    100042: mane3
+    100044: Mane3_1
+    100046: Mane3_2
+    100048: //RootNode
+    100050: mouth
+    100052: Neck
+    100054: pony
+    100056: RL_01
+    100058: RL_02
+    100060: RLLeg
+    100062: rlLeg
+    100064: RR_01
+    100066: RR_02
+    100068: RRLeg
+    100070: rrLeg
+    100072: scarf
+    100074: Tail
+    100076: tail
+    100078: Tail_01
+    100080: Tail_02
+    400000: body
+    400002: cutiemark
+    400004: Ear
+    400006: ear
+    400008: eye
+    400010: FL_01
+    400012: FLLeg
+    400014: flLeg
+    400016: FR_01
+    400018: FRLeg
+    400020: frLeg
+    400022: googles
+    400024: Head
+    400026: head
+    400028: Hip
+    400030: mane1
+    400032: Mane1_1
+    400034: Mane1_2
+    400036: mane2
+    400038: Mane2_1
+    400040: Mane2_2
+    400042: mane3
+    400044: Mane3_1
+    400046: Mane3_2
+    400048: //RootNode
+    400050: mouth
+    400052: Neck
+    400054: pony
+    400056: RL_01
+    400058: RL_02
+    400060: RLLeg
+    400062: rlLeg
+    400064: RR_01
+    400066: RR_02
+    400068: RRLeg
+    400070: rrLeg
+    400072: scarf
+    400074: Tail
+    400076: tail
+    400078: Tail_01
+    400080: Tail_02
+    4300000: body
+    4300002: flLeg
+    4300004: frLeg
+    4300006: ear
+    4300008: rlLeg
+    4300010: rrLeg
+    4300012: eye
+    4300014: mouth
+    4300016: cutiemark
+    4300018: head
+    4300020: tail
+    4300022: mane1
+    4300024: mane2
+    4300026: mane3
+    4300028: scarf
+    4300030: googles
+    7400000: idle
+    7400002: run
+    7400004: jump
+    9500000: //RootNode
+    13700000: body
+    13700002: cutiemark
+    13700004: ear
+    13700006: eye
+    13700008: flLeg
+    13700010: frLeg
+    13700012: googles
+    13700014: head
+    13700016: mane1
+    13700018: mane2
+    13700020: mane3
+    13700022: mouth
+    13700024: rlLeg
+    13700026: rrLeg
+    13700028: scarf
+    13700030: tail
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hip
+        weight: 1
+      - path: Hip/FLLeg
+        weight: 1
+      - path: Hip/FLLeg/FL_01
+        weight: 1
+      - path: Hip/FRLeg
+        weight: 1
+      - path: Hip/FRLeg/FR_01
+        weight: 1
+      - path: Hip/Neck
+        weight: 1
+      - path: Hip/Neck/Head
+        weight: 1
+      - path: Hip/Neck/Head/Ear
+        weight: 1
+      - path: Hip/Neck/Head/Mane1_1
+        weight: 1
+      - path: Hip/Neck/Head/Mane1_1/Mane1_2
+        weight: 1
+      - path: Hip/Neck/Head/Mane2_1
+        weight: 1
+      - path: Hip/Neck/Head/Mane2_1/Mane2_2
+        weight: 1
+      - path: Hip/Neck/Head/Mane3_1
+        weight: 1
+      - path: Hip/Neck/Head/Mane3_1/Mane3_2
+        weight: 1
+      - path: Hip/RLLeg
+        weight: 1
+      - path: Hip/RLLeg/RL_01
+        weight: 1
+      - path: Hip/RLLeg/RL_01/RL_02
+        weight: 1
+      - path: Hip/RRLeg
+        weight: 1
+      - path: Hip/RRLeg/RR_01
+        weight: 1
+      - path: Hip/RRLeg/RR_01/RR_02
+        weight: 1
+      - path: Hip/Tail
+        weight: 1
+      - path: Hip/Tail/Tail_01
+        weight: 1
+      - path: Hip/Tail/Tail_01/Tail_02
+        weight: 1
+      - path: pony
+        weight: 1
+      - path: pony/body
+        weight: 1
+      - path: pony/cutiemark
+        weight: 1
+      - path: pony/ear
+        weight: 1
+      - path: pony/eye
+        weight: 1
+      - path: pony/flLeg
+        weight: 1
+      - path: pony/frLeg
+        weight: 1
+      - path: pony/googles
+        weight: 1
+      - path: pony/head
+        weight: 1
+      - path: pony/mane1
+        weight: 1
+      - path: pony/mane2
+        weight: 1
+      - path: pony/mane3
+        weight: 1
+      - path: pony/mouth
+        weight: 1
+      - path: pony/rlLeg
+        weight: 1
+      - path: pony/rrLeg
+        weight: 1
+      - path: pony/scarf
+        weight: 1
+      - path: pony/tail
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: run
+      takeName: Take 001
+      firstFrame: 102
+      lastFrame: 142
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hip
+        weight: 1
+      - path: Hip/FLLeg
+        weight: 1
+      - path: Hip/FLLeg/FL_01
+        weight: 1
+      - path: Hip/FRLeg
+        weight: 1
+      - path: Hip/FRLeg/FR_01
+        weight: 1
+      - path: Hip/Neck
+        weight: 1
+      - path: Hip/Neck/Head
+        weight: 1
+      - path: Hip/Neck/Head/Ear
+        weight: 1
+      - path: Hip/Neck/Head/Mane1_1
+        weight: 1
+      - path: Hip/Neck/Head/Mane1_1/Mane1_2
+        weight: 1
+      - path: Hip/Neck/Head/Mane2_1
+        weight: 1
+      - path: Hip/Neck/Head/Mane2_1/Mane2_2
+        weight: 1
+      - path: Hip/Neck/Head/Mane3_1
+        weight: 1
+      - path: Hip/Neck/Head/Mane3_1/Mane3_2
+        weight: 1
+      - path: Hip/RLLeg
+        weight: 1
+      - path: Hip/RLLeg/RL_01
+        weight: 1
+      - path: Hip/RLLeg/RL_01/RL_02
+        weight: 1
+      - path: Hip/RRLeg
+        weight: 1
+      - path: Hip/RRLeg/RR_01
+        weight: 1
+      - path: Hip/RRLeg/RR_01/RR_02
+        weight: 1
+      - path: Hip/Tail
+        weight: 1
+      - path: Hip/Tail/Tail_01
+        weight: 1
+      - path: Hip/Tail/Tail_01/Tail_02
+        weight: 1
+      - path: pony
+        weight: 1
+      - path: pony/body
+        weight: 1
+      - path: pony/cutiemark
+        weight: 1
+      - path: pony/ear
+        weight: 1
+      - path: pony/eye
+        weight: 1
+      - path: pony/flLeg
+        weight: 1
+      - path: pony/frLeg
+        weight: 1
+      - path: pony/googles
+        weight: 1
+      - path: pony/head
+        weight: 1
+      - path: pony/mane1
+        weight: 1
+      - path: pony/mane2
+        weight: 1
+      - path: pony/mane3
+        weight: 1
+      - path: pony/mouth
+        weight: 1
+      - path: pony/rlLeg
+        weight: 1
+      - path: pony/rrLeg
+        weight: 1
+      - path: pony/scarf
+        weight: 1
+      - path: pony/tail
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: jump
+      takeName: Take 001
+      firstFrame: 144
+      lastFrame: 163
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hip
+        weight: 1
+      - path: Hip/FLLeg
+        weight: 1
+      - path: Hip/FLLeg/FL_01
+        weight: 1
+      - path: Hip/FRLeg
+        weight: 1
+      - path: Hip/FRLeg/FR_01
+        weight: 1
+      - path: Hip/Neck
+        weight: 1
+      - path: Hip/Neck/Head
+        weight: 1
+      - path: Hip/Neck/Head/Ear
+        weight: 1
+      - path: Hip/Neck/Head/Mane1_1
+        weight: 1
+      - path: Hip/Neck/Head/Mane1_1/Mane1_2
+        weight: 1
+      - path: Hip/Neck/Head/Mane2_1
+        weight: 1
+      - path: Hip/Neck/Head/Mane2_1/Mane2_2
+        weight: 1
+      - path: Hip/Neck/Head/Mane3_1
+        weight: 1
+      - path: Hip/Neck/Head/Mane3_1/Mane3_2
+        weight: 1
+      - path: Hip/RLLeg
+        weight: 1
+      - path: Hip/RLLeg/RL_01
+        weight: 1
+      - path: Hip/RLLeg/RL_01/RL_02
+        weight: 1
+      - path: Hip/RRLeg
+        weight: 1
+      - path: Hip/RRLeg/RR_01
+        weight: 1
+      - path: Hip/RRLeg/RR_01/RR_02
+        weight: 1
+      - path: Hip/Tail
+        weight: 1
+      - path: Hip/Tail/Tail_01
+        weight: 1
+      - path: Hip/Tail/Tail_01/Tail_02
+        weight: 1
+      - path: pony
+        weight: 1
+      - path: pony/body
+        weight: 1
+      - path: pony/cutiemark
+        weight: 1
+      - path: pony/ear
+        weight: 1
+      - path: pony/eye
+        weight: 1
+      - path: pony/flLeg
+        weight: 1
+      - path: pony/frLeg
+        weight: 1
+      - path: pony/googles
+        weight: 1
+      - path: pony/head
+        weight: 1
+      - path: pony/mane1
+        weight: 1
+      - path: pony/mane2
+        weight: 1
+      - path: pony/mane3
+        weight: 1
+      - path: pony/mouth
+        weight: 1
+      - path: pony/rlLeg
+        weight: 1
+      - path: pony/rrLeg
+        weight: 1
+      - path: pony/scarf
+        weight: 1
+      - path: pony/tail
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

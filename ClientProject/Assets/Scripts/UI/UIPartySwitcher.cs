@@ -39,8 +39,12 @@ public class UIPartySwitcher : MonoBehaviour {
     public void ChangeCharacter(int type) {
         CharsFMData pony = Database.Instance.GetCharFMInfo(Database.Instance.PartyPony[type]);
         if (Database.Instance.SelectedPony == Database.Instance.PartyPony[type]) {
-            MenuNavigation.Instance.HideLeftPanels();
-            win_anim.SetBool("trigger", !win_anim.GetBool("trigger"));
+            if (win_anim.GetBool("trigger")) {
+                MenuNavigation.Instance.HideLeftPanels();
+            } else {
+                MenuNavigation.Instance.HideLeftPanels();
+                win_anim.SetBool("trigger", true);
+            }
         }
         navi.RefreshPreviewMesh(pony);
         Database.Instance.SelectedPony = Database.Instance.PartyPony[type];

@@ -334,7 +334,8 @@ public class SkillController : MonoBehaviour {
 
     //Special Action
     void OnTriggerEnter(Collider coll) {
-        if ((int)Character.CharSkills[0].passiveType == 0 && "EoH_" + Character.CharSkills[0].item == coll.gameObject.tag) {
+        if (coll.gameObject.GetComponent<OnDestroyFX>() == null) return;
+        if ((int)Character.CharSkills[0].passiveType == 0 && Character.CharSkills[0].item == coll.gameObject.GetComponent<OnDestroyFX>().objectType) {
             Character.CharSkills[0].ItemMultiplier(Character.CharSkills[0].item, Character.CharSkills[0].multiplier - 1);
             if (fx[0] != null) {
                 fx[0].SetActive(true);
@@ -342,9 +343,20 @@ public class SkillController : MonoBehaviour {
                 StartCoroutine(fxDisable);
             }
         }
+        if ((int)Character.CharSkills[0].passiveType == 1 && Character.CharSkills[0].item == "EoH" && coll.name.Contains("eoh")) {
+            //pick random element from array
+            string it = Character.CharSkills[0].items[Mathf.RoundToInt(Random.Range(0.0f, Character.CharSkills[0].items.GetLength(0) - 1.0f))];
+            //increase element quantity and show popup
+            float rnd = Random.Range(0.0f, 1.0f);
+            if (rnd < Character.CharSkills[0].chance) {
+                Character.CharSkills[0].ItemMultiplier(it, Character.CharSkills[0].multiplier);
+                PickupPopup.Instance.ShowPopupInfo(it);
+            }
+        }
     }
     void OnCollisionEnter(Collision coll) {
-        if ((int)Character.CharSkills[0].passiveType == 1 && Character.CharSkills[0].item == coll.gameObject.tag) {
+        if (coll.gameObject.GetComponent<OnDestroyFX>() == null) return;
+        if ((int)Character.CharSkills[0].passiveType == 1 && Character.CharSkills[0].item == coll.gameObject.GetComponent<OnDestroyFX>().objectType) {
             //pick random element from array
             string it = Character.CharSkills[0].items[Mathf.RoundToInt(Random.Range(0.0f, Character.CharSkills[0].items.GetLength(0) - 1.0f))];
             //increase element quantity and show popup
