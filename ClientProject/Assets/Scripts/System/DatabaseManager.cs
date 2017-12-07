@@ -46,6 +46,7 @@ public class DatabaseManager : MonoBehaviour {
         Database.Instance.timeSpan = (int)elapsedSpan.TotalSeconds - Database.Instance.timeSpan;
         //Characters
         parser.LoadCharData();
+        SetStoryLevel();
     }
 
     //Save State
@@ -62,6 +63,12 @@ public class DatabaseManager : MonoBehaviour {
     //Clear State
     public void ClearState() {
         parser.ClearFile();
+    }
+
+    public void SetStoryLevel() {
+        if (Database.Instance.GetItemQuantity("Cyclotrone") > 0) Database.Instance.storyLevel = 1;
+        if (Database.Instance.GetItemQuantity("Generator") > 0) Database.Instance.storyLevel = 2;
+        if (Database.Instance.GetItemQuantity("Static Cells Block") > 0) Database.Instance.storyLevel = 3;
     }
 
     void OnApplicationQuit() {

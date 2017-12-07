@@ -24,10 +24,11 @@ public class StorageData {
 [Serializable]
 public class UsableItem {
     public string ItemName;
-    public string Description;
     public List<string> costItems;
     public float[] costPrices;
     public float exitQuantity = 1;
+    public bool isSinglePart;
+    public int toCraftStateValue;
 
     public float GetCostItemQuantity(string title) {
         float value = 0;

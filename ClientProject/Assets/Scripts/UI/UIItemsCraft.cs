@@ -119,6 +119,14 @@ public class UIItemsCraft : MonoBehaviour {
             ShowNotification("Take your created item from furnace first!", Database.COLOR_RED);
             return;
         }
+        if (result.isSinglePart && Database.Instance.GetItemQuantity(result.ItemName) > 0) {
+            ShowNotification("You can't create more than one time machine part!", Database.COLOR_RED);
+            return;
+        }
+        if (result.toCraftStateValue > Database.Instance.storyLevel) {
+            ShowNotification("Create previous time machine parts first!", Database.COLOR_RED);
+            return;
+        }
 
         //Create item
         foreach (var res in item) {
@@ -132,7 +140,7 @@ public class UIItemsCraft : MonoBehaviour {
         Database.Instance.craftedComps++;
         AchievementsController.Instance.CheckStates();
         ShowNotification(result.ItemName + " crafted!", Database.COLOR_GREEN);
-
+        FindObjectOfType<DatabaseManager>().SetStoryLevel();
 
     }
 

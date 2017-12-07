@@ -48,7 +48,6 @@ public class SaveParcer : MonoBehaviour {
         saveFile.Add("obstaclesNonDamage:" + Database.Instance.obstNonDamage);
         saveFile.Add("enduranceDistanceEasy:" + Database.Instance.distEndEasy);
         saveFile.Add("craftedComponents:" + Database.Instance.craftedComps);
-        saveFile.Add("storyLevel:" + Database.Instance.storyLevel);
         saveFile.Add("");
 
         saveFile.Add("--Materials--");
@@ -118,7 +117,6 @@ public class SaveParcer : MonoBehaviour {
         Database.Instance.obstNonDamage = LoadLineInt(saveFile, "obstaclesNonDamage", Database.Instance.obstNonDamage);
         Database.Instance.distEndEasy = LoadLineInt(saveFile, "enduranceDistanceEasy", Database.Instance.distEndEasy);
         Database.Instance.craftedComps = LoadLineInt(saveFile, "craftedComponents", Database.Instance.craftedComps);
-        Database.Instance.storyLevel = LoadLineInt(saveFile, "storyLevel", Database.Instance.storyLevel);
 
         //Materials
         for (int i = 0; i < Database.Instance.ArrayItemsGetLenght(); i++) {
