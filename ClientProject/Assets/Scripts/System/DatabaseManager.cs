@@ -5,16 +5,12 @@ using System;
 
 public class DatabaseManager : MonoBehaviour {
 
-    [Header("Items Containers")]
-    public Transform itemsInventory;
-    public Transform[] itemsBelt;
-    public Transform[] itemsFurnace;
-
     private SaveParcer parser;
 
     void Start() {
         parser = GetComponent<SaveParcer>();
         MusicManager.Instance.SetFolder("Music/Menu", 0);
+        GlobalData.Instance.gameState = GameModeState.MainMenu;
         if (!Database.Instance.IsLoaded) {
             LoadState();
             Database.Instance.IsLoaded = true;

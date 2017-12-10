@@ -57,6 +57,7 @@ public class CharsFMData {
     public float MPRecovery;
     public GameObject PreviewPrefab;
     public GameObject GamePlayPrefab;
+    public GameObject FreePlayPrefab;
     public Skill[] CharSkills;
     public string[] costItems;
     public float[] costPrises;
@@ -79,6 +80,7 @@ public class CharsFMData {
         MPRecovery = character.MPRecovery;
         PreviewPrefab = character.PreviewPrefab;
         GamePlayPrefab = character.GamePlayPrefab;
+        FreePlayPrefab = character.FreePlayPrefab;
         CharSkills = character.CharSkills;
         costItems = character.costItems;
         costPrises = character.costPrises;

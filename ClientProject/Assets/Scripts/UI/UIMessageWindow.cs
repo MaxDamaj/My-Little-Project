@@ -93,7 +93,7 @@ public class UIMessageWindow : MonoBehaviour {
                     Database.Instance.IncreaseItemQuantity(item.ItemName, -item.ItemQuantity);
                 }
                 GlobalData.Instance.nowChallenge = ID;
-                UnityEngine.SceneManagement.SceneManager.LoadScene("road_challenge");
+                UnityEngine.SceneManagement.SceneManager.LoadScene("freemode");
                 break;
             case UIAction.returnToEquestria:
                 UnityEngine.SceneManagement.SceneManager.LoadScene("menu");

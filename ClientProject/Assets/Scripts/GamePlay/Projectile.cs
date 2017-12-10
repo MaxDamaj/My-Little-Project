@@ -12,7 +12,7 @@ public class Projectile : MonoBehaviour {
 
 
     void Start() {
-        GetComponent<Rigidbody>().AddForce(force);
+        GetComponent<Rigidbody>().AddRelativeForce(force);
     }
 
 

@@ -24,7 +24,7 @@ public class ChallModeController : MonoBehaviour {
         Invoke("FindPony", 0.4f);
         challenge = DBC.GetChallenge(GlobalData.Instance.nowChallenge);
         IsComplete = false;
-        finishLine.transform.position = new Vector3(challenge.distance / 2, 0f, 0f);
+        //finishLine.transform.position = new Vector3(challenge.distance / 2, 0f, 0f);
     }
 
     void FindPony() {
@@ -41,14 +41,14 @@ public class ChallModeController : MonoBehaviour {
 
     void Update() {
         if (player != null) {
-            _emc.distance.text = "" + Mathf.RoundToInt(player.position.x * 2) + "/" + challenge.distance;
+            //_emc.distance.text = "" + Mathf.RoundToInt(player.position.x * 2) + "/" + challenge.distance;
             //Pass Check
-            if (player.position.x * 2 >= challenge.distance && !IsComplete) {
+            /*if (player.position.x * 2 >= challenge.distance && !IsComplete) {
                 Database.Instance.passedChallenges[GlobalData.Instance.nowChallenge]++;
                 GainReward();
                 IsComplete = true;
                 _emc.ShowPassWindow();
-            }
+            }*/
         }
     }
 

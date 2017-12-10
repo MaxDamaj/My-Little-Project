@@ -10,7 +10,7 @@ public class TerrainCHL : MonoBehaviour {
     private Collider pony;
     private int eoh_counter;
 
-    void Start() {
+    /*void Start() {
         Invoke("FindPony", 0.4f);
         challenge = DBC.GetChallenge(GlobalData.Instance.nowChallenge);
         //Create base terrain
@@ -51,5 +51,5 @@ public class TerrainCHL : MonoBehaviour {
             eoh_counter = challenge.packsSpawnDelay;
         }
         eoh_counter--;
-    }
+    }*/
 }

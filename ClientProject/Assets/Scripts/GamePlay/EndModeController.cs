@@ -40,6 +40,7 @@ public class EndModeController : MonoBehaviour {
 
     void Start() {
         MusicManager.Instance.SetFolder("Music/Endurance", 1);
+        GlobalData.Instance.gameState = GameModeState.Endurance;
 
         Invoke("FindPony", 0.3f);
         _pony = Database.Instance.GetCharFMInfo(Database.Instance.SelectedPony);

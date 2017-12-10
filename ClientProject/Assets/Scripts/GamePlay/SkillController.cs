@@ -10,6 +10,7 @@ public class SkillController : MonoBehaviour {
     private GameObject Pony;
     private EndModeController _emc;
     private SimModeController _smc;
+    private RaceCourceController _rcc;
     private UISkills _uiSkill;
     private IEnumerator cooldown;
     private CharsFMData Character;
@@ -35,9 +36,15 @@ public class SkillController : MonoBehaviour {
         } else {
             Character = DBSimulation.Instance.simCharacter;
         }
-        Pony = PonyController.Instance.gameObject;
+        if (GlobalData.Instance.gameState == GameModeState.Endurance) {
+            Pony = PonyController.Instance.gameObject;
+        } else {
+            Pony = PonyFreeMoveController.Instance.gameObject;
+        }
+        
         _emc = FindObjectOfType<EndModeController>();
         _smc = FindObjectOfType<SimModeController>();
+        _rcc = FindObjectOfType<RaceCourceController>();
         _uiSkill = FindObjectOfType<UISkills>();
         //Set all skills to execute state
         for (int i = 0; i < Character.CharSkills.GetLength(0); i++) {
@@ -46,6 +53,7 @@ public class SkillController : MonoBehaviour {
         }
         if (_emc != null) { _emc.CharacterState = SkillConditionStats; }
         if (_smc != null) { _smc.CharacterState = SkillConditionStats; }
+        if (_rcc != null) { _rcc.CharacterState = SkillConditionStats; }
         MPDrain = 0;
         //Attash FXs to pony
         for (int i = 0; i < 4; i++) {
@@ -135,7 +143,9 @@ public class SkillController : MonoBehaviour {
                 StartCoroutine(fxDisable);
             }
             GlobalData.Instance.currentMP -= Character.CharSkills[sn].MP_cost;
-            spark_cl = Instantiate(Character.CharSkills[sn].obj, v3, Character.CharSkills[sn].obj.transform.rotation);
+            spark_cl = Instantiate(Character.CharSkills[sn].obj, v3, Pony.transform.rotation);
+            spark_cl.transform.SetParent(Pony.transform);
+            spark_cl.transform.localPosition = Character.CharSkills[sn].projPosition;
             spark_cl.GetComponent<Projectile>().DestroyObject(Character.CharSkills[sn].cooldown);
         }
     }
