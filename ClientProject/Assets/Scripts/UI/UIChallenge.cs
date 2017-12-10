@@ -8,12 +8,12 @@ public class UIChallenge : MonoBehaviour {
     [SerializeField]
     DBChallenges DBC = null;
 
+    public UIChallengeFull fullWindow;
+
     [Header("UI")]
     public Button challButton;
     public Text challTitle;
     public Image challBG;
-    public GameObject distance;
-    public Text distanceText;
     public GameObject lockSprite;
     public GameObject passSprite;
     public Text psText;
@@ -35,7 +35,6 @@ public class UIChallenge : MonoBehaviour {
     private float timer;
     private float feeScale;
     private float rewardScale;
-    private float distanceScale;
     private Challenge challenge;
 
     void Start() {
@@ -44,8 +43,6 @@ public class UIChallenge : MonoBehaviour {
         challButton.onClick.AddListener(ShowStartMessage);
         challTitle.text = challenge.title;
         challBG.sprite = challenge.bg;
-        distance.SetActive(true);
-        distanceText.text = "" + challenge.distance;
         psText.text = "You need " + challenge.PSRestr + " PS";
         switch (challenge.charRestr) {
             case PonyType.EarthPony:
@@ -92,7 +89,6 @@ public class UIChallenge : MonoBehaviour {
         if (timer >= 0 && timer < 0.5f) {
             feeScale += Time.deltaTime * 2;
             rewardScale = 0;
-            distanceScale = 0;
         }
         //Fee Showed
         if (timer >= 0.5f && timer < 5f) feeScale = 1;
@@ -109,22 +105,11 @@ public class UIChallenge : MonoBehaviour {
         //Hiding Reward
         if (timer >= 11 && timer < 11.5f) rewardScale -= Time.deltaTime * 2;
 
-        //Show Distance
-        if (timer >= 11.5f && timer < 12) {
-            distanceScale += Time.deltaTime * 2;
-            rewardScale = 0;
-        }
-        //Distance Showed
-        if (timer >= 12 && timer < 17) distanceScale = 1;
-        //Hiding Distance
-        if (timer >= 17 && timer < 17.5f) distanceScale -= Time.deltaTime * 2;
-
         //Go to firts step
-        if (timer >= 17.5f) timer = 0;
+        if (timer >= 11.5f) timer = 0;
         //Set Scales
         feeGameobject.transform.localScale = new Vector3(1, feeScale, 1);
         rewardGameobject.transform.localScale = new Vector3(1, rewardScale, 1);
-        distance.transform.localScale = new Vector3(1, distanceScale, 1);
     }
 
     void RefreshUI() {
@@ -149,12 +134,7 @@ public class UIChallenge : MonoBehaviour {
                 return;
             }
         }
-        //If enough resources show message
-        if (challenge.challengeType != ChallType.CardGame) {
-            UIMessageWindow.Instance.ShowMessage("Are you really want to begin challenge " + challenge.title + "?", ChallID, UIAction.startChallenge);
-        } else {
-            GlobalData.Instance.nowChallenge = ChallID;
-        }
+        fullWindow.ShowWindow(ChallID);
     }
 
     void OnDestroy() {

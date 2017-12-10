@@ -5,7 +5,6 @@ using System.Collections;
 public class CharFMInfoShort : MonoBehaviour {
 
     public int CharNum;
-    public MenuNavigation dummy;
     public CharFMInfoFull window;
     public Animator win_anim;
 
@@ -14,6 +13,7 @@ public class CharFMInfoShort : MonoBehaviour {
     public Text HPText, MPText, SPDText, LUCKText;
     public Text STMText;
     public GameObject priceTag;
+    public Text storyRestriction;
     public UIStatUpgrade cost;
 
     private CharsFMData Character;
@@ -23,6 +23,7 @@ public class CharFMInfoShort : MonoBehaviour {
         priceTag.GetComponent<Button>().onClick.AddListener(ShowBuyWindow);
         Database.onRefresh += RefreshUI;
         RefreshUI();
+        if (Character.storyRestriction == 0) { storyRestriction.gameObject.SetActive(false); }
     }
 
     //Refresh UI info
@@ -35,6 +36,12 @@ public class CharFMInfoShort : MonoBehaviour {
         MPText.text = "" + Character.MP;
         SPDText.text = "" + Character.SPD;
         LUCKText.text = "" + Character.LUCK;
+        storyRestriction.text = "Create " + Character.storyRestriction + " time machine parts";
+        if (Character.storyRestriction > Database.Instance.storyLevel) {
+            storyRestriction.color = Database.COLOR_RED;
+        } else {
+            storyRestriction.color = Database.COLOR_GREEN;
+        }
         STMText.text = Mathf.RoundToInt(Character.STMCurrent) + "/" + Character.STMMax;
         if (Character.Rank >= 0) { priceTag.SetActive(false); } else { priceTag.SetActive(true); }
         if (cost != null) { cost.UpgradeCost(Character.costItems[0], Character.costItems[1], Character.costItems[2], Character.costPrises[0], Character.costPrises[1], Character.costPrises[2]); }
@@ -61,10 +68,14 @@ public class CharFMInfoShort : MonoBehaviour {
     }
 
     void ShowBuyWindow() {
-        if (PriceCheck()) {
+        if (PriceCheck() && Character.storyRestriction <= Database.Instance.storyLevel) {
             UIMessageWindow.Instance.ShowMessage("Are you really want to this pony join to your team?", CharNum, UIAction.buying);
         } else {
-            UIMessageWindow.Instance.ShowMessage("You don't have enough materials", 0, UIAction.nothing, true, false);
+            if (Character.storyRestriction > Database.Instance.storyLevel) {
+                UIMessageWindow.Instance.ShowMessage("Create more time machine parts", 0, UIAction.nothing, true, false);
+            } else {
+                UIMessageWindow.Instance.ShowMessage("You don't have enough materials", 0, UIAction.nothing, true, false);
+            }
         }
     }
 

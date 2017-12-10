@@ -4,6 +4,13 @@ using System.Collections;
 using UnityEditor;
 #endif
 
+public enum GameModeState {
+    SplashScreen = 0,
+    MainMenu = 1,
+    Endurance = 2,
+    Challenge = 3
+};
+
 public class GlobalData : ScriptableObject {
 
     [Header("Non saved params")]
@@ -22,6 +29,7 @@ public class GlobalData : ScriptableObject {
     public float currentHP;
     public float currentMP;
     public float currentMP_rec; //MP recovery value
+    public GameModeState gameState;
 
     private static GlobalData globalData;
 

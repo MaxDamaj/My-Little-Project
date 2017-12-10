@@ -3,9 +3,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-public enum ChallType {
-    ShortRun, LongRun, Mania, CardGame
-};
 public enum ChallModifier {
     None, MPSlow
 };
@@ -14,20 +11,14 @@ public enum ChallModifier {
 public class Challenge {
     public string title;
     public Sprite bg;
-    public ChallType challengeType;
+    public Sprite map;
     public ChallModifier challengeModifier;
-    public int externalIndex;
-    public float distance;
-    public float timeRestr;
+    public Vector2 timeRestr;
     public PonyType charRestr;
     public int PSRestr;
     public StorageData[] startFee;
     public StorageData[] reward;
-    public GameObject[] roads;
-    public GameObject border;
-    public GameObject[] bonuses;
-    public GameObject[] packs;
-    public int packsSpawnDelay;
+    public GameObject terrain;
 }
 
 public class DBChallenges : MonoBehaviour {

@@ -14,6 +14,9 @@ public class PonyFreeMoveController : MonoBehaviour {
     private Vector3 _start_position;
     private Camera _mainCamera;
 
+    private float f_shift;
+    private float s_shift;
+
     private static PonyFreeMoveController controller;
 
     public delegate void PickupArgs(string tag, GameObject target);
@@ -56,24 +59,26 @@ public class PonyFreeMoveController : MonoBehaviour {
         }
 
         //Moving
-        if (_rigidbody.velocity.magnitude < maxSpeed) {
-            _rigidbody.AddRelativeForce(Input.GetAxisRaw("Vertical") * 0.4f, 0, 0, ForceMode.VelocityChange);
+        if (_rigidbody.velocity.magnitude < maxSpeed * GlobalData.Instance.SPDmlp) {
+            if (f_shift == 0) {
+                _rigidbody.AddRelativeForce(Input.GetAxisRaw("Vertical") * 0.4f, 0, 0, ForceMode.VelocityChange);
+            } else {
+                _rigidbody.AddRelativeForce(f_shift * 0.4f, 0, 0, ForceMode.VelocityChange);
+            }
         }
-        /*if (Input.GetAxisRaw("Vertical") == 0) {
-            _rigidbody.velocity = new Vector3(0, _rigidbody.velocity.y, 0);
-        }*/
-        anim.SetFloat("speed", Mathf.Abs(Input.GetAxisRaw("Vertical")));
-        anim.SetFloat("speed", _rigidbody.velocity.sqrMagnitude / 11f);
-        _rigidbody.angularVelocity = new Vector3(0, Input.GetAxisRaw("Horizontal") * 1.5f, 0);
+        //anim.SetFloat("speed", Mathf.Abs(Input.GetAxisRaw("Vertical")));
+        float speedValue = _rigidbody.velocity.sqrMagnitude <= maxSpeed*maxSpeed ? _rigidbody.velocity.sqrMagnitude : maxSpeed * maxSpeed;
+        anim.SetFloat("speed", speedValue / 11f);
+        //Rotation
+        if (s_shift == 0) {
+            _rigidbody.angularVelocity = new Vector3(0, Input.GetAxisRaw("Horizontal") * 1.5f, 0);
+        } else {
+            _rigidbody.angularVelocity = new Vector3(0, -s_shift * 1.5f, 0);
+        }
 
         //Jumping
         if (Input.GetAxis("Jump") > 0.01f && jump_recover <= 0) {
-            if (anim.GetBool("ground")) {
-                jump_recover = 20;
-                anim.SetBool("ground", false);
-                _rigidbody.AddForce(new Vector3(0f, 220f, 0f));
-                SoundManager.Instance.SetMuteState("a_run", true);
-            }
+            Jump();
         }
 
         //Sound of running
@@ -103,30 +108,51 @@ public class PonyFreeMoveController : MonoBehaviour {
                 SoundManager.Instance.SetMuteState("a_run", false);
                 SoundManager.Instance.PlaySound("a_landing");
                 break;
+            case "Hay":
+                CalculateObstacle(coll.gameObject.transform, 0.3f, 1f * (_rigidbody.velocity.sqrMagnitude / 10), 0.04f);
+                break;
+            case "WoodCrate":
+                CalculateObstacle(coll.gameObject.transform, 0.3f, 2f * (_rigidbody.velocity.sqrMagnitude / 10), 0.075f);
+                break;
         }
     }
 
     //Bonuses picking up
     void OnTriggerEnter(Collider coll) {
         //Run pickup event
-        if (coll.gameObject.name != "trigger") onPlayerPickup(gameObject.tag, coll.gameObject);
+        if (coll.gameObject.name != "trigger" && onPlayerPickup != null) onPlayerPickup(gameObject.tag, coll.gameObject);
+        if (coll.gameObject.tag == "Finish") {
+            FindObjectOfType<RaceCourceController>().ShowPassWindow();
+        }
     }
 
     void CalculateObstacle(Transform obstacle, float shift, float damage, float camShaking) {
         Database.Instance.obstTotal++;
-        if (obstacle.position.x - transform.position.x > shift) {
-            //SoundManager.Instance.PlaySound("a_thump");
-            if (GlobalData.Instance.isMPProtection && GlobalData.Instance.currentMP >= damage) {
-                GlobalData.Instance.currentMP -= damage * GlobalData.Instance.DMGmlp;
-            } else {
-                GlobalData.Instance.currentHP -= damage * GlobalData.Instance.DMGmlp;
-            }
-            //_cpf.shake_intensity = camShaking * GlobalData.Instance.DMGmlp;
-            if (!SkillController.Instance.IsSimulation) Database.Instance.obstWithDamage++;
+        SoundManager.Instance.PlaySound("a_thump");
+        if (GlobalData.Instance.isMPProtection && GlobalData.Instance.currentMP >= damage) {
+            GlobalData.Instance.currentMP -= damage * GlobalData.Instance.DMGmlp;
         } else {
-            if (!SkillController.Instance.IsSimulation) Database.Instance.obstNonDamage++;
+            GlobalData.Instance.currentHP -= damage * GlobalData.Instance.DMGmlp;
         }
+        //_cpf.shake_intensity = camShaking * GlobalData.Instance.DMGmlp;
+        if (!SkillController.Instance.IsSimulation) Database.Instance.obstWithDamage++;
     }
 
     #endregion
+
+    public void Jump() {
+        if (anim.GetBool("ground")) {
+            jump_recover = 20;
+            anim.SetBool("ground", false);
+            _rigidbody.AddForce(new Vector3(0f, 220f, 0f));
+            SoundManager.Instance.SetMuteState("a_run", true);
+        }
+    }
+
+    public void SetSideShift(float value) {
+        s_shift = value;
+    }
+    public void SetFrontShift(float value) {
+        f_shift = value;
+    }
 }

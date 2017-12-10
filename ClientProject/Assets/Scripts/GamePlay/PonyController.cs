@@ -77,16 +77,16 @@ public class PonyController : MonoBehaviour {
                 SoundManager.Instance.PlaySound("a_landing");
                 break;
             case "Hay":
-                CalculateObstacle(coll.gameObject.transform, 0.3f, 1f, 0.05f);
+                CalculateObstacle(coll.gameObject.transform, 0.3f, 1f, 0.04f);
                 break;
             case "WoodCrate":
-                CalculateObstacle(coll.gameObject.transform, 0.3f, 2f, 0.1f);
+                CalculateObstacle(coll.gameObject.transform, 0.3f, 2f, 0.075f);
                 break;
             case "Rail":
-                CalculateObstacle(coll.gameObject.transform, 0.3f, 4f, 0.2f);
+                CalculateObstacle(coll.gameObject.transform, 0.3f, 4f, 0.1f);
                 break;
             case "Firebarrel":
-                CalculateObstacle(coll.gameObject.transform, 0.2f, 10f, 0.2f);
+                CalculateObstacle(coll.gameObject.transform, 0.2f, 10f, 0.1f);
                 break;
         }
     }

@@ -16,6 +16,7 @@ public class OnDestroyFX : MonoBehaviour {
 
     void Start() {
         PonyController.onPlayerPickup += ExecuteFX;
+        PonyFreeMoveController.onPlayerPickup += ExecuteFX;
     }
 
     void ExecuteFX(string tag, GameObject target) {
@@ -30,5 +31,6 @@ public class OnDestroyFX : MonoBehaviour {
 
     void OnDestroy() {
         PonyController.onPlayerPickup -= ExecuteFX;
+        PonyFreeMoveController.onPlayerPickup -= ExecuteFX;
     }
 }

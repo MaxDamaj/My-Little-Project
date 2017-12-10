@@ -48,6 +48,7 @@ public class CharsFMData {
     public Sprite CharPreviewIcon;
     public PonyType Type;
     public int Rank;
+    public int storyRestriction;
     public float HP;
     public float MP;
     public float SPD;
@@ -57,6 +58,7 @@ public class CharsFMData {
     public float MPRecovery;
     public GameObject PreviewPrefab;
     public GameObject GamePlayPrefab;
+    public GameObject FreePlayPrefab;
     public Skill[] CharSkills;
     public string[] costItems;
     public float[] costPrises;
@@ -79,6 +81,7 @@ public class CharsFMData {
         MPRecovery = character.MPRecovery;
         PreviewPrefab = character.PreviewPrefab;
         GamePlayPrefab = character.GamePlayPrefab;
+        FreePlayPrefab = character.FreePlayPrefab;
         CharSkills = character.CharSkills;
         costItems = character.costItems;
         costPrises = character.costPrises;
@@ -335,6 +338,11 @@ public class Database : MonoBehaviour {
     }
     public int ArrayUsableItemsGetLenght() {
         return _usableItems.Count;
+    }
+
+    public void SetStoryLevel(int value) {
+        storyLevel = value;
+        if (onRefresh != null) { onRefresh(); }
     }
 
 #if UNITY_EDITOR

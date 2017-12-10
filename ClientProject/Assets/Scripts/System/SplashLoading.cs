@@ -46,12 +46,13 @@ public class SplashLoading : MonoBehaviour {
         DontDestroyOnLoad(tmp);
 
         //Set random character info
-        CharsFMData character = Database.Instance.GetCharFMInfo(Random.Range(0, 6)); //Some first characters
+        CharsFMData character = Database.Instance.GetCharFMInfo(Random.Range(0, Database.Instance.ArrayCharFMGetLenght()));
         charIcon.sprite = character.CharPreviewIcon;
         charText.text = character.CharName;
         charText.color = character.CharColor;
         charDescription.text = character.description;
 
+        GlobalData.Instance.gameState = GameModeState.SplashScreen;
         SoundManager.Instance.UpdateSoundList();
     }
 
