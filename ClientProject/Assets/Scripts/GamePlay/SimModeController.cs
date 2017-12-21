@@ -40,6 +40,8 @@ public class SimModeController : MonoBehaviour {
 
     void Start() {
         Invoke("FindPony", 0.3f);
+        GlobalData.Instance.gameState = GameModeState.Endurance;
+
         _pony = DBSimulation.Instance.simCharacter;
         pauseButton.onClick.AddListener(GamePause);
         retireButton.onClick.AddListener(GameRetire);

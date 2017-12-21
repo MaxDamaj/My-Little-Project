@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 87eb57778ae961b4ebd75e3beb059585
-timeCreated: 1513777634
+timeCreated: 1513847393
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -10,6 +10,7 @@ TextureImporter:
     21300006: button_horizontal
     21300008: button_vertical
     21300010: slider
+    21300012: fall_grad
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -157,8 +158,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 15, y: 15, z: 15, w: 15}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fall_grad
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     outline: []

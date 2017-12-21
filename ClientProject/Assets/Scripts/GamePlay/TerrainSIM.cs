@@ -46,7 +46,13 @@ public class TerrainSIM : MonoBehaviour {
         lastTerrain = DBSimulation.Instance.section.terrains[sel];
         //Spawn Bonuses
         sel = UnityEngine.Random.Range(DBSimulation.Instance.sectionBonusLow, DBSimulation.Instance.sectionBonusHigh);
-        Destroy(Instantiate(DBSimulation.Instance.section.obstacles[sel], transform.position, DBSimulation.Instance.section.obstacles[sel].transform.rotation), 45);
+        Destroy(Instantiate(DBSimulation.Instance.section.obstacles[sel], new Vector3(transform.position.x - 7.5f, transform.position.y, transform.position.z), DBSimulation.Instance.section.obstacles[sel].transform.rotation), 45);
+        sel = UnityEngine.Random.Range(DBSimulation.Instance.sectionBonusLow, DBSimulation.Instance.sectionBonusHigh);
+        Destroy(Instantiate(DBSimulation.Instance.section.obstacles[sel], new Vector3(transform.position.x - 2.5f, transform.position.y, transform.position.z), DBSimulation.Instance.section.obstacles[sel].transform.rotation), 45);
+        sel = UnityEngine.Random.Range(DBSimulation.Instance.sectionBonusLow, DBSimulation.Instance.sectionBonusHigh);
+        Destroy(Instantiate(DBSimulation.Instance.section.obstacles[sel], new Vector3(transform.position.x + 2.5f, transform.position.y, transform.position.z), DBSimulation.Instance.section.obstacles[sel].transform.rotation), 45);
+        sel = UnityEngine.Random.Range(DBSimulation.Instance.sectionBonusLow, DBSimulation.Instance.sectionBonusHigh);
+        Destroy(Instantiate(DBSimulation.Instance.section.obstacles[sel], new Vector3(transform.position.x + 7.5f, transform.position.y, transform.position.z), DBSimulation.Instance.section.obstacles[sel].transform.rotation), 45);
         //Spawn Border
         Destroy(Instantiate(DBSimulation.Instance.section.border, new Vector3(transform.position.x + 20, -0.6f, 20f), DBSimulation.Instance.section.border.transform.rotation), 45);
         //Spawn Packs
