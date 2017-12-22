@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CraftComponent : MonoBehaviour {
+namespace MLA.UI.Common {
+    public class CraftComponent : MonoBehaviour {
 
-    public bool IsItem;
-    public string title;
+        public bool IsItem;
+        public string title;
 
+    }
 }

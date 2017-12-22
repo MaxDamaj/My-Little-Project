@@ -4,53 +4,56 @@ using UnityEngine.SceneManagement;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using MLA.System;
+using MLA.System.Controllers;
 
-public class ChallModeController : MonoBehaviour {
+namespace MLA.Gameplay.Controllers {
+    public class ChallModeController : MonoBehaviour {
 
-    [SerializeField]
-    DBChallenges DBC = null;
+        [SerializeField]
+        DBChallenges DBC = null;
 
-    public GameObject finishLine;
+        public GameObject finishLine;
 
-    private EndModeController _emc;
-    private Transform player;
-    private Challenge challenge;
-    private bool IsComplete;
+        private EndModeController _emc;
+        private Transform player;
+        private Challenge challenge;
+        private bool IsComplete;
 
-    void Start() {
-        MusicManager.Instance.SetFolder("Music/Challenges", 2);
+        void Start() {
+            MusicManager.Instance.SetFolder("Music/Challenges", 2);
 
-        _emc = FindObjectOfType<EndModeController>();
-        Invoke("FindPony", 0.4f);
-        challenge = DBC.GetChallenge(GlobalData.Instance.nowChallenge);
-        IsComplete = false;
-        //finishLine.transform.position = new Vector3(challenge.distance / 2, 0f, 0f);
-    }
+            _emc = FindObjectOfType<EndModeController>();
+            Invoke("FindPony", 0.4f);
+            challenge = DBC.GetChallenge(GlobalData.Instance.nowChallenge);
+            IsComplete = false;
+            //finishLine.transform.position = new Vector3(challenge.distance / 2, 0f, 0f);
+        }
 
-    void FindPony() {
-        player = PonyController.Instance.transform;
-    }
+        void FindPony() {
+            player = PonyController.Instance.transform;
+        }
 
-    void GainReward() {
-        if (!IsComplete) {
-            foreach (var item in challenge.reward) {
-                Database.Instance.IncreaseItemQuantity(item.ItemName, item.ItemQuantity);
+        void GainReward() {
+            if (!IsComplete) {
+                foreach (var item in challenge.reward) {
+                    Database.Instance.IncreaseItemQuantity(item.ItemName, item.ItemQuantity);
+                }
             }
         }
-    }
 
-    void Update() {
-        if (player != null) {
-            //_emc.distance.text = "" + Mathf.RoundToInt(player.position.x * 2) + "/" + challenge.distance;
-            //Pass Check
-            /*if (player.position.x * 2 >= challenge.distance && !IsComplete) {
-                Database.Instance.passedChallenges[GlobalData.Instance.nowChallenge]++;
-                GainReward();
-                IsComplete = true;
-                _emc.ShowPassWindow();
-            }*/
+        void Update() {
+            if (player != null) {
+                //_emc.distance.text = "" + Mathf.RoundToInt(player.position.x * 2) + "/" + challenge.distance;
+                //Pass Check
+                /*if (player.position.x * 2 >= challenge.distance && !IsComplete) {
+                    Database.Instance.passedChallenges[GlobalData.Instance.nowChallenge]++;
+                    GainReward();
+                    IsComplete = true;
+                    _emc.ShowPassWindow();
+                }*/
+            }
         }
+
     }
-
-
 }

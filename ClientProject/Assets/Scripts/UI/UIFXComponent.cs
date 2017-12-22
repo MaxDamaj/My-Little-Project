@@ -1,18 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class UIFXComponent : MonoBehaviour {
+namespace MLA.UI.Windows {
+    public class UIFXComponent : MonoBehaviour {
 
-    void Start() {
-        //gameObject.SetActive(false);
-    }
+        void Start() {
+            //gameObject.SetActive(false);
+        }
 
-    public void ShowUIFX(float duration) {
-        gameObject.SetActive(true);
-        Invoke("HideUIFX", duration);
-    }
+        public void ShowUIFX(float duration) {
+            gameObject.SetActive(true);
+            Invoke("HideUIFX", duration);
+        }
 
-    void HideUIFX() {
-        gameObject.SetActive(false);
+        void HideUIFX() {
+            gameObject.SetActive(false);
+        }
     }
 }

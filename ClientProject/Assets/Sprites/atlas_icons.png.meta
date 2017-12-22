@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e8f4c431080821d4594bd078fb753d1f
-timeCreated: 1513860670
+timeCreated: 1513948802
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -280,6 +280,7 @@ TextureImporter:
     21300546: icon_earthpony
     21300548: icon_unicorn
     21300550: icon_pegasus
+    21300552: icon_transformer
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -1464,7 +1465,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -1477,7 +1478,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -1489,6 +1490,19 @@ TextureImporter:
         y: 960
         width: 64
         height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_transformer
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

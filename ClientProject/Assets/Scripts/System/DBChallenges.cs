@@ -21,17 +21,17 @@ public class Challenge {
     public GameObject terrain;
 }
 
-public class DBChallenges : MonoBehaviour {
+namespace MLA.System {
+    public class DBChallenges : MonoBehaviour {
 
-    [SerializeField]
-    List<Challenge> _challegesList = null;
+        [SerializeField]
+        List<Challenge> _challegesList = null;
 
-    public Challenge GetChallenge(int index) {
-        return _challegesList[index];
+        public Challenge GetChallenge(int index) {
+            return _challegesList[index];
+        }
+        public int GetChallengesCount() {
+            return _challegesList.Count;
+        }
     }
-
-    public int GetChallengesCount() {
-        return _challegesList.Count;
-    }
-
 }

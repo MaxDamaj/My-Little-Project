@@ -14,20 +14,22 @@ public class CodexRow {
     public string text;
 }
 
-public class CodexList : ScriptableObject {
+namespace MLA.System {
+    public class CodexList : ScriptableObject {
 
-    public List<CodexRow> codexRows;
-    [Header("Shown Condition")]
-    public AchieveType condition;
-    public float condValue;
-    public string condLine;
+        public List<CodexRow> codexRows;
+        [Header("Shown Condition")]
+        public AchieveType condition;
+        public float condValue;
+        public string condLine;
 
 #if UNITY_EDITOR
-    [MenuItem("Assets/Create new Codex list")]
-    private static void CreateGDContainer() {
-        var obj = ScriptableObject.CreateInstance<CodexList>();
-        AssetDatabase.CreateAsset(obj, "Assets/Resources/Codex/_NewCodexList.asset");
-        AssetDatabase.SaveAssets();
-    }
+        [MenuItem("Assets/Create new Codex list")]
+        private static void CreateGDContainer() {
+            var obj = ScriptableObject.CreateInstance<CodexList>();
+            AssetDatabase.CreateAsset(obj, "Assets/Resources/Codex/_NewCodexList.asset");
+            AssetDatabase.SaveAssets();
+        }
 #endif
+    }
 }

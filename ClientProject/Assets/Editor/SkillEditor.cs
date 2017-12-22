@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEditor;
 using System.Collections;
+using MLA.Gameplay.Common;
 
 [CustomEditor(typeof(Skill))]
 public class SkillEditor : Editor {

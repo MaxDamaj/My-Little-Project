@@ -15,23 +15,24 @@ public enum MapObjectType {
     Ruine = 8
 }
 
-public class UIMapObject : MonoBehaviour {
+namespace MLA.UI.Windows {
+    public class UIMapObject : MonoBehaviour {
 
-    public MapObjectType objectType;
+        public MapObjectType objectType;
 
-    private Button button;
-    private RectTransform _playerMarker;
-    private float visibleDistance = 3000f;
+        private Button button;
+        private RectTransform _playerMarker;
+        private float visibleDistance = 3000f;
 
-    void Start() {
-        _playerMarker = GameObject.Find("player_marker").GetComponent<RectTransform>();
-        button = GetComponent<Button>();
+        void Start() {
+            _playerMarker = GameObject.Find("player_marker").GetComponent<RectTransform>();
+            button = GetComponent<Button>();
 
-        Vector2 position = GetComponent<RectTransform>().anchoredPosition;
-        float sqrLen = (position - _playerMarker.anchoredPosition).sqrMagnitude;
-        if (sqrLen > visibleDistance) {
-            button.interactable = false;
+            Vector2 position = GetComponent<RectTransform>().anchoredPosition;
+            float sqrLen = (position - _playerMarker.anchoredPosition).sqrMagnitude;
+            if (sqrLen > visibleDistance) {
+                button.interactable = false;
+            }
         }
     }
-
 }

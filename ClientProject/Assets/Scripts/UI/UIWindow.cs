@@ -14,11 +14,12 @@ public enum PanelType {
     RightPanel = 2
 };
 
-public class UIWindow : MonoBehaviour {
+namespace MLA.UI.Common {
+    public class UIWindow : MonoBehaviour {
 
-    public Animator anim;
-    public FallBackPanel returnPanel;
-    public PanelType panelType;
-    public FallBackPanel fallback;
-
+        public Animator anim;
+        public FallBackPanel returnPanel;
+        public PanelType panelType;
+        public FallBackPanel fallback;
+    }
 }
