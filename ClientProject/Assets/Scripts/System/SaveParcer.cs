@@ -48,6 +48,8 @@ namespace MLA.System {
             saveFile.Add("obstaclesWithDamage:" + Database.Instance.obstWithDamage);
             saveFile.Add("obstaclesNonDamage:" + Database.Instance.obstNonDamage);
             saveFile.Add("enduranceDistanceEasy:" + Database.Instance.distEndEasy);
+            saveFile.Add("enduranceDistanceNormal:" + Database.Instance.distEndNormal);
+            saveFile.Add("enduranceDistanceHard:" + Database.Instance.distEndHard);
             saveFile.Add("craftedComponents:" + Database.Instance.craftedComps);
             saveFile.Add("");
 
@@ -120,6 +122,8 @@ namespace MLA.System {
             Database.Instance.obstWithDamage = LoadLineInt(saveFile, "obstaclesWithDamage", Database.Instance.obstWithDamage);
             Database.Instance.obstNonDamage = LoadLineInt(saveFile, "obstaclesNonDamage", Database.Instance.obstNonDamage);
             Database.Instance.distEndEasy = LoadLineInt(saveFile, "enduranceDistanceEasy", Database.Instance.distEndEasy);
+            Database.Instance.distEndNormal = LoadLineInt(saveFile, "enduranceDistanceNormal", Database.Instance.distEndNormal);
+            Database.Instance.distEndHard = LoadLineInt(saveFile, "enduranceDistanceHard", Database.Instance.distEndHard);
             Database.Instance.craftedComps = LoadLineInt(saveFile, "craftedComponents", Database.Instance.craftedComps);
 
             //Materials

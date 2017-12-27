@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using MLA.Gameplay.Common;
 using MLA.System.Controllers;
 using MLA.System;
+using MLA.Gameplay.Scenes;
 
 namespace MLA.Gameplay.Controllers {
     public class PonyController : MonoBehaviour {
@@ -38,6 +39,9 @@ namespace MLA.Gameplay.Controllers {
             _pony = Database.Instance.GetCharFMInfo(Database.Instance.SelectedPony);
             anim = GetComponentInChildren<Animator>();
             jump_recover = 20;
+            //Initialization
+            TerrainSpawner terrainSpawner = FindObjectOfType<TerrainSpawner>();
+            if (terrainSpawner != null) { terrainSpawner.Init(GetComponent<Collider>()); }
         }
 
         void FixedUpdate() {
@@ -70,7 +74,7 @@ namespace MLA.Gameplay.Controllers {
         //Bonuses picking up
         void OnTriggerEnter(Collider coll) {
             //Run pickup event
-            if (coll.gameObject.name != "trigger") onPlayerPickup(gameObject.tag, coll.gameObject);
+            if (coll.gameObject.tag != "Trigger") onPlayerPickup(gameObject.tag, coll.gameObject);
         }
 
         void OnCollisionEnter(Collision coll) {

@@ -56,6 +56,7 @@ namespace MLA.Gameplay.Controllers {
             GlobalData.Instance.currentHP = _pony.HP;
             GlobalData.Instance.currentMP = 0;
             GlobalData.Instance.currentMP_rec = _pony.MPRecovery;
+            GlobalData.Instance.PickupMlp = 1;
             deltaCam = mainCamera.position.x;
             //Set pony name
             charName.text = _pony.CharName;

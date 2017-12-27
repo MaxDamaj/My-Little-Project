@@ -131,6 +131,8 @@ namespace MLA.System {
         public int obstWithDamage;  //Wrecked obstacles with recieving damage
         public int obstNonDamage;   //Wrecked obstacles without recieving damage
         public int distEndEasy;
+        public int distEndNormal;
+        public int distEndHard;
         public int craftedComps;
         public int storyLevel;      //Current level your time machine
 

@@ -11,8 +11,6 @@ namespace MLA.UI.Windows {
         [SerializeField]
         private Color _colorGrey = Color.grey;
         [SerializeField]
-        private Color _colorWhite = Color.white;
-        [SerializeField]
         private Color[] _skillsColors = null;
 
         public Image[] SkillIcons;

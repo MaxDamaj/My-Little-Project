@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using System.Collections;
 using MLA.UI.Windows;
 using MLA.UI.Controllers;
+using MLA.System.Controllers;
 
 namespace MLA.UI.Common {
     public class Navigation : MonoBehaviour {
@@ -19,7 +20,7 @@ namespace MLA.UI.Common {
             //Buttons special actions
             switch (specialAction) {
                 case UIAction.startEndurance:
-                    UnityEngine.SceneManagement.SceneManager.LoadScene("road_endurance");
+                    GameController.Instance.StartEndurance(Difficulty.Easy);
                     break;
                 case UIAction.hideLeftPanels:
                     MenuNavigation.Instance.HideLeftPanels();

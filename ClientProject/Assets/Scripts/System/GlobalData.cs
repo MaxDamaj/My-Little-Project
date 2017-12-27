@@ -11,6 +11,13 @@ public enum GameModeState {
     Challenge = 3
 };
 
+public enum Difficulty {
+    Unsigned = 0,
+    Easy = 1,
+    Normal = 2,
+    Hard = 3
+};
+
 namespace MLA.System {
     public class GlobalData : ScriptableObject {
 
@@ -20,6 +27,7 @@ namespace MLA.System {
         public int itemsBeltCount;
         public int codexPagesCount;
         public bool IsYMovementAllowed = false;
+        public Difficulty difficulty;
 
         [Header("Ingame params")]
         public float SPDmlp;        //Speed multiplier. Used in PonyController

@@ -11,6 +11,7 @@ using MLA.System.Controllers;
 namespace MLA.Gameplay.Controllers {
     public class EndModeController : MonoBehaviour {
 
+        public DBChallenges DBC;
         //UI
         public Image ponyIcon;
         public Image ponyHP;
@@ -45,6 +46,7 @@ namespace MLA.Gameplay.Controllers {
         void Start() {
             MusicManager.Instance.SetFolder("Music/Endurance", 1);
             GlobalData.Instance.gameState = GameModeState.Endurance;
+            Instantiate(DBC.GetEndurance(GlobalData.Instance.difficulty).terrain.gameObject);
 
             Invoke("FindPony", 0.3f);
             _pony = Database.Instance.GetCharFMInfo(Database.Instance.SelectedPony);
@@ -190,9 +192,24 @@ namespace MLA.Gameplay.Controllers {
                     Database.Instance.distChall += player.position.x > 0 ? Mathf.RoundToInt(player.position.x * 2) : 0;
                 } else {
                     Database.Instance.distEnd += player.position.x > 0 ? Mathf.RoundToInt(player.position.x * 2) : 0;
-                    if (player.position.x * 2 > Database.Instance.distEndEasy) {
-                        Database.Instance.distEndEasy = Mathf.RoundToInt(player.position.x * 2);
+                    switch (GlobalData.Instance.difficulty) {
+                        case Difficulty.Easy:
+                            if (player.position.x * 2 > Database.Instance.distEndEasy) {
+                                Database.Instance.distEndEasy = Mathf.RoundToInt(player.position.x * 2);
+                            }
+                            break;
+                        case Difficulty.Normal:
+                            if (player.position.x * 2 > Database.Instance.distEndNormal) {
+                                Database.Instance.distEndNormal = Mathf.RoundToInt(player.position.x * 2);
+                            }
+                            break;
+                        case Difficulty.Hard:
+                            if (player.position.x * 2 > Database.Instance.distEndHard) {
+                                Database.Instance.distEndHard = Mathf.RoundToInt(player.position.x * 2);
+                            }
+                            break;
                     }
+                    
                 }
             }
             SoundManager.Instance.SetMuteState("a_run", true);
