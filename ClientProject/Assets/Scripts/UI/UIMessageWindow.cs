@@ -76,12 +76,7 @@ namespace MLA.UI.Windows {
         private void Confirm() {
             switch (action) {
                 case UIAction.buying:
-                    Database.Instance.SetCharFMRank(ID, 0);
-                    CharsFMData pony = Database.Instance.GetCharFMInfo(ID);
-                    for (int i = 0; i < pony.costPrises.GetLength(0); i++) {
-                        Database.Instance.IncreaseItemQuantity(pony.costItems[i], 0 - pony.costPrises[i]);
-                    }
-                    AchievementsController.Instance.CheckStates();
+                    GameController.Instance.BuyCharacter(ID);
                     break;
                 case UIAction.clear:
                     DBM.ClearState();
