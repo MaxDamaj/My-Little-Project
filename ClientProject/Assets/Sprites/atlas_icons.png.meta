@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e8f4c431080821d4594bd078fb753d1f
-timeCreated: 1513948802
+timeCreated: 1514538019
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -273,7 +273,7 @@ TextureImporter:
     21300532: skill_STM
     21300534: icon_iridium
     21300536: icon_pixel
-    21300538: icon_flow
+    21300538: icon_flux
     21300540: icon_cyclotrone
     21300542: icon_generator
     21300544: icon_staticcellsblock
@@ -1405,7 +1405,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: icon_flow
+      name: icon_flux
       rect:
         serializedVersion: 2
         x: 1408
@@ -1504,7 +1504,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0

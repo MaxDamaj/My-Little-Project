@@ -14,6 +14,8 @@ namespace MLA.System {
 
         public EnduranceSection section;
 
+        public List<DBCharUpgrade.CharUpgradeLine> materialConversion;
+
         private static DBSimulation database;
 
 

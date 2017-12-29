@@ -59,6 +59,10 @@ namespace MLA.UI.Windows {
                 //Specials
                 case "":
                     break;
+                case "simulation.resetflows":
+                    DBSimulation.Instance.SetItemQuantity(1, 0);
+                    UIMessageWindow.Instance.ShowMessage("Set Flows count to 0", 0, UIAction.nothing, true, false);
+                    break;
                 case "lesson zero":
                     for (int i = 0; i < Database.Instance.ArrayItemsGetLenght(); i++) {
                         Database.Instance.SetItemQuantity(i, 0);
