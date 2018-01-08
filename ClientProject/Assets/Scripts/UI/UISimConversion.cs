@@ -32,7 +32,7 @@ namespace MLA.UI.Windows {
             }
         }
 
-        void Destroy() {
+        void OnDestroy() {
             Database.onRefresh -= Refresh;
         }
 

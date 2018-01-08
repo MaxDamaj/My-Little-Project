@@ -11,27 +11,92 @@ ModelImporter:
     100006: Box05
     100008: road01
     100010: //RootNode
+    100012: column1
+    100014: column2
+    100016: column3
+    100018: column4
+    100020: column5
+    100022: dirtTunnel
+    100024: log1
+    100026: log2
+    100028: road1
+    100030: road2_1
+    100032: road2_2
+    100034: tunnelWall1
+    100036: tunnelWall2
     400000: Box02
     400002: Box03
     400004: Box04
     400006: Box05
     400008: road01
     400010: //RootNode
+    400012: column1
+    400014: column2
+    400016: column3
+    400018: column4
+    400020: column5
+    400022: dirtTunnel
+    400024: log1
+    400026: log2
+    400028: road1
+    400030: road2_1
+    400032: road2_2
+    400034: tunnelWall1
+    400036: tunnelWall2
     2300000: Box02
     2300002: Box03
     2300004: Box04
     2300006: Box05
     2300008: road01
+    2300010: column1
+    2300012: column2
+    2300014: column3
+    2300016: column4
+    2300018: column5
+    2300020: dirtTunnel
+    2300022: log1
+    2300024: log2
+    2300026: road1
+    2300028: road2_1
+    2300030: road2_2
+    2300032: tunnelWall1
+    2300034: tunnelWall2
     3300000: Box02
     3300002: Box03
     3300004: Box04
     3300006: Box05
     3300008: road01
+    3300010: column1
+    3300012: column2
+    3300014: column3
+    3300016: column4
+    3300018: column5
+    3300020: dirtTunnel
+    3300022: log1
+    3300024: log2
+    3300026: road1
+    3300028: road2_1
+    3300030: road2_2
+    3300032: tunnelWall1
+    3300034: tunnelWall2
     4300000: road01
     4300002: Box02
     4300004: Box03
     4300006: Box04
     4300008: Box05
+    4300010: road1
+    4300012: tunnelWall1
+    4300014: column2
+    4300016: column3
+    4300018: tunnelWall2
+    4300020: column4
+    4300022: road2_1
+    4300024: road2_2
+    4300026: log1
+    4300028: log2
+    4300030: column5
+    4300032: dirtTunnel
+    4300034: column1
   materials:
     importMaterials: 0
     materialName: 0
@@ -39,9 +104,11 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
-    resampleRotations: 1
+    resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -78,6 +145,7 @@ ModelImporter:
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -88,7 +156,10 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 0
   humanoidOversampling: 1

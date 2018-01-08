@@ -22,10 +22,9 @@ namespace MLA.UI.Windows {
         // Use this for initialization
         void Start() {
             clearButton.onClick.AddListener(ShowBuyWindow);
-            Invoke("SetValues", 0.35f);
         }
 
-        void SetValues() {
+        public void Init() {
             camPosition.value = Database.Instance.cameraShift;
             musicVolume.value = Database.Instance.musicVolume;
             bloomCheck.isOn = Database.Instance.paramBloom == 1;

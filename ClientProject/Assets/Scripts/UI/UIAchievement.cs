@@ -23,7 +23,7 @@ namespace MLA.UI.Windows {
         public int ID;
         private Achievement achievement;
 
-        void Start() {
+        public void Init() {
             Database.onRefresh += RefreshUI;
             achievement = DBAchievements.Instance.GetAchievement(ID);
 
@@ -53,10 +53,10 @@ namespace MLA.UI.Windows {
                 rewardTexts[2].text = "" + achievement.reward.quan3;
             }
 
-            Invoke("RefreshUI", 1f);
+            RefreshUI();
         }
 
-        void RefreshUI() {
+        public void RefreshUI() {
             title.text = achievement.title;
             description.text = achievement.description;
             if (Database.Instance.takenAchievements[ID] > 0) {

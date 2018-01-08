@@ -28,7 +28,7 @@ namespace MLA.System.Controllers {
             for (int i = 0; i < pony.costPrises.GetLength(0); i++) {
                 Database.Instance.IncreaseItemQuantity(pony.costItems[i], 0 - pony.costPrises[i]);
             }
-            AchievementsController.Instance.CheckStates();
+            AchievementsController.Instance.Init(false);
         }
 
         public void StartEndurance(Difficulty diff) {

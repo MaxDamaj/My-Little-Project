@@ -34,6 +34,10 @@ ModelImporter:
     100052: water
     100054: waterGrass
     100056: waterGrass01
+    100058: forBorder14
+    100060: forBorder15
+    100062: forBorder16
+    100064: forBorder17
     400000: Box01
     400002: forBorder02
     400004: forBorder03
@@ -63,6 +67,10 @@ ModelImporter:
     400052: water
     400054: waterGrass
     400056: waterGrass01
+    400058: forBorder14
+    400060: forBorder15
+    400062: forBorder16
+    400064: forBorder17
     2300000: Box01
     2300002: forBorder02
     2300004: forBorder03
@@ -91,6 +99,10 @@ ModelImporter:
     2300050: water
     2300052: waterGrass
     2300054: waterGrass01
+    2300056: forBorder14
+    2300058: forBorder15
+    2300060: forBorder16
+    2300062: forBorder17
     3300000: Box01
     3300002: forBorder02
     3300004: forBorder03
@@ -119,6 +131,10 @@ ModelImporter:
     3300050: water
     3300052: waterGrass
     3300054: waterGrass01
+    3300056: forBorder14
+    3300058: forBorder15
+    3300060: forBorder16
+    3300062: forBorder17
     4300000: road
     4300002: grass
     4300004: grass01
@@ -147,6 +163,10 @@ ModelImporter:
     4300050: log02
     4300052: waterGrass
     4300054: waterGrass01
+    4300056: forBorder14
+    4300058: forBorder15
+    4300060: forBorder16
+    4300062: forBorder17
   materials:
     importMaterials: 0
     materialName: 0
@@ -154,9 +174,11 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
-    resampleRotations: 1
+    resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -193,6 +215,7 @@ ModelImporter:
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -203,7 +226,10 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 0
   humanoidOversampling: 1

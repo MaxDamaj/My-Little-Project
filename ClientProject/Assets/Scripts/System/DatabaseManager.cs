@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using System;
+using MLA.UI.Windows;
+using MLA.UI.Controllers;
 
 namespace MLA.System.Controllers {
     public class DatabaseManager : MonoBehaviour {
@@ -20,6 +22,11 @@ namespace MLA.System.Controllers {
             } else {
                 SaveState();
             }
+
+            //Initializing Windows
+            MenuNavigation.Instance.Init();
+            FindObjectOfType<UIOptionWindow>().Init();
+            AchievementsController.Instance.Init(true);
         }
 
         //Loading State
@@ -66,6 +73,8 @@ namespace MLA.System.Controllers {
             if (Database.Instance.GetItemQuantity("Cyclotrone") > 0) Database.Instance.SetStoryLevel(1);
             if (Database.Instance.GetItemQuantity("Generator") > 0) Database.Instance.SetStoryLevel(2);
             if (Database.Instance.GetItemQuantity("Static Cells Block") > 0) Database.Instance.SetStoryLevel(3);
+            if (Database.Instance.GetItemQuantity("Field Compensator") > 0) Database.Instance.SetStoryLevel(4);
+            if (Database.Instance.GetItemQuantity("Transformer") > 0) Database.Instance.SetStoryLevel(5);
         }
 
         void OnApplicationQuit() {

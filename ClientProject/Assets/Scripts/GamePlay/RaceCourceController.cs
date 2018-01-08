@@ -221,6 +221,7 @@ namespace MLA.Gameplay.Controllers {
                 }
             }
             Database.Instance.distChall += (int)_distance;
+            Database.Instance.distTotal += (int)_distance;
             UnityEngine.SceneManagement.SceneManager.LoadScene("menu");
         }
 

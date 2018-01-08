@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using MLA.UI.Controllers;
 
 namespace MLA.System.Controllers {
     public class SimulationManager : MonoBehaviour {
@@ -9,6 +10,7 @@ namespace MLA.System.Controllers {
 
         void Start() {
             MusicManager.Instance.SetFolder("Music/Simulation", 0);
+            MenuNavigation.Instance.Init();
             Refresh();
         }
 

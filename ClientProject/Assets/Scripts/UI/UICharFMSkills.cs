@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 using MLA.System;
+using MLA.UI.Controllers;
 
 namespace MLA.UI.Windows {
     public class UICharFMSkills : MonoBehaviour {
@@ -16,10 +17,19 @@ namespace MLA.UI.Windows {
         }
 
         public void RefreshUI() {
-            Character = Database.Instance.GetCharFMInfo(Database.Instance.SelectedPony);
-            for (int i = 0; i < SkillTitle.GetLength(0); i++) {
-                SkillTitle[i].text = Character.CharSkills[i].title;
-                SkillDesc[i].text = Character.CharSkills[i].description;
+            if (MenuNavigation.Instance == null) return;
+            if (!MenuNavigation.Instance.IsSimulation) {
+                Character = Database.Instance.GetCharFMInfo(Database.Instance.SelectedPony);
+                for (int i = 0; i < SkillTitle.GetLength(0); i++) {
+                    SkillTitle[i].text = Character.CharSkills[i].title;
+                    SkillDesc[i].text = Character.CharSkills[i].description;
+                }
+            } else {
+                Character = DBSimulation.Instance.simCharacter;
+                for (int i = 0; i < SkillTitle.GetLength(0); i++) {
+                    SkillTitle[i].text = Character.CharSkills[i].title;
+                    SkillDesc[i].text = Character.CharSkills[i].description;
+                }
             }
         }
     }

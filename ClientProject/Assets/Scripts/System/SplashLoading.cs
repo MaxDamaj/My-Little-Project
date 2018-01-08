@@ -55,6 +55,7 @@ namespace MLA.UI.Controllers {
             charText.color = character.CharColor;
             charDescription.text = character.description;
 
+            Time.timeScale = 1;
             GlobalData.Instance.gameState = GameModeState.SplashScreen;
             SoundManager.Instance.UpdateSoundList();
         }

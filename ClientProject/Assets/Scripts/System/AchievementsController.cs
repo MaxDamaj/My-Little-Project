@@ -23,22 +23,19 @@ namespace MLA.System.Controllers {
             }
         }
 
-        void Start() {
-            //Place achievements
-            for (int i = 0; i < DBAchievements.Instance.GetAchievementsCount(); i++) {
-                GameObject tmp = Instantiate(sample.gameObject);
-                tmp.transform.SetParent(container);
-                tmp.transform.position = Vector3.zero;
-                tmp.transform.rotation = Quaternion.identity;
-                tmp.transform.localScale = Vector3.one;
-                tmp.GetComponent<UIAchievement>().ID = i;
+        public void Init(bool IsStartInit) {
+            if (IsStartInit) {
+                //Place achievements
+                for (int i = 0; i < DBAchievements.Instance.GetAchievementsCount(); i++) {
+                    GameObject tmp = Instantiate(sample.gameObject, container);
+                    tmp.transform.localPosition = Vector3.zero;
+                    tmp.transform.rotation = Quaternion.identity;
+                    tmp.transform.localScale = Vector3.one;
+                    tmp.GetComponent<UIAchievement>().ID = i;
+                    tmp.GetComponent<UIAchievement>().Init();
+                }
             }
-            Invoke("CheckStates", 0.8f);
-        }
 
-        #endregion
-
-        public void CheckStates() {
             bool IsNewAchievementGain = false;
             string messageString = "You are gain achievements: ";
             for (int i = 0; i < DBAchievements.Instance.GetAchievementsCount(); i++) {
@@ -57,8 +54,12 @@ namespace MLA.System.Controllers {
             if (IsNewAchievementGain) {
                 UIMessageWindow.Instance.ShowMessage(messageString, 0, UIAction.nothing, true, false);
             }
-            Invoke("SortAchievements", 0.5f);
+            SortAchievements();
         }
+
+        #endregion
+
+
 
         public float ReturnAchievementProgress(AchieveType type, float value) {
             switch (type) {
@@ -86,7 +87,7 @@ namespace MLA.System.Controllers {
 
         public void SortAchievements() {
             List<UIAchievement> achList = new List<UIAchievement>();
-            achList.AddRange(container.GetComponentsInChildren<UIAchievement>());
+            achList.AddRange(container.GetComponentsInChildren<UIAchievement>(true));
             List<UIAchievement> achTaken = achList.FindAll(x => x.progressBar.fillAmount == 1);
             foreach (var ach in achList) {
                 ach.transform.SetParent(container.parent);

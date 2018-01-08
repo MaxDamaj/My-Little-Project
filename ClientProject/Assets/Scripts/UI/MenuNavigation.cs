@@ -31,7 +31,7 @@ namespace MLA.UI.Controllers {
             }
         }
 
-        void Start() {
+        public void Init() {
             //Find all panels
             List<UIWindow> panels = new List<UIWindow>();
             panels.AddRange(panelsContainer.GetComponentsInChildren<UIWindow>(true));

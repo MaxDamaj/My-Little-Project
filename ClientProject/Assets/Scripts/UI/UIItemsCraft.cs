@@ -142,7 +142,7 @@ namespace MLA.UI.Windows {
             }
             Database.Instance.IncreaseItemQuantity(result.ItemName, result.exitQuantity);
             Database.Instance.craftedComps++;
-            AchievementsController.Instance.CheckStates();
+            AchievementsController.Instance.Init(false);
             ShowNotification(result.ItemName + " crafted!", Database.COLOR_GREEN);
             FindObjectOfType<DatabaseManager>().SetStoryLevel();
 

@@ -1,0 +1,159 @@
+fileFormatVersion: 2
+guid: 74cb38c1027f9d644910022ed1f5b09d
+timeCreated: 1515145099
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Box01
+    100002: grass
+    100004: grass01
+    100006: highGrass
+    100008: highGrass01
+    100010: highGrass02
+    100012: highGrass03
+    100014: highGrass04
+    100016: highGrass05
+    100018: highGrass06
+    100020: highGrass07
+    100022: highGrass08
+    100024: highGrass09
+    100026: Plane01
+    100028: road
+    100030: //RootNode
+    100032: water
+    400000: Box01
+    400002: grass
+    400004: grass01
+    400006: highGrass
+    400008: highGrass01
+    400010: highGrass02
+    400012: highGrass03
+    400014: highGrass04
+    400016: highGrass05
+    400018: highGrass06
+    400020: highGrass07
+    400022: highGrass08
+    400024: highGrass09
+    400026: Plane01
+    400028: road
+    400030: //RootNode
+    400032: water
+    2300000: Box01
+    2300002: grass
+    2300004: grass01
+    2300006: highGrass
+    2300008: highGrass01
+    2300010: highGrass02
+    2300012: highGrass03
+    2300014: highGrass04
+    2300016: highGrass05
+    2300018: highGrass06
+    2300020: highGrass07
+    2300022: highGrass08
+    2300024: highGrass09
+    2300026: Plane01
+    2300028: road
+    2300030: water
+    3300000: Box01
+    3300002: grass
+    3300004: grass01
+    3300006: highGrass
+    3300008: highGrass01
+    3300010: highGrass02
+    3300012: highGrass03
+    3300014: highGrass04
+    3300016: highGrass05
+    3300018: highGrass06
+    3300020: highGrass07
+    3300022: highGrass08
+    3300024: highGrass09
+    3300026: Plane01
+    3300028: road
+    3300030: water
+    4300000: road
+    4300002: highGrass
+    4300004: grass
+    4300006: highGrass01
+    4300008: highGrass02
+    4300010: highGrass03
+    4300012: highGrass04
+    4300014: highGrass05
+    4300016: highGrass06
+    4300018: highGrass07
+    4300020: highGrass08
+    4300022: highGrass09
+    4300024: grass01
+    4300026: Box01
+    4300028: water
+    4300030: Plane01
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 3.9375
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
