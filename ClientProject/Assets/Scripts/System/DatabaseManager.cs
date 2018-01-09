@@ -27,21 +27,24 @@ namespace MLA.System.Controllers {
             MenuNavigation.Instance.Init();
             FindObjectOfType<UIOptionWindow>().Init();
             AchievementsController.Instance.Init(true);
+            FindObjectOfType<UIEndurance>().Init();
         }
 
         //Loading State
         void LoadState() {
             Database.Instance.takenAchievements = new List<int>();
             Database.Instance.readenCodex = new List<int>();
+            Database.Instance.endRewardsEasy = new List<int>();
+            Database.Instance.endRewardsNormal = new List<int>();
+            Database.Instance.endRewardsHard = new List<int>();
 
             parser.LoadFromFile();
 
-            for (int i = Database.Instance.takenAchievements.Count; i < DBAchievements.Instance.GetAchievementsCount(); i++) {
-                Database.Instance.takenAchievements.Add(0);
-            }
-            for (int i = Database.Instance.readenCodex.Count; i < GlobalData.Instance.codexPagesCount; i++) {
-                Database.Instance.readenCodex.Add(0);
-            }
+            for (int i = Database.Instance.takenAchievements.Count; i < DBAchievements.Instance.GetAchievementsCount(); i++) { Database.Instance.takenAchievements.Add(0); }
+            for (int i = Database.Instance.readenCodex.Count; i < GlobalData.Instance.codexPagesCount; i++) { Database.Instance.readenCodex.Add(0); }
+            for (int i = Database.Instance.endRewardsEasy.Count; i < DBEndRewards.Instance.EasyRewards.GetLength(0); i++) { Database.Instance.endRewardsEasy.Add(0); }
+            for (int i = Database.Instance.endRewardsNormal.Count; i < DBEndRewards.Instance.NormalRewards.GetLength(0); i++) { Database.Instance.endRewardsNormal.Add(0); }
+            for (int i = Database.Instance.endRewardsHard.Count; i < DBEndRewards.Instance.HardRewards.GetLength(0); i++) { Database.Instance.endRewardsHard.Add(0); }
 
             //Time span calculate
             DateTime startDate = new DateTime(2016, 1, 1);

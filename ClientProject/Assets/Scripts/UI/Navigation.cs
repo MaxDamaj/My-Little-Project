@@ -19,9 +19,6 @@ namespace MLA.UI.Common {
         void Activation() {
             //Buttons special actions
             switch (specialAction) {
-                case UIAction.startEndurance:
-                    GameController.Instance.StartEndurance(Difficulty.Easy);
-                    break;
                 case UIAction.hideLeftPanels:
                     MenuNavigation.Instance.HideLeftPanels();
                     SendPanel.anim.SetBool("trigger", true);

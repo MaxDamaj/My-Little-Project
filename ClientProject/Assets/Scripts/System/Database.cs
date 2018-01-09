@@ -122,6 +122,7 @@ namespace MLA.System {
         public int paramSSAO;       //Camera using Ambient Obscurance
         public float musicVolume;   //Game music volume value
         public int furnaceSlots;    //Number of furnace slots
+        public int enduranceLevel;  //Enabled level of endurance
 
         [Header("Statistic")]
         public int distTotal;       //Total passed distance in free mode
@@ -140,7 +141,9 @@ namespace MLA.System {
         public int[] passedChallenges;
         public List<int> takenAchievements;
         public List<int> readenCodex;
-        public int[] endRewardsEasy;
+        public List<int> endRewardsEasy;
+        public List<int> endRewardsNormal;
+        public List<int> endRewardsHard;
 
         public delegate void RefreshArgs(); //variable for event values
         public static event RefreshArgs onRefresh; //Refresh event

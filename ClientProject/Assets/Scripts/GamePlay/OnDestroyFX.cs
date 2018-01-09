@@ -14,6 +14,8 @@ namespace MLA.Gameplay.Common {
         private float _objectDestroyDelay = 0;
         [SerializeField]
         private float _fxDestroyDelay = 3;
+        [SerializeField]
+        private float _addValue = 1;
 
         public string objectType = "Bits";
         public string sound = "a_beeps";
@@ -28,12 +30,12 @@ namespace MLA.Gameplay.Common {
         void ExecuteFX(string tag, GameObject target) {
             if (tag == "Player" && gameObject == target) {
                 SoundManager.Instance.PlaySound(sound);
-                if (isShowPopup) { PickupPopup.Instance.ShowPopupInfo(objectType, isSimulationPickup); }
                 if (!isSimulationPickup) {
-                    Database.Instance.IncreaseItemQuantity(objectType, GlobalData.Instance.PickupMlp);
+                    Database.Instance.IncreaseItemQuantity(objectType, _addValue * GlobalData.Instance.PickupMlp);
                 } else {
-                    DBSimulation.Instance.IncreaseItemQuantity(objectType, GlobalData.Instance.PickupMlp);
+                    DBSimulation.Instance.IncreaseItemQuantity(objectType, _addValue * GlobalData.Instance.PickupMlp);
                 }
+                if (isShowPopup) { PickupPopup.Instance.ShowPopupInfo(objectType, isSimulationPickup); }
                 Destroy(Instantiate(fx, transform.position, fx.transform.rotation), _fxDestroyDelay);
                 Destroy(gameObject, _objectDestroyDelay);
             }

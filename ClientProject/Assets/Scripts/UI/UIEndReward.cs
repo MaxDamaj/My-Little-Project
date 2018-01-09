@@ -13,7 +13,7 @@ namespace MLA.UI.Windows {
         public Text rewardContainer;
 
         [Header("Common")]
-        public string EndDifficulty;
+        public Difficulty EndDifficulty;
 
         void Start() {
 

@@ -18,6 +18,8 @@ namespace MLA.System {
     public class DBEndRewards : ScriptableObject {
 
         public RunRewards[] EasyRewards;
+        public RunRewards[] NormalRewards;
+        public RunRewards[] HardRewards;
 
         private static DBEndRewards dbEndRewards;
 

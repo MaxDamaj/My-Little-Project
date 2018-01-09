@@ -9,6 +9,8 @@ namespace MLA.System {
         private const string FILE_NAME = "gameSave.sav";
         private List<string> saveFile;
 
+        #region Save-Load-Clear
+
         public void SaveToFile() {
             string[] saveFiles;
             if (Directory.Exists(Application.persistentDataPath + "/Saves")) {
@@ -38,6 +40,7 @@ namespace MLA.System {
             saveFile.Add("timeSpan:" + Database.Instance.timeSpan);
             saveFile.Add("furnaceSlots:" + Database.Instance.furnaceSlots);
             saveFile.Add("musicVolume:" + Database.Instance.musicVolume);
+            saveFile.Add("enduranceLevel:" + Database.Instance.enduranceLevel);
             saveFile.Add("");
 
             saveFile.Add("--Statistic--");
@@ -69,7 +72,9 @@ namespace MLA.System {
             saveFile.Add(SaveMultiline(Database.Instance.readenCodex.ToArray(), "readenCodex"));
             saveFile.Add("");
             saveFile.Add("--Endurance Rewards--");
-            saveFile.Add(SaveMultiline(Database.Instance.endRewardsEasy, "enduranceRewardsEasy"));
+            saveFile.Add(SaveMultiline(Database.Instance.endRewardsEasy.ToArray(), "enduranceRewardsEasy"));
+            saveFile.Add(SaveMultiline(Database.Instance.endRewardsNormal.ToArray(), "enduranceRewardsNormal"));
+            saveFile.Add(SaveMultiline(Database.Instance.endRewardsHard.ToArray(), "enduranceRewardsHard"));
             saveFile.Add("");
 
             saveFile.Add("--Characters--");
@@ -113,6 +118,7 @@ namespace MLA.System {
             Database.Instance.timeSpan = LoadLineInt(saveFile, "timeSpan", Database.Instance.timeSpan);
             Database.Instance.furnaceSlots = LoadLineInt(saveFile, "furnaceSlots", Database.Instance.furnaceSlots);
             Database.Instance.musicVolume = LoadLineFloat(saveFile, "musicVolume", Database.Instance.musicVolume);
+            Database.Instance.enduranceLevel = LoadLineInt(saveFile, "enduranceLevel", Database.Instance.enduranceLevel);
 
             //Statistic
             Database.Instance.distTotal = LoadLineInt(saveFile, "totalDistance", Database.Instance.distTotal);
@@ -138,7 +144,9 @@ namespace MLA.System {
             //Codex
             Database.Instance.readenCodex.AddRange(LoadMultilineInt(saveFile, "readenCodex", Database.Instance.readenCodex.ToArray()));
             //Endurance Rewards
-            Database.Instance.endRewardsEasy = LoadMultilineInt(saveFile, "enduranceRewardsEasy", Database.Instance.endRewardsEasy);
+            Database.Instance.endRewardsEasy.AddRange(LoadMultilineInt(saveFile, "enduranceRewardsEasy", Database.Instance.endRewardsEasy.ToArray()));
+            Database.Instance.endRewardsNormal.AddRange(LoadMultilineInt(saveFile, "enduranceRewardsNormal", Database.Instance.endRewardsNormal.ToArray()));
+            Database.Instance.endRewardsHard.AddRange(LoadMultilineInt(saveFile, "enduranceRewardsHard", Database.Instance.endRewardsHard.ToArray()));
 
             //Simulation
             DBSimulation.Instance.sectionBonusLow = LoadLineInt(saveFile, "obstaclesLow", DBSimulation.Instance.sectionBonusLow);
@@ -158,7 +166,10 @@ namespace MLA.System {
             File.Delete(Application.persistentDataPath + "/Saves/" + FILE_NAME);
         }
 
-        //------Common-----------------------
+        #endregion
+
+        #region Common
+
         string SaveMultiline(List<string> lines, string lineTitle) {
             string value = lineTitle + ":";
             foreach (string item in lines) { value += (item + ","); }
@@ -218,7 +229,9 @@ namespace MLA.System {
             }
             return defaultValue;
         }
-        //-----------------------------------
+
+        #endregion
+
         string GetCharStats(int index) {
             CharsFMData character = Database.Instance.GetCharFMInfo(index);
             string line = character.CharName;
