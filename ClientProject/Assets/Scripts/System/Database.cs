@@ -115,7 +115,7 @@ namespace MLA.System {
         public int SelectedPony;    //Current selected pony in FreeMode
         public int[] PartyPony;     //Ponies in your party
         public bool IsLoaded;       //Is current Database loaded from disk
-        public int tutorialState;
+        public int tutorialState;   //level of passed tutorials
         public int[] nowPlaying;    //Current playing music in different modes
         public float cameraShift;   //Current camera shifting position in gamemode
         public int paramBloom;      //Camera using Antialising
@@ -131,11 +131,10 @@ namespace MLA.System {
         public int obstTotal;       //Total wrecked obstacles
         public int obstWithDamage;  //Wrecked obstacles with recieving damage
         public int obstNonDamage;   //Wrecked obstacles without recieving damage
-        public int distEndEasy;
-        public int distEndNormal;
-        public int distEndHard;
-        public int craftedComps;
-        public int storyLevel;      //Current level your time machine
+        public int distEndEasy;     //Passed distance in Enduranse (Easy)
+        public int distEndNormal;   //Passed distance in Enduranse (Normal)
+        public int distEndHard;     //Passed distance in Enduranse (Hard)
+        public int craftedComps;    //Total crafted components
 
         [Header("Lists")]
         public int[] passedChallenges;
@@ -144,6 +143,8 @@ namespace MLA.System {
         public List<int> endRewardsEasy;
         public List<int> endRewardsNormal;
         public List<int> endRewardsHard;
+
+        public int storyLevel { get; private set; }     //Current level player's time machine, calculated in DatabaseManager
 
         public delegate void RefreshArgs(); //variable for event values
         public static event RefreshArgs onRefresh; //Refresh event
