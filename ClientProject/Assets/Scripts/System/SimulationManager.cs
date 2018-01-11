@@ -9,6 +9,7 @@ namespace MLA.System.Controllers {
         public GameObject mainCamera;
 
         void Start() {
+            GlobalData.Instance.IsSimulation = true;
             MusicManager.Instance.SetFolder("Music/Simulation", 0);
             MenuNavigation.Instance.Init();
             Refresh();

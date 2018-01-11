@@ -19,7 +19,7 @@ namespace MLA.Gameplay.Controllers {
             rewards = new List<UIEndReward>();
             //Gain Rewards for passed distance
             for (int i = 0; i < DBEndRewards.Instance.EasyRewards.GetLength(0); i++) {
-                RewardForTask(Difficulty.Easy, Database.Instance.distEndEasy, i);
+                RewardForTask(Difficulty.Easy, Database.Instance.distEndEasy, DBEndRewards.Instance.EasyRewards[i].distance, i);
             }
             diffButtons[0].onClick.AddListener(delegate { ShowPanels(Difficulty.Easy); });
             diffButtons[1].onClick.AddListener(delegate { ShowPanels(Difficulty.Normal); });
@@ -75,20 +75,43 @@ namespace MLA.Gameplay.Controllers {
             }
         }
 
-        void RewardForTask(Difficulty diff, int distance, int index) {
+        void RewardForTask(Difficulty diff, int distance, int takenDistance, int index) {
             switch (diff) {
                 case Difficulty.Easy:
-                    if (distance >= DBEndRewards.Instance.EasyRewards[index].distance && Database.Instance.endRewardsEasy[index] == 0) {
+                    if (distance >= takenDistance && Database.Instance.endRewardsEasy[index] == 0) {
                         if (DBEndRewards.Instance.EasyRewards[index].stage == "") {
                             for (int i = 0; i < DBEndRewards.Instance.EasyRewards[index].rewardItems.GetLength(0); i++) {
                                 Database.Instance.IncreaseItemQuantity(DBEndRewards.Instance.EasyRewards[index].rewardItems[i], DBEndRewards.Instance.EasyRewards[index].rewardPrices[i]);
                             }
-                            UIMessageWindow.Instance.ShowMessage("You gain new reward for Endurance Mode!", 0, UIAction.nothing, true, false);
+                            UIMessageWindow.Instance.ShowMessage("You gain new reward for Endurance Mode (Easy)!", 0, UIAction.nothing, true, false);
                             Database.Instance.endRewardsEasy[index] = 1;
                         } else {
                             UIMessageWindow.Instance.ShowMessage("You are unlock Endurance Mode (Normal)!", 0, UIAction.nothing, true, false);
                             Database.Instance.enduranceLevel = 2;
                         }
+                    }
+                    break;
+                case Difficulty.Normal:
+                    if (distance >= takenDistance && Database.Instance.endRewardsNormal[index] == 0) {
+                        if (DBEndRewards.Instance.NormalRewards[index].stage == "") {
+                            for (int i = 0; i < DBEndRewards.Instance.NormalRewards[index].rewardItems.GetLength(0); i++) {
+                                Database.Instance.IncreaseItemQuantity(DBEndRewards.Instance.NormalRewards[index].rewardItems[i], DBEndRewards.Instance.NormalRewards[index].rewardPrices[i]);
+                            }
+                            UIMessageWindow.Instance.ShowMessage("You gain new reward for Endurance Mode (Normal)!", 0, UIAction.nothing, true, false);
+                            Database.Instance.endRewardsNormal[index] = 1;
+                        } else {
+                            UIMessageWindow.Instance.ShowMessage("You are unlock Endurance Mode (Hard)!", 0, UIAction.nothing, true, false);
+                            Database.Instance.enduranceLevel = 3;
+                        }
+                    }
+                    break;
+                case Difficulty.Hard:
+                    if (distance >= takenDistance && Database.Instance.endRewardsHard[index] == 0) {
+                        for (int i = 0; i < DBEndRewards.Instance.HardRewards[index].rewardItems.GetLength(0); i++) {
+                            Database.Instance.IncreaseItemQuantity(DBEndRewards.Instance.HardRewards[index].rewardItems[i], DBEndRewards.Instance.HardRewards[index].rewardPrices[i]);
+                        }
+                        UIMessageWindow.Instance.ShowMessage("You gain new reward for Endurance Mode (Hard)!", 0, UIAction.nothing, true, false);
+                        Database.Instance.endRewardsHard[index] = 1;
                     }
                     break;
             }

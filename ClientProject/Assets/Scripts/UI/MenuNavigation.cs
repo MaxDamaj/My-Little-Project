@@ -11,7 +11,6 @@ namespace MLA.UI.Controllers {
         public Button backButton;
         public RectTransform panelsContainer;
         public Text ScenePonyName;
-        public bool IsSimulation;
         [HideInInspector]
         public FallBackPanel panel;
 
@@ -48,7 +47,7 @@ namespace MLA.UI.Controllers {
             }
             UIRightPanels.Find(x => x.fallback == FallBackPanel.FreeMode).anim.SetBool("trigger", true); //FreeMode panel
                                                                                                          //Spawn Selected Pony first time
-            if (!IsSimulation) {
+            if (!GlobalData.Instance.IsSimulation) {
                 CharsFMData pony = Database.Instance.GetCharFMInfo(Database.Instance.SelectedPony);
                 RefreshPreviewMesh(pony);
             }

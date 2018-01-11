@@ -43,6 +43,8 @@ namespace MLA.Gameplay.Scenes {
             Destroy(Instantiate(startSection, transform.position, startSection.transform.rotation), 45);
             Destroy(Instantiate(startSection, new Vector3(transform.position.x - 20f, 0f, 0f), startSection.transform.rotation), 45);
             Destroy(Instantiate(startSection, anchor.position, startSection.transform.rotation), 45);
+
+            sky_camera.material = sections[0].skybox;
         }
 
         #endregion

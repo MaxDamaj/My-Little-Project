@@ -39,6 +39,7 @@ namespace MLA.System {
         public float currentMP;
         public float currentMP_rec; //MP recovery value
         public GameModeState gameState;
+        public bool IsSimulation { set; get; }
 
         private static GlobalData globalData;
 

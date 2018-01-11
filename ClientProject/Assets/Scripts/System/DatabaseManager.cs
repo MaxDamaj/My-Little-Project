@@ -24,6 +24,7 @@ namespace MLA.System.Controllers {
             }
 
             //Initializing Windows
+            GlobalData.Instance.IsSimulation = false;
             MenuNavigation.Instance.Init();
             FindObjectOfType<UIOptionWindow>().Init();
             AchievementsController.Instance.Init(true);

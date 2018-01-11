@@ -17,8 +17,7 @@ namespace MLA.UI.Windows {
         }
 
         public void RefreshUI() {
-            if (MenuNavigation.Instance == null) return;
-            if (!MenuNavigation.Instance.IsSimulation) {
+            if (!GlobalData.Instance.IsSimulation) {
                 Character = Database.Instance.GetCharFMInfo(Database.Instance.SelectedPony);
                 for (int i = 0; i < SkillTitle.GetLength(0); i++) {
                     SkillTitle[i].text = Character.CharSkills[i].title;
