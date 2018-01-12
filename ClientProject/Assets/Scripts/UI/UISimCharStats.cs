@@ -2,6 +2,8 @@
 using UnityEngine.UI;
 using System.Collections;
 using MLA.System;
+using MLA.Gameplay.Common;
+using MLA.UI.Common;
 
 namespace MLA.UI.Windows {
     public class UISimCharStats : MonoBehaviour {
@@ -16,7 +18,19 @@ namespace MLA.UI.Windows {
         public Text statSetMP;
         public Text statSetSPD;
 
+        public UIStatUpgrade[] UIStat;
+        public Button[] upgButton;
+        public Text[] upgText;
+
+        private bool IsEnoughToHP, IsEnoughToMP;
+        private string i1, i2;
+        private int quan1, quan2;
+
         void Start() {
+            IsEnoughToHP = false;
+            IsEnoughToMP = false;
+            upgButton[0].onClick.AddListener(UpgradeHealth);
+            upgButton[1].onClick.AddListener(UpgradeMana);
             Refresh();
         }
 
@@ -28,38 +42,63 @@ namespace MLA.UI.Windows {
             statSetHP.text = "" + character.HP;
             statSetMP.text = "" + character.MP;
             statSetSPD.text = "" + character.SPD;
+            //Show Upgrade values
+            upgText[0].text = "+1";
+            upgText[1].text = "+1";
+            UpgradeHealthCost();
+            UpgradeManaCost();
         }
 
-        public void SetHP(int value) {
-            DBSimulation.Instance.simCharacter.HP = value;
+
+        #region Common
+
+        //-----------Health-Upgrade----------------
+        void UpgradeHealthCost() {
+            var line = DBCharUpgrade.Instance.SimHPUpgrade;
+            //Set Upgrade Cost
+            i1 = line.res1;
+            i2 = line.res2;
+            quan1 = Mathf.FloorToInt(line.quan1 + (DBSimulation.Instance.simCharacter.HP - line.toValue));
+            quan2 = Mathf.FloorToInt(line.quan2 + (DBSimulation.Instance.simCharacter.HP - line.toValue));
+            //Set items values
+            IsEnoughToHP = UIStat[0].UpgradeSimCost(i1, i2, quan1, quan2);
+        }
+        void UpgradeHealth() {
+            var line = DBCharUpgrade.Instance.SimHPUpgrade;
+            if (IsEnoughToHP) {
+                DBSimulation.Instance.IncreaseItemQuantity(line.res1, 0 - (line.quan1 + (DBSimulation.Instance.simCharacter.HP - line.toValue)));
+                DBSimulation.Instance.IncreaseItemQuantity(line.res2, 0 - (line.quan2 + (DBSimulation.Instance.simCharacter.HP - line.toValue)));
+                DBSimulation.Instance.simCharacter.HP += 1f;
+                Database.Instance.SetCharFM_HP(Database.Instance.SelectedPony, DBSimulation.Instance.simCharacter.HP);
+            } else {
+                UIMessageWindow.Instance.ShowMessage("You don't have enough resources", 0, UIAction.nothing, true, false);
+            }
             Refresh();
         }
-        public void SetMP(int value) {
-            DBSimulation.Instance.simCharacter.MP = value;
-            Refresh();
+        //-----------Mana-Upgrade----------------
+        void UpgradeManaCost() {
+            var line = DBCharUpgrade.Instance.SimMPUpgrade;
+            //Set Upgrade Cost
+            i1 = line.res1;
+            i2 = line.res2;
+            quan1 = Mathf.FloorToInt(line.quan1 + (DBSimulation.Instance.simCharacter.MP - line.toValue));
+            quan2 = Mathf.FloorToInt(line.quan2 + (DBSimulation.Instance.simCharacter.MP - line.toValue));
+            //Set items values
+            IsEnoughToMP = UIStat[1].UpgradeSimCost(i1, i2, quan1, quan2);
         }
-        public void SetSPD(int value) {
-            DBSimulation.Instance.simCharacter.SPD = value;
+        void UpgradeMana() {
+            var line = DBCharUpgrade.Instance.SimMPUpgrade;
+            if (IsEnoughToMP) {
+                DBSimulation.Instance.IncreaseItemQuantity(line.res1, 0 - (line.quan1 + (DBSimulation.Instance.simCharacter.MP - line.toValue)));
+                DBSimulation.Instance.IncreaseItemQuantity(line.res2, 0 - (line.quan2 + (DBSimulation.Instance.simCharacter.MP - line.toValue)));
+                DBSimulation.Instance.simCharacter.MP += 1f;
+                Database.Instance.SetCharFM_MP(Database.Instance.SelectedPony, DBSimulation.Instance.simCharacter.MP);
+            } else {
+                UIMessageWindow.Instance.ShowMessage("You don't have enough resources", 0, UIAction.nothing, true, false);
+            }
             Refresh();
         }
 
-        public void IncreaseHP(int value) {
-            if (DBSimulation.Instance.simCharacter.HP + value > 0 && DBSimulation.Instance.simCharacter.HP + value < 1000) {
-                DBSimulation.Instance.simCharacter.HP += value;
-            }
-            Refresh();
-        }
-        public void IncreaseMP(int value) {
-            if (DBSimulation.Instance.simCharacter.MP + value > 0 && DBSimulation.Instance.simCharacter.MP + value < 1000) {
-                DBSimulation.Instance.simCharacter.MP += value;
-            }
-            Refresh();
-        }
-        public void IncreaseSPD(int value) {
-            if (DBSimulation.Instance.simCharacter.SPD + value > 30 && DBSimulation.Instance.simCharacter.SPD + value < 100) {
-                DBSimulation.Instance.simCharacter.SPD += value;
-            }
-            Refresh();
-        }
+        #endregion
     }
 }

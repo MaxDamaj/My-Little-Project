@@ -100,7 +100,7 @@ namespace MLA.Gameplay.Controllers {
         }
 
         void CalculateObstacle(Transform obstacle, float shift, float damage, float camShaking) {
-            Database.Instance.obstTotal++;
+            if (!GlobalData.Instance.IsSimulation) Database.Instance.obstTotal++;
             if (obstacle.position.x - transform.position.x > shift) {
                 //SoundManager.Instance.PlaySound("a_thump");
                 if (GlobalData.Instance.isMPProtection && GlobalData.Instance.currentMP >= damage) {
@@ -109,9 +109,9 @@ namespace MLA.Gameplay.Controllers {
                     GlobalData.Instance.currentHP -= damage * GlobalData.Instance.DMGmlp;
                 }
                 _cpf.shake_intensity = camShaking * GlobalData.Instance.DMGmlp;
-                if (!SkillController.Instance.IsSimulation) Database.Instance.obstWithDamage++;
+                if (!GlobalData.Instance.IsSimulation) Database.Instance.obstWithDamage++;
             } else {
-                if (!SkillController.Instance.IsSimulation) Database.Instance.obstNonDamage++;
+                if (!GlobalData.Instance.IsSimulation) Database.Instance.obstNonDamage++;
             }
         }
 

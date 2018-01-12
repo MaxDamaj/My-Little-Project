@@ -14,6 +14,9 @@ namespace MLA.System {
         public List<CharUpgradeLine> MPUpgrade;
         public List<CharUpgradeLine> LuckUpgrade;
         public List<CharUpgradeLine> FurnaceUpgrade;
+        [Header("Simulation Stats")]
+        public CharUpgradeLine SimHPUpgrade;
+        public CharUpgradeLine SimMPUpgrade;
 
         [Serializable]
         public struct CharUpgradeLine {
@@ -56,6 +59,7 @@ namespace MLA.System {
             }
             return HPUpgrade[0];
         }
+
 
 #if UNITY_EDITOR
         [MenuItem("Assets/Create DBCharUpgrade asset")]
