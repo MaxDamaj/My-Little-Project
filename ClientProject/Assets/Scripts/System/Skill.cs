@@ -76,7 +76,11 @@ namespace MLA.Gameplay.Common {
 
         public void ItemMultiplier(string i, float q) {
             if (Random.Range(0.0f, 1.0f) <= chance) {
-                Database.Instance.IncreaseItemQuantity(i, q);
+                if (!GlobalData.Instance.IsSimulation) {
+                    Database.Instance.IncreaseItemQuantity(i, q);
+                } else {
+                    DBSimulation.Instance.IncreaseItemQuantity(i, q);
+                }
             }
         }
     }

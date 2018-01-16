@@ -351,7 +351,7 @@ namespace MLA.Gameplay.Controllers {
         //Special Action
         void OnTriggerEnter(Collider coll) {
             if (coll.gameObject.GetComponent<OnDestroyFX>() == null) return;
-            if ((int)Character.CharSkills[0].passiveType == 0 && Character.CharSkills[0].item == coll.gameObject.GetComponent<OnDestroyFX>().objectType) {
+            if (Character.CharSkills[0].passiveType == Skill.PassiveType.ItemMultiplier && Character.CharSkills[0].item == coll.gameObject.GetComponent<OnDestroyFX>().objectType && !GlobalData.Instance.IsSimulation) {
                 Character.CharSkills[0].ItemMultiplier(Character.CharSkills[0].item, Character.CharSkills[0].multiplier - 1);
                 if (fx[0] != null) {
                     fx[0].SetActive(true);

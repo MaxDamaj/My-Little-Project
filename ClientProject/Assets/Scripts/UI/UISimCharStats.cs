@@ -2,7 +2,6 @@
 using UnityEngine.UI;
 using System.Collections;
 using MLA.System;
-using MLA.Gameplay.Common;
 using MLA.UI.Common;
 
 namespace MLA.UI.Windows {
@@ -69,7 +68,6 @@ namespace MLA.UI.Windows {
                 DBSimulation.Instance.IncreaseItemQuantity(line.res1, 0 - (line.quan1 + (DBSimulation.Instance.simCharacter.HP - line.toValue)));
                 DBSimulation.Instance.IncreaseItemQuantity(line.res2, 0 - (line.quan2 + (DBSimulation.Instance.simCharacter.HP - line.toValue)));
                 DBSimulation.Instance.simCharacter.HP += 1f;
-                Database.Instance.SetCharFM_HP(Database.Instance.SelectedPony, DBSimulation.Instance.simCharacter.HP);
             } else {
                 UIMessageWindow.Instance.ShowMessage("You don't have enough resources", 0, UIAction.nothing, true, false);
             }
@@ -92,7 +90,6 @@ namespace MLA.UI.Windows {
                 DBSimulation.Instance.IncreaseItemQuantity(line.res1, 0 - (line.quan1 + (DBSimulation.Instance.simCharacter.MP - line.toValue)));
                 DBSimulation.Instance.IncreaseItemQuantity(line.res2, 0 - (line.quan2 + (DBSimulation.Instance.simCharacter.MP - line.toValue)));
                 DBSimulation.Instance.simCharacter.MP += 1f;
-                Database.Instance.SetCharFM_MP(Database.Instance.SelectedPony, DBSimulation.Instance.simCharacter.MP);
             } else {
                 UIMessageWindow.Instance.ShowMessage("You don't have enough resources", 0, UIAction.nothing, true, false);
             }
